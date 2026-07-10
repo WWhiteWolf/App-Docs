@@ -29,9 +29,9 @@ day; the OneDrive move had been convenience only.
 - Never give click-directions for a screen Claude can't see.
 - Patrick leads; Claude doesn't steer. No urgency — his pace.
 
-## Where things stand (updated 2026-07-09, session #71)
+## Where things stand (updated 2026-07-10, session #72)
 
-**The four products, all to be published (decided #71):**
+**The products, all to be published (decided #71; Memory-web dropped #72):**
 
 1. **Mystery Tracker — web** — live at elyfont.com, Beta. Project:
    `Projects/MysteryTracker` (its own session docs: SESSION-HANDOFF.md
@@ -40,18 +40,32 @@ day; the OneDrive move had been convenience only.
    #71) — PWA, Beta. **← THE ACTIVE EFFORT: clean up → App Store, FREE,
    via a bare Xcode+WKWebView wrapper. Read
    `Projects/MysteryCluesTracker/docs/upgrade-scope.md` FIRST — it holds
-   every decision.**
+   every decision.** Progress (#72): ALL mechanical cleanup done and
+   Patrick-verified (rename, voice claim, new icon, relative paths,
+   bundled fonts — fully offline). No-thinking directive logged. Xcode
+   26.6 + iOS components installed, Apple ID signed in, Dev account
+   held — the toolchain is ready.
 3. **A Place To Remember (Memory) — iPhone** — Alpha, mostly built.
    Project: `Projects/elderlyassistant` (its own session docs:
    docs/handoff.md, pending.txt, parked-items.md, session-start.md).
-   Store prep comes after the Mystery rehearsal.
-4. **Memory — web** — not started; waits its turn.
+   Store prep comes after the Mystery rehearsal. Android version
+   eventually, after the iPhone build (decided #72).
+4. **Memory — web** — DROPPED (decided 2026-07-10, session #72): no web
+   version. The app is built around the rich reminder scheme, which the
+   web can't carry. elyfont.com gets a pointer to the App Store listing
+   only.
 
-**NEXT SESSION'S GOAL (Patrick, end of #71): begin the Mystery Tracker
-mobile upgrade, "when we are ready."** Open first steps (Patrick picks):
-the "Clue" grep of in-app text, the mechanical pre-store fixes (fonts,
-paths, icons, rename, drop the voice claim), or mockups for the
-configurable setup + Σ/House columns.
+**NEXT SESSION'S GOAL (end of #72): the mockups.** Configurable setup
+(1–4 categories, 1–30 cards, player-named), ✓/✗ cell tinting, the 🏠
+column (manual marks only), tier-gate removal (auto-Σ comes OUT with
+it — no-thinking directive), and the portrait/landscape question —
+all in upgrade-scope.md.
+
+**Commit reminder (Patrick, #72):** commit BOTH repos (App-Docs and
+MysteryCluesTracker). At commit, delete the three dead files in
+MysteryCluesTracker: `clue-manifest.json`, `static/clue-icon.png`,
+`static/service-worker.js`. (Keep `MysteryTracker.html` — that's
+Patrick's original hand-built Clue sheet, a keepsake.)
 
 **Loose ends:** Memory's #69 badge-reorder commit/build/phone-check may
 still be pending — confirm with Patrick. The elyfont.com home card
