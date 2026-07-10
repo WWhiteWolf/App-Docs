@@ -29,7 +29,7 @@ day; the OneDrive move had been convenience only.
 - Never give click-directions for a screen Claude can't see.
 - Patrick leads; Claude doesn't steer. No urgency — his pace.
 
-## Where things stand (updated 2026-07-10, session #72)
+## Where things stand (updated 2026-07-10, session #72 second sitting — scope + mockups)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -44,7 +44,15 @@ day; the OneDrive move had been convenience only.
    Patrick-verified (rename, voice claim, new icon, relative paths,
    bundled fonts — fully offline). No-thinking directive logged. Xcode
    26.6 + iOS components installed, Apple ID signed in, Dev account
-   held — the toolchain is ready.
+   held — the toolchain is ready. #72 second sitting: the SCOPE IS
+   COMPLETE — every design question decided and in upgrade-scope.md
+   (🏠 = ✓-only toggle, mockup approved; mirror-the-web standing rule;
+   truly-variable structure, player-shaped at setup; band 4 = web
+   gold; setup mockup approved; templates carry the whole structure;
+   minimums 15-card deck / 2 players / 2 cards / Me slot; asks = one
+   card per non-empty category, auto-commit; 2-of-3 auto-check OUT;
+   tinting ports as-is; LANDSCAPE DEFERRED till after the product is
+   finished — ships portrait-only).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, mostly built.
    Project: `Projects/elderlyassistant` (its own session docs:
    docs/handoff.md, pending.txt, parked-items.md, session-start.md).
@@ -55,11 +63,12 @@ day; the OneDrive move had been convenience only.
    web can't carry. elyfont.com gets a pointer to the App Store listing
    only.
 
-**NEXT SESSION'S GOAL (end of #72): the mockups.** Configurable setup
-(1–4 categories, 1–30 cards, player-named), ✓/✗ cell tinting, the 🏠
-column (manual marks only), tier-gate removal (auto-Σ comes OUT with
-it — no-thinking directive), and the portrait/landscape question —
-all in upgrade-scope.md.
+**NEXT SESSION'S GOAL (end of #72 second sitting): START THE BUILD.**
+Scope is complete; upgrade-scope.md holds every decision. Build ONE
+change at a time, each with Patrick's explicit go. A build order to
+discuss with Patrick (his call): tier-gate removal (auto-Σ out),
+asking auto-check removal, 🏠 column, ✓/✗ tinting, then the
+configurable structure (setup screen, then in-play).
 
 **Commit reminder (Patrick, #72):** commit BOTH repos (App-Docs and
 MysteryCluesTracker). At commit, delete the three dead files in
@@ -71,8 +80,13 @@ Patrick's original hand-built Clue sheet, a keepsake.)
 still be pending — confirm with Patrick. The elyfont.com home card
 mis-describes the web app (says book-reading; it's a board-game
 companion). The 266-step test procedure as a tickable web page remains a
-liked idea. Patrick still owed: git init + GitHub repo + first commit for
-THIS folder.
+liked idea. App-Docs git status: a .git folder exists (verified by
+looking, no git commands run) — whether the GitHub repo + first commit
+happened is unconfirmed; ask Patrick. NEW (#72 second sitting):
+CLAUDE.md + session-start.md now
+exist in all three project folders; Patrick's opener line: "#NN — name.
+Read CLAUDE.md, session-start.md, and the hand-off, then tell me where
+things stand."
 
 ## At session end
 
