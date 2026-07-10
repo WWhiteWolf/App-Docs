@@ -29,7 +29,7 @@ day; the OneDrive move had been convenience only.
 - Never give click-directions for a screen Claude can't see.
 - Patrick leads; Claude doesn't steer. No urgency — his pace.
 
-## Where things stand (updated 2026-07-10, session #72 second sitting — scope + mockups)
+## Where things stand (updated 2026-07-10, session #73 — the Setup build)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -52,7 +52,16 @@ day; the OneDrive move had been convenience only.
    minimums 15-card deck / 2 players / 2 cards / Me slot; asks = one
    card per non-empty category, auto-commit; 2-of-3 auto-check OUT;
    tinting ports as-is; LANDSCAPE DEFERRED till after the product is
-   finished — ships portrait-only).
+   finished — ships portrait-only). **#73 (2026-07-10): the SETUP
+   BUILD IS DONE and Patrick-verified in-browser** — categories data
+   model; full setup UI (add/rename/delete categories, add/remove
+   cards, counters, hint, gold band 4); defaults REDEFINED to
+   Category 1–3 / Card 1–27 (de-Clue complete, mirrors the web);
+   empty categories auto-delete; minimums REDEFINED (3 in Me hand /
+   2 players / 2 active categories / 3 cards per active category /
+   12-card deck); ask size = active categories (built). Details in
+   upgrade-scope.md's "Built — session #73" section. CLAUDE.md rule 6
+   added to all three project folders (no defensiveness — move ahead).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, mostly built.
    Project: `Projects/elderlyassistant` (its own session docs:
    docs/handoff.md, pending.txt, parked-items.md, session-start.md).
@@ -63,12 +72,11 @@ day; the OneDrive move had been convenience only.
    web can't carry. elyfont.com gets a pointer to the App Store listing
    only.
 
-**NEXT SESSION'S GOAL (end of #72 second sitting): START THE BUILD.**
-Scope is complete; upgrade-scope.md holds every decision. Build ONE
-change at a time, each with Patrick's explicit go. A build order to
-discuss with Patrick (his call): tier-gate removal (auto-Σ out),
-asking auto-check removal, 🏠 column, ✓/✗ tinting, then the
-configurable structure (setup screen, then in-play).
+**NEXT SESSION'S GOAL (end of #73): BUILD THE GAME PLAY.** The
+remaining in-play items, one change at a time, each with Patrick's
+explicit go: tier-gate removal (auto-Σ comes out with it), asking
+auto-check removal (`markShower`), the 🏠 column, ✓/✗ cell tinting.
+(The ask-size generalization is already done — #73.)
 
 **Commit reminder (Patrick, #72):** commit BOTH repos (App-Docs and
 MysteryCluesTracker). At commit, delete the three dead files in
