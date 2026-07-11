@@ -29,7 +29,7 @@ day; the OneDrive move had been convenience only.
 - Never give click-directions for a screen Claude can't see.
 - Patrick leads; Claude doesn't steer. No urgency — his pace.
 
-## Where things stand (updated 2026-07-10, session #74 — the Game Play build)
+## Where things stand (updated 2026-07-11, session #75 — the catch-up session)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -74,7 +74,27 @@ day; the OneDrive move had been convenience only.
    upgrade-scope.md's "Built — session #74". NEW RESOURCE:
    `MysteryTracker-spec.md` (the web app's functional spec) — Patrick
    supplied it mid-session; it drove the 🏠 and Player Out builds.
-   Session-upload only so far — SAVE IT INTO App-Docs.
+   SAVED into App-Docs by Patrick, #75. **#75 (2026-07-11): the
+   CATCH-UP SESSION IS DONE — all seven items, each Patrick-verified
+   in-browser:** shower-initial in Me's column removed (the `shownme`
+   mark gone entirely); full Guide factual pass (three "3 cards"
+   spots, "Me" mark wording, stale Renaming Cards section replaced,
+   ride-along: live asking hint no longer hard-codes "three");
+   gold-band aesthetics CLOSED no change; P5/P6 dark empty columns
+   SETTLED as-is (deliberate deviation from the web); Play button now
+   always visible on Setup, dimmed until ready, tap-when-dim names
+   the first unmet condition; duplicate card names guarded at the
+   Edit modal's Save (deck-wide, case-insensitive, rejected Save
+   changes nothing); `loadState` duplicate line removed. Ride-along:
+   grid scroll bars slimmed to 4px (desktop bar was clipping P6).
+   STANDING NOTE (Patrick, #75): old/saved games don't exist and
+   don't matter — no migration concerns, ever. FUTURE SESSION noted:
+   a Guide EDITING pass (wording/flow; first case: SETUP intro's
+   "from the list below"). Business-side notes (Sonnet session,
+   2026-07-11, saved as `session-notes-hasbro-and-tiering.md` in
+   App-Docs): Hasbro Spark CLOSED (not pursuing); monetization
+   pricing model OPEN; TIERING DECIDED — fold tiering hooks back
+   into this rebuild, scoped in a coding session first.
 3. **A Place To Remember (Memory) — iPhone** — Alpha, mostly built.
    Project: `Projects/elderlyassistant` (its own session docs:
    docs/handoff.md, pending.txt, parked-items.md, session-start.md).
@@ -85,29 +105,26 @@ day; the OneDrive move had been convenience only.
    web can't carry. elyfont.com gets a pointer to the App Store listing
    only.
 
-**NEXT SESSION'S GOAL (end of #74): CATCH UP ON THE DETAILS LEFT
-BEHIND** (Patrick's words), one change at a time, each with his go:
+**NEXT SESSION'S GOAL (end of #75): THE TIERING HOOKS (#76)** —
+scope (then, with Patrick's go, build) the tiering hooks back into
+the MysteryCluesTracker rebuild, per the tiering decision in
+`session-notes-hasbro-and-tiering.md` (App-Docs): ship free either
+way, but put the hooks into this clean rebuild now rather than bolt
+them on later. References: the notes file, `MysteryTracker-spec.md`,
+the web app's existing tiering code, and upgrade-scope.md — whose
+"Decided OUT — tiering" section this decision amends; reconcile the
+two in writing as part of the scoping. NOTE: what "hooks" means
+concretely (what is gated, how the gate works, how it stays dormant
+in a free app) is NOT yet decided — that IS the #76 scoping work.
+The no-thinking directive still stands (auto-Σ etc. stay out).
 
-1. Drop the shower-initial in Me's column (the `shownme` mark, line
-   ~1935 — the shower's ✅ already records the fact; Patrick, #74) +
-   its two Guide lines ("B (player initial)" in Marks; the "If they
-   showed to you" bullet).
-2. The FULL Guide pass (includes the three "3 cards" spots).
-3. Gold-band finer aesthetics (Patrick calls the tweaks).
-4. P5/P6 empty seats show as dark columns — web hides empty columns;
-   decide and settle.
-5. Play button appears/disappears with no explanation of the unmet
-   condition.
-6. Duplicate card names aren't guarded.
-7. `loadState`'s harmless duplicated turnLog-parse line.
-
-After #75, the road to the store: the Xcode + WKWebView wrapper and
+After #76, still queued: the Guide EDITING session (wording/flow),
+then the road to the store — the Xcode + WKWebView wrapper and
 data-safety bridge (see upgrade-scope.md "The route to the store").
 
-**Commit reminder (Patrick, #72):** commit BOTH repos (App-Docs and
-MysteryCluesTracker). At commit, delete the three dead files in
-MysteryCluesTracker: `clue-manifest.json`, `static/clue-icon.png`,
-`static/service-worker.js`. (Keep `MysteryTracker.html` — that's
+**Commit reminder:** commit BOTH repos (App-Docs and
+MysteryCluesTracker). The three dead files are GONE — verified by
+looking, #75 (no git commands). (Keep `MysteryTracker.html` — that's
 Patrick's original hand-built Clue sheet, a keepsake.)
 
 **Loose ends:** Memory's #69 badge-reorder commit/build/phone-check may
