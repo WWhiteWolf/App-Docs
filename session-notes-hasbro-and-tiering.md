@@ -26,9 +26,11 @@ Raised independently of Hasbro: interest in "a little extra income" from Mystery
 
 **No decision made yet** on pricing model. Next step when picked back up: decide free-plus-premium vs. something else, informed by the above.
 
+**Visibility note (Patrick, #76):** while researching competitors, Patrick found these apps genuinely HARD TO FIND in the store — the whole category (deduction notepads / board-game companion trackers) has a discoverability problem: poor ranking on generic searches, no featuring, and the one app with real downloads (official Clue Companion) got them from the Hasbro brand, not findability. Implication for us, both directions: our app won't be found easily either, AND the store listing's name/keywords/screenshots are the highest-leverage marketing surface we have. Carry this into the Publishing-Strategy work when the listing is prepared. (Competitor addendum, same session: `Clue Solver: Detective Notepad` — the closest cousin, rebuilt 2026, entirely FREE including a full deduction engine, only 3 ratings — plus a cluster of Clue-notepad apps, none prominent. Confirms the small-market realism; differentiators we keep: generic player-named structure, works for variants, web+mobile pair.)
+
 ## 3. Tiering — DECIDED: bring it back into the current rebuild, now
 
-- Ironic wrinkle surfaced: the original web app (MysteryTracker.html) already has tiering/premium logic built in. The new iOS rebuild (MysteryCluesTracker) explicitly **removed** it per the "NO-THINKING" directive in upgrade-scope.md (auto-Σ premium came out; per-turn auto-cross kept as plain bookkeeping).
+- Ironic wrinkle surfaced: the original mobile app had tiering/premium logic built in. (Corrected #76: this line first said "web app" — wrong; the web app has no tiering, code-verified.) The new iOS rebuild (MysteryCluesTracker) explicitly **removed** it per the "NO-THINKING" directive in upgrade-scope.md (auto-Σ premium came out; per-turn auto-cross kept as plain bookkeeping).
 - Rebuild is only ~2 days old — low sunk cost, good moment to fold this back in rather than bolt on later.
 - **Decision:** do both — ship a free app either way, but put the tiering *hooks* back into this same clean rebuild now (using the Spec, the flow diagram, and the existing code as reference), rather than treating it as a separate future project. A full clean rebuild from those three sources was already a long-term goal; now's the time to incorporate it.
 

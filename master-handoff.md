@@ -27,7 +27,12 @@ day; the OneDrive move had been convenience only.
 - Verify before asserting — read the actual code/files, don't guess.
 - One question at a time; open questions, no boxed choices.
 - Never give click-directions for a screen Claude can't see.
-- Patrick leads; Claude doesn't steer. No urgency — his pace.
+- Patrick leads; Claude doesn't steer. No urgency — his pace. He's
+  retired; this is a hobby — no deadlines, no clerk-abrupt tone; warm
+  and conversational. Not wasteful of his time, but never hurried.
+  Patrick lives alone; Claude's tone is sometimes the only
+  conversation he gets all day — it matters. The conversation is
+  part of the work, not overhead.
 
 ## Where things stand (updated 2026-07-11, session #75 — the catch-up session)
 
@@ -95,6 +100,30 @@ day; the OneDrive move had been convenience only.
    App-Docs): Hasbro Spark CLOSED (not pursuing); monetization
    pricing model OPEN; TIERING DECIDED — fold tiering hooks back
    into this rebuild, scoped in a coding session first.
+   **#76 (2026-07-11, "the two-tier session"): the TIERING SCOPE IS
+   DECIDED** — scoping only, no code changes. Patrick threw out all
+   prior tiering rules and wrote new ones: TWO tiers. Free = today's
+   app exactly (records everything, concludes nothing — no-thinking
+   is the free tier's character). Paid (name OPEN) = the thinking:
+   the web's seven Appendix B read-only helpers (never place a
+   mark). Turn tags stay OUT of both tiers (cluttered the grid).
+   OPEN idea: infer player card counts instead of restoring a typed
+   Card Count field (Patrick's family variant — even deal, leftovers
+   face down on the board — makes counts exact; the 🏠 column was
+   born from that variant). Coaching ideas parked for much later.
+   Still OPEN: gate mechanics (unlock method, dormancy in the free
+   app) and pricing. Full detail: upgrade-scope.md "Decided —
+   session #76". Ride-alongs: notes file CORRECTED (tiering was in
+   the MOBILE app, never the web) + #76 market/visibility addendum
+   added (Clue Solver = closest competitor, entirely free with a
+   deduction engine, ~3 ratings; Board Game Stats = the model to
+   copy; the category is hard to find in the store). NEW reference
+   file `MysteryCluesTracker/docs/pre74-tiering-reference.html`
+   (Patrick pulled the pre-#74 tier code from git; does NOT ship).
+   Tone rules expanded in all three projects' CLAUDE.md +
+   elderlyassistant session-start (retired/hobby pace, warm
+   workbench tone, Patrick lives alone — the conversation is part
+   of the work).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, mostly built.
    Project: `Projects/elderlyassistant` (its own session docs:
    docs/handoff.md, pending.txt, parked-items.md, session-start.md).
@@ -105,25 +134,23 @@ day; the OneDrive move had been convenience only.
    web can't carry. elyfont.com gets a pointer to the App Store listing
    only.
 
-**NEXT SESSION'S GOAL (end of #75): THE TIERING HOOKS (#76)** —
-scope (then, with Patrick's go, build) the tiering hooks back into
-the MysteryCluesTracker rebuild, per the tiering decision in
-`session-notes-hasbro-and-tiering.md` (App-Docs): ship free either
-way, but put the hooks into this clean rebuild now rather than bolt
-them on later. References: the notes file, `MysteryTracker-spec.md`,
-the web app's existing tiering code, and upgrade-scope.md — whose
-"Decided OUT — tiering" section this decision amends; reconcile the
-two in writing as part of the scoping. NOTE: what "hooks" means
-concretely (what is gated, how the gate works, how it stays dormant
-in a free app) is NOT yet decided — that IS the #76 scoping work.
-The no-thinking directive still stands (auto-Σ etc. stay out).
+**NEXT SESSION'S GOAL (#77, named by Patrick at #76's close):
+CONTINUE THE FREE VERSION** — the free tier IS the current app
+(decided #76), so #77 picks up the free-version queue where #75
+left it. Queued first: the Guide EDITING pass (wording/flow; first
+case: the SETUP intro's "from the list below"); after that, the
+road to the store — the Xcode + WKWebView wrapper and data-safety
+bridge (upgrade-scope.md "The route to the store"). Patrick
+confirms or redirects at #77's start, as always. The paid-tier
+design/build (seven helpers, count inference, gate mechanics —
+upgrade-scope.md "Decided — session #76") waits until the free
+product is finished.
 
-After #76, still queued: the Guide EDITING session (wording/flow),
-then the road to the store — the Xcode + WKWebView wrapper and
-data-safety bridge (see upgrade-scope.md "The route to the store").
-
-**Commit reminder:** commit BOTH repos (App-Docs and
-MysteryCluesTracker). The three dead files are GONE — verified by
+**Commit reminder (#76): commit ALL THREE repos this time —
+App-Docs, MysteryCluesTracker (docs only: upgrade-scope, CLAUDE.md,
+and the new docs/pre74-tiering-reference.html if Patrick wants it
+kept), and elderlyassistant (CLAUDE.md + docs/session-start.md tone
+rules). The three dead files are GONE — verified by
 looking, #75 (no git commands). (Keep `MysteryTracker.html` — that's
 Patrick's original hand-built Clue sheet, a keepsake.)
 
