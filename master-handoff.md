@@ -29,7 +29,7 @@ day; the OneDrive move had been convenience only.
 - Never give click-directions for a screen Claude can't see.
 - Patrick leads; Claude doesn't steer. No urgency — his pace.
 
-## Where things stand (updated 2026-07-10, session #73 — the Setup build)
+## Where things stand (updated 2026-07-10, session #74 — the Game Play build)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -62,6 +62,19 @@ day; the OneDrive move had been convenience only.
    12-card deck); ask size = active categories (built). Details in
    upgrade-scope.md's "Built — session #73" section. CLAUDE.md rule 6
    added to all three project folders (no defensiveness — move ahead).
+   **#74 (2026-07-10): the GAME PLAY BUILD IS DONE and Patrick-verified
+   in-browser** — tier gate removed (Card Count + turn superscripts
+   OUT entirely, Patrick's #74 redefinition; Log/Notepad standard);
+   ALL deductions removed (no-thinking complete in code); Player Out
+   rebuilt as TWO models (😢 Wrong Accusation = turn skipped, still
+   shows, light fade; 👋 Quit = cards shown, column ✗-filled, fully
+   out; permanent marks + log entries, Undo-proof); 🏠 House column
+   built (spec Page 9, touch-adapted); ✓/✗ tinting ported; Σ ✕
+   recolored red; ask-guard message generalized. Details in
+   upgrade-scope.md's "Built — session #74". NEW RESOURCE:
+   `MysteryTracker-spec.md` (the web app's functional spec) — Patrick
+   supplied it mid-session; it drove the 🏠 and Player Out builds.
+   Session-upload only so far — SAVE IT INTO App-Docs.
 3. **A Place To Remember (Memory) — iPhone** — Alpha, mostly built.
    Project: `Projects/elderlyassistant` (its own session docs:
    docs/handoff.md, pending.txt, parked-items.md, session-start.md).
@@ -72,11 +85,24 @@ day; the OneDrive move had been convenience only.
    web can't carry. elyfont.com gets a pointer to the App Store listing
    only.
 
-**NEXT SESSION'S GOAL (end of #73): BUILD THE GAME PLAY.** The
-remaining in-play items, one change at a time, each with Patrick's
-explicit go: tier-gate removal (auto-Σ comes out with it), asking
-auto-check removal (`markShower`), the 🏠 column, ✓/✗ cell tinting.
-(The ask-size generalization is already done — #73.)
+**NEXT SESSION'S GOAL (end of #74): CATCH UP ON THE DETAILS LEFT
+BEHIND** (Patrick's words), one change at a time, each with his go:
+
+1. Drop the shower-initial in Me's column (the `shownme` mark, line
+   ~1935 — the shower's ✅ already records the fact; Patrick, #74) +
+   its two Guide lines ("B (player initial)" in Marks; the "If they
+   showed to you" bullet).
+2. The FULL Guide pass (includes the three "3 cards" spots).
+3. Gold-band finer aesthetics (Patrick calls the tweaks).
+4. P5/P6 empty seats show as dark columns — web hides empty columns;
+   decide and settle.
+5. Play button appears/disappears with no explanation of the unmet
+   condition.
+6. Duplicate card names aren't guarded.
+7. `loadState`'s harmless duplicated turnLog-parse line.
+
+After #75, the road to the store: the Xcode + WKWebView wrapper and
+data-safety bridge (see upgrade-scope.md "The route to the store").
 
 **Commit reminder (Patrick, #72):** commit BOTH repos (App-Docs and
 MysteryCluesTracker). At commit, delete the three dead files in
