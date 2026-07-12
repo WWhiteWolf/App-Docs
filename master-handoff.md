@@ -164,6 +164,36 @@ day; the OneDrive move had been convenience only.
    re-reads CLAUDE.md right then; the first slip gets called
    immediately, not endured. Full detail: upgrade-scope.md
    "Decided + built — session #78".
+   **#79 (2026-07-12, "the wrapper begins"): the WELCOME MODAL now
+   mentions the 💬 feedback button (the #78 open question SETTLED —
+   Patrick chose the friendly gesture; wording in upgrade-scope #79),
+   Patrick-verified in-browser. THE WRAPPER IS STARTED:** Xcode
+   project created at `MysteryCluesTracker/wrapper/` (bundle ID
+   com.elyfont.MysteryCluesTrackSheet, Team set, NO nested git);
+   toolchain proven end to end (Hello-world ran on Mac and iPhone 17
+   Pro simulator; codesign keychain prompt handled); HTML + static
+   COPIED into the project (Xcode 26 offers no reference-in-place —
+   standing habit: re-copy + diff when the HTML changes);
+   ContentView.swift replaced with a WKWebView loader; the REAL APP
+   RAN in the simulator. OPEN PROBLEM stopping the session: custom
+   fonts don't load (proven by a Courier-fallback experiment, since
+   reverted; WKWebView sandbox wants one dedicated web folder). A
+   www/ restructure hit Xcode 26's synchronized-folder FLATTENING
+   (bundle loses subfolders — proven by a temp in-app diagnostic
+   that's STILL IN ContentView.swift). THE AGREED FIX awaits #80:
+   move www/ beside the .xcodeproj and add it as a classic folder
+   reference by hand-editing project.pbxproj (Xcode quit first).
+   Full detail: upgrade-scope.md "Built — session #79".
+   SESSION-CONDUCT agreements (#79 end-of-session talk), TO BE
+   WRITTEN INTO CLAUDE.md AT #80: (a) load flag by COUNTING, not
+   feel — around a dozen screenshots, or one big research detour,
+   Claude names the next natural breakpoint out loud (screenshots
+   are Claude's heaviest load; screen-heavy sessions fill Claude
+   fastest — the #78 "length is volume" note, now with a number);
+   (b) the session-END docs refresh is NOT pre-approved — it gets
+   discussed and gets Patrick's go like any other change (the #79
+   slip: Claude edited both docs on "session's over" without
+   asking first).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, mostly built.
    Project: `Projects/elderlyassistant` (its own session docs:
    docs/handoff.md, pending.txt, parked-items.md, session-start.md).
@@ -174,25 +204,28 @@ day; the OneDrive move had been convenience only.
    web can't carry. elyfont.com gets a pointer to the App Store listing
    only.
 
-**NEXT SESSION'S GOAL (#79, carried from #78 untouched): THE ROAD TO
-THE STORE** — the Xcode + WKWebView wrapper and the data-safety
-bridge (upgrade-scope.md "The route to the store"). Patrick drives
-Xcode, Claude assists; the toolchain has been ready since #72
-(Xcode 26.6, Apple ID signed in, Dev account held). The wrapper's
-display name is "Mystery ✓" (decided #78). At listing time: confirm
-"Mystery Clues Track Sheet" is available. Also still open from #78:
-the Welcome-modal-mentions-💬 question. Patrick confirms or
-redirects at #79's start, as always. The paid-tier design/build
-(seven helpers, count inference, gate mechanics — upgrade-scope.md
-"Decided — session #76") waits until the free product is finished.
+**NEXT SESSION'S GOAL (#80): FIRST, Patrick's discussion items — he
+has a couple of things to talk through BEFORE any work starts (his
+to name; nothing decided about them yet). Also at the start: write
+the two #79 session-conduct agreements into CLAUDE.md (see the #79
+entry above). THEN the wrapper continues: the www folder-reference
+fix** — Patrick quits Xcode; Claude moves `www/` beside the
+.xcodeproj and hand-edits project.pbxproj to add it as a
+structure-preserving folder reference; Patrick reopens and runs;
+the lettering gives the verdict, and the temp diagnostic comes out
+of ContentView.swift once fonts load. After that, in order: the
+data-safety bridge, then dressing (display name "Mystery ✓",
+portrait-only lock, icon), then phone + dictation checks. At
+listing time: confirm "Mystery Clues Track Sheet" is available.
+The paid-tier design/build (upgrade-scope.md "Decided — session
+#76") waits until the free product is finished.
 
-**Commit reminder (#78): commit App-Docs (this file) and
-MysteryCluesTracker — the app changed again: `mystery-clues-tracker.html`
-+ `manifest.json` (the rename), plus docs/upgrade-scope.md and
-docs/session-start.md (retitled). Check-if-still-pending from #77/#76:
-the #77 set (app + docs) and the #76 docs (MysteryCluesTracker
-CLAUDE.md, pre74-tiering-reference.html if kept; elderlyassistant
-CLAUDE.md + docs/session-start.md tone rules). (Keep
+**Commit reminder (#79): commit App-Docs (this file) and
+MysteryCluesTracker — changed there: `mystery-clues-tracker.html`
+(the Welcome modal's new 💬 line), `docs/upgrade-scope.md` (new #79
+section), and the NEW `wrapper/` folder (the whole Xcode project —
+first commit). Check-if-still-pending from #78 and earlier: the #78
+set (app rename + docs), the #77 set, and the #76 docs. (Keep
 `MysteryTracker.html` — that's Patrick's original hand-built Clue
 sheet, a keepsake.)
 
