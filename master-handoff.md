@@ -39,8 +39,9 @@ day; the OneDrive move had been convenience only.
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
 1. **Mystery Tracker — web** — live at elyfont.com, Beta. Project:
-   `Projects/MysteryTracker` (its own session docs: SESSION-HANDOFF.md
-   etc.).
+   `Projects/MysteryTracker` (its own session docs: docs/session-start.md,
+   docs/handoff.md, ROADMAP.md etc. — renamed #80 to match the other
+   projects' naming).
 2. **Mystery Tracker — mobile** (renamed from "Mystery Clues Tracker",
    #71) — PWA, Beta. **← THE ACTIVE EFFORT: clean up → App Store, FREE,
    via a bare Xcode+WKWebView wrapper. Read
@@ -218,9 +219,20 @@ first commit. NEW root `.gitignore` in MysteryCluesTracker keeps
 xcuserdata/, *.xcuserstate, and .DS_Store out of history (a first
 staged commit was aborted; `git reset` + `git rm --cached .DS_Store`
 + re-add produced the clean one). The two #79 session-conduct
-agreements are WRITTEN (#80) as CLAUDE.md rules 7 and 8 in BOTH this
-repo's and MysteryCluesTracker's CLAUDE.md — elderlyassistant's copy
-STILL PENDING (folder wasn't connected; add when it's next open).
+agreements are WRITTEN (#80) as CLAUDE.md rules 7 and 8 in ALL THREE
+project CLAUDE.md files — this repo, MysteryCluesTracker, and
+elderlyassistant (added later the same session). ALSO #80, web-side
+housekeeping: MysteryTracker's session docs RENAMED to match the
+other projects (docs/RESUME-HERE.md → docs/session-start.md,
+docs/SESSION-HANDOFF.md → docs/handoff.md; six live pointers
+updated, ROADMAP's history mentions left as written). ALSO DONE
+same session: a root CLAUDE.md created there (the full 8 rules,
+rule 1 pointing at its session-start/handoff pair — all FOUR
+project folders now open the same way; the old EMPTY docs/CLAUDE.md
+deleted), session-start.md's stale OneDrive → App-Pubs pointer
+corrected to Projects → App-Docs, and its title line renamed to
+match. MysteryTracker's repo has all of this uncommitted —
+Patrick's commit when ready.
 Conduct note, logged without blame per rule 6: Claude ran `git
 status` early in the session (rule slip, self-caught) — it left an
 index.lock that Patrick deleted; the rule stands reaffirmed.
