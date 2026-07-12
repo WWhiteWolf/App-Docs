@@ -204,30 +204,44 @@ day; the OneDrive move had been convenience only.
    web can't carry. elyfont.com gets a pointer to the App Store listing
    only.
 
-**NEXT SESSION'S GOAL (#80): FIRST, Patrick's discussion items — he
-has a couple of things to talk through BEFORE any work starts (his
-to name; nothing decided about them yet). Also at the start: write
-the two #79 session-conduct agreements into CLAUDE.md (see the #79
-entry above). THEN the wrapper continues: the www folder-reference
-fix** — Patrick quits Xcode; Claude moves `www/` beside the
-.xcodeproj and hand-edits project.pbxproj to add it as a
-structure-preserving folder reference; Patrick reopens and runs;
-the lettering gives the verdict, and the temp diagnostic comes out
-of ContentView.swift once fonts load. After that, in order: the
-data-safety bridge, then dressing (display name "Mystery ✓",
-portrait-only lock, icon), then phone + dictation checks. At
-listing time: confirm "Mystery Clues Track Sheet" is available.
-The paid-tier design/build (upgrade-scope.md "Decided — session
-#76") waits until the free product is finished.
+**#80 (2026-07-12, same day; session titled "#79 Retry"): the
+discussion-items session.
+NATIVE-VS-WRAPPER SETTLED (Patrick): the app STAYS a WKWebView
+wrapper — no native Swift rewrite; "decided for purposes of the
+project"; future sessions don't re-open it** (full reasoning + a
+fresh-eyes code-cleanliness report in upgrade-scope.md's "#80"
+section — verdict: the HTML is clean, not the messy first draft the
+rewrite principle warns about; a ~30-line optional dust list is
+recorded there). **The #79 COMMITS ARE DONE, both repos** — verified
+in .git/logs by file-reading, no git commands. The wrapper got its
+first commit. NEW root `.gitignore` in MysteryCluesTracker keeps
+xcuserdata/, *.xcuserstate, and .DS_Store out of history (a first
+staged commit was aborted; `git reset` + `git rm --cached .DS_Store`
++ re-add produced the clean one). The two #79 session-conduct
+agreements are WRITTEN (#80) as CLAUDE.md rules 7 and 8 in BOTH this
+repo's and MysteryCluesTracker's CLAUDE.md — elderlyassistant's copy
+STILL PENDING (folder wasn't connected; add when it's next open).
+Conduct note, logged without blame per rule 6: Claude ran `git
+status` early in the session (rule slip, self-caught) — it left an
+index.lock that Patrick deleted; the rule stands reaffirmed.
 
-**Commit reminder (#79): commit App-Docs (this file) and
-MysteryCluesTracker — changed there: `mystery-clues-tracker.html`
-(the Welcome modal's new 💬 line), `docs/upgrade-scope.md` (new #79
-section), and the NEW `wrapper/` folder (the whole Xcode project —
-first commit). Check-if-still-pending from #78 and earlier: the #78
-set (app rename + docs), the #77 set, and the #76 docs. (Keep
-`MysteryTracker.html` — that's Patrick's original hand-built Clue
-sheet, a keepsake.)
+**NEXT SESSION'S GOAL (#81): the www folder-reference fix** —
+Patrick quits Xcode; Claude moves `www/` beside the .xcodeproj and
+hand-edits project.pbxproj to add it as a structure-preserving
+folder reference; Patrick reopens and runs; the lettering gives the
+verdict, and the temp diagnostic comes out of ContentView.swift once
+fonts load. After that, in order: the data-safety bridge, then
+dressing (display name "Mystery ✓", portrait-only lock, icon), then
+phone + dictation checks. At listing time: confirm "Mystery Clues
+Track Sheet" is available. The paid-tier design/build
+(upgrade-scope.md "Decided — session #76") waits until the free
+product is finished.
+
+**Commit reminder (#80): commit App-Docs (this file +
+CLAUDE.md) and MysteryCluesTracker (CLAUDE.md + docs/upgrade-scope.md
+— the #80 doc updates). Everything else from #79 and earlier
+is committed. (Keep `MysteryTracker.html` — that's Patrick's
+original hand-built Clue sheet, a keepsake.)
 
 **Loose ends:** Memory's #69 badge-reorder commit/build/phone-check may
 still be pending — confirm with Patrick. The elyfont.com home card
