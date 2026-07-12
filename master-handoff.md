@@ -34,7 +34,7 @@ day; the OneDrive move had been convenience only.
   conversation he gets all day — it matters. The conversation is
   part of the work, not overhead.
 
-## Where things stand (updated 2026-07-11, session #77 — the Guide editing session)
+## Where things stand (updated 2026-07-12, session #78 — the pre-wrapper decisions session)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -141,6 +141,29 @@ day; the OneDrive move had been convenience only.
    reserved address); modal wording de-beta'd; new SUGGESTIONS
    Guide section; button restyled to the gold pill. Full detail:
    upgrade-scope.md "Built — session #77".
+   **#78 (2026-07-12, "the pre-wrapper decisions session"): the app
+   is RENAMED "Mystery Clues Track Sheet"** (no hyphen; home-screen
+   label "Mystery ✓", plain U+2713 not the ✅ emoji; #71's
+   match-the-web rule and fallbacks void; the "is 'Clues' generic?"
+   question researched and settled — descriptive use, Hasbro v. Clue
+   Computing, not legal advice; name availability still checked at
+   listing time). Changed in all seven code spots (manifest ×2,
+   title, apple-title, header, welcome line, feedback email) and
+   Patrick-verified in-browser. VOICE INPUT AMENDED: field dictation
+   into Setup's text fields comes FREE via the iOS keyboard once
+   wrapped — nothing to build; voice commands stay out. DISCLAIMER
+   SETTLED: none in the app; if one goes in the store description at
+   listing time it names nobody ("Not affiliated with or endorsed by
+   any…"). OPEN: whether the first-launch Welcome modal should
+   mention the 💬 feedback button (code fact: 💬 lives only in the
+   Guide screen's footer — the Guide is feedback's single doorway).
+   The wrapper was not started. SESSION-CONDUCT notes (Patrick, #78,
+   after mid-session rule slips): one goal then break — a session's
+   length is VOLUME (files read, screenshots, research), not
+   minutes; Patrick may say "rules check" mid-session = Claude
+   re-reads CLAUDE.md right then; the first slip gets called
+   immediately, not endured. Full detail: upgrade-scope.md
+   "Decided + built — session #78".
 3. **A Place To Remember (Memory) — iPhone** — Alpha, mostly built.
    Project: `Projects/elderlyassistant` (its own session docs:
    docs/handoff.md, pending.txt, parked-items.md, session-start.md).
@@ -151,26 +174,27 @@ day; the OneDrive move had been convenience only.
    web can't carry. elyfont.com gets a pointer to the App Store listing
    only.
 
-**NEXT SESSION'S GOAL (#78, named at #77's close): THE ROAD TO THE
-STORE** — the Guide editing pass is done (#77), so the free-version
-queue moves to the Xcode + WKWebView wrapper and the data-safety
+**NEXT SESSION'S GOAL (#79, carried from #78 untouched): THE ROAD TO
+THE STORE** — the Xcode + WKWebView wrapper and the data-safety
 bridge (upgrade-scope.md "The route to the store"). Patrick drives
 Xcode, Claude assists; the toolchain has been ready since #72
-(Xcode 26.6, Apple ID signed in, Dev account held). At listing
-time: confirm the "Mystery Tracker" name is available (fallbacks
-in upgrade-scope.md). Patrick confirms or redirects at #78's
-start, as always. The paid-tier design/build (seven helpers, count
-inference, gate mechanics — upgrade-scope.md "Decided — session
-#76") waits until the free product is finished.
+(Xcode 26.6, Apple ID signed in, Dev account held). The wrapper's
+display name is "Mystery ✓" (decided #78). At listing time: confirm
+"Mystery Clues Track Sheet" is available. Also still open from #78:
+the Welcome-modal-mentions-💬 question. Patrick confirms or
+redirects at #79's start, as always. The paid-tier design/build
+(seven helpers, count inference, gate mechanics — upgrade-scope.md
+"Decided — session #76") waits until the free product is finished.
 
-**Commit reminder (#77): commit App-Docs (this file) and
-MysteryCluesTracker — this time the app itself changed:
-`mystery-clues-tracker.html` (the Guide pass + feedback repairs)
-plus docs/upgrade-scope.md. Still pending from #76 if not yet done:
-MysteryCluesTracker docs (CLAUDE.md, pre74-tiering-reference.html
-if kept) and elderlyassistant (CLAUDE.md + docs/session-start.md
-tone rules). (Keep `MysteryTracker.html` — that's Patrick's
-original hand-built Clue sheet, a keepsake.)
+**Commit reminder (#78): commit App-Docs (this file) and
+MysteryCluesTracker — the app changed again: `mystery-clues-tracker.html`
++ `manifest.json` (the rename), plus docs/upgrade-scope.md and
+docs/session-start.md (retitled). Check-if-still-pending from #77/#76:
+the #77 set (app + docs) and the #76 docs (MysteryCluesTracker
+CLAUDE.md, pre74-tiering-reference.html if kept; elderlyassistant
+CLAUDE.md + docs/session-start.md tone rules). (Keep
+`MysteryTracker.html` — that's Patrick's original hand-built Clue
+sheet, a keepsake.)
 
 **Loose ends:** Memory's #69 badge-reorder commit/build/phone-check may
 still be pending — confirm with Patrick. The elyfont.com home card
