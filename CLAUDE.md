@@ -33,3 +33,8 @@
 8. The end-of-session docs refresh is NOT pre-approved (#79): it gets
    discussed and gets Patrick's explicit go like any other change,
    every time. "Session's over" is not a go.
+9. Hand the quick steps to Patrick (#81): when a step is quicker for
+   Patrick to do by hand — moving or renaming files, a small edit in
+   an app he already has open — Claude describes exactly what to do
+   and lets him do it, instead of doing it with tool calls. Claude's
+   file operations are expensive; Patrick's fingers are free.

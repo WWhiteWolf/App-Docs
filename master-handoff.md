@@ -237,23 +237,32 @@ Conduct note, logged without blame per rule 6: Claude ran `git
 status` early in the session (rule slip, self-caught) — it left an
 index.lock that Patrick deleted; the rule stands reaffirmed.
 
-**NEXT SESSION'S GOAL (#81): the www folder-reference fix** —
-Patrick quits Xcode; Claude moves `www/` beside the .xcodeproj and
-hand-edits project.pbxproj to add it as a structure-preserving
-folder reference; Patrick reopens and runs; the lettering gives the
-verdict, and the temp diagnostic comes out of ContentView.swift once
-fonts load. After that, in order: the data-safety bridge, then
-dressing (display name "Mystery ✓", portrait-only lock, icon), then
-phone + dictation checks. At listing time: confirm "Mystery Clues
-Track Sheet" is available. The paid-tier design/build
-(upgrade-scope.md "Decided — session #76") waits until the free
-product is finished.
+**#81 (2026-07-12): the www folder-reference fix — DONE, FONTS
+LOAD.** The #79 open problem is closed on the first run: `www/`
+moved beside the .xcodeproj, project.pbxproj hand-edited (Xcode
+quit first) to add it as a classic structure-preserving folder
+reference in the Resources phase; Patrick's simulator screenshot
+showed the real app with the real Playfair/Lora lettering, and the
+#79 sandbox-extension console errors are gone. The temp diagnostic
+is OUT of ContentView.swift — Patrick removed it himself in Xcode
+and re-ran (identical). NEW STANDING RULE (Patrick, #81), in the
+CLAUDE.md files: when a step is quicker for Patrick to do by hand,
+Claude describes it and hands it to him instead of burning tool
+calls. Full detail: upgrade-scope.md "Built — session #81".
 
-**Commit reminder (#80): commit App-Docs (this file +
-CLAUDE.md) and MysteryCluesTracker (CLAUDE.md + docs/upgrade-scope.md
-— the #80 doc updates). Everything else from #79 and earlier
-is committed. (Keep `MysteryTracker.html` — that's Patrick's
-original hand-built Clue sheet, a keepsake.)
+**NEXT SESSION'S GOAL (#82): the data-safety bridge** —
+localStorage → native mirror, so game state survives whatever iOS
+does to WKWebView storage. After that, in order: dressing (display
+name "Mystery ✓", portrait-only lock, icon), then phone + dictation
+checks. At listing time: confirm "Mystery Clues Track Sheet" is
+available. The paid-tier design/build (upgrade-scope.md "Decided —
+session #76") waits until the free product is finished.
+
+**Commit reminder (#81): commit MysteryCluesTracker (the www/ move,
+project.pbxproj, ContentView.swift, CLAUDE.md, docs/upgrade-scope.md
+— plus the still-uncommitted #80 doc updates if not yet done) and
+App-Docs (this file + CLAUDE.md). (Keep `MysteryTracker.html` —
+that's Patrick's original hand-built Clue sheet, a keepsake.)
 
 **Loose ends:** Memory's #69 badge-reorder commit/build/phone-check may
 still be pending — confirm with Patrick. The elyfont.com home card
