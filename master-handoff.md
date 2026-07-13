@@ -34,7 +34,7 @@ day; the OneDrive move had been convenience only.
   conversation he gets all day — it matters. The conversation is
   part of the work, not overhead.
 
-## Where things stand (updated 2026-07-12, session #82 — the data-safety bridge session)
+## Where things stand (updated 2026-07-13, session #83 — dead-Next closed, Copy fixed, bridge fully proven)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -276,19 +276,37 @@ Notes keyboard pushes the page up (uninvestigated); card names
 bigger + NORMAL weight (430px grid budget makes it a design talk).
 Full detail: upgrade-scope.md "Built — session #82".
 
-**NEXT SESSION'S GOAL (#83): the dead-Next resume bug** — start with
-the ready `nextPlayer()` console test, fix, then take the quirk queue
-(Copy decision first — it's Patrick's call between the JS fallback
-and the native pasteboard route), then the wipe test. After that, in
-order: dressing (display name "Mystery ✓", portrait-only lock, icon),
-then phone + dictation checks. At listing time: confirm "Mystery
-Clues Track Sheet" is available. The paid-tier design/build
-(upgrade-scope.md "Decided — session #76") waits until the free
-product is finished.
+**#83 (2026-07-13): dead-Next CLOSED, messages seen, Copy FIXED, the
+BRIDGE IS FULLY PROVEN.** The dead-Next "bug" was never a bug in the
+turn logic and never resume-related — the nobody-showed guard was
+refusing correctly (an asked card had a confirmed ✓); the real defect
+was an invisible warning. THE FIX, mirror-the-web: the web's scrolling
+status renderer ported; game-screen messages now take over the hint
+line between Undo and Next (red for warnings); Setup's strip redressed
+to be seen; NEW Log-screen strip (that screen had no message outlet at
+all). LOG COPY fixed the permanent way (Patrick's call): a second
+bridge handler "clipboard" → UIPasteboard; paste-proven into Notes.
+WIPE TEST PASSED twice — first run caught a real gap (pre-bridge keys
+like the first-launch flag had no mirror copy), fixed with a
+full-sync-at-launch in the bridge block; second run clean. The bridge
+now has every proof. Quirk queue remaining: Notes keyboard push
+(uninvestigated), card names bigger/normal weight (design talk).
+Full detail: upgrade-scope.md "Built — session #83".
 
-**Commit reminder (#82): commit MysteryCluesTracker
-(mystery-clues-tracker.html — the bridge block; the www/ copy of
-same; wrapper ContentView.swift — coordinator, restore, inspectable;
+**NEXT SESSION'S GOAL (#84): DRESSING** — the three small Xcode items:
+home-screen display name "Mystery ✓" (plain U+2713), the
+portrait-only lock in the wrapper settings, and installing the app
+icon (already designed: `static/icon-1024.png` and friends). Behind
+it, still queued: the two remaining quirks (Notes keyboard push, card
+names design talk), then phone + dictation checks. At listing time:
+confirm "Mystery Clues Track Sheet" is available. The paid-tier
+design/build (upgrade-scope.md "Decided — session #76") waits until
+the free product is finished.
+
+**Commit reminder (#83): commit MysteryCluesTracker
+(mystery-clues-tracker.html — status renderer, clipboard post,
+bridge full-sync; the www/ copy of same, diff-identical; wrapper
+ContentView.swift — clipboard handler, import UIKit;
 docs/upgrade-scope.md) and App-Docs (this file). (Keep
 `MysteryTracker.html` — that's Patrick's original hand-built Clue
 sheet, a keepsake.)
