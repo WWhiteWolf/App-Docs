@@ -34,7 +34,7 @@ day; the OneDrive move had been convenience only.
   conversation he gets all day — it matters. The conversation is
   part of the work, not overhead.
 
-## Where things stand (updated 2026-07-12, session #78 — the pre-wrapper decisions session)
+## Where things stand (updated 2026-07-12, session #82 — the data-safety bridge session)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -250,19 +250,48 @@ CLAUDE.md files: when a step is quicker for Patrick to do by hand,
 Claude describes it and hands it to him instead of burning tool
 calls. Full detail: upgrade-scope.md "Built — session #81".
 
-**NEXT SESSION'S GOAL (#82): the data-safety bridge** —
-localStorage → native mirror, so game state survives whatever iOS
-does to WKWebView storage. After that, in order: dressing (display
-name "Mystery ✓", portrait-only lock, icon), then phone + dictation
-checks. At listing time: confirm "Mystery Clues Track Sheet" is
-available. The paid-tier design/build (upgrade-scope.md "Decided —
-session #76") waits until the free product is finished.
+**#82 (2026-07-12): the DATA-SAFETY BRIDGE IS BUILT and half-proven.**
+JS half: a guarded block in the HTML patches Storage.prototype and
+posts every localStorage write/remove to a "storage" message handler
+(no-op in a plain browser — Patrick browser-verified full behavior
+unchanged; www/ re-copied, diff-identical). Swift half: Coordinator
+mirrors into UserDefaults under `mct.mirror.`; a document-start
+WKUserScript restores the mirror at launch. JS→native PROVEN in the
+Xcode console (`storage bridge: set mctGame` lines as Patrick
+played). ROLLBACK BUG found (Patrick: stop/restart resumed "in odd
+spots") and FIXED — the restore was an unconditional copy and an
+abrupt kill can leave the mirror a beat behind; it is now
+FILL-GAPS-ONLY (restores only keys localStorage lacks). Web Inspector
+ENABLED (`isInspectable`, #if DEBUG) and Patrick attached Safari's
+inspector to the simulator and used its console — the tool is set up.
+**OPEN BUG, mid-diagnosis when the session closed: after a
+stop/restart + resume, Next is DEAD — no turn advance, no console
+error; live sessions are fine (the fault arrives via the save/load
+round-trip). The next diagnostic is READY: type `nextPlayer()` in the
+inspector console — advance = touch/overlay problem, no advance =
+state problem.** Wipe test (restore's full proof) not yet run. NEW
+quirk queue: Log Copy dead in wrapper (cause found: no
+navigator.clipboard on file://; fix routes discussed, UNDECIDED);
+Notes keyboard pushes the page up (uninvestigated); card names
+bigger + NORMAL weight (430px grid budget makes it a design talk).
+Full detail: upgrade-scope.md "Built — session #82".
 
-**Commit reminder (#81): commit MysteryCluesTracker (the www/ move,
-project.pbxproj, ContentView.swift, CLAUDE.md, docs/upgrade-scope.md
-— plus the still-uncommitted #80 doc updates if not yet done) and
-App-Docs (this file + CLAUDE.md). (Keep `MysteryTracker.html` —
-that's Patrick's original hand-built Clue sheet, a keepsake.)
+**NEXT SESSION'S GOAL (#83): the dead-Next resume bug** — start with
+the ready `nextPlayer()` console test, fix, then take the quirk queue
+(Copy decision first — it's Patrick's call between the JS fallback
+and the native pasteboard route), then the wipe test. After that, in
+order: dressing (display name "Mystery ✓", portrait-only lock, icon),
+then phone + dictation checks. At listing time: confirm "Mystery
+Clues Track Sheet" is available. The paid-tier design/build
+(upgrade-scope.md "Decided — session #76") waits until the free
+product is finished.
+
+**Commit reminder (#82): commit MysteryCluesTracker
+(mystery-clues-tracker.html — the bridge block; the www/ copy of
+same; wrapper ContentView.swift — coordinator, restore, inspectable;
+docs/upgrade-scope.md) and App-Docs (this file). (Keep
+`MysteryTracker.html` — that's Patrick's original hand-built Clue
+sheet, a keepsake.)
 
 **Loose ends:** Memory's #69 badge-reorder commit/build/phone-check may
 still be pending — confirm with Patrick. The elyfont.com home card
