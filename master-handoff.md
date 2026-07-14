@@ -34,7 +34,7 @@ day; the OneDrive move had been convenience only.
   conversation he gets all day — it matters. The conversation is
   part of the work, not overhead.
 
-## Where things stand (updated 2026-07-13, session #83 — dead-Next closed, Copy fixed, bridge fully proven)
+## Where things stand (updated 2026-07-13, session #84 — home-screen name, app icon, header emblem)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -293,23 +293,38 @@ now has every proof. Quirk queue remaining: Notes keyboard push
 (uninvestigated), card names bigger/normal weight (design talk).
 Full detail: upgrade-scope.md "Built — session #83".
 
-**NEXT SESSION'S GOAL (#84): DRESSING** — the three small Xcode items:
-home-screen display name "Mystery ✓" (plain U+2713), the
-portrait-only lock in the wrapper settings, and installing the app
-icon (already designed: `static/icon-1024.png` and friends). Behind
-it, still queued: the two remaining quirks (Notes keyboard push, card
-names design talk), then phone + dictation checks. At listing time:
-confirm "Mystery Clues Track Sheet" is available. The paid-tier
-design/build (upgrade-scope.md "Decided — session #76") waits until
-the free product is finished.
+**#84 (2026-07-13): DRESSING, two of three, plus the header emblem.**
+Home-screen name DONE ("Mystery ✓", plain U+2713 — verified in
+pbxproj, both configs; Patrick-verified on the home screen). App icon
+INSTALLED (icon-1024.png into the AppIcon Any-Appearance well; a
+stray first-drag image set caught and removed; verified on disk and
+home screen). NEW decision + build the same session: the 🔍 in the
+app's four header spots (main h1, Welcome, both Welcome Backs)
+REPLACED by the icon's fanned cards with the tile removed — new
+`static/icon-cards.svg` + one `.title-icon` CSS rule — Patrick's tie
+from the home screen to the app name; browser- and wrapper-verified,
+www/ diff-identical. CODE-FACT correction: www/ lives INSIDE the
+inner source folder as an Xcode 26 synchronized-group explicit
+folder, not beside the .xcodeproj as the #81 note said. Full detail:
+upgrade-scope.md "Built — session #84".
 
-**Commit reminder (#83): commit MysteryCluesTracker
-(mystery-clues-tracker.html — status renderer, clipboard post,
-bridge full-sync; the www/ copy of same, diff-identical; wrapper
-ContentView.swift — clipboard handler, import UIKit;
-docs/upgrade-scope.md) and App-Docs (this file). (Keep
-`MysteryTracker.html` — that's Patrick's original hand-built Clue
-sheet, a keepsake.)
+**NEXT SESSION'S GOAL (#85): the SIMULATOR FIT** — on the phone the
+header title wraps to two lines and the grid doesn't fit (Patrick's
+report; pre-existing, not from #84's changes; uninvestigated —
+likely meets the queued card-names design talk and the 430px
+budget). Behind it: the portrait-only lock (the one dressing item
+left), Notes keyboard push, then phone + dictation checks. At
+listing time: confirm "Mystery Clues Track Sheet" is available. The
+paid-tier design/build (upgrade-scope.md "Decided — session #76")
+waits until the free product is finished.
+
+**Commit reminder (#84): commit MysteryCluesTracker
+(mystery-clues-tracker.html — emblem in four spots + .title-icon
+CSS; static/icon-cards.svg NEW; the www/ copies of both,
+diff-identical; project.pbxproj + Assets.xcassets — display name
+and icon, Xcode's own edits; docs/upgrade-scope.md) and App-Docs
+(this file). (Keep `MysteryTracker.html` — that's Patrick's
+original hand-built Clue sheet, a keepsake.)
 
 **Loose ends:** Memory's #69 badge-reorder commit/build/phone-check may
 still be pending — confirm with Patrick. The elyfont.com home card
