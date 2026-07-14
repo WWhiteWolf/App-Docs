@@ -34,7 +34,7 @@ day; the OneDrive move had been convenience only.
   conversation he gets all day — it matters. The conversation is
   part of the work, not overhead.
 
-## Where things stand (updated 2026-07-13, session #85 — dressing 3/3: iPhone-only + portrait lock)
+## Where things stand (updated 2026-07-13, session #86 — the real-device check)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -326,23 +326,38 @@ the healthy pbxproj and only that file differed; Xcode quit; Patrick
 on purpose: the inert `...Orientations_iPad` key stays. Today's whole
 disk footprint: project.pbxproj (+ the docs refresh).
 
-**NEXT SESSION'S GOAL (#86): the REAL-DEVICE CHECK** — the app on
-Patrick's actual iPhone (Patrick's #85 redefinition: the phone is
-the judge). Check THERE: the header-title wrap + grid fit (the
-simulator's report) and the Notes keyboard push — if the phone
-doesn't show them, there is nothing to do for them; only what the
-phone shows becomes work (the card-names design talk rides with the
-fit question). Also confirm dictation into Setup's text fields
-(expected free from the iOS keyboard, #78). At listing time:
-confirm "Mystery Clues Track Sheet" is available. The paid-tier
-design/build (upgrade-scope.md "Decided — session #76") waits until
-the free product is finished.
+**#86 (2026-07-13): the REAL-DEVICE CHECK — the app RUNS ON PATRICK'S
+ACTUAL iPHONE, end to end.** First device run (only hiccup: the phone
+needed picking in the destination list; trust + Developer Mode were
+already in place from the Memory app's runs). ALL THREE simulator
+threats dissolved on real hardware — header-title wrap, grid fit, and
+the Notes keyboard push are NOT present on the phone (per the #85
+rule, nothing to do for them; closed). DICTATION into Setup's text
+fields WORKS — the #78 prediction held, nothing built. The phone
+surfaced three real items, all fixed and phone-proven the same
+session: Out button lost after Log/Notes/Guide (the three "Game →"
+returns restored only New — now restore Out too); card names now
+12px NORMAL weight, was 10px bold (the #82 design-talk item closed
+with no column widening — "Conservatory" fits); grid horizontal push
+stopped (`.grid-wrap` overflow-x:hidden; vertical untouched). The
+quirk queue is EMPTY. Full detail: upgrade-scope.md "Checked +
+built — session #86".
 
-**Commit reminder (#85): commit MysteryCluesTracker
-(project.pbxproj — destinations + portrait lock, Xcode's own edits;
-docs/upgrade-scope.md — the #85 section) and App-Docs (this file).
-(Keep `MysteryTracker.html` — that's Patrick's original hand-built
-Clue sheet, a keepsake.)
+**NEXT SESSION'S GOAL (#87): EVALUATE EDITING THE WEB VERSION'S SPEC
+AND TEST DOCS FOR THE MOBILE VERSION** — Patrick wants those docs for
+the publishing effort. (The web's functional spec is already here:
+App-Docs `MysteryTracker-spec.md`. Where the web's test docs live —
+locate at session start; the loose-ends' 266-step test procedure is
+presumably related, unverified.) At listing time: confirm "Mystery
+Clues Track Sheet" is available. The paid-tier design/build
+(upgrade-scope.md "Decided — session #76") waits until the free
+product is finished.
+
+**Commit reminder (#86): commit MysteryCluesTracker
+(`mystery-clues-tracker.html` + the `www/` copy — the three #86
+fixes; docs/upgrade-scope.md — the #86 section) and App-Docs (this
+file). (Keep `MysteryTracker.html` — that's Patrick's original
+hand-built Clue sheet, a keepsake.)
 
 **Loose ends:** Memory's #69 badge-reorder commit/build/phone-check may
 still be pending — confirm with Patrick. The elyfont.com home card
