@@ -34,7 +34,7 @@ day; the OneDrive move had been convenience only.
   conversation he gets all day — it matters. The conversation is
   part of the work, not overhead.
 
-## Where things stand (updated 2026-07-13, session #86 — the real-device check)
+## Where things stand (updated 2026-07-14, session #87 — pending.txt + the test-doc evaluation)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -343,21 +343,38 @@ stopped (`.grid-wrap` overflow-x:hidden; vertical untouched). The
 quirk queue is EMPTY. Full detail: upgrade-scope.md "Checked +
 built — session #86".
 
-**NEXT SESSION'S GOAL (#87): EVALUATE EDITING THE WEB VERSION'S SPEC
-AND TEST DOCS FOR THE MOBILE VERSION** — Patrick wants those docs for
-the publishing effort. (The web's functional spec is already here:
-App-Docs `MysteryTracker-spec.md`. Where the web's test docs live —
-locate at session start; the loose-ends' 266-step test procedure is
-presumably related, unverified.) At listing time: confirm "Mystery
-Clues Track Sheet" is available. The paid-tier design/build
-(upgrade-scope.md "Decided — session #76") waits until the free
-product is finished.
+**#87 (2026-07-14): pending.txt + the TEST-DOC EVALUATION.** NEW
+`MysteryCluesTracker/docs/pending.txt` — a plain-language "what's
+still left" list in the elderlyassistant style, this app only
+(Patrick's ask; refreshing it joins the session-end docs routine).
+Verified on the way: the three #72 delete-at-commit files are already
+gone from disk. THE TEST-DOC HALF of #87's goal is DONE: the web's
+test doc located (`MysteryTracker/docs/mtr-master-test-v2.docx` —
+REPO COPY STALE at 203 steps; Patrick's current draft is 267 steps,
+session upload; he updates the repo copy himself). All 22 sections
+read, mobile facts code-verified. VERDICT: the format (5-column
+tickable table, sections, tally) and the scripted-game spine transfer
+beautifully; content is half adapt (the play sections, 🏠, Player
+Out, New Game, Guide), a quarter drop (category moves, right-click
+manual marks, theme, keyboard steps — mobile deletes, never mutes), a
+quarter write-new (Welcome modals, templates, guards, Σ picker, Cell
+Notes, Notepad, native Log Copy, status strips, 💬, wrapper
+behaviors). Full detail: upgrade-scope.md "#87". The SPEC-doc half
+was NOT reached — still open, tracked in pending.txt.
 
-**Commit reminder (#86): commit MysteryCluesTracker
+**NEXT SESSION'S GOAL (#88): BEGIN THE TEST DOC** — start writing the
+mobile test document, working from the #87 verdict and Patrick's
+current 267-step web draft (mind the stale repo copy until he
+refreshes it). At listing time: confirm "Mystery Clues Track Sheet"
+is available. The paid-tier design/build (upgrade-scope.md "Decided —
+session #76") waits until the free product is finished.
+
+**Commit reminder (#87): commit MysteryCluesTracker
 (`mystery-clues-tracker.html` + the `www/` copy — the three #86
-fixes; docs/upgrade-scope.md — the #86 section) and App-Docs (this
-file). (Keep `MysteryTracker.html` — that's Patrick's original
-hand-built Clue sheet, a keepsake.)
+fixes; docs/upgrade-scope.md — the #86 + #87 sections; the NEW
+docs/pending.txt) and App-Docs (this file). (Keep
+`MysteryTracker.html` — that's Patrick's original hand-built Clue
+sheet, a keepsake.)
 
 **Loose ends:** Memory's #69 badge-reorder commit/build/phone-check may
 still be pending — confirm with Patrick. The elyfont.com home card
