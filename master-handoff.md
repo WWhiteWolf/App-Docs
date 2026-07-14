@@ -34,7 +34,7 @@ day; the OneDrive move had been convenience only.
   conversation he gets all day — it matters. The conversation is
   part of the work, not overhead.
 
-## Where things stand (updated 2026-07-13, session #84 — home-screen name, app icon, header emblem)
+## Where things stand (updated 2026-07-13, session #85 — dressing 3/3: iPhone-only + portrait lock)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -308,23 +308,41 @@ inner source folder as an Xcode 26 synchronized-group explicit
 folder, not beside the .xcodeproj as the #81 note said. Full detail:
 upgrade-scope.md "Built — session #84".
 
-**NEXT SESSION'S GOAL (#85): the SIMULATOR FIT** — on the phone the
-header title wraps to two lines and the grid doesn't fit (Patrick's
-report; pre-existing, not from #84's changes; uninvestigated —
-likely meets the queued card-names design talk and the 430px
-budget). Behind it: the portrait-only lock (the one dressing item
-left), Notes keyboard push, then phone + dictation checks. At
-listing time: confirm "Mystery Clues Track Sheet" is available. The
-paid-tier design/build (upgrade-scope.md "Decided — session #76")
-waits until the free product is finished.
+**#85 (2026-07-13, "Dressing 3/3"): DRESSING IS COMPLETE — iPhone-only
++ the portrait lock, both Patrick's hand in Xcode, both
+pbxproj-verified.** NEW DECISION: the app is iPhone-ONLY on the store
+(device family was Xcode's default 1,2,7; iPad, Apple Vision, and Mac
+destinations removed; `TARGETED_DEVICE_FAMILY = 1`, Catalyst off,
+both configs — also sidesteps Apple's Requires-Full-Screen rule for
+orientation-locked iPad apps). PORTRAIT LOCK set (Landscape
+Left/Right unchecked; `...Orientations = Portrait` both configs) and
+**Patrick-proven in the simulator — rotated, it held portrait.** The
+HTML's own landscape block untouched (#71 stands). INCIDENT, cleanly
+recovered: the wrong minus button (TARGETS-list one, not the
+Supported-Destinations one) deleted the WHOLE TARGET; verified via a
+sandbox copy of the repo (no git commands in the repo) that HEAD held
+the healthy pbxproj and only that file differed; Xcode quit; Patrick
+`git restore`d it. Trap + detail in upgrade-scope.md "#85". DUST left
+on purpose: the inert `...Orientations_iPad` key stays. Today's whole
+disk footprint: project.pbxproj (+ the docs refresh).
 
-**Commit reminder (#84): commit MysteryCluesTracker
-(mystery-clues-tracker.html — emblem in four spots + .title-icon
-CSS; static/icon-cards.svg NEW; the www/ copies of both,
-diff-identical; project.pbxproj + Assets.xcassets — display name
-and icon, Xcode's own edits; docs/upgrade-scope.md) and App-Docs
-(this file). (Keep `MysteryTracker.html` — that's Patrick's
-original hand-built Clue sheet, a keepsake.)
+**NEXT SESSION'S GOAL (#86): the REAL-DEVICE CHECK** — the app on
+Patrick's actual iPhone (Patrick's #85 redefinition: the phone is
+the judge). Check THERE: the header-title wrap + grid fit (the
+simulator's report) and the Notes keyboard push — if the phone
+doesn't show them, there is nothing to do for them; only what the
+phone shows becomes work (the card-names design talk rides with the
+fit question). Also confirm dictation into Setup's text fields
+(expected free from the iOS keyboard, #78). At listing time:
+confirm "Mystery Clues Track Sheet" is available. The paid-tier
+design/build (upgrade-scope.md "Decided — session #76") waits until
+the free product is finished.
+
+**Commit reminder (#85): commit MysteryCluesTracker
+(project.pbxproj — destinations + portrait lock, Xcode's own edits;
+docs/upgrade-scope.md — the #85 section) and App-Docs (this file).
+(Keep `MysteryTracker.html` — that's Patrick's original hand-built
+Clue sheet, a keepsake.)
 
 **Loose ends:** Memory's #69 badge-reorder commit/build/phone-check may
 still be pending — confirm with Patrick. The elyfont.com home card
