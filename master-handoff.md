@@ -34,7 +34,7 @@ day; the OneDrive move had been convenience only.
   conversation he gets all day — it matters. The conversation is
   part of the work, not overhead.
 
-## Where things stand (updated 2026-07-14, session #89 — the test doc closes Setup)
+## Where things stand (updated 2026-07-14, session #90 — the game designed, §8 built)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -400,20 +400,44 @@ minimum that unlocks Play); the real deal gets settled when §8–9 are
 drafted, adjusting 7.5–7.9 to match. Full detail: upgrade-scope.md
 "Built — session #89".
 
-**NEXT SESSION'S GOAL (#90): THE GAME SECTIONS** — section 8 (Game
-Page Layout Check), then the scripted turns (§9–13). First call to
-settle: Me's real hand for the scripted game. Handy along the way:
-rebuild the wrapper in Xcode so the phone picks up the new Clear. At
-listing time: confirm "Mystery Clues Track Sheet" is available. The
-paid-tier design/build (upgrade-scope.md "Decided — session #76")
-waits until the free product is finished.
+**#90 (2026-07-14): THE GAME IS DESIGNED AND §8 IS BUILT.** The whole
+scripted game settled in one sitting (Patrick's calls): default card
+names all around; a 21-card deck, 3 categories, 6/6/9 (the trim drops
+Card 7–9 and 16–18); the deal is his FAMILY WAY — 3 in the envelope
+(Card 6/15/27, the last of each category), 4 per hand, 2 face down on
+the board (Card 5/26) — full ledger plus all eight turn designs in
+upgrade-scope "#90", each walked against the code (round one: every
+shower first-in-ring, incl. the preselect modal and the envelope
+nobody-shows; round two: the guards — asker-can't-show + first
+auto-❌ passers T5, must-show-first T6, no-preselect modal + the Undo
+test T7, all-crossed + repeat nobody-shows T8). PREMIUM-REUSE
+PRINCIPLE logged (Patrick): the free script doubles as the paid
+tier's future answer key — the ledger lives in the doc, turn-end
+states stay explicit; the family deal also makes card counts
+derivable (the #76 open idea). §8 BUILT as "Game Prep & Layout Check"
+(12 steps; the doc stands at 83): prep rebuilds the game from ANY
+state (Patrick's design — no leftover-state tracking; §7's
+placeholder hand stays; the #89 open item closes), then seven
+look-only layout checks. 8.12 reworded from Patrick's phone run (21
+rows fit his screen — no scrolling). AGREED, unbuilt: Appendix A —
+the deal + turn sequence, after §25. Parked: the skip-turn and
+"Prev Turn?" tests still need homes. Full detail: upgrade-scope.md
+"Built — session #90".
 
-**Commit status (#89): BOTH repos hold uncommitted work — Patrick's
-commits, when ready.** MysteryCluesTracker: mystery-clues-tracker.html
-+ the www/ copy (the two #88 app changes + #89's Clear), CLAUDE.md
-(rule 2), docs/mcts-master-test.docx, docs/build-mcts-test.js,
-docs/upgrade-scope.md (#88 + #89 sections), docs/pending.txt.
-App-Docs: CLAUDE.md (rule 2) and this file.
+**NEXT SESSION'S GOAL (#91): APPENDIX A, then the scripted turns —
+§9–13 written from the #90 designs.** (Me's real hand is settled —
+Card 1/10/19/20 — the #90 first-call item is done.) At listing time:
+confirm "Mystery Clues Track Sheet" is available. The paid-tier
+design/build (upgrade-scope.md "Decided — session #76") waits until
+the free product is finished.
+
+**Commit status (#90): BOTH repos hold uncommitted work — Patrick's
+commits, when ready.** MysteryCluesTracker: docs/build-mcts-test.js +
+docs/mcts-master-test.docx (§8 + the 8.12 rewording),
+docs/upgrade-scope.md (#90 section), docs/pending.txt — plus the
+#88–89 batch (mystery-clues-tracker.html + www/, CLAUDE.md rule 2)
+if not yet committed. App-Docs: this file (and CLAUDE.md rule 2 if
+still pending).
 
 **Loose ends:** Memory's #69 badge-reorder commit/build/phone-check may
 still be pending — confirm with Patrick. The elyfont.com home card
