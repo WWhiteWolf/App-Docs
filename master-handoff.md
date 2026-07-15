@@ -34,7 +34,7 @@ day; the OneDrive move had been convenience only.
   conversation he gets all day — it matters. The conversation is
   part of the work, not overhead.
 
-## Where things stand (updated 2026-07-15, session #92 — §13–16 built, the scripted game complete)
+## Where things stand (updated 2026-07-15, session #93 — the two gameplay fixes done)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -459,18 +459,33 @@ survives the Shown-Me confirm; diagnostic ready) and the "checked
 card" message-wording hunt. Full detail: upgrade-scope.md "Built —
 session #92".
 
-**NEXT SESSION'S GOAL (#93): the two code fixes queued in #92** —
-(a) the 15.5 hint line (diagnostic ready in upgrade-scope.md "#92":
-`gamePhase` in the inspector console when the wrong hint shows);
-(b) the message-wording hunt ("checked card" in words where the
-consistent red ✗ is wanted). At listing time: confirm "Mystery Clues
+**#93 (2026-07-15, "gameplay bug fixes"): BOTH #92 CODE ITEMS ARE
+CLOSED, each browser-verified by Patrick.** (a) The HINT LINE FIXED —
+the #92 note's placement ("after the Shown-Me confirm") was WRONG;
+Patrick's #91 report was the true one: the wrong hint appeared the
+instant Me's 3rd pick was clicked, because Me's showing-phase hint
+was a longer line that clipped mid-word (static hints never scroll)
+— no reason for Me's wording to differ. One line in updateStageHint:
+every player's showing phase now reads "Tap the column header of who
+showed." (b) The MESSAGE-WORDING HUNT DONE under Patrick's rule
+(stated #93): "confirmed" in words is fine as long as it's
+consistent; never "checked" in place of ✅, never "cross"/"crossed"
+in place of the red ❌. One change — the nobody-shows message is now
+"Nobody showed — cards are ❌-ed out" (Patrick's wording); the
+"confirmed card" pair and the Guide's 🏠 sentence ruled fine as-is.
+www/ re-copied, diff-identical; THE PHONE NEEDS AN XCODE REBUILD to
+get both fixes. Full detail: upgrade-scope.md "Built — session #93".
+
+**NEXT SESSION'S GOAL (#94): continue the test doc — §17 onward**
+(the map runs 28 sections; §15's 15.5 make-sure can now name the
+hint line — settled in #93). At listing time: confirm "Mystery Clues
 Track Sheet" is available. The paid-tier design/build (upgrade-scope.md
 "Decided — session #76") waits until the free product is finished.
 
-**Commit status (#92): Patrick's commits, when ready.**
-MysteryCluesTracker: docs/build-mcts-test.js + docs/mcts-master-test.docx
-(§13–16 + the renumber), docs/upgrade-scope.md (#92 section),
-docs/pending.txt — plus the #88–91 batch if not yet committed.
+**Commit status (#93): Patrick's commits, when ready.**
+MysteryCluesTracker: mystery-clues-tracker.html + the wrapper's www/
+copy (the two #93 fixes), docs/upgrade-scope.md (#93 section),
+docs/pending.txt — plus the #88–92 batch if not yet committed.
 App-Docs: this file. elderlyassistant and MysteryTracker: CLAUDE.md
 (the #88 "Go?" clarification), if not already committed.
 
