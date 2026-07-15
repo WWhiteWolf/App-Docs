@@ -34,7 +34,7 @@ day; the OneDrive move had been convenience only.
   conversation he gets all day — it matters. The conversation is
   part of the work, not overhead.
 
-## Where things stand (updated 2026-07-15, session #91 — Appendix A + §9–12 built)
+## Where things stand (updated 2026-07-15, session #92 — §13–16 built, the scripted game complete)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -443,20 +443,36 @@ notes: status reports not verdicts — Patrick decides; brevity must
 not drift terse (rule 5 covers it; a sharpening line was offered,
 declined). Full detail: upgrade-scope.md "Built — session #91".
 
-**NEXT SESSION'S GOAL (#92): §13 — Turns 5–8, the guard tests,
-written from the #90 designs** (asker-can't-show + first auto-❌
-passers T5, must-show-first T6, no-preselect + the Undo test T7,
-all-crossed + repeat nobody-shows T8). At listing time: confirm
-"Mystery Clues Track Sheet" is available. The paid-tier design/build
-(upgrade-scope.md "Decided — session #76") waits until the free
-product is finished.
+**#92 (2026-07-15, "gameplay section 13"): THE GUARD TURNS ARE BUILT
+AND THE SCRIPTED GAME IS COMPLETE IN THE DOC — 138 steps.**
+Mid-session restructure (Patrick's call, on the web doc's precedent):
+each guard turn got its OWN section, §13–16 (First Passers /
+Must-Show-First / the Undo Test / the Envelope Again), the sections
+after renumbered 14–25 → 17–28 (the map now runs 28 sections),
+Appendix A's turn table repointed. 31 new steps, each turn
+code-verified, wording-approved, built on Patrick's go, and
+PHONE-TESTED by Patrick as it was written; his test-pass corrections
+folded in (Card 11's doubled "?" — ask marks are permanent records;
+the Undo arm/disarm split). TWO CODE ITEMS QUEUED, found by Patrick's
+phone runs: the 15.5 hint-line discrepancy (showing-phase hint
+survives the Shown-Me confirm; diagnostic ready) and the "checked
+card" message-wording hunt. Full detail: upgrade-scope.md "Built —
+session #92".
 
-**Commit status (#91): FOUR repos hold uncommitted work — Patrick's
-commits, when ready.** MysteryCluesTracker: docs/build-mcts-test.js +
-docs/mcts-master-test.docx (Appendix A + §9–12), docs/upgrade-scope.md
-(#91 section), docs/pending.txt — plus the #88–90 batch if not yet
-committed. App-Docs: this file. elderlyassistant and MysteryTracker:
-CLAUDE.md (the #88 "Go?" clarification).
+**NEXT SESSION'S GOAL (#93): the two code fixes queued in #92** —
+(a) the 15.5 hint line (diagnostic ready in upgrade-scope.md "#92":
+`gamePhase` in the inspector console when the wrong hint shows);
+(b) the message-wording hunt ("checked card" in words where the
+consistent red ✗ is wanted). At listing time: confirm "Mystery Clues
+Track Sheet" is available. The paid-tier design/build (upgrade-scope.md
+"Decided — session #76") waits until the free product is finished.
+
+**Commit status (#92): Patrick's commits, when ready.**
+MysteryCluesTracker: docs/build-mcts-test.js + docs/mcts-master-test.docx
+(§13–16 + the renumber), docs/upgrade-scope.md (#92 section),
+docs/pending.txt — plus the #88–91 batch if not yet committed.
+App-Docs: this file. elderlyassistant and MysteryTracker: CLAUDE.md
+(the #88 "Go?" clarification), if not already committed.
 
 **Loose ends:** Memory's #69 badge-reorder commit/build/phone-check may
 still be pending — confirm with Patrick. The elyfont.com home card
