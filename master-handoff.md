@@ -34,7 +34,7 @@ day; the OneDrive move had been convenience only.
   conversation he gets all day — it matters. The conversation is
   part of the work, not overhead.
 
-## Where things stand (updated 2026-07-14, session #90 — the game designed, §8 built)
+## Where things stand (updated 2026-07-15, session #91 — Appendix A + §9–12 built)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -424,20 +424,39 @@ the deal + turn sequence, after §25. Parked: the skip-turn and
 "Prev Turn?" tests still need homes. Full detail: upgrade-scope.md
 "Built — session #90".
 
-**NEXT SESSION'S GOAL (#91): APPENDIX A, then the scripted turns —
-§9–13 written from the #90 designs.** (Me's real hand is settled —
-Card 1/10/19/20 — the #90 first-call item is done.) At listing time:
-confirm "Mystery Clues Track Sheet" is available. The paid-tier
-design/build (upgrade-scope.md "Decided — session #76") waits until
-the free product is finished.
+**#91 (2026-07-15, "sections 9–12" — Patrick revised the name mid-way;
+§13 moved to #92): APPENDIX A + FOUR SCRIPTED TURNS BUILT — the doc
+stands at 107 steps.** Appendix A first (Patrick's call after asking
+whether it would help): the deal table + the eight-turn table
+rendered after §25, the tester's face-up view of the #90 designs.
+Then §9–12, 24 steps — T1 Ann→Bob shows, T2 Bob→Me shows (preselect
+modal), T3 Me→Dan shows (no-preselect modal, first earned ✅), T4
+Dan asks the envelope→nobody shows (auto-advance) — each drafted
+from code-verified facts, wording approved, built on Patrick's go,
+render-checked. Doc-wording conduct (Patrick): draft steps only, no
+test explanations; the Make-sure column observes, never directs.
+RIDE-ALONGS: pending.txt trimmed twice (the stale web test-doc copy —
+Patrick had done it; the #88 "Go?" rule into the elderlyassistant +
+MysteryTracker CLAUDE.md files — checked on Patrick's ask, both
+still old, FIXED on his go: all four copies now match). Conduct
+notes: status reports not verdicts — Patrick decides; brevity must
+not drift terse (rule 5 covers it; a sharpening line was offered,
+declined). Full detail: upgrade-scope.md "Built — session #91".
 
-**Commit status (#90): BOTH repos hold uncommitted work — Patrick's
+**NEXT SESSION'S GOAL (#92): §13 — Turns 5–8, the guard tests,
+written from the #90 designs** (asker-can't-show + first auto-❌
+passers T5, must-show-first T6, no-preselect + the Undo test T7,
+all-crossed + repeat nobody-shows T8). At listing time: confirm
+"Mystery Clues Track Sheet" is available. The paid-tier design/build
+(upgrade-scope.md "Decided — session #76") waits until the free
+product is finished.
+
+**Commit status (#91): FOUR repos hold uncommitted work — Patrick's
 commits, when ready.** MysteryCluesTracker: docs/build-mcts-test.js +
-docs/mcts-master-test.docx (§8 + the 8.12 rewording),
-docs/upgrade-scope.md (#90 section), docs/pending.txt — plus the
-#88–89 batch (mystery-clues-tracker.html + www/, CLAUDE.md rule 2)
-if not yet committed. App-Docs: this file (and CLAUDE.md rule 2 if
-still pending).
+docs/mcts-master-test.docx (Appendix A + §9–12), docs/upgrade-scope.md
+(#91 section), docs/pending.txt — plus the #88–90 batch if not yet
+committed. App-Docs: this file. elderlyassistant and MysteryTracker:
+CLAUDE.md (the #88 "Go?" clarification).
 
 **Loose ends:** Memory's #69 badge-reorder commit/build/phone-check may
 still be pending — confirm with Patrick. The elyfont.com home card
