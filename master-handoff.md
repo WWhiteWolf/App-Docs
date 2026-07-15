@@ -34,7 +34,7 @@ day; the OneDrive move had been convenience only.
   conversation he gets all day — it matters. The conversation is
   part of the work, not overhead.
 
-## Where things stand (updated 2026-07-14, session #88 — the mobile test doc begun)
+## Where things stand (updated 2026-07-14, session #89 — the test doc closes Setup)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -382,21 +382,38 @@ elderlyassistant + MysteryTracker copies still need it): a go exists
 only after Claude asks "Go?" as its own question and Patrick answers
 it. Full detail: upgrade-scope.md "Built — session #88".
 
-**NEXT SESSION'S GOAL (#89): CONTINUE THE TEST DOC** — section 6
-(Players & the Me seat) is drafted and awaiting wording approval
-(cast Ann/Bob/Me/Dan; the turn-section title renames go in with it —
-draft recorded in upgrade-scope "#88"), then section 7 (Card Pick,
-Play Button & Messages) closes the Setup coverage. At listing time:
-confirm "Mystery Clues Track Sheet" is available. The paid-tier
-design/build (upgrade-scope.md "Decided — session #76") waits until
-the free product is finished.
+**#89 (2026-07-14): SETUP COVERAGE CLOSED — sections 6 and 7 written,
+71 steps.** §6 (Players & the Me Seat, 9 steps) and §7 (Card Pick,
+Play Button & Messages, 9 steps — `setupUnmet`'s condition order
+code-verified), each wording-approved and written on Patrick's go.
+NEW APP CHANGE from Patrick's own test pass (he runs the doc on the
+phone as it's written): **Clear in the player popup now clears the
+"This is Me" check too** — one line in `clearPlayerInput`;
+browser-verified, www/ diff-identical; THE PHONE NEEDS AN XCODE
+REBUILD to get it (step 7.2 depends on it). Doc improvements, all
+Patrick's asks: "Start: …" state lines in the section banners (§1–8;
+a new `start` field in the script), 0.75" side margins, columns
+0.45/0.45/2.58/2.58/0.94, 10pt table text, padding in the three text
+columns. Turn titles renamed to the cast (§9 Ann/Bob, §10 Bob/Me,
+§12 Dan). OPEN: Me's hand is a placeholder (Card 1/2/10 — the
+minimum that unlocks Play); the real deal gets settled when §8–9 are
+drafted, adjusting 7.5–7.9 to match. Full detail: upgrade-scope.md
+"Built — session #89".
 
-**Commit status (#88): BOTH repos hold uncommitted work — Patrick's
+**NEXT SESSION'S GOAL (#90): THE GAME SECTIONS** — section 8 (Game
+Page Layout Check), then the scripted turns (§9–13). First call to
+settle: Me's real hand for the scripted game. Handy along the way:
+rebuild the wrapper in Xcode so the phone picks up the new Clear. At
+listing time: confirm "Mystery Clues Track Sheet" is available. The
+paid-tier design/build (upgrade-scope.md "Decided — session #76")
+waits until the free product is finished.
+
+**Commit status (#89): BOTH repos hold uncommitted work — Patrick's
 commits, when ready.** MysteryCluesTracker: mystery-clues-tracker.html
-+ the www/ copy (the two #88 app changes), CLAUDE.md (rule 2),
-docs/mcts-master-test.docx, docs/build-mcts-test.js,
-docs/upgrade-scope.md (#88 section), docs/pending.txt. App-Docs:
-CLAUDE.md (rule 2) and this file.
++ the www/ copy (the two #88 app changes + #89's Clear), CLAUDE.md
+(rule 2), docs/mcts-master-test.docx, docs/build-mcts-test.js,
+docs/upgrade-scope.md (#88 + #89 sections), docs/pending.txt.
+App-Docs: CLAUDE.md (rule 2) and this file.
 
 **Loose ends:** Memory's #69 badge-reorder commit/build/phone-check may
 still be pending — confirm with Patrick. The elyfont.com home card
