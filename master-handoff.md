@@ -524,12 +524,14 @@ stays as-is until after #96. Conduct note: "diff-identical" is
 jargon — say it plainly. Full detail: upgrade-scope.md "Built —
 session #95".
 
-**NEXT SESSION'S GOAL (#96): test doc §22 Player Out, plus the three
-queued MESSAGE items:** (1) status messages that duplicate what the
-turn bar already says (15.5's "Ann showed you Card 2" beside "Turn 7
-— Ann ... showed ✓" is the named case, from #94); (2) some red-letter
+**NEXT SESSION'S GOAL (#96, Patrick's call, #95): the three queued
+MESSAGE items** — (1) status messages that duplicate what the turn
+bar already says (15.5's "Ann showed you Card 2" beside "Turn 7 —
+Ann ... showed ✓" is the named case, from #94); (2) some red-letter
 messages are hard to read (#95); (3) the Setup screen's bottom
-messages should be black lettering on a light background (#95). At
+messages should be black lettering on a light background (#95).
+The test doc resumes after that — §22 Player Out is its next
+unwritten section, in a later session. At
 listing time: confirm "Mystery Clues Track Sheet" is available. The
 paid-tier design/build (upgrade-scope.md "Decided — session #76")
 waits until the free product is finished.
