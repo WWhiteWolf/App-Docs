@@ -34,7 +34,7 @@ day; the OneDrive move had been convenience only.
   conversation he gets all day — it matters. The conversation is
   part of the work, not overhead.
 
-## Where things stand (updated 2026-07-15, session #93 — the two gameplay fixes done)
+## Where things stand (updated 2026-07-15, session #94 — test doc §17–19 written)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -476,18 +476,41 @@ in place of the red ❌. One change — the nobody-shows message is now
 www/ re-copied, diff-identical; THE PHONE NEEDS AN XCODE REBUILD to
 get both fixes. Full detail: upgrade-scope.md "Built — session #93".
 
-**NEXT SESSION'S GOAL (#94): continue the test doc — §17 onward**
-(the map runs 28 sections; §15's 15.5 make-sure can now name the
-hint line — settled in #93). At listing time: confirm "Mystery Clues
+**#94 (2026-07-15, "gameplay sections 17, 18 & 19"): TEST DOC
+SECTIONS 17–19 WRITTEN — the doc stands at 163 steps.** §17 🏠 House
+Column (8 steps — both board cards checked; the exact-revert proven
+on Card 5's row: the untap removes only the house-placed ❌s and
+leaves Bob's passer ❌ and Me's turn-0 ❌ alone), §18 Σ Popup Picker
+(8 — modal anatomy, overwrite, the two-tap Clear; ends ✕ on Card 2,
+⭐ on Card 6), §19 Cell Notes (9 — Set saves in place, edit on
+reopen, BOTH exits per Patrick's own run: Clear → Done and
+Set-with-empty-box → Close; P5 ghost tap does nothing; the 6-char
+cap stays parked for §27). Each section code-verified,
+wording-approved, built on Patrick's go, render-checked, tested by
+Patrick as it was written. RIDE-ALONG: the five #93 wording
+alignments in already-written sections — 12.4/16.5 "cards are ❌-ed
+out", 11.3/15.3 the collapsed hint, 15.5 names the waiting hint (the
+#93 follow-on settled); render-verified, zero old wording remains.
+No app code touched. The phone still needs the Xcode rebuild for the
+#93 fixes (and #89's Clear). Full detail: upgrade-scope.md "Built —
+session #94".
+
+**NEXT SESSION'S GOAL (#95): test doc sections 20–22** (§20 Notepad,
+§21 Log & Log Copy, §22 Player Out) **plus Patrick's queued
+discussion: status messages that duplicate what the turn bar already
+says** (15.5's "Ann showed you Card 2" beside "Turn 7 — Ann ...
+showed ✓" is the named case). At listing time: confirm "Mystery Clues
 Track Sheet" is available. The paid-tier design/build (upgrade-scope.md
 "Decided — session #76") waits until the free product is finished.
 
-**Commit status (#93): Patrick's commits, when ready.**
-MysteryCluesTracker: mystery-clues-tracker.html + the wrapper's www/
-copy (the two #93 fixes), docs/upgrade-scope.md (#93 section),
-docs/pending.txt — plus the #88–92 batch if not yet committed.
-App-Docs: this file. elderlyassistant and MysteryTracker: CLAUDE.md
-(the #88 "Go?" clarification), if not already committed.
+**Commit status (#94): Patrick's commits, when ready.**
+MysteryCluesTracker: docs/build-mcts-test.js +
+docs/mcts-master-test.docx (§17–19 + the five alignments),
+docs/upgrade-scope.md (#94 section), docs/pending.txt — plus the #93
+pair (mystery-clues-tracker.html + the wrapper's www/ copy) and the
+#88–92 batch if not yet committed. App-Docs: this file.
+elderlyassistant and MysteryTracker: CLAUDE.md (the #88 "Go?"
+clarification), if not already committed.
 
 **Loose ends:** Memory's #69 badge-reorder commit/build/phone-check may
 still be pending — confirm with Patrick. The elyfont.com home card
