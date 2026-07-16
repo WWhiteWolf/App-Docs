@@ -34,7 +34,7 @@ day; the OneDrive move had been convenience only.
   conversation he gets all day — it matters. The conversation is
   part of the work, not overhead.
 
-## Where things stand (updated 2026-07-15, session #94 — test doc §17–19 written)
+## Where things stand (updated 2026-07-16, session #95 — test doc §20–21 written; Notepad strip + Undo log built)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -495,22 +495,53 @@ No app code touched. The phone still needs the Xcode rebuild for the
 #93 fixes (and #89's Clear). Full detail: upgrade-scope.md "Built —
 session #94".
 
-**NEXT SESSION'S GOAL (#95): test doc sections 20–22** (§20 Notepad,
-§21 Log & Log Copy, §22 Player Out) **plus Patrick's queued
-discussion: status messages that duplicate what the turn bar already
-says** (15.5's "Ann showed you Card 2" beside "Turn 7 — Ann ...
-showed ✓" is the named case). At listing time: confirm "Mystery Clues
-Track Sheet" is available. The paid-tier design/build (upgrade-scope.md
-"Decided — session #76") waits until the free product is finished.
+**#95 (2026-07-16, "gameplay sections 20 & 21"): §20 AND §21 ARE
+WRITTEN — the doc stands at 180 steps — plus TWO APP CHANGES.**
+Scope was §20–21 only (Patrick's call; §22 and the message
+discussions moved to #96). Correction on arrival: the #94 "phone
+needs the rebuild" note was stale — the phone was current and all
+prior tests ran there. APP CHANGE 1 (Patrick's ask): the Notepad got
+its own status strip between the 📝 title and Clear — found while
+banking §20 facts: `showStatus` had NO outlet on the Notes screen,
+so the Clear two-tap's "Tap again to confirm" showed nowhere;
+browser- and phone-verified. §20 Notepad (9 steps) written; 8.5
+reworded to name the app name in the gold header (which tops every
+screen — code-verified). FINDING at §21: Undo never touched the
+log — §15's sequence left two identical Turn 7 entries. APP CHANGE 2
+(Patrick's design, HONEST HISTORY): the undone entry STAYS and the
+Undo itself is logged — new `undo` entry type ("Turn N — ↩ Undo —
+turn restarted" / "All Turn N marks removed." / "∑ marks, Player Out
+records and 👋-placed marks are not undone."), in render and Copy;
+the completion message is now just "∑ and Player Out marks not
+undone." Browser-proven incl. Patrick's Copy paste test. §21 Log &
+Log Copy (8 steps) written — the exact scripted-game log
+reconstructed; 21.7 pastes the copied log into the app's own Notepad
+(no outside app needed); 15.8 aligned to the new message. PHONE
+STATUS: §20–21 phone-verified incl. the new strip; the Undo message
++ Log undo entries are browser-proven only (no §20/§21 step fires an
+Undo — they meet the phone at 15.8 on a full pass); the phone build
+stays as-is until after #96. Conduct note: "diff-identical" is
+jargon — say it plainly. Full detail: upgrade-scope.md "Built —
+session #95".
 
-**Commit status (#94): Patrick's commits, when ready.**
-MysteryCluesTracker: docs/build-mcts-test.js +
-docs/mcts-master-test.docx (§17–19 + the five alignments),
-docs/upgrade-scope.md (#94 section), docs/pending.txt — plus the #93
-pair (mystery-clues-tracker.html + the wrapper's www/ copy) and the
-#88–92 batch if not yet committed. App-Docs: this file.
-elderlyassistant and MysteryTracker: CLAUDE.md (the #88 "Go?"
-clarification), if not already committed.
+**NEXT SESSION'S GOAL (#96): test doc §22 Player Out, plus the three
+queued MESSAGE items:** (1) status messages that duplicate what the
+turn bar already says (15.5's "Ann showed you Card 2" beside "Turn 7
+— Ann ... showed ✓" is the named case, from #94); (2) some red-letter
+messages are hard to read (#95); (3) the Setup screen's bottom
+messages should be black lettering on a light background (#95). At
+listing time: confirm "Mystery Clues Track Sheet" is available. The
+paid-tier design/build (upgrade-scope.md "Decided — session #76")
+waits until the free product is finished.
+
+**Commit status (#95): Patrick's commits, when ready.**
+MysteryCluesTracker: mystery-clues-tracker.html + the wrapper's www/
+copy (the Notepad strip + the Undo log), docs/build-mcts-test.js +
+docs/mcts-master-test.docx (§20–21, 8.5, 15.8), docs/upgrade-scope.md
+(#95 section), docs/pending.txt — plus the #93 pair and the #88–92
+batch if not yet committed. App-Docs: this file. elderlyassistant and
+MysteryTracker: CLAUDE.md (the #88 "Go?" clarification), if not
+already committed.
 
 **Loose ends:** Memory's #69 badge-reorder commit/build/phone-check may
 still be pending — confirm with Patrick. The elyfont.com home card
