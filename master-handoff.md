@@ -34,7 +34,7 @@ day; the OneDrive move had been convenience only.
   conversation he gets all day — it matters. The conversation is
   part of the work, not overhead.
 
-## Where things stand (updated 2026-07-16, session #95 — test doc §20–21 written; Notepad strip + Undo log built)
+## Where things stand (updated 2026-07-16, session #96 — warnings white + the Setup strip black-on-gold)
 
 **The products, all to be published (decided #71; Memory-web dropped #72):**
 
@@ -524,24 +524,49 @@ stays as-is until after #96. Conduct note: "diff-identical" is
 jargon — say it plainly. Full detail: upgrade-scope.md "Built —
 session #95".
 
-**NEXT SESSION'S GOAL (#96, Patrick's call, #95): the three queued
-MESSAGE items** — (1) status messages that duplicate what the turn
-bar already says (15.5's "Ann showed you Card 2" beside "Turn 7 —
-Ann ... showed ✓" is the named case, from #94); (2) some red-letter
-messages are hard to read (#95); (3) the Setup screen's bottom
-messages should be black lettering on a light background (#95).
-The test doc resumes after that — §22 Player Out is its next
-unwritten section, in a later session. At
+**#96 (2026-07-16, "post-gameplay §20 Notes & §21 Log — code fixes"):
+TWO OF THE THREE MESSAGE ITEMS ARE BUILT, each browser-verified by
+Patrick.** THE COLOR RULE (Patrick): warnings — refusals and "you
+can't do that yet" — show WHITE; directions, confirmations, and
+outcomes stay gold. Build 1: new `--warn:#fff`, passed at 18
+showStatus call sites (the full sorting Patrick-approved
+message-by-message; his addition: "∑ and Player Out marks not
+undone." is a warning) plus the Edit modal's refusal hint (#88 red
+bold → white bold); the must-show-first pair traded #83's red for
+white — `--red-lt` is now unused dust. Build 2: the SETUP STRIP is
+black-on-gold (Patrick: "Black letters on gold back") — the header's
+colors (bg `--gold-dk`, text #1a1410); showStatus always passes
+black for that strip, ignoring the message color (white would vanish
+on light gold). Bug on the first cut, Patrick's find: the letters
+showed WHITE — passing no color CLEARED the strip's inline black and
+it fell back to the body's near-white; fixed by passing black
+explicitly. The third item — messages duplicating the turn bar —
+was offered and declined; it moves to #97 untouched. QUEUED at the
+docs refresh: two test-doc alignments now stale ("arrives in RED" at
+14.3; "a red, bold hint" in §4 — both now white). The phone has
+NEITHER #96 change nor #95's Undo log — the next Xcode rebuild
+carries them all. Conduct notes: name things by what they are, never
+a bare "item 3"; Patrick ran rule 7 in reverse — counted Claude's
+slips and called the fog first, and was right. Full detail:
+upgrade-scope.md "Built — session #96".
+
+**NEXT SESSION'S GOAL (#97, from #96): the remaining MESSAGE item —
+status messages that duplicate what the turn bar already says**
+(15.5's "Ann showed you Card 2" beside "Turn 7 — Ann ... showed ✓"
+is the named case, from #94) — **plus the two test-doc alignments**
+(14.3 and §4's "red" wording → white; script edit + rebuild). The
+test doc resumes after that — §22 Player Out is its next unwritten
+section, in a later session. At
 listing time: confirm "Mystery Clues Track Sheet" is available. The
 paid-tier design/build (upgrade-scope.md "Decided — session #76")
 waits until the free product is finished.
 
-**Commit status (#95): Patrick's commits, when ready.**
+**Commit status (#96): Patrick's commits, when ready.**
 MysteryCluesTracker: mystery-clues-tracker.html + the wrapper's www/
-copy (the Notepad strip + the Undo log), docs/build-mcts-test.js +
-docs/mcts-master-test.docx (§20–21, 8.5, 15.8), docs/upgrade-scope.md
-(#95 section), docs/pending.txt — plus the #93 pair and the #88–92
-batch if not yet committed. App-Docs: this file. elderlyassistant and
+copy (the #96 color changes), docs/upgrade-scope.md (#96 section),
+docs/pending.txt — plus the #95 set (HTML + www/, build-mcts-test.js
++ mcts-master-test.docx, upgrade-scope #95) and earlier batches if
+not yet committed. App-Docs: this file. elderlyassistant and
 MysteryTracker: CLAUDE.md (the #88 "Go?" clarification), if not
 already committed.
 
