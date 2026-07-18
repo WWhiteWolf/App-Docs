@@ -63,26 +63,32 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-18, session #106 — the Feedback modal rebuilt and phone-verified; §24 into the script at 236 steps; rule 10 written)
+## Where things stand (updated 2026-07-18, session #107 — the reopen bug diagnosed, the mid-game path proven good, a new quit-clamp bug found; NO code touched)
 
-**The 💬 Feedback modal is REBUILT to the s24 spec and
-PHONE-VERIFIED — Patrick ran §24's fifteen steps, 15/15 pass.
-§24 is IN build-mcts-test.js; the docx is regenerated at 236
-steps and verified row-for-row programmatically; s24-draft.md is
-deleted (Patrick, in Finder — deletion verified). The phone
-build is CURRENT. RULE 10 is in both CLAUDE.md files (Patrick's
-words): if unsure — what Patrick meant, where things stand, what
-a result was — ASK him; don't assume and continue. Patrick's
-standing ruling from this session: every code change must be in
-the spec so he can verify spec and code together — the
-spec-first pattern extends to all remaining items.**
+**The REOPEN BUG is DIAGNOSED (#107, code-verified, line numbers
+in build-history "#107"): three Setup-side mechanisms — the
+ghost game (New Game never resets the active-player list, so the
+next Setup edit saves an empty "game" and reopen's Continue
+opens a markless Game page); New Game's instant delete of the
+saved game with the player-name recovery unreachable (players
+erased, no modal); and the returning-modal's hand-wipe behind
+still-green chips. The MID-GAME path is proven GOOD on the phone
+— 22.25/22.26 with an hours-later reopen: Welcome Back, Continue
+restores exactly as left — so the fix scope is Setup-side ONLY.
+What reopen SHOULD do is still OPEN, and it is ONE design
+discussion with the tap-guard question and the deck decoupling
+(pending 1, 3, 4). The fix's spec home is still open — Patrick
+ruled it is NOT §25. Two NEW pending items from Patrick's own
+testing: the quit-clamp bug (quitting on your own turn can hand
+the turn to a 😢 player) and a spec fix (a direction buried at
+the tail of 22.24's long Make-sure, plus a sweep for siblings).
+#107 touched NO code — this refresh is docs only.**
 
-The phone sits on factory-fresh Setup ("Classic" and the keeper
-note surviving); §25 (Welcome Back & resume) needs the
-scripted-game state rebuilt, and it carries the Game screen's
-own 📖 Guide door plus — once decided — the reopen fix's spec.
-The reopen bug (pending 1) still needs its code-path diagnosis
-and the what-should-reopen-do decision; the deck decoupling
+The phone HOLDS the §22 end-state (Turn 13, Bob thinking, Ann
+😢, Dan 👋 over his dark column) — rebuilt by Patrick in #107,
+staged both for the reopen design's live testing and for §25
+later. The Log empty-state restyle and the single-tap decision
+still ride together (pending 2 and 3); the deck decoupling
 (pending 4) is designed and waiting.
 
 Standing habits and notes: after any HTML change, re-copy into the
@@ -130,35 +136,33 @@ waits until the free product is finished. At listing time: confirm
 - #104 (2026-07-17): §23 run (15/15 pass), settled, into the script — the docx at 221; the lettering find pinned (the Log's empty-state line); the reopen bug logged; both drafts deleted.
 - #105 (2026-07-18): pending.txt trimmed to glance-length; §24 drafted spec-first into s24-draft.md; the Feedback-modal redesign decided; the reopen bug grown; the deck decoupling decided.
 - #106 (2026-07-18): the Feedback modal rebuilt to spec and phone-verified; §24 run 15/15 and into the script — the docx at 236; rule 10 (ask, don't assume) into both CLAUDE.md files.
+- #107 (2026-07-18): the reopen bug diagnosed (three Setup-side mechanisms; mid-game path phone-proven good); the quit-clamp bug and the buried-direction spec fix found by Patrick's own testing; the phone staged with the §22 end-state; docs only, no code.
 
-## Next session's goal (#107, from #106)
+## Next session's goal (#108, from #107)
 
-**Finish the remaining code changes, spec-first (Patrick's #106
-ruling: every change lands in the spec so he verifies spec and
-code together), then test. In order of the pending queue: the
-reopen bug (pending 1) — code-path diagnosis first, then the
-what-should-reopen-do decision with Patrick, its spec written
-into the §25 draft, then the build; the Log empty-state restyle
-and the single-tap decision ride together (pending 2 and 3); the
-deck decoupling (pending 4) is designed and waiting — its build
-ripples into §23.15's assertions and the Guide's New section.
-Patrick rebuilds the phone and tests once the code round is
-done.** Then §25 needs the scripted-game state rebuilt. Still
-open from #87: the web SPEC doc (App-Docs
-`MysteryTracker-spec.md`) evaluated for a mobile edition
-(pending 6).
+**The items 1/3/4 DESIGN PROPOSAL, as one discussion: what
+reopen shows on the Setup side (the mid-game path is proven good
+and stays), how the reopen modals' buttons are guarded (their
+single-tap New Game buttons vs the in-game three-tap New — the
+Log empty-state restyle rides along, pending 2), and the deck
+decoupling's Same deck / New deck. Decisions first, then the
+spec (its home to be chosen — Patrick ruled NOT §25), then the
+build — spec-first per the #106 ruling. Patrick starts #108
+fresh after committing #107's docs; the phone is staged with the
+§22 end-state for live testing.** Then §25 (its game state is
+ready on the phone). Still open from #87: the web SPEC doc
+(App-Docs `MysteryTracker-spec.md`) evaluated for a mobile
+edition (pending 6).
 
-## Commit status (#106): Patrick's commits, when ready
+## Commit status (#107): Patrick's commits, when ready
 
-MysteryCluesTracker: mystery-clues-tracker.html + the wrapper's
-www/ copy (the modal rebuild, cmp-verified identical),
-docs/build-mcts-test.js (§24 in), docs/mcts-master-test.docx
-(regenerated, 236 steps), docs/pending.txt (item 2 closed,
-renumbered), docs/build-history.md (#106 section),
-docs/upgrade-scope.md (the modal bullet now BUILT), CLAUDE.md
-(rule 10); docs/s24-draft.md DELETED (Patrick). Anything of
-#103–#105's still uncommitted rides along. App-Docs:
-master-handoff.md (this refresh), CLAUDE.md (rule 10).
+DOCS ONLY — #107 changed no code. MysteryCluesTracker:
+docs/pending.txt (item 1 rewritten as diagnosed, item 5 trimmed
+of the §25-spec line, items 7–8 added, the staged-phone note),
+docs/build-history.md (#107 section). App-Docs:
+master-handoff.md (this refresh). Anything still uncommitted
+from #106 rides along (its list is in git history / the #106
+handoff version).
 
 ## Loose ends
 
