@@ -63,32 +63,31 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-17, session #104 — §23 run, settled, and in the script; the lettering find pinned; the reopen bug logged)
+## Where things stand (updated 2026-07-18, session #105 — pending.txt trimmed; §24 drafted spec-first; the modal redesign and deck decoupling decided; the reopen bug grown)
 
-**§23 New Game is SETTLED and IN THE SCRIPT (#104): all fifteen
-steps phone-run and passing. Three markups settled on the run —
-23.1 opens EMPTY (21.8's clear is the script's last Notepad
-touch), the keeper line is "Keep me", and 23.12 routes "Tap ←
-Setup, then Notes →" (the Log page has no Notes button). Pasted
-into build-mcts-test.js, the docx regenerated and verified
-row-for-row — the computed count reads 221. Both draft files
-(s22-draft.md, s23-draft.md) are DELETED. The "lettering too
-small" find is PINNED at last: the Log page's empty-state line,
-"No turns logged yet." — too small AND dull; restyle it in the
-next code-change session (pending.txt 3). NEW BUG logged
-(pending.txt 2): reopening the app from a not-Play-ready Setup
-landed on the GAME page — players, categories, and cards correct
-but no ✓ or ✗ anywhere; not investigated, and what reopen SHOULD
-do there is still open.**
+**§24 (Guide & 💬 Feedback) is DRAFTED AND SETTLED in
+docs/s24-draft.md — NOT yet in the script. It was written
+SPEC-FIRST at Patrick's ask: steps 4–12 describe the REDESIGNED
+Feedback modal (decided #105 — the draft doubles as the build
+spec: friendlier wording, equal-brightness answer buttons that
+brighten when picked, a thin rating slide that opens middle and
+emails "5. Rating: N%", the thank-you moved inside the modal).
+§24 enters build-mcts-test.js only after the modal is rebuilt
+and Patrick phone-runs the steps. pending.txt is trimmed to
+glance-length and rebuilt as a seven-item queue — its rule now
+explicit: it is PATRICK'S reminder list, items only, no process
+talk. The reopen bug GREW (pending 3): reopening from Setup
+after the Game page was visited also ERASES seated players, and
+none of these reopens fire the Welcome Back modal. NEW DESIGN
+decided (pending 6): the deck decouples from players — keeps
+as-left through Game→Setup and reopen; the New Game modal gains
+"Same deck" / "New deck" (ripples: §23.15's assertions, the
+Guide's New section).**
 
-The phone ends on 23.15's factory-fresh Setup ("Classic" and the
-keeper note surviving) — the scripted-game state is gone; §25
-(Welcome Back & resume) will need it rebuilt. pending.txt gained
-a housekeeping item (its WHERE THINGS STAND section needs a trim,
-in a docs session). Process note, Patrick's preference restated:
-new sections arrive the two-column §22 way — the whole draft in
-chat, marked up and phone-proven in ONE pass, not step-at-a-time
-feeding and never a separate second run; §24 starts so.
+The phone still sits on 23.15's factory-fresh Setup ("Classic"
+and the keeper note surviving); §25 (Welcome Back & resume)
+needs the scripted-game state rebuilt. The Game screen's own 📖
+Guide door rides along in §25 too — it needs a live game.
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -133,35 +132,33 @@ waits until the free product is finished. At listing time: confirm
 - #101–#102 (2026-07-16/17, cloud): run in the cloud by accident (≈15% Fable usage burned); the #100 docs refresh recovered and written; the §23 draft stayed chat-only and was lost with the cloud scroll-back; detail thin, honestly marked.
 - #103 (2026-07-17): §23 reconstructed at 15 steps (s23-draft.md); four modals given message lines, phone-verified; spec: ⚠ precaution, computed step count (206), 3.8/3.9/5.7/18.6 enriched, "The bottom strip shows:" convention; phone fresh-installed — game state to rebuild.
 - #104 (2026-07-17): §23 run (15/15 pass), settled, into the script — the docx at 221; the lettering find pinned (the Log's empty-state line); the reopen bug logged; both drafts deleted.
+- #105 (2026-07-18): pending.txt trimmed to glance-length; §24 drafted spec-first into s24-draft.md; the Feedback-modal redesign decided; the reopen bug grown; the deck decoupling decided.
 
-## Next session's goal (#105, from #104)
+## Next session's goal (#106, from #105)
 
-**Start with the pending.txt trim — WHERE THINGS STAND cut back
-to a short glance; the longer it waits the less valuable it
-becomes (Patrick, #104). Then §24 (Guide & 💬 Feedback), the §22
-way — the whole section as a two-column draft in chat, Patrick
-testing on the phone AS he marks it up: one pass, review and
-proving together, never twice. Then §25 (Welcome Back & resume;
-carries the single-tap observation; needs the scripted-game state
-rebuilt) if bandwidth. If it turns into a code-change session
-instead: the reopen bug, the lettering restyle, and the Welcome
-Back single-tap call (pending.txt 3–5; 4 and 5 attempted
-together).**
+**Rebuild the 💬 Feedback modal to s24-draft.md's build spec
+(pending 2), then Patrick phone-runs §24 and it goes into the
+script — draft file deleted, docx regenerated and verified. If
+bandwidth: the reopen-bug investigation (pending 3 — now three
+symptoms: wrong landing, erased players, no Welcome Back). If it
+becomes a bigger code session: the lettering restyle and the
+Welcome Back single-tap call ride together (pending 4 and 5);
+the deck decoupling (pending 6) is designed and waiting.**
 Still open from #87: the web SPEC doc (App-Docs
-`MysteryTracker-spec.md`) evaluated for a mobile edition.
+`MysteryTracker-spec.md`) evaluated for a mobile edition
+(pending 7).
 
-## Commit status (#104): Patrick's commits, when ready
+## Commit status (#105): Patrick's commits, when ready
 
-MysteryCluesTracker: docs/build-mcts-test.js +
-docs/mcts-master-test.docx (§23 in, 221 steps), docs/pending.txt
-(the three #104 items + renumbering), docs/build-history.md (#104
-section), plus the two draft deletions (docs/s22-draft.md,
-docs/s23-draft.md — already deleted by Patrick). Anything of
-#103's still uncommitted rides along (mystery-clues-tracker.html +
-the wrapper's www/ copy, docs/test-spec-styling.md,
-ContentView.swift, upgrade-scope.md; elderlyassistant and
-MysteryTracker CLAUDE.md). App-Docs: master-handoff.md (this
-refresh).
+MysteryCluesTracker: docs/pending.txt (the trim + the seven-item
+queue), docs/s24-draft.md (NEW), docs/build-history.md (#105
+section), docs/upgrade-scope.md (two #105 decision bullets),
+docs/test-spec-styling.md (the owner-only delivery-check line).
+Anything of #103–#104's still uncommitted rides along
+(docs/build-mcts-test.js + docs/mcts-master-test.docx,
+mystery-clues-tracker.html + the wrapper's www/ copy,
+ContentView.swift; elderlyassistant and MysteryTracker
+CLAUDE.md). App-Docs: master-handoff.md (this refresh).
 
 ## Loose ends
 
