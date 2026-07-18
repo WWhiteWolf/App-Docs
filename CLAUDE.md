@@ -40,3 +40,6 @@
    an app he already has open — Claude describes exactly what to do
    and lets him do it, instead of doing it with tool calls. Claude's
    file operations are expensive; Patrick's fingers are free.
+10. If unsure about something — what Patrick meant, where things
+    stand, what a result was — ASK him; don't assume and continue
+    (#106).
