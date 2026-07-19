@@ -63,40 +63,32 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-19, session #109 — the sibling modals built and browser-verified; §25 drafted, NOT run; the phone's state UNCONFIRMED)
+## Where things stand (updated 2026-07-19, session #110 — §25 settled and in the script; the wordings sweep done; the docx at 259)
 
-**The welcome-modal design wrapped (#109, detail in build-history
-"#109"): Welcome Back and New Game are SIBLINGS — both carry
-side-by-side Same/New Players and Same/New Deck rows, Close in
-the header, Cancel, and a two-tap Start New Game (replacing
-Done); Welcome Back alone keeps the three status lines and
-two-tap ▶ Continue Game. The button law: commit buttons
-two-tap, walk-away buttons one-tap. Cancel and Close are
-identical one-tap doors: nothing saved is touched and the app
-returns to where it was when closed — with no game underway
-that means a half-made Setup restored EXACTLY as left (names,
-deck, picked cards; Patrick's ruling — on the Cancel road it
-overrides #108's "the hand never returns to Setup";
-startNewGame now snapshots the Setup it builds to back it).
-Two touch irritations fixed: an armed "Sure?" button holds its
-size, and modal message lines keep their space reserved —
-nothing moves between taps. Patrick browser-verified it all;
-www/ diff-verified; the phone runs the #109 build.**
+**§25 (Welcome Back Modals & Resume After Kill) is SETTLED and
+IN THE SCRIPT (#110, detail in build-history "#110"): Patrick
+ran it on his phone as he reviewed the two-column draft; its
+one find — 25.12 names the "Classic" template chip among the
+restored features — is in. The draft's open questions closed:
+the §22 staged state is done with, and the "game underway but
+closed while on Setup" Cancel flavor is code-proven UNREACHABLE
+(every ← Setup road shuts mid-game; kills on panel screens
+restore to Game) — nothing to test. The docx went 236→258,
+row-for-row verified; s25-draft.md deleted.**
 
-**§25 is DRAFTED (MysteryCluesTracker/docs/s25-draft.md — 22
-steps from §24's factory-fresh end, rebuilding the game through
-the modal's own picks; presented two-column in chat) but NOT
-reviewed step-by-step and NOT run. CAUTION: the phone's saved
-state is UNCONFIRMED — the staged §22 end-state was cleared in
-\#109's staging confusion (Claude described §25's start three
-inconsistent ways; it cost Patrick two Xcode builds and three
-stagings). #110 opens the app and reads the Welcome Back status
-lines before believing anything.**
+**The wordings sweep is DONE (#110): 22.25–26, 23.4, 23.6–8,
+23.15 rewritten to the #109 sibling design (23.7 and 23.8 found
+stale beyond the pending list); the buried directions all moved
+to their Do columns — 22.24, 4.9, 5.4, and §6, where 6.7 split
+in two (§6 now runs 10 steps; 7.1 says "6.10"). The docx ends
+at 259 steps, every change verified row-for-row. The Guide's
+New section is rewritten in the app HTML, www/ diff-verified —
+it reaches the phone at Patrick's NEXT XCODE BUILD (the phone
+still runs the #109 build; its saved data is untouched by any
+of this).**
 
-Still open: the Log empty-state restyle; the stale modal
-wordings in the script (22.25–26, 23.4–6, 23.15 — code-verified
-pre-#108 text — plus the Guide's New section); the #107 finds
-(quit clamp, buried-directions sweep); the web-spec evaluation.
+Still open: the Log empty-state restyle (#104); the quit-clamp
+bug (#107); the web-spec evaluation (#87).
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -146,31 +138,29 @@ waits until the free product is finished. At listing time: confirm
 - #107 (2026-07-18): the reopen bug diagnosed (three Setup-side mechanisms; mid-game path phone-proven good); the quit-clamp bug and the buried-direction spec fix found by Patrick's own testing; the phone staged with the §22 end-state; docs only, no code.
 - #108 (2026-07-18): the reopen bug FIXED — the ONE Welcome Back modal built (status lines, greyed picks, two-tap Continue/Done), the deck decoupled (mctDeck), the New Game modal reworked, picks now save; pending 1/3/4 closed, browser- and phone-verified; two new finds logged (Cancel/Close, the fresh-install seam).
 - #109 (2026-07-19): the sibling modals designed and built (Cancel/Close, return-as-left restore, the two no-move fixes) — browser-verified, phone built; §25 drafted (s25-draft.md), not run; ended on a staging muddle — the phone's state unconfirmed.
+- #110 (2026-07-19): §25 settled and into the script (258); the wordings sweep + the buried directions — the docx at 259; the Guide's New section rewritten (awaits the Xcode build); the draft deleted.
 
-## Next session's goal (#110, from #109)
+## Next session's goal (#111, from #110 — Patrick named it)
 
-**First, verify the phone's true state — open the app and read
-the Welcome Back status lines; restage §25's doorstep if needed
-(cast and a 6-6-9 deck remembered, factory-fresh Setup
-showing). Then review §25 (s25-draft.md, three open questions
-at its top), run it on the phone, settle it, and put it in the
-script. In the same neighborhood: the stale modal wordings
-(22.25–26, 23.4–6, 23.15, the Guide's New section) and the Log
-empty-state restyle.** Still open from #87: the web SPEC doc
-(App-Docs `MysteryTracker-spec.md`) evaluated for a mobile
-edition. And from #107: the quit clamp, the buried-directions
-sweep.
+**Draft §26 — Wrapper Checks (portrait lock, dictation) —
+spec-first, the §22 pattern: Claude reads the real code and
+wrapper settings, proposes the section two-column in chat, and
+the wording settles with Patrick before anything lands.** Also
+in reach: Patrick's Xcode build carrying the Guide fix to the
+phone. Still open: the Log empty-state restyle (#104), the
+quit-clamp bug (#107), the web-spec evaluation (#87).
 
-## Commit status (#109): Patrick's commits, when ready
+## Commit status (#110): Patrick's commits, when ready
 
-MysteryCluesTracker: mystery-clues-tracker.html (the #109
-build), wrapper/MysteryCluesTrackSheet/MysteryCluesTrackSheet/
+MysteryCluesTracker: docs/build-mcts-test.js (§25 + the sweep),
+docs/mcts-master-test.docx (regenerated, 259 steps),
+mystery-clues-tracker.html (the Guide's New section),
+wrapper/MysteryCluesTrackSheet/MysteryCluesTrackSheet/
 www/mystery-clues-tracker.html (the verified copy),
-docs/s25-draft.md (NEW — stays until §25 settles),
-docs/pending.txt (reworked list), docs/build-history.md (#109
-section), docs/upgrade-scope.md (the #109 sibling-modal entry,
-now BUILT; the dust-list screen-field note updated). App-Docs:
-master-handoff.md (this refresh).
+docs/s25-draft.md (DELETED), docs/pending.txt (reworked),
+docs/build-history.md (#110 section), docs/upgrade-scope.md
+(the #110 ripple note). App-Docs: master-handoff.md (this
+refresh).
 
 ## Loose ends
 
