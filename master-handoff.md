@@ -63,32 +63,31 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-19, session #110 — §25 settled and in the script; the wordings sweep done; the docx at 259)
+## Where things stand (updated 2026-07-19, session #111 — §26 settled and in the script at 262; the quit road fixed twice; the phone CURRENT)
 
-**§25 (Welcome Back Modals & Resume After Kill) is SETTLED and
-IN THE SCRIPT (#110, detail in build-history "#110"): Patrick
-ran it on his phone as he reviewed the two-column draft; its
-one find — 25.12 names the "Classic" template chip among the
-restored features — is in. The draft's open questions closed:
-the §22 staged state is done with, and the "game underway but
-closed while on Setup" Cancel flavor is code-proven UNREACHABLE
-(every ← Setup road shuts mid-game; kills on panel screens
-restore to Game) — nothing to test. The docx went 236→258,
-row-for-row verified; s25-draft.md deleted.**
+**§26 (Wrapper Checks — Portrait Lock, Dictation) is SETTLED
+and IN THE SCRIPT (#111, detail in build-history "#111"): three
+lean steps at Patrick's direction — rotate, dictate, return.
+Patrick phone-proved both wrapper behaviors against the chat
+draft before it landed. The docx went 259→262, row-for-row
+verified out of the docx itself; drafted in chat — no draft
+file existed.**
 
-**The wordings sweep is DONE (#110): 22.25–26, 23.4, 23.6–8,
-23.15 rewritten to the #109 sibling design (23.7 and 23.8 found
-stale beyond the pending list); the buried directions all moved
-to their Do columns — 22.24, 4.9, 5.4, and §6, where 6.7 split
-in two (§6 now runs 10 steps; 7.1 says "6.10"). The docx ends
-at 259 steps, every change verified row-for-row. The Guide's
-New section is rewritten in the app HTML, www/ diff-verified —
-it reaches the phone at Patrick's NEXT XCODE BUILD (the phone
-still runs the #109 build; its saved data is untouched by any
-of this).**
+**The quit road's TWO pointer bugs are FIXED (#111): the #107
+bug (a quit on the quitter's own turn could seat a 😢 player
+as thinker — doRemovePlayer now runs advanceTurn's own 😢-skip
+at its landing spot) and an adjacent find fixed the same
+sitting (a quit on someone ELSE's turn shifted the pointer off
+the thinker — currentCol() is captured before the filter and
+re-pointed after). Also built #111: the Log empty-state line
+at 1rem keeping the placeholder look (#104 closed), and the
+∑ ✕ at 13px, was 9px. The phone is CURRENT: Patrick's Xcode
+build carried the whole batch plus #110's Guide fix, and he
+eye-checked the ∑ ✕ and the Log line on the phone — all good.
+Nothing waits on a build.**
 
-Still open: the Log empty-state restyle (#104); the quit-clamp
-bug (#107); the web-spec evaluation (#87).
+Still open: the Feedback-modal bug question (noted #111,
+session-sized); the web-spec evaluation (#87).
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -139,28 +138,25 @@ waits until the free product is finished. At listing time: confirm
 - #108 (2026-07-18): the reopen bug FIXED — the ONE Welcome Back modal built (status lines, greyed picks, two-tap Continue/Done), the deck decoupled (mctDeck), the New Game modal reworked, picks now save; pending 1/3/4 closed, browser- and phone-verified; two new finds logged (Cancel/Close, the fresh-install seam).
 - #109 (2026-07-19): the sibling modals designed and built (Cancel/Close, return-as-left restore, the two no-move fixes) — browser-verified, phone built; §25 drafted (s25-draft.md), not run; ended on a staging muddle — the phone's state unconfirmed.
 - #110 (2026-07-19): §25 settled and into the script (258); the wordings sweep + the buried directions — the docx at 259; the Guide's New section rewritten (awaits the Xcode build); the draft deleted.
+- #111 (2026-07-19): §26 settled, phone-proven, and into the script — the docx at 262; the quit road's two pointer fixes; the Log line and ∑ ✕ restyles; the Xcode build done — the phone current, all eye-checked.
 
-## Next session's goal (#111, from #110 — Patrick named it)
+## Next session's goal (#112, from #111 — Patrick named it)
 
-**Draft §26 — Wrapper Checks (portrait lock, dictation) —
-spec-first, the §22 pattern: Claude reads the real code and
-wrapper settings, proposes the section two-column in chat, and
-the wording settles with Patrick before anything lands.** Also
-in reach: Patrick's Xcode build carrying the Guide fix to the
-phone. Still open: the Log empty-state restyle (#104), the
-quit-clamp bug (#107), the web-spec evaluation (#87).
+**Draft §27 — Edge Cases & Input Limits — as much as is
+comfortable.** Still open: the Feedback-modal bug question
+(noted #111, session-sized — the question's wording, the modal
+edit, the email renumbering, a §24 wordings pass), and the
+web-spec evaluation (#87).
 
-## Commit status (#110): Patrick's commits, when ready
+## Commit status (#111): Patrick's commits, when ready
 
-MysteryCluesTracker: docs/build-mcts-test.js (§25 + the sweep),
-docs/mcts-master-test.docx (regenerated, 259 steps),
-mystery-clues-tracker.html (the Guide's New section),
-wrapper/MysteryCluesTrackSheet/MysteryCluesTrackSheet/
+MysteryCluesTracker: docs/build-mcts-test.js (§26),
+docs/mcts-master-test.docx (regenerated, 262 steps),
+mystery-clues-tracker.html (the quit fixes, the Log line, the
+∑ ✕), wrapper/MysteryCluesTrackSheet/MysteryCluesTrackSheet/
 www/mystery-clues-tracker.html (the verified copy),
-docs/s25-draft.md (DELETED), docs/pending.txt (reworked),
-docs/build-history.md (#110 section), docs/upgrade-scope.md
-(the #110 ripple note). App-Docs: master-handoff.md (this
-refresh).
+docs/pending.txt (reworked), docs/build-history.md (#111
+section). App-Docs: master-handoff.md (this refresh).
 
 ## Loose ends
 
