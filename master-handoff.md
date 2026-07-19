@@ -63,33 +63,37 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-18, session #107 — the reopen bug diagnosed, the mid-game path proven good, a new quit-clamp bug found; NO code touched)
+## Where things stand (updated 2026-07-18, session #108 — the reopen bug FIXED: the ONE Welcome Back modal built, browser- AND phone-verified)
 
-**The REOPEN BUG is DIAGNOSED (#107, code-verified, line numbers
-in build-history "#107"): three Setup-side mechanisms — the
-ghost game (New Game never resets the active-player list, so the
-next Setup edit saves an empty "game" and reopen's Continue
-opens a markless Game page); New Game's instant delete of the
-saved game with the player-name recovery unreachable (players
-erased, no modal); and the returning-modal's hand-wipe behind
-still-green chips. The MID-GAME path is proven GOOD on the phone
-— 22.25/22.26 with an hours-later reopen: Welcome Back, Continue
-restores exactly as left — so the fix scope is Setup-side ONLY.
-What reopen SHOULD do is still OPEN, and it is ONE design
-discussion with the tap-guard question and the deck decoupling
-(pending 1, 3, 4). The fix's spec home is still open — Patrick
-ruled it is NOT §25. Two NEW pending items from Patrick's own
-testing: the quit-clamp bug (quitting on your own turn can hand
-the turn to a 😢 player) and a spec fix (a direction buried at
-the tail of 22.24's long Make-sure, plus a sweep for siblings).
-#107 touched NO code — this refresh is docs only.**
+**Pending 1, 3 and 4 CLOSED in one build (#108, detail in
+build-history "#108"): Fresh Start stays, and every other open
+now gets ONE Welcome Back modal — three status lines ("You have
+a/no saved Game / Players / Deck"), two-tap ▶ Continue Game
+(locked without a game underway), Same/New Players and Same/New
+Deck picks (greyed when storage can't back them; never hidden —
+"consistency wins in an even battle"), and a two-tap Done. It
+replaced the old Welcome Back, the returning modal (bug c died
+with it), and the reopen silence. The deck is DECOUPLED (its own
+mctDeck record, riding the #82 bridge); the in-game New Game
+modal matches (pick rows + two-tap Start New Game — no
+single-tap new-game path remains, closing pending 3); the
+ghost game is fixed (New Game resets the active-player list);
+and picks now SAVE, so Continue means "exactly as left" with no
+exceptions — a half-made ask included (Patrick's consistency
+ruling). Patrick verified in three browsers and on the phone;
+the phone build is CURRENT. Key rulings: "saved game" = any
+snapshot, Setup included, but Continue keys on a game underway;
+Same Players seats NAMES ONLY — the hand never returns to
+Setup; §25 carries the Welcome Back modals' test. Two phone
+finds logged: the modal needs a Cancel and/or Close (pending 2,
+design before §25's test), and a fresh-install edge seam
+(nice-to-have note).**
 
-The phone HOLDS the §22 end-state (Turn 13, Bob thinking, Ann
-😢, Dan 👋 over his dark column) — rebuilt by Patrick in #107,
-staged both for the reopen design's live testing and for §25
-later. The Log empty-state restyle and the single-tap decision
-still ride together (pending 2 and 3); the deck decoupling
-(pending 4) is designed and waiting.
+The phone still HOLDS the §22 end-state (Turn 13, Bob thinking,
+Ann 😢, Dan 👋), staged for §25. Still open: the Log
+empty-state restyle (pending 1), the deck-decoupling ripples
+(§23.15's assertions + the Guide's New section, pending 4), and
+the #107 finds (quit clamp, buried-directions sweep).
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -137,32 +141,32 @@ waits until the free product is finished. At listing time: confirm
 - #105 (2026-07-18): pending.txt trimmed to glance-length; §24 drafted spec-first into s24-draft.md; the Feedback-modal redesign decided; the reopen bug grown; the deck decoupling decided.
 - #106 (2026-07-18): the Feedback modal rebuilt to spec and phone-verified; §24 run 15/15 and into the script — the docx at 236; rule 10 (ask, don't assume) into both CLAUDE.md files.
 - #107 (2026-07-18): the reopen bug diagnosed (three Setup-side mechanisms; mid-game path phone-proven good); the quit-clamp bug and the buried-direction spec fix found by Patrick's own testing; the phone staged with the §22 end-state; docs only, no code.
+- #108 (2026-07-18): the reopen bug FIXED — the ONE Welcome Back modal built (status lines, greyed picks, two-tap Continue/Done), the deck decoupled (mctDeck), the New Game modal reworked, picks now save; pending 1/3/4 closed, browser- and phone-verified; two new finds logged (Cancel/Close, the fresh-install seam).
 
-## Next session's goal (#108, from #107)
+## Next session's goal (#109, from #108)
 
-**The items 1/3/4 DESIGN PROPOSAL, as one discussion: what
-reopen shows on the Setup side (the mid-game path is proven good
-and stays), how the reopen modals' buttons are guarded (their
-single-tap New Game buttons vs the in-game three-tap New — the
-Log empty-state restyle rides along, pending 2), and the deck
-decoupling's Same deck / New deck. Decisions first, then the
-spec (its home to be chosen — Patrick ruled NOT §25), then the
-build — spec-first per the #106 ruling. Patrick starts #108
-fresh after committing #107's docs; the phone is staged with the
-§22 end-state for live testing.** Then §25 (its game state is
-ready on the phone). Still open from #87: the web SPEC doc
-(App-Docs `MysteryTracker-spec.md`) evaluated for a mobile
-edition (pending 6).
+**Wrap up the welcome-modal work: design the Welcome Back
+modal's Cancel and/or Close (pending 2 — Patrick's phone find:
+every exit is guarded and a made pick can't be cleared), and
+the Log empty-state restyle (pending 1). Then §25 — Welcome
+Back & resume — which now carries the Welcome Back modals' test
+plus the Game screen's 📖 Guide door; its game state (the §22
+end-state) is staged on the phone. The deck-decoupling ripples
+(§23.15's assertions, the Guide's New section — pending 4)
+belong in that same neighborhood.** Still open from #87: the
+web SPEC doc (App-Docs `MysteryTracker-spec.md`) evaluated for
+a mobile edition (pending 5).
 
-## Commit status (#107): Patrick's commits, when ready
+## Commit status (#108): Patrick's commits, when ready
 
-DOCS ONLY — #107 changed no code. MysteryCluesTracker:
-docs/pending.txt (item 1 rewritten as diagnosed, item 5 trimmed
-of the §25-spec line, items 7–8 added, the staged-phone note),
-docs/build-history.md (#107 section). App-Docs:
-master-handoff.md (this refresh). Anything still uncommitted
-from #106 rides along (its list is in git history / the #106
-handoff version).
+MysteryCluesTracker: mystery-clues-tracker.html (the #108
+build), wrapper/MysteryCluesTrackSheet/MysteryCluesTrackSheet/
+www/mystery-clues-tracker.html (the verified copy),
+docs/pending.txt (items 1/3/4 out, new items 2 and the edge
+seam in, renumbered 1–7), docs/build-history.md (#108 section),
+docs/upgrade-scope.md (deck bullet now BUILT; the unified-modal
+decision entry added). App-Docs: master-handoff.md (this
+refresh).
 
 ## Loose ends
 
