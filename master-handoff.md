@@ -63,31 +63,30 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-19, session #112 — the function appendix built; the Welcome Back modal removed BY DECISION, not yet built)
+## Where things stand (updated 2026-07-20, session #113 — the New Game modal settled; the Welcome Back removal scoped, NOT built)
 
-**The function appendix is BUILT and verified (#112):
-docs/mcts-function-appendix.md (MysteryCluesTracker) — all 108
-functions in 25 families, plain-word descriptions from a full
-code read (pass one), a coverage map against the script's 262
-steps, and a twelve-item §27 harvest (pass two). Every name
-machine-checked against the code, both directions clean. The
-appendix is a KEEPER (Patrick) — not a draft.**
+**#113 closed its goal, docs only — no code touched. The New
+Game modal is SETTLED: Patrick reviewed it on his phone —
+nothing changes. The one flagged question (a fresh-start road
+from Setup with no game underway) settled with it: NO new road;
+editing Setup by hand is the road. The open-as-left boot
+behavior stands as decided in #112.**
 
-**The Welcome Back modal is REMOVED BY DECISION (#112) — NOT
-YET BUILT. Full entry and the four-surface ledger (code / test
-spec / Guide / drafted-and-waiting) live in upgrade-scope.md.
-Born of the 1.9 find (the step predates #108's every-open
-modal) and Patrick's lived-with-it verdict — iOS restarts the
-idle app, so the modal fired on nearly every wake. The app
-will open silently, exactly as left; the New Game modal stays,
-its own decisions OPEN. Four #112 chat drafts (spec warnings +
-a Guide subsection) dissolved unbuilt with the decision.
-Nothing in the code changed in #112 — the phone stays current,
-no wrapper copy, no build pending.**
+**The Welcome Back removal is fully SCOPED (#113,
+Patrick-approved) — NOT YET BUILT. The scope lives in
+upgrade-scope.md's #112 entry (its closing block), drawn from a
+fresh code read: the comes-out list (modal block, six wm*
+functions, continueGame, wm state, the showWelcome boot line),
+the three boot landings loadState absorbs (keyed on the saved
+`screen` field), the untouched list, and the §25 / 22.25–26
+spec ripples. The build warrants a DEDICATED session (Patrick)
+— boot-path code, all landings verified in browser and on the
+phone. Nothing in the code changed in #112 or #113 — the phone
+stays current, no wrapper copy, no build pending.**
 
-Still open: the New Game modal's open decisions (#112, ahead
-of the removal); the Feedback-modal bug question (noted #111,
-session-sized); the web-spec evaluation (#87).
+Still open: the Feedback-modal bug question (noted #111,
+session-sized); the web-spec evaluation (#87). §27 drafting
+still waits behind the removal build, harvest in hand.
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -140,27 +139,32 @@ waits until the free product is finished. At listing time: confirm
 - #110 (2026-07-19): §25 settled and into the script (258); the wordings sweep + the buried directions — the docx at 259; the Guide's New section rewritten (awaits the Xcode build); the draft deleted.
 - #111 (2026-07-19): §26 settled, phone-proven, and into the script — the docx at 262; the quit road's two pointer fixes; the Log line and ∑ ✕ restyles; the Xcode build done — the phone current, all eye-checked.
 - #112 (2026-07-19): the function appendix built and verified (108 functions, coverage map, §27 harvest); the 1.9 find; the Welcome Back modal removal DECIDED, ledger in upgrade-scope.md — nothing built, no code touched.
+- #113 (2026-07-20): the New Game modal SETTLED (nothing changes; no new fresh-start road); the Welcome Back removal SCOPED into upgrade-scope.md from a fresh code read; build sized as a dedicated session — docs only, no code touched.
 
-## Next session's goal (#113, from #112 — proposed by Claude, Patrick-confirmed with the refresh go)
+## Next session's goal (#114, from #113 — sized with Patrick)
 
-**Settle the New Game modal's open decisions, then scope the
-Welcome Back removal — decisions before demolition.** §27
-drafting waits behind it, harvest in hand
-(docs/mcts-function-appendix.md, "The harvest"). Also still
-open: the Feedback-modal bug question (noted #111,
-session-sized), and the web-spec evaluation (#87).
+**BUILD the Welcome Back removal to the #113 scope
+(upgrade-scope.md, the removal-scope block): delete the modal
+and its seven functions, grow loadState's three landings,
+verify every landing in browser and on the phone, wrapper www/
+re-copy, Xcode build.** Then the §25 / 22.25–26 spec rewrite
+(silent reopens) if the session runs light — otherwise it's
+#115's. Also still open: the Feedback-modal bug question
+(noted #111, session-sized), and the web-spec evaluation (#87).
 
-## Commit status (#112): Patrick's commits, when ready
+## Commit status: Patrick's commits, when ready
 
-MysteryCluesTracker: docs/mcts-function-appendix.md (NEW —
-the appendix, both passes), docs/upgrade-scope.md (the #112
-removal entry + two superseded notes), docs/build-history.md
-(the #112 section), docs/pending.txt (refreshed — RETIRING:
-Patrick reads the docx only, so pending.docx is now THE pending
-list; #113 sweeps the pending.txt references and Patrick deletes
-the txt then), docs/pending.docx (NEW — the pending list, large
-type, refreshed each session end from now on). App-Docs:
-master-handoff.md (this refresh).
+Still uncommitted from #112 unless already done:
+MysteryCluesTracker docs/mcts-function-appendix.md (NEW) and
+the #112 refresh set — confirm with Patrick. From #113:
+MysteryCluesTracker docs/upgrade-scope.md (the New Game
+settlement + the removal-scope block), docs/build-history.md
+(the #113 section), docs/pending.docx (refreshed — THE pending
+list). pending.txt: references swept (#113, per the #112
+retirement — the only remaining mentions are historical lines
+in build-history and this file's index); Patrick deletes the
+txt after committing. App-Docs: master-handoff.md (this
+refresh).
 
 ## Loose ends
 
