@@ -63,30 +63,30 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-19, session #111 — §26 settled and in the script at 262; the quit road fixed twice; the phone CURRENT)
+## Where things stand (updated 2026-07-19, session #112 — the function appendix built; the Welcome Back modal removed BY DECISION, not yet built)
 
-**§26 (Wrapper Checks — Portrait Lock, Dictation) is SETTLED
-and IN THE SCRIPT (#111, detail in build-history "#111"): three
-lean steps at Patrick's direction — rotate, dictate, return.
-Patrick phone-proved both wrapper behaviors against the chat
-draft before it landed. The docx went 259→262, row-for-row
-verified out of the docx itself; drafted in chat — no draft
-file existed.**
+**The function appendix is BUILT and verified (#112):
+docs/mcts-function-appendix.md (MysteryCluesTracker) — all 108
+functions in 25 families, plain-word descriptions from a full
+code read (pass one), a coverage map against the script's 262
+steps, and a twelve-item §27 harvest (pass two). Every name
+machine-checked against the code, both directions clean. The
+appendix is a KEEPER (Patrick) — not a draft.**
 
-**The quit road's TWO pointer bugs are FIXED (#111): the #107
-bug (a quit on the quitter's own turn could seat a 😢 player
-as thinker — doRemovePlayer now runs advanceTurn's own 😢-skip
-at its landing spot) and an adjacent find fixed the same
-sitting (a quit on someone ELSE's turn shifted the pointer off
-the thinker — currentCol() is captured before the filter and
-re-pointed after). Also built #111: the Log empty-state line
-at 1rem keeping the placeholder look (#104 closed), and the
-∑ ✕ at 13px, was 9px. The phone is CURRENT: Patrick's Xcode
-build carried the whole batch plus #110's Guide fix, and he
-eye-checked the ∑ ✕ and the Log line on the phone — all good.
-Nothing waits on a build.**
+**The Welcome Back modal is REMOVED BY DECISION (#112) — NOT
+YET BUILT. Full entry and the four-surface ledger (code / test
+spec / Guide / drafted-and-waiting) live in upgrade-scope.md.
+Born of the 1.9 find (the step predates #108's every-open
+modal) and Patrick's lived-with-it verdict — iOS restarts the
+idle app, so the modal fired on nearly every wake. The app
+will open silently, exactly as left; the New Game modal stays,
+its own decisions OPEN. Four #112 chat drafts (spec warnings +
+a Guide subsection) dissolved unbuilt with the decision.
+Nothing in the code changed in #112 — the phone stays current,
+no wrapper copy, no build pending.**
 
-Still open: the Feedback-modal bug question (noted #111,
+Still open: the New Game modal's open decisions (#112, ahead
+of the removal); the Feedback-modal bug question (noted #111,
 session-sized); the web-spec evaluation (#87).
 
 Standing habits and notes: after any HTML change, re-copy into the
@@ -139,24 +139,28 @@ waits until the free product is finished. At listing time: confirm
 - #109 (2026-07-19): the sibling modals designed and built (Cancel/Close, return-as-left restore, the two no-move fixes) — browser-verified, phone built; §25 drafted (s25-draft.md), not run; ended on a staging muddle — the phone's state unconfirmed.
 - #110 (2026-07-19): §25 settled and into the script (258); the wordings sweep + the buried directions — the docx at 259; the Guide's New section rewritten (awaits the Xcode build); the draft deleted.
 - #111 (2026-07-19): §26 settled, phone-proven, and into the script — the docx at 262; the quit road's two pointer fixes; the Log line and ∑ ✕ restyles; the Xcode build done — the phone current, all eye-checked.
+- #112 (2026-07-19): the function appendix built and verified (108 functions, coverage map, §27 harvest); the 1.9 find; the Welcome Back modal removal DECIDED, ledger in upgrade-scope.md — nothing built, no code touched.
 
-## Next session's goal (#112, from #111 — Patrick named it)
+## Next session's goal (#113, from #112 — proposed by Claude, Patrick-confirmed with the refresh go)
 
-**Draft §27 — Edge Cases & Input Limits — as much as is
-comfortable.** Still open: the Feedback-modal bug question
-(noted #111, session-sized — the question's wording, the modal
-edit, the email renumbering, a §24 wordings pass), and the
-web-spec evaluation (#87).
+**Settle the New Game modal's open decisions, then scope the
+Welcome Back removal — decisions before demolition.** §27
+drafting waits behind it, harvest in hand
+(docs/mcts-function-appendix.md, "The harvest"). Also still
+open: the Feedback-modal bug question (noted #111,
+session-sized), and the web-spec evaluation (#87).
 
-## Commit status (#111): Patrick's commits, when ready
+## Commit status (#112): Patrick's commits, when ready
 
-MysteryCluesTracker: docs/build-mcts-test.js (§26),
-docs/mcts-master-test.docx (regenerated, 262 steps),
-mystery-clues-tracker.html (the quit fixes, the Log line, the
-∑ ✕), wrapper/MysteryCluesTrackSheet/MysteryCluesTrackSheet/
-www/mystery-clues-tracker.html (the verified copy),
-docs/pending.txt (reworked), docs/build-history.md (#111
-section). App-Docs: master-handoff.md (this refresh).
+MysteryCluesTracker: docs/mcts-function-appendix.md (NEW —
+the appendix, both passes), docs/upgrade-scope.md (the #112
+removal entry + two superseded notes), docs/build-history.md
+(the #112 section), docs/pending.txt (refreshed — RETIRING:
+Patrick reads the docx only, so pending.docx is now THE pending
+list; #113 sweeps the pending.txt references and Patrick deletes
+the txt then), docs/pending.docx (NEW — the pending list, large
+type, refreshed each session end from now on). App-Docs:
+master-handoff.md (this refresh).
 
 ## Loose ends
 
