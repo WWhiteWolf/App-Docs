@@ -63,39 +63,31 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-20, session #114 — the Welcome Back removal BUILT and phone-verified; PANEL WAKE decided, not built)
+## Where things stand (updated 2026-07-20, session #116 — the spec rewrite DONE; §27 drafting is next)
 
-**#114 closed its goal: the Welcome Back removal is BUILT to
-the #113 scope and fully verified — Firefox and Chrome
-(Patrick), the wrapper's www/ copy diff-verified, the Xcode
-build done, and the phone walk clean: from both Setup and Game,
-after a simple close, a phone lock, and a power cycle, the app
-wakes silently, exactly as left. One find rode along, judged
-in-scope: startNewGame carried a closeModal('modalWelcome')
-that would have crashed New Game once the modal div was gone —
-removed with the rest. firstLaunch is now written but never
-read; Patrick ruled it stays for now. The edge-seam pending
-item is believed closed by the removal — not separately
-re-tested. The phone is CURRENT.**
+**#116 closed its goal: the §25 / 22.25–26 SPEC REWRITE is DONE
+— docs only, no code touched, the phone still current as of
+#115. In build-mcts-test.js: 22.25–26 merged into one
+silent-reopen step, §23's banner repointed, 24.15 trimmed, and
+§25 replaced whole — "25 — Reopen — the App Wakes Where It Was
+Closed", 19 steps walking the wakes no-game side then game
+side: the half-made Setup, the half-made ask, all six panel
+wakes, the Feedback-modal close pinned (25.8–9), Patrick's
+25.18 logged-turn wake, and the 25.19 bridge keeping §26
+untouched. The docx regenerated at 258 steps and verified
+word-for-word against the settled draft. Ruled on the way:
+game underway × Setup has no road from the screen (New Game
+clears the game before Setup appears) — the spec tests the
+eight reachable landings; 1.9 stands untouched. Detail:
+build-history.md #116.**
 
-**PANEL WAKE is DECIDED (Patrick, #114) — NOT built: the app
-will wake exactly where it was closed, the three side pages
-(Log, Notes, Guide) included. Research-backed (Apple's
-state-restoration guidance, NN/g's interruption research,
-platform practice — Mail/Notes/Books). Entry and build sketch
-in upgrade-scope.md: snapshot on panel opens, persist
-lastScreen, loadState's landings grow to nine (first launch
-untouched), the parked Notes→Guide quirk (#98) gets settled on
-the way. Order settled by Patrick (#114): code first, THEN the
-spec — the §25 / 22.25–26 rewrite follows the panel-wake
-build.**
-
-Still open: the Feedback-modal bug question (noted #111,
-session-sized); the web-spec evaluation (#87); §27 drafting,
-harvest in hand. Small and parked: seven docx files got an
-in-file zoom of 125% (#114), but Patrick's opening app ignores
-the saved setting and the files' own font sizes differ —
-revisit some other time.
+Still open: §27 drafting — NEXT, #117 (harvest in hand,
+docs/mcts-function-appendix.md); the Feedback-modal bug
+question (noted #111, session-sized); the web-spec evaluation
+(#87). Small and parked: seven docx files got an in-file zoom
+of 125% (#114), but Patrick's opening app ignores the saved
+setting and the files' own font sizes differ — revisit some
+other time.
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -150,37 +142,32 @@ waits until the free product is finished. At listing time: confirm
 - #112 (2026-07-19): the function appendix built and verified (108 functions, coverage map, §27 harvest); the 1.9 find; the Welcome Back modal removal DECIDED, ledger in upgrade-scope.md — nothing built, no code touched.
 - #113 (2026-07-20): the New Game modal SETTLED (nothing changes; no new fresh-start road); the Welcome Back removal SCOPED into upgrade-scope.md from a fresh code read; build sized as a dedicated session — docs only, no code touched.
 - #114 (2026-07-20): the Welcome Back removal BUILT and phone-verified (close, lock, power cycle — both rooms); the startNewGame crash find removed in-scope; PANEL WAKE decided (research-backed), code-then-spec order set; seven docx zoomed 125% in-file (opening app ignores it — parked).
+- #115 (2026-07-20): PANEL WAKE built and phone-proven — nine landings, lastScreen in the snapshot, the #98 Notes→Guide settlement, the Feedback-modal close ruled Apple-consistent, and the boot-order ▶ Play leak (Patrick's phone find) guarded to Setup-only.
+- #116 (2026-07-20): the spec rewrite — §25 → the 19-step reopen walk, 22.25–26 merged; the docx at 258; the game-behind-Setup landing ruled unstageable (eight reachable); docs only, no code.
 
-## Next session's goal (#115, from #114 — sized with Patrick)
+## Next session's goal (#117, from #116)
 
-**BUILD PANEL WAKE: the app wakes exactly where it was closed —
-Log, Notes, and Guide included (upgrade-scope.md, the #114
-panel-wake entry). Snapshot on panel opens and the roads out,
-persist lastScreen in the mctGame record, grow loadState's
-landings to nine (first launch untouched), settle the parked
-Notes→Guide lastScreen quirk (#98) on the way; verify all nine
-landings in browser and on the phone; wrapper www/ re-copy;
-Xcode build.** THEN the spec: §25 / 22.25–26 rewritten once,
-against the final reopen behavior (Patrick, #114: code first,
-then spec and docs). Also still open: the Feedback-modal bug
-question (noted #111, session-sized), the web-spec evaluation
-(#87), and §27 drafting (harvest in hand).
+**DRAFT §27 — Edge Cases & Input Limits. Spec-first per the §22
+pattern (test-spec-styling.md "How a section is born"): read
+the real code paths, propose the section as a two-column draft
+in chat, Patrick marks it up, phone-prove what needs proving,
+then into build-mcts-test.js on his go. The candidate list —
+twelve untested corners — sits in
+docs/mcts-function-appendix.md; the script is
+docs/mcts-master-test.docx (258 steps; §27 and §28 are empty
+skeletons); styling rules in docs/test-spec-styling.md.** Also
+still open: the Feedback-modal bug question (noted #111,
+session-sized) and the web-spec evaluation (#87).
 
 ## Commit status: Patrick's commits, when ready
 
-Possibly still uncommitted from #112/#113 — confirm with
-Patrick: docs/mcts-function-appendix.md (NEW), the #112–#113
-refresh sets, pending.txt deletion after commit. From #114,
-MysteryCluesTracker: mystery-clues-tracker.html (the removal),
-wrapper .../www/mystery-clues-tracker.html (the diff-verified
-copy), docs/upgrade-scope.md (removal marked built + the
-panel-wake entry), docs/build-history.md (the #114 section),
-docs/pending.docx (refreshed + re-zoomed), and zoom-only
-touches to docs/mcts-master-test.docx and
-docs/mct-checklist-appendix.docx. App-Docs: master-handoff.md
-(this refresh), plus zoom-only touches to
-Publishing-Strategy.docx, My-Tools-and-Extensions.docx,
-mtr-master-test.docx, mtr-master-test-v2.docx.
+From #116 — MysteryCluesTracker: docs/build-mcts-test.js (the
+rewrite), docs/mcts-master-test.docx (regenerated, 258 steps),
+docs/upgrade-scope.md (two line-closes), docs/build-history.md
+(the #116 section), docs/pending.docx (refreshed). App-Docs:
+master-handoff.md (this refresh). Earlier sets possibly still
+uncommitted (#112–#115 files, pending.txt deletion after
+commit) — confirm with Patrick.
 
 ## Loose ends
 
