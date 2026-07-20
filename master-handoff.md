@@ -63,26 +63,29 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-20, session #116 — the spec rewrite DONE; §27 drafting is next)
+## Where things stand (updated 2026-07-20, session #117 — the §27 ground settled; the draft itself is next)
 
-**#116 closed its goal: the §25 / 22.25–26 SPEC REWRITE is DONE
-— docs only, no code touched, the phone still current as of
-#115. In build-mcts-test.js: 22.25–26 merged into one
-silent-reopen step, §23's banner repointed, 24.15 trimmed, and
-§25 replaced whole — "25 — Reopen — the App Wakes Where It Was
-Closed", 19 steps walking the wakes no-game side then game
-side: the half-made Setup, the half-made ask, all six panel
-wakes, the Feedback-modal close pinned (25.8–9), Patrick's
-25.18 logged-turn wake, and the 25.19 bridge keeping §26
-untouched. The docx regenerated at 258 steps and verified
-word-for-word against the settled draft. Ruled on the way:
-game underway × Setup has no road from the screen (New Game
-clears the game before Setup appears) — the spec tests the
-eight reachable landings; 1.9 stands untouched. Detail:
-build-history.md #116.**
+**#117 settled the GROUND for §27 — docs only, no code touched,
+the phone still current as of #115, the script and docx
+untouched at 258. The appendix's twelve-corner harvest was
+re-verified against today's code AND a full end-to-end read of
+all 258 steps (Patrick caught Claude leaning on the appendix's
+coverage map; the full read followed and corrected the list).
+The result, Patrick-agreed: SIXTEEN tests needed, two dropped
+(clearAllPlayers — dead code, nothing calls it; the private
+modals' fallback lists — unreachable from the screen, the
+guards refuse first), and one grown (after the THIRD pick,
+taps stop un-picking and Undo-between-commit-and-show is
+untested — folded into the un-pick test). Walking order
+settled: game-side edges first on §26's carried-in game, then
+Setup's caps, Reset no-op, and Play-gate refusals, closing
+with a game at a different category width. The appendix
+carries #117 correction notes; pending.docx refreshed (two of
+its new Nice-to-have lines are Patrick's own). Detail:
+build-history.md #117.**
 
-Still open: §27 drafting — NEXT, #117 (harvest in hand,
-docs/mcts-function-appendix.md); the Feedback-modal bug
+Still open: §27 DRAFTING — NEXT, #118 (the settled list and
+order live in build-history.md #117); the Feedback-modal bug
 question (noted #111, session-sized); the web-spec evaluation
 (#87). Small and parked: seven docx files got an in-file zoom
 of 125% (#114), but Patrick's opening app ignores the saved
@@ -144,30 +147,35 @@ waits until the free product is finished. At listing time: confirm
 - #114 (2026-07-20): the Welcome Back removal BUILT and phone-verified (close, lock, power cycle — both rooms); the startNewGame crash find removed in-scope; PANEL WAKE decided (research-backed), code-then-spec order set; seven docx zoomed 125% in-file (opening app ignores it — parked).
 - #115 (2026-07-20): PANEL WAKE built and phone-proven — nine landings, lastScreen in the snapshot, the #98 Notes→Guide settlement, the Feedback-modal close ruled Apple-consistent, and the boot-order ▶ Play leak (Patrick's phone find) guarded to Setup-only.
 - #116 (2026-07-20): the spec rewrite — §25 → the 19-step reopen walk, 22.25–26 merged; the docx at 258; the game-behind-Setup landing ruled unstageable (eight reachable); docs only, no code.
+- #117 (2026-07-20): the §27 ground settled — the harvest re-verified against code AND all 258 steps; sixteen tests + walking order agreed; clearAllPlayers and the popup fallbacks dropped (dead/unreachable); the after-the-3rd find; appendix corrected; docs only, no code.
 
-## Next session's goal (#117, from #116)
+## Next session's goal (#118, from #117)
 
-**DRAFT §27 — Edge Cases & Input Limits. Spec-first per the §22
-pattern (test-spec-styling.md "How a section is born"): read
-the real code paths, propose the section as a two-column draft
-in chat, Patrick marks it up, phone-prove what needs proving,
-then into build-mcts-test.js on his go. The candidate list —
-twelve untested corners — sits in
-docs/mcts-function-appendix.md; the script is
+**WRITE the §27 two-column draft in chat — Edge Cases & Input
+Limits — from the SETTLED sixteen-test list and walking order
+(build-history.md #117): game-side edges first on §26's
+carried-in game (Turn 2, Bob thinking, the small 27-card
+game), then Setup's caps, Reset no-op, and Play-gate refusals,
+closing with the different-category-width game. The §22
+pattern continues (test-spec-styling.md "How a section is
+born"): Patrick marks the draft up, phone-proves what needs
+proving, then it goes into build-mcts-test.js on his go —
+regenerate the docx and verify row-for-row. The script is
 docs/mcts-master-test.docx (258 steps; §27 and §28 are empty
-skeletons); styling rules in docs/test-spec-styling.md.** Also
-still open: the Feedback-modal bug question (noted #111,
-session-sized) and the web-spec evaluation (#87).
+skeletons).** Also still open: the Feedback-modal bug question
+(noted #111, session-sized) and the web-spec evaluation (#87).
 
 ## Commit status: Patrick's commits, when ready
 
-From #116 — MysteryCluesTracker: docs/build-mcts-test.js (the
-rewrite), docs/mcts-master-test.docx (regenerated, 258 steps),
-docs/upgrade-scope.md (two line-closes), docs/build-history.md
-(the #116 section), docs/pending.docx (refreshed). App-Docs:
-master-handoff.md (this refresh). Earlier sets possibly still
-uncommitted (#112–#115 files, pending.txt deletion after
-commit) — confirm with Patrick.
+From #117 — MysteryCluesTracker: docs/build-history.md (the
+#117 section), docs/mcts-function-appendix.md (the two
+corrections + harvest notes), docs/pending.docx (date line,
+WHAT'S NEXT 1 reworded, plus Patrick's own two Nice-to-have
+additions). App-Docs: master-handoff.md (this refresh). The
+script and docx were NOT touched in #117 — still the #116
+versions. Earlier sets possibly still uncommitted (#112–#116
+files, pending.txt deletion after commit) — confirm with
+Patrick.
 
 ## Loose ends
 
