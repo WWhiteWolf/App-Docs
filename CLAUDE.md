@@ -1,5 +1,6 @@
 # Session rules — read before anything else
 
+0. No shorthand orjargon speak in chat or specs. Write in full sentences.
 1. Read `session-start.md` in this folder, then `master-handoff.md`.
 2. Patrick's saved Cowork preferences ALWAYS apply: one question at a
    time; genuinely open questions — no button/boxed choices, no

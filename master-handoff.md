@@ -63,32 +63,34 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-20, session #118 — §27 Blocks 1–2 drafted; Block 1 settled)
+## Where things stand (updated 2026-07-21, session #119 — §27 Block 2 settled; the two closing games decided)
 
-**#118 drafted §27 in chat — docs only, no code touched, the
-phone still current as of #115, the script and docx untouched
-at 258. Every wording was code-verified first. Block 1
-(game-side edges, 30 steps) was drafted, Patrick-marked, and
-SETTLED: the banner leads with the exact turn bar plus a
-hand-stager note; "modal" per §19's precedent; the cell-note
-max moved to §19 as two agreed steps riding the same build;
-the no-new-❌s reasoning carries both halves. Two phone proofs
-the same night: the marquee message scrolls, and the private
-modals' empty Confirm refuses SILENTLY — the coded "Select a
-card" renders to a message line those modals lack (a find, not
-yet placed; fix would be code, none made). Block 2 (Setup:
-four caps, the Reset no-op in a fourth category, the four
-Play-gate refusals — 25 steps) is drafted and UNMARKED. The
-whole draft lives in MysteryCluesTracker/docs/s27-draft.md.
-test-spec-styling.md gained the chat-reporting shape
-(Opening/Bridge/Bullets) and chat-voice rules. Detail:
-build-history.md #118.**
+**#119 was docs only — no code touched, the phone current as of
+#115, the script and docx untouched at 258. Between #118 and
+#119 three session starts were deleted for rule-breaking; the
+files came through unharmed. Block 2 (Setup: the caps, the
+Reset no-op, the Play-gate refusals — 25 steps) was
+Patrick-marked, phone-run, and SETTLED into
+MysteryCluesTracker/docs/s27-draft.md. His marks: a fuller
+Start banner, a plain-speak pass over all 25 steps, a Clear
+wording fix, watch-the-bottom-strip precautions on four steps,
+and lead-Tap fixes on three. The CLOSING GAMES are DECIDED —
+both edges, not a choice: first the GAME OF MINIMUMS (2
+players, 2 categories, 12 cards — exactly Block 2's end state,
+no staging), then the BIG SHRINKING GAME, Patrick's idea (6
+players, 4 categories, 30 cards, 👋-quitting players one at a
+time to prove every count down to two; 👋 not 😢, so the ring
+truly shrinks). The old "width" label is retired — the plain
+name is the category count. Patrick added rule 0 to both
+CLAUDE.md files: no shorthand or jargon in chat or specs.
+pending.txt was refreshed from its #112 staleness; the
+test-spec INDEX (Patrick's ask) is logged there as item 2.
+Detail: build-history.md #119.**
 
-Still open: Block 2 MARKUP, the closing game's width (2 or 4 —
-#117 left it open; Block 2's end state tees up 2), and Block 3
-drafting — NEXT, #119; the invisible-message find's placement;
-the Feedback-modal bug question (noted #111, session-sized);
-the web-spec evaluation (#87). Small and parked: the "Every
+Still open: DRAFTING the two closing games — NEXT, #120; the
+invisible-message find's placement; the Feedback-modal bug
+question (noted #111, session-sized); the web-spec evaluation
+(#87); the test-spec index (#119). Small and parked: the "Every
 other cell is clean" gloss in 24.x/25.11 (Patrick: stays
 parked); the docx message-font distinction (a build-script
 styling discussion); the docx zoom quirk (#114).
@@ -150,48 +152,57 @@ waits until the free product is finished. At listing time: confirm
 - #116 (2026-07-20): the spec rewrite — §25 → the 19-step reopen walk, 22.25–26 merged; the docx at 258; the game-behind-Setup landing ruled unstageable (eight reachable); docs only, no code.
 - #117 (2026-07-20): the §27 ground settled — the harvest re-verified against code AND all 258 steps; sixteen tests + walking order agreed; clearAllPlayers and the popup fallbacks dropped (dead/unreachable); the after-the-3rd find; appendix corrected; docs only, no code.
 - #118 (2026-07-20): §27 Blocks 1–2 drafted in chat — Block 1 (30 steps) marked and SETTLED, Block 2 (25) unmarked, in docs/s27-draft.md; two phone proofs (marquee scrolls; empty Confirm silent — the invisible-message find); chat-style rules into test-spec-styling.md; docs only, no code.
+- #119 (2026-07-21): §27 Block 2 marked, phone-run, and SETTLED; the two closing games DECIDED (the game of minimums, then the big shrinking game); pending.txt refreshed; rule 0 (no shorthand) into both CLAUDE.md files; docs only, no code. (Three deleted session starts preceded it; files unharmed.)
 
-## Next session's goal (#119, from #118)
+## Next session's goal (#120, from #119)
 
-**MARK UP §27 Block 2 (Setup: the four caps, the Reset no-op,
-the Play-gate refusals — 25 steps, in
-MysteryCluesTracker/docs/s27-draft.md), DECIDE the closing
-game's width (2 or 4 — Block 2's end state tees up 2), then
-DRAFT Block 3 (the width game). When all of §27 settles: into
-build-mcts-test.js on Patrick's go — plus the §19 two-step
-addition in the draft file — regenerate the docx, verify
-row-for-row, delete s27-draft.md. §27 may split into more than
-one section if it runs big (Patrick, #118).** Also still open:
-the invisible "Select a card" find's placement (pending.docx
-candidate); the Feedback-modal bug question (noted #111,
-session-sized); the web-spec evaluation (#87).
+**DRAFT the game of minimums (2 players, 2 categories, 12
+cards) as §27's next block in
+MysteryCluesTracker/docs/s27-draft.md — spec-first; Patrick's
+phone already stands at its start (Block 2's end state, no
+staging needed). Patrick marks it up and phone-proves it. Then,
+if bandwidth permits, DRAFT the big shrinking game (6 players,
+4 categories, 30 cards, 👋-quitting down through every count) —
+it needs its own staging steps and names for the two new seats.
+When all of §27 settles: into build-mcts-test.js on Patrick's
+go — plus the §19 two-step addition in the draft file —
+regenerate the docx, verify row-for-row, delete s27-draft.md.
+§27 may split into more than one section if it runs big
+(Patrick, #118).** Also still open: the invisible "Select a
+card" find's placement (pending.docx candidate); the
+Feedback-modal bug question (noted #111, session-sized); the
+web-spec evaluation (#87); the test-spec index (Patrick, #119
+— pending.txt item 2).
 
-Opener note for Patrick to paste into #119:
+Opener note for Patrick to paste into #120:
 
-"MCTS #119 — mark up §27 Block 2, decide the closing game's
-width, draft Block 3. Connect App-Docs and
-MysteryCluesTracker. Read both CLAUDE.md files, session-start,
-the master hand-off, docs/test-spec-styling.md (note its new
-chat-reporting rules), docs/s27-draft.md (Block 1 settled at
-30 steps; Block 2 at 25 awaits my markup; the §19 addition and
-the open items are listed there), and build-history.md's #118
-section. Verify every wording against
-mystery-clues-tracker.html — never from memory. After Block 3
-settles, all of §27 plus the §19 addition go into
-build-mcts-test.js on my go — regenerate the docx and verify
-row-for-row. No code changes expected. One change at a time; I
-do all commits."
+"MCTS #120 — draft the game of minimums, then the big
+shrinking game if bandwidth permits. Connect App-Docs and
+MysteryCluesTracker. Read both CLAUDE.md files (note rule 0:
+no shorthand or jargon — full sentences), session-start, the
+master hand-off, docs/test-spec-styling.md, docs/s27-draft.md
+(Blocks 1–2 settled; the two closing games are decided and
+described at its top), and build-history.md's #119 section.
+Verify every wording against mystery-clues-tracker.html —
+never from memory. My phone stands at Block 2's end state,
+ready for the minimums game. After both games settle, all of
+§27 plus the §19 addition go into build-mcts-test.js on my go
+— regenerate the docx and verify row-for-row. No code changes
+expected. One change at a time; I do all commits."
 
 ## Commit status: Patrick's commits, when ready
 
-From #118 — MysteryCluesTracker: docs/test-spec-styling.md
-(the chat-reporting section + the scope-line stretch),
-docs/s27-draft.md (NEW), docs/build-history.md (the #118
-section). App-Docs: master-handoff.md (this refresh). The
-script and docx were NOT touched in #118 — still the #116
-versions at 258. pending.docx untouched (the new find's
-placement is Patrick's to decide). Earlier sets possibly
-still uncommitted (#112–#117 files) — confirm with Patrick.
+From #119 — MysteryCluesTracker: docs/s27-draft.md (Block 2
+settled + the closing-games decision), docs/pending.txt (the
+refresh), docs/build-history.md (the #119 section),
+docs/test-spec-styling.md (the break-lists-open rule, left by
+a deleted session start), CLAUDE.md (Patrick's rule 0).
+App-Docs: master-handoff.md (this refresh), CLAUDE.md
+(Patrick's rule 0). The script and docx were NOT touched in
+#119 — still the #116 versions at 258. pending.docx untouched
+(the new find's placement is Patrick's to decide). Earlier
+sets possibly still uncommitted (#112–#118 files) — confirm
+with Patrick.
 
 ## Loose ends
 
