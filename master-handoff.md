@@ -63,35 +63,35 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-22, session #121 — the game of minimums phone-run at 20 steps; the shrinking game moved whole to #122)
+## Where things stand (updated 2026-07-22, session #122 — the big shrinking game settled at 47 steps; ALL OF §27 COMPLETE)
 
-**#121 was docs only — no code touched, the phone current as of
-#115, the script and docx untouched at 258. The GAME OF
-MINIMUMS was PHONE-RUN: Patrick ran it as he verified, every
-make-sure matched the written word, and the block GREW to 20
-steps — step 4's Do gained its address ("In Ann's column"),
-and a new step 20 opens the Log, reads its seven entries
-newest-first, and returns by Game →. Its teaching line: a
-passed turn writes nothing to the Log. THE FIND (Patrick): a
-passed turn should leave at least a minimum line — pending.txt
-item 8, a code change for its own session. A CORRECTION:
-#120 called step 18's second `?` "its first appearance
-anywhere in the spec" — wrong; 15.2/15.6 (and 16.1) have
-proven it since #92; step 18 is a quiet re-proof. Mid-session,
-an ACCIDENTAL WRITE from the still-open #120 window rewrote
-all four session docs as though the run had happened in #120;
-Patrick's 12:12 commit held the true versions, and two
-`git restore` commands (his hands) brought everything back —
-close the old window before opening the next. Detail:
-build-history.md #121.**
+**#122 was docs only — no code touched, the phone current as of
+#115, the script and docx untouched at 258. The BIG SHRINKING
+GAME was designed, drafted, and PHONE-RUN in one session — the
+last piece of §27, which is now COMPLETE in s27-draft.md
+(Blocks 1–2, the game of minimums, and the shrinking game, all
+settled and phone-run; nothing in the script yet). The design:
+Eve and Faye take Seats 5 and 6; the envelope holds the last
+card of every category, Me the first; the board pair (Card 8,
+Extra 2) lives by the official two-player peek rule, scaled to
+six players; staging goes back to nothing by the New Players +
+New Deck road. Patrick's mid-run design rule: mark knowledge
+in the ∑ column when it arrives — ✕ every known hand, ⭐ each
+solution card at its earliest provable moment. The finale asks
+the envelope itself; the silence proves Card 9; every row ends
+named, thirty for thirty. Two code finds → pending items 9–10
+(the refusal message should name the column; the Player Out
+modal rides loose). A Card-5 fat-finger at Turn 1 was traced,
+ruled cosmetic, and documented — the run carried on. Detail:
+build-history.md #122.**
 
-Still open: the big shrinking game's drafting — NEXT, #122;
-the passed-turn minimum Log line (#121, pending.txt item 8);
-the invisible-message
-find's placement; the Feedback-modal bug question (noted #111,
-session-sized); the web-spec evaluation (#87); the test-spec
-index (#119). Small and parked: the "Every other cell is
-clean" gloss in 24.x/25.11 (Patrick: stays parked); the docx
+Still open: the §27 BUILD into the script — NEXT, #123; the
+passed-turn minimum Log line (#121, pending.txt item 8); the
+invisible-message find's placement; the Feedback-modal bug
+question (noted #111, session-sized); the web-spec evaluation
+(#87); the test-spec index (#119); the two new #122 code finds
+(pending items 9–10). Small and parked: the "Every other cell
+is clean" gloss in 24.x/25.11 (Patrick: stays parked); the docx
 message-font distinction (a build-script styling discussion);
 the docx zoom quirk (#114).
 
@@ -155,60 +155,57 @@ waits until the free product is finished. At listing time: confirm
 - #119 (2026-07-21): §27 Block 2 marked, phone-run, and SETTLED; the two closing games DECIDED (the game of minimums, then the big shrinking game); pending.txt refreshed; rule 0 (no shorthand) into both CLAUDE.md files; docs only, no code. (Three deleted session starts preceded it; files unharmed.)
 - #120 (2026-07-22): the game of minimums SETTLED at 19 steps on the two-player Clue-variant fiction (not yet phone-run); the appendix entries and the four-section split DECIDED; the Guide cleared for optional variants, two wordings settled for later; docs only, no code.
 - #121 (2026-07-22): the game of minimums PHONE-RUN and grown to 20 steps (the Log-check step); the passed-turn find (pending item 8); the second-`?` first-claim corrected (15.2/15.6 had it since #92); the accidental #120-window write repaired by Patrick's git restore; docs only, no code.
+- #122 (2026-07-22): the big shrinking game designed, drafted, phone-run, and SETTLED at 47 steps — §27 COMPLETE; Eve and Faye seated; the mark-knowledge-when-it-arrives rule; two code finds (pending 9–10); docs only, no code.
 
-## Next session's goal (#122, from #121)
+## Next session's goal (#123, from #122)
 
-**DISCUSS and DRAFT the big shrinking game (6 players, 4
-categories, 30 cards; 👋 quits one at a time to prove every
-player count down to two — 😢 stays in the showing ring, so
-only 👋 truly shrinks it, code line 1982) — the last piece of
-§27. It needs its own staging steps from New and names for the
-two new seats. Discussion first; drafting on Patrick's "Go?".
-When all of §27 settles: into build-mcts-test.js on Patrick's
-go — plus the §19 two-step addition in the draft file —
-regenerate the docx, verify row-for-row, delete s27-draft.md.
-At build time §27 becomes FOUR numbered sections and both
-closing games get face-up appendix entries (#120).** Also
-still open: the passed-turn minimum Log line (#121 —
-pending.txt item 8, a code change for its own session); the
-invisible "Select a card" find's placement
-(pending.docx candidate); the Feedback-modal bug question
-(noted #111, session-sized); the web-spec evaluation (#87);
-the test-spec index (Patrick, #119 — pending.txt item 2); the
-two Guide wordings and the smarter-messaging item (#120 —
-pending.txt items 6–7, code changes for their own session).
+**BUILD §27 into the test spec. All of §27 is settled and
+phone-run in docs/s27-draft.md — Blocks 1–2 (55 steps), the
+game of minimums (20), and the big shrinking game (47). On
+Patrick's go: the steps into build-mcts-test.js, PLUS the §19
+two-step addition in the draft file; §27 becomes FOUR numbered
+sections and both closing games get face-up appendix entries
+stating their fixed deals (#120); regenerate the docx, verify
+it row-for-row, then delete s27-draft.md.** Also still open:
+the passed-turn minimum Log line (pending item 8); the two
+#122 code finds (pending items 9–10); the invisible
+"Select a card" find's placement (pending.docx candidate); the
+Feedback-modal bug question (noted #111, session-sized); the
+web-spec evaluation (#87); the test-spec index (Patrick, #119
+— pending item 2); the two Guide wordings and the
+smarter-messaging item (#120 — pending items 6–7, code changes
+for their own session).
 
-Opener note for Patrick to paste into #122:
+Opener note for Patrick to paste into #123:
 
-"MCTS #122 — discuss and draft the big shrinking game, the
-last piece of §27. Connect App-Docs and MysteryCluesTracker.
-Read both CLAUDE.md files (note rule 0: no shorthand or jargon
-— full sentences), session-start, the master hand-off,
-docs/test-spec-styling.md, docs/s27-draft.md (Blocks 1–2 and
-the game of minimums are all settled and phone-run; the
-shrinking game's ground rules sit in the file's top matter),
-and build-history.md's #121 section. Verify every wording
-against mystery-clues-tracker.html — never from memory. The
-shrinking game needs its own staging from New, names for the
-two new seats, and 👋 quits one at a time down to two. We
-discuss the design first; drafting starts on my 'Go?'. If I
-tell you something you do not see, ask me why I said it before
-looking. No code changes expected. One change at a time; I do
-all commits."
+"MCTS #123 — build §27 into the test spec. Connect App-Docs
+and MysteryCluesTracker. Read both CLAUDE.md files (note rule
+0: no shorthand or jargon — full sentences), session-start,
+the master hand-off, docs/test-spec-styling.md, and
+docs/s27-draft.md — everything in it is settled and phone-run
+(#118–#122). The work: the steps into build-mcts-test.js plus
+the §19 two-step addition; §27 becomes four numbered sections;
+both closing games get appendix entries stating their fixed
+deals; regenerate the docx and verify it row-for-row against
+the draft before anything is deleted. Discuss the section
+numbering and appendix shape with me first; building starts on
+my 'Go?'. If I tell you something you do not see, ask me why I
+said it before looking. No app-code changes expected — the
+build script and docx only. One change at a time; I do all
+commits."
 
 ## Commit status: Patrick's commits, when ready
 
-From #121 — MysteryCluesTracker: docs/s27-draft.md (step 4's
-address, the new step 20, the 20-step status lines),
-docs/pending.txt (item 8 added; the standing lines
-refreshed), docs/build-history.md (the #121 section).
+From #122 — MysteryCluesTracker: docs/s27-draft.md (the
+47-step shrinking-game block, the top-matter and Open-section
+refresh), docs/pending.txt (items 9–10 added; the standing
+lines refreshed), docs/build-history.md (the #122 section).
 App-Docs: master-handoff.md (this refresh). Neither CLAUDE.md
 was touched this session. The script and docx were NOT
-touched in #121 — still the #116 versions at 258. The #120
-sets are COMMITTED (both repos, 12:12 today, confirmed by
-reading .git/logs — no git commands). pending.docx untouched
-(the invisible-message find's placement is Patrick's to
-decide).
+touched in #122 — still the #116 versions at 258. The #121
+sets' commit status is Patrick's to confirm. pending.docx
+untouched (the invisible-message find's placement is
+Patrick's to decide).
 
 ## Loose ends
 
