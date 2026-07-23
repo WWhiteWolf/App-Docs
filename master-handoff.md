@@ -63,37 +63,48 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-22, session #123 — §27 BUILT into the script; the spec's skeleton COMPLETE at 382 steps)
+## Where things stand (updated 2026-07-23, session #124 — code cleanup part one: items 2 and 5 BUILT; the messaging review's "Me" group BUILT and spec-aligned)
 
-**#123 was the BUILD — the test spec's skeleton is COMPLETE.
-The old §27 went into build-mcts-test.js as FOUR sections
-(27 game-side edges, 28 Setup caps and the Play gate, 29 the
-game of minimums, 30 the big shrinking game), with Appendices
-B and C stating the two closing games' fixed deals and the
-§19 addition landing as 19.9–19.10 (the six-character note
-test). The End of Pass placeholder was DROPPED (Patrick): the
-cover's self-counted "Step count: 382" already keeps the
-number honest, so the document ends at §30 on the shrinking
-game. The docx was regenerated and machine-verified
-row-for-row against the draft (248 cells; one quote-convention
-slip caught and fixed; six settled conversions).
-test-spec-styling.md now says 30 sections. s27-draft.md is
-handed to Patrick for deletion. pending.txt: item 1 closed,
-the list renumbered to nine, smarter messaging grown to a
-WHOLE-APP review (Patrick). The build script and docx only —
-no app code touched; the phone current as of #115. Detail:
-build-history.md #123.**
+**#124 built three packages, all browser-verified by Patrick.
+Item 2: the two private modals ("Which card did you show?",
+"What were you shown?") got their message lines — the
+empty-Confirm refusal "Select a card" now shows, white,
+buttons never moving; the stale #99 stylesheet comment
+corrected; spec steps 27.12/27.19 reworded. Item 5: both #120
+Guide wordings in (the 🏠 peeked-privately sentence; the
+hint-messages closing line); the spec quotes neither. Item 6
+OPENED: the full message catalog read from code; Patrick set
+three lenses (guide before the mistake; name the subject when
+known; "you" over "Me", case by case). Its "Me" group BUILT:
+three refusals speak to you as "you" ("You are asking — you
+cannot also show", "You have ❌ on all N asked cards — you
+cannot show", "You must show first — you have a confirmed
+card"), and the turn bar dropped " ... " for EVERY player and
+gained you-forms ("Turn 6 — You are thinking 🤔"). Decided,
+no code: the Log keeps "Me", "[card] — shown" stays nameless,
+the Play gate keeps its "Me". The spec aligned in-session:
+101 replacements across 99 rows, docx regenerated at 382,
+machine-verified row-for-row, zero residue. Patrick renamed
+the styling doc to chat&test-spec-styling.md; its report
+shape (Opening, Bridge, Bullets, lists broken open, changed
+text bold-italicized) is now standing law for every
+substantive chat reply. Detail: build-history.md #124.**
 
-Still open: the code-cleanup session — NEXT, #124 (pending
-items 5–9, with item 2's silent-modal fix an open rider); the
-test-spec index (pending item 1, Patrick #119); where the
-invisible "Select a card" find gets logged (pending item 2);
-the Feedback-modal bug question (noted #111, session-sized —
-pending item 3); the web-spec evaluation (#87 — pending item
-4). Small and parked: the "Every other cell is clean" gloss in
-24.x/25.11 (Patrick: stays parked); the docx message-font
-distinction (a build-script styling discussion); the docx zoom
-quirk (#114).
+**CAUTION — the HTML is AHEAD of the wrapper: no www/ copy,
+no Xcode build in #124. The phone still runs the #115 build.
+ONE wrapper-and-phone pass closes #125, covering both
+sessions' changes (Patrick's order).**
+
+Still open: the rest of the messaging review (pending item 4
+— the guide-before-the-mistake group and the name-the-subject
+lens); the passed-turn Log line (item 5); the mid-ask refusal
+naming its column (item 6); the Player Out modal (item 7,
+phone-only proof); the test-spec index (item 1, Patrick
+#119); the Feedback-modal bug question (item 2, noted #111);
+the web-spec evaluation (item 3, #87). Small and parked: the
+"Every other cell is clean" gloss in 24.x/25.11 (Patrick:
+stays parked); the docx message-font distinction (a
+build-script styling discussion); the docx zoom quirk (#114).
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -157,60 +168,43 @@ waits until the free product is finished. At listing time: confirm
 - #121 (2026-07-22): the game of minimums PHONE-RUN and grown to 20 steps (the Log-check step); the passed-turn find (pending item 8); the second-`?` first-claim corrected (15.2/15.6 had it since #92); the accidental #120-window write repaired by Patrick's git restore; docs only, no code.
 - #122 (2026-07-22): the big shrinking game designed, drafted, phone-run, and SETTLED at 47 steps — §27 COMPLETE; Eve and Faye seated; the mark-knowledge-when-it-arrives rule; two code finds (pending 9–10); docs only, no code.
 - #123 (2026-07-22): §27 BUILT into the script as §27–30 + Appendices B–C; §19's two steps in; End of Pass DROPPED; the docx at 382, machine-verified row-for-row; the draft handed to Patrick for deletion; no app code.
+- #124 (2026-07-23): code cleanup 1 of 2 — items 2 and 5 BUILT; the messaging review opened, its "Me" group BUILT (you-form refusals, the dotless turn bar) and spec-aligned (99 rows, docx at 382); all browser-verified; the styling doc renamed chat&test-spec-styling.md, its shape now law for all chat; the wrapper copy deliberately deferred to #125.
 
-## Next session's goal (#124, from #123)
+## Next session's goal (#125, from #124)
 
-**CODE CLEANUP — the banked code changes, plus the
-smarter-messaging review grown to the WHOLE APP (Patrick,
-#123). The pieces, from pending.txt: the whole-app messaging
-review (item 6 — read every message the app can show and,
-wherever the app already knows the answer, ask whether it
-could guide before the mistake instead of correcting after;
-the two #120 two-player candidates are examples, not the
-scope); the two Guide wordings (item 5, settled #120); the
-passed-turn minimum Log line (item 7); the mid-ask refusal
-naming its column (item 8); the loose Player Out modal
-(item 9). Item 2's silent-modal fix is an open rider — scope
-together at session start. Two standing cautions: the test
-spec quotes app messages word for word — §27–30 included — so
-every wording change needs a spec-alignment pass; and after
-any HTML change, re-copy into the wrapper's www/ folder,
-rebuild in Xcode, and verify on the phone.** Also still open:
-the test-spec index (pending item 1); the Feedback-modal bug
-question (item 3); the web-spec evaluation (item 4, #87).
+**CODE CLEANUP 2 of 2 — finish the messaging work, then the
+wrapper, in Patrick's order (#124): (1) the rest of the
+messaging review (pending item 4) — the
+guide-before-the-mistake group (the showing-phase guidance;
+the two #120 two-player hints are examples, not the scope;
+the dim-until-picked ideas for the Player Out and private
+modals) and the name-the-subject lens; (2) the passed-turn
+minimum Log line (item 5); (3) the mid-ask refusal naming its
+column (item 6); (4) the Player Out modal tightening (item
+7); (5) LAST, ONE wrapper-and-phone pass covering BOTH
+sessions' HTML — re-copy into the wrapper's www/ folder,
+rebuild in Xcode, verify on the phone — including item 7,
+provable only there. Standing caution: the spec quotes
+messages word for word (§27–30 included) — every wording
+change carries its spec-alignment pass and docx rebuild.**
 
-Opener note for Patrick to paste into #124:
-
-"MCTS #124 — code cleanup. Connect App-Docs and
-MysteryCluesTracker. Read both CLAUDE.md files (note rule 0:
-no shorthand or jargon — full sentences), session-start, the
-master hand-off, and docs/pending.txt items 5 through 9. The
-work: the smarter-messaging review for the WHOLE app (the two
-#120 candidates are examples, not the scope), the two Guide
-wordings, the passed-turn Log line, the refusal that names its
-column, and the Player Out modal; item 2's silent-modal fix
-may ride along — we scope that together first. Every message
-wording that changes in the app must be aligned in the test
-spec, which quotes messages word for word — sections 27–30
-included. After any HTML change: re-copy into the wrapper's
-www/ folder, rebuild in Xcode, and verify on the phone.
-Discuss the scope with me first; building starts on my 'Go?'.
-If I tell you something you do not see, ask me why I said it
-before looking. One change at a time; I do all commits."
+The opener note is handed to Patrick in chat at session end —
+not stored here (Patrick, #124).
 
 ## Commit status: Patrick's commits, when ready
 
-From #123 — MysteryCluesTracker: docs/build-mcts-test.js
-(§27–30 in, the two §19 steps, End of Pass removed,
-Appendices B and C), docs/mcts-master-test.docx (regenerated
-at 382 steps), docs/test-spec-styling.md (28 → 30 sections),
-docs/pending.txt (item 1 closed, renumbered to nine, item 6
-grown), docs/build-history.md (the #123 section). App-Docs:
-master-handoff.md (this refresh). Neither CLAUDE.md was
-touched this session. s27-draft.md's deletion is Patrick's
-by-hand step — once done, its removal rides his commit.
-pending.docx untouched (the invisible-message find's
-placement is still Patrick's to decide — pending item 2).
+From #124 — MysteryCluesTracker: mystery-clues-tracker.html
+(the two modal message lines, the corrected #99 comment, the
+two Guide wordings, the you-form refusals, the dotless
+you-form turn bar), docs/build-mcts-test.js (the two
+"Select a card" rows; the 99-row turn-bar alignment),
+docs/mcts-master-test.docx (regenerated twice, final at 382),
+docs/chat&test-spec-styling.md (renamed by Patrick from
+test-spec-styling.md; one closing rule added),
+docs/pending.txt (items 2 and 5 closed, renumbered to seven),
+docs/build-history.md (the #124 section). App-Docs:
+master-handoff.md (this refresh). Neither CLAUDE.md touched.
+pending.docx untouched.
 
 ## Loose ends
 
@@ -231,7 +225,7 @@ the finished session folded into ONE history-index line — plus the
 strategy doc's "Next session — start here" note and the active
 project's own docs. The refresh is discussed and gets Patrick's go
 like any other change (#79). Claude also scripts a short opener note
-for Patrick to paste into the next session — goal, what's decided,
-the reading list, and the working rules — as part of the refresh
-(Patrick, #114). Patrick commits (this repo and any project repos
+and hands it to Patrick in chat — goal, what's decided, the
+reading list, and the working rules — at session end
+(Patrick, #114/#124). Patrick commits (this repo and any project repos
 touched).
