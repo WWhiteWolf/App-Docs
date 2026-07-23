@@ -63,37 +63,37 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-22, session #122 — the big shrinking game settled at 47 steps; ALL OF §27 COMPLETE)
+## Where things stand (updated 2026-07-22, session #123 — §27 BUILT into the script; the spec's skeleton COMPLETE at 382 steps)
 
-**#122 was docs only — no code touched, the phone current as of
-#115, the script and docx untouched at 258. The BIG SHRINKING
-GAME was designed, drafted, and PHONE-RUN in one session — the
-last piece of §27, which is now COMPLETE in s27-draft.md
-(Blocks 1–2, the game of minimums, and the shrinking game, all
-settled and phone-run; nothing in the script yet). The design:
-Eve and Faye take Seats 5 and 6; the envelope holds the last
-card of every category, Me the first; the board pair (Card 8,
-Extra 2) lives by the official two-player peek rule, scaled to
-six players; staging goes back to nothing by the New Players +
-New Deck road. Patrick's mid-run design rule: mark knowledge
-in the ∑ column when it arrives — ✕ every known hand, ⭐ each
-solution card at its earliest provable moment. The finale asks
-the envelope itself; the silence proves Card 9; every row ends
-named, thirty for thirty. Two code finds → pending items 9–10
-(the refusal message should name the column; the Player Out
-modal rides loose). A Card-5 fat-finger at Turn 1 was traced,
-ruled cosmetic, and documented — the run carried on. Detail:
-build-history.md #122.**
+**#123 was the BUILD — the test spec's skeleton is COMPLETE.
+The old §27 went into build-mcts-test.js as FOUR sections
+(27 game-side edges, 28 Setup caps and the Play gate, 29 the
+game of minimums, 30 the big shrinking game), with Appendices
+B and C stating the two closing games' fixed deals and the
+§19 addition landing as 19.9–19.10 (the six-character note
+test). The End of Pass placeholder was DROPPED (Patrick): the
+cover's self-counted "Step count: 382" already keeps the
+number honest, so the document ends at §30 on the shrinking
+game. The docx was regenerated and machine-verified
+row-for-row against the draft (248 cells; one quote-convention
+slip caught and fixed; six settled conversions).
+test-spec-styling.md now says 30 sections. s27-draft.md is
+handed to Patrick for deletion. pending.txt: item 1 closed,
+the list renumbered to nine, smarter messaging grown to a
+WHOLE-APP review (Patrick). The build script and docx only —
+no app code touched; the phone current as of #115. Detail:
+build-history.md #123.**
 
-Still open: the §27 BUILD into the script — NEXT, #123; the
-passed-turn minimum Log line (#121, pending.txt item 8); the
-invisible-message find's placement; the Feedback-modal bug
-question (noted #111, session-sized); the web-spec evaluation
-(#87); the test-spec index (#119); the two new #122 code finds
-(pending items 9–10). Small and parked: the "Every other cell
-is clean" gloss in 24.x/25.11 (Patrick: stays parked); the docx
-message-font distinction (a build-script styling discussion);
-the docx zoom quirk (#114).
+Still open: the code-cleanup session — NEXT, #124 (pending
+items 5–9, with item 2's silent-modal fix an open rider); the
+test-spec index (pending item 1, Patrick #119); where the
+invisible "Select a card" find gets logged (pending item 2);
+the Feedback-modal bug question (noted #111, session-sized —
+pending item 3); the web-spec evaluation (#87 — pending item
+4). Small and parked: the "Every other cell is clean" gloss in
+24.x/25.11 (Patrick: stays parked); the docx message-font
+distinction (a build-script styling discussion); the docx zoom
+quirk (#114).
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -156,56 +156,61 @@ waits until the free product is finished. At listing time: confirm
 - #120 (2026-07-22): the game of minimums SETTLED at 19 steps on the two-player Clue-variant fiction (not yet phone-run); the appendix entries and the four-section split DECIDED; the Guide cleared for optional variants, two wordings settled for later; docs only, no code.
 - #121 (2026-07-22): the game of minimums PHONE-RUN and grown to 20 steps (the Log-check step); the passed-turn find (pending item 8); the second-`?` first-claim corrected (15.2/15.6 had it since #92); the accidental #120-window write repaired by Patrick's git restore; docs only, no code.
 - #122 (2026-07-22): the big shrinking game designed, drafted, phone-run, and SETTLED at 47 steps — §27 COMPLETE; Eve and Faye seated; the mark-knowledge-when-it-arrives rule; two code finds (pending 9–10); docs only, no code.
+- #123 (2026-07-22): §27 BUILT into the script as §27–30 + Appendices B–C; §19's two steps in; End of Pass DROPPED; the docx at 382, machine-verified row-for-row; the draft handed to Patrick for deletion; no app code.
 
-## Next session's goal (#123, from #122)
+## Next session's goal (#124, from #123)
 
-**BUILD §27 into the test spec. All of §27 is settled and
-phone-run in docs/s27-draft.md — Blocks 1–2 (55 steps), the
-game of minimums (20), and the big shrinking game (47). On
-Patrick's go: the steps into build-mcts-test.js, PLUS the §19
-two-step addition in the draft file; §27 becomes FOUR numbered
-sections and both closing games get face-up appendix entries
-stating their fixed deals (#120); regenerate the docx, verify
-it row-for-row, then delete s27-draft.md.** Also still open:
-the passed-turn minimum Log line (pending item 8); the two
-#122 code finds (pending items 9–10); the invisible
-"Select a card" find's placement (pending.docx candidate); the
-Feedback-modal bug question (noted #111, session-sized); the
-web-spec evaluation (#87); the test-spec index (Patrick, #119
-— pending item 2); the two Guide wordings and the
-smarter-messaging item (#120 — pending items 6–7, code changes
-for their own session).
+**CODE CLEANUP — the banked code changes, plus the
+smarter-messaging review grown to the WHOLE APP (Patrick,
+#123). The pieces, from pending.txt: the whole-app messaging
+review (item 6 — read every message the app can show and,
+wherever the app already knows the answer, ask whether it
+could guide before the mistake instead of correcting after;
+the two #120 two-player candidates are examples, not the
+scope); the two Guide wordings (item 5, settled #120); the
+passed-turn minimum Log line (item 7); the mid-ask refusal
+naming its column (item 8); the loose Player Out modal
+(item 9). Item 2's silent-modal fix is an open rider — scope
+together at session start. Two standing cautions: the test
+spec quotes app messages word for word — §27–30 included — so
+every wording change needs a spec-alignment pass; and after
+any HTML change, re-copy into the wrapper's www/ folder,
+rebuild in Xcode, and verify on the phone.** Also still open:
+the test-spec index (pending item 1); the Feedback-modal bug
+question (item 3); the web-spec evaluation (item 4, #87).
 
-Opener note for Patrick to paste into #123:
+Opener note for Patrick to paste into #124:
 
-"MCTS #123 — build §27 into the test spec. Connect App-Docs
-and MysteryCluesTracker. Read both CLAUDE.md files (note rule
-0: no shorthand or jargon — full sentences), session-start,
-the master hand-off, docs/test-spec-styling.md, and
-docs/s27-draft.md — everything in it is settled and phone-run
-(#118–#122). The work: the steps into build-mcts-test.js plus
-the §19 two-step addition; §27 becomes four numbered sections;
-both closing games get appendix entries stating their fixed
-deals; regenerate the docx and verify it row-for-row against
-the draft before anything is deleted. Discuss the section
-numbering and appendix shape with me first; building starts on
-my 'Go?'. If I tell you something you do not see, ask me why I
-said it before looking. No app-code changes expected — the
-build script and docx only. One change at a time; I do all
-commits."
+"MCTS #124 — code cleanup. Connect App-Docs and
+MysteryCluesTracker. Read both CLAUDE.md files (note rule 0:
+no shorthand or jargon — full sentences), session-start, the
+master hand-off, and docs/pending.txt items 5 through 9. The
+work: the smarter-messaging review for the WHOLE app (the two
+#120 candidates are examples, not the scope), the two Guide
+wordings, the passed-turn Log line, the refusal that names its
+column, and the Player Out modal; item 2's silent-modal fix
+may ride along — we scope that together first. Every message
+wording that changes in the app must be aligned in the test
+spec, which quotes messages word for word — sections 27–30
+included. After any HTML change: re-copy into the wrapper's
+www/ folder, rebuild in Xcode, and verify on the phone.
+Discuss the scope with me first; building starts on my 'Go?'.
+If I tell you something you do not see, ask me why I said it
+before looking. One change at a time; I do all commits."
 
 ## Commit status: Patrick's commits, when ready
 
-From #122 — MysteryCluesTracker: docs/s27-draft.md (the
-47-step shrinking-game block, the top-matter and Open-section
-refresh), docs/pending.txt (items 9–10 added; the standing
-lines refreshed), docs/build-history.md (the #122 section).
-App-Docs: master-handoff.md (this refresh). Neither CLAUDE.md
-was touched this session. The script and docx were NOT
-touched in #122 — still the #116 versions at 258. The #121
-sets' commit status is Patrick's to confirm. pending.docx
-untouched (the invisible-message find's placement is
-Patrick's to decide).
+From #123 — MysteryCluesTracker: docs/build-mcts-test.js
+(§27–30 in, the two §19 steps, End of Pass removed,
+Appendices B and C), docs/mcts-master-test.docx (regenerated
+at 382 steps), docs/test-spec-styling.md (28 → 30 sections),
+docs/pending.txt (item 1 closed, renumbered to nine, item 6
+grown), docs/build-history.md (the #123 section). App-Docs:
+master-handoff.md (this refresh). Neither CLAUDE.md was
+touched this session. s27-draft.md's deletion is Patrick's
+by-hand step — once done, its removal rides his commit.
+pending.docx untouched (the invisible-message find's
+placement is still Patrick's to decide — pending item 2).
 
 ## Loose ends
 
