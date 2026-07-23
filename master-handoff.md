@@ -63,45 +63,40 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-23, session #124 — code cleanup part one: items 2 and 5 BUILT; the messaging review's "Me" group BUILT and spec-aligned)
+## Where things stand (updated 2026-07-23, session #125 — code cleanup part two: the messaging review CLOSED, the game gained its ENDINGS, and the phone is CURRENT)
 
-**#124 built three packages, all browser-verified by Patrick.
-Item 2: the two private modals ("Which card did you show?",
-"What were you shown?") got their message lines — the
-empty-Confirm refusal "Select a card" now shows, white,
-buttons never moving; the stale #99 stylesheet comment
-corrected; spec steps 27.12/27.19 reworded. Item 5: both #120
-Guide wordings in (the 🏠 peeked-privately sentence; the
-hint-messages closing line); the spec quotes neither. Item 6
-OPENED: the full message catalog read from code; Patrick set
-three lenses (guide before the mistake; name the subject when
-known; "you" over "Me", case by case). Its "Me" group BUILT:
-three refusals speak to you as "you" ("You are asking — you
-cannot also show", "You have ❌ on all N asked cards — you
-cannot show", "You must show first — you have a confirmed
-card"), and the turn bar dropped " ... " for EVERY player and
-gained you-forms ("Turn 6 — You are thinking 🤔"). Decided,
-no code: the Log keeps "Me", "[card] — shown" stays nameless,
-the Play gate keeps its "Me". The spec aligned in-session:
-101 replacements across 99 rows, docx regenerated at 382,
-machine-verified row-for-row, zero residue. Patrick renamed
-the styling doc to chat&test-spec-styling.md; its report
-shape (Opening, Bridge, Bullets, lists broken open, changed
-text bold-italicized) is now standing law for every
-substantive chat reply. Detail: build-history.md #124.**
+**#125 closed all four pending items and built two features,
+everything browser- and phone-verified by Patrick. Item 4:
+dim-until-picked in all three modals (the private Confirms
+and Player Out's kind buttons rest half-bright until a pick;
+dim taps keep their spoken refusals); the showing-phase hint
+ruled left alone; "Nobody showed" ruled left alone. Item 5:
+a passed turn writes "Turn 5 — Ann passed" to the Log.
+Item 6: the mid-ask refusal names its column ("Select 4
+cards in Ann's column first"). Item 7: the Player Out modal
+no longer rubber-bands (one overscroll declaration, all
+modals, phone-proven). NEW — GAME OVER: the last live
+opponent leaving by either door (👋 or 😢) ends the game —
+frozen inputs that answer "Game over — tap New to start a
+new game", the bar at "Game over — you won"; Log, Notes,
+Guide, and New stay live. NEW — THE ACCUSATION FLOW: one ⭐
+in every category opens the ⭐ Accusation modal; "Were you
+right?" ends it won or lost, logged permanently, undoable
+(↩ Undo reopens the modal), surviving close-and-reopen; a
+second ⭐ in one category arms to "Sure?" with the warning
+inside the ∑ modal. Rulings: the zero-card quit is legal;
+😢 players don't count as alive. The spec tracked every
+change in-session — the docx is at 390 steps, each rebuild
+machine-verified row-for-row. The wrapper-and-phone pass
+closed the session: www/ diff-verified, Xcode build made,
+the full two-session checklist walked on the phone. Detail:
+build-history.md #125.**
 
-**CAUTION — the HTML is AHEAD of the wrapper: no www/ copy,
-no Xcode build in #124. The phone still runs the #115 build.
-ONE wrapper-and-phone pass closes #125, covering both
-sessions' changes (Patrick's order).**
-
-Still open: the rest of the messaging review (pending item 4
-— the guide-before-the-mistake group and the name-the-subject
-lens); the passed-turn Log line (item 5); the mid-ask refusal
-naming its column (item 6); the Player Out modal (item 7,
-phone-only proof); the test-spec index (item 1, Patrick
-#119); the Feedback-modal bug question (item 2, noted #111);
-the web-spec evaluation (item 3, #87). Small and parked: the
+Still open: the #126 goal below; the test-spec index (item
+1, Patrick #119); the Feedback-modal bug question (item 2,
+noted #111); the web-spec evaluation (item 3, #87); the
+mid-ask Next ▶ question (found #125 — it quietly abandons a
+half-made ask; unspecified, untested). Small and parked: the
 "Every other cell is clean" gloss in 24.x/25.11 (Patrick:
 stays parked); the docx message-font distinction (a
 build-script styling discussion); the docx zoom quirk (#114).
@@ -169,42 +164,43 @@ waits until the free product is finished. At listing time: confirm
 - #122 (2026-07-22): the big shrinking game designed, drafted, phone-run, and SETTLED at 47 steps — §27 COMPLETE; Eve and Faye seated; the mark-knowledge-when-it-arrives rule; two code finds (pending 9–10); docs only, no code.
 - #123 (2026-07-22): §27 BUILT into the script as §27–30 + Appendices B–C; §19's two steps in; End of Pass DROPPED; the docx at 382, machine-verified row-for-row; the draft handed to Patrick for deletion; no app code.
 - #124 (2026-07-23): code cleanup 1 of 2 — items 2 and 5 BUILT; the messaging review opened, its "Me" group BUILT (you-form refusals, the dotless turn bar) and spec-aligned (99 rows, docx at 382); all browser-verified; the styling doc renamed chat&test-spec-styling.md, its shape now law for all chat; the wrapper copy deliberately deferred to #125.
+- #125 (2026-07-23): code cleanup 2 of 2 — the messaging review CLOSED (dim-until-picked in three modals; two leave-alone rulings); the passed-turn Log line; the column-naming refusal; the modal rubber-band fix; GAME OVER and the ⭐ ACCUSATION FLOW built (Patrick's in-session design — endings, freeze, undoable accusation, 390-step spec); the wrapper-and-phone pass run — the phone CURRENT.
 
-## Next session's goal (#125, from #124)
+## Next session's goal (#126, from #125)
 
-**CODE CLEANUP 2 of 2 — finish the messaging work, then the
-wrapper, in Patrick's order (#124): (1) the rest of the
-messaging review (pending item 4) — the
-guide-before-the-mistake group (the showing-phase guidance;
-the two #120 two-player hints are examples, not the scope;
-the dim-until-picked ideas for the Player Out and private
-modals) and the name-the-subject lens; (2) the passed-turn
-minimum Log line (item 5); (3) the mid-ask refusal naming its
-column (item 6); (4) the Player Out modal tightening (item
-7); (5) LAST, ONE wrapper-and-phone pass covering BOTH
-sessions' HTML — re-copy into the wrapper's www/ folder,
-rebuild in Xcode, verify on the phone — including item 7,
-provable only there. Standing caution: the spec quotes
-messages word for word (§27–30 included) — every wording
-change carries its spec-alignment pass and docx rebuild.**
+**THE SPEC'S FUNCTION APPENDIX AND THE §30 CHECK (Patrick's
+order, #125): (1) move the function inventory
+(docs/mcts-function-appendix.md) into the test spec as an
+appendix, bring it current — nine #125 functions are missing
+(the game-over pair, the ∑ watcher family, the accusation
+flow) — and verify the new appendix; (2) a checking pass
+over §30's new stars-and-out steps (30.45–55); (3) then
+pending items 1 (the test-spec index) and 2 (the
+Feedback-modal bugs question) if bandwidth allows. Standing
+caution: the spec quotes messages word for word — every
+wording change carries its spec-alignment pass and docx
+rebuild, machine-verified.**
 
 The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
 
 ## Commit status: Patrick's commits, when ready
 
-From #124 — MysteryCluesTracker: mystery-clues-tracker.html
-(the two modal message lines, the corrected #99 comment, the
-two Guide wordings, the you-form refusals, the dotless
-you-form turn bar), docs/build-mcts-test.js (the two
-"Select a card" rows; the 99-row turn-bar alignment),
-docs/mcts-master-test.docx (regenerated twice, final at 382),
-docs/chat&test-spec-styling.md (renamed by Patrick from
-test-spec-styling.md; one closing rule added),
-docs/pending.txt (items 2 and 5 closed, renumbered to seven),
-docs/build-history.md (the #124 section). App-Docs:
-master-handoff.md (this refresh). Neither CLAUDE.md touched.
-pending.docx untouched.
+From #124–#125 — MysteryCluesTracker: mystery-clues-tracker.html
+(all #124 and #125 changes — the messaging work, the three
+dim-until-picked modals, the passed-turn Log line, the
+column-naming refusal, game over, the accusation flow, the
+overscroll fix), wrapper/MysteryCluesTrackSheet/
+MysteryCluesTrackSheet/www/mystery-clues-tracker.html (the
+diff-verified copy), docs/build-mcts-test.js (every #125
+alignment; §30's rebuilt tail), docs/mcts-master-test.docx
+(final at 390 steps), docs/chat&test-spec-styling.md (the
+#124 rule), docs/pending.txt (rewritten — items 4–7 closed,
+five items remain), docs/build-history.md (the #124 and #125
+sections), docs/upgrade-scope.md (the GAME ENDINGS entry).
+App-Docs: master-handoff.md (this refresh). Neither
+CLAUDE.md touched. pending.docx untouched. Xcode project:
+whatever the #125 build changed, if anything.
 
 ## Loose ends
 
