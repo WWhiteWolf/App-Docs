@@ -63,39 +63,41 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-23, session #127 — Appendix D BUILT, the mid-ask Next ▶ fix BUILT and phone-proven, steps 27.5–27.6 in; the docx at 400)
+## Where things stand (updated 2026-07-24, session #128 — the §31 pass CLEAN, the INDEX in, Appendix D reordered, pending brought current)
 
-**#127 built what #126 settled. APPENDIX D is in the test
-spec: the storage keys, the function list (108 entries, 26
-families, anchors refreshed from today's code), the
-two-column coverage map, and a written conclusion (Patrick's
-ask). Two NEW dead-code finds on the way — goBackFromPanel
-and pInitial are called by nothing (the #80 note was right;
-the draft's map rows for them were wrong) — Patrick's ruling
-"make them accurate": both now carry dead-code standing
-everywhere, six dead pieces total, all on pending's
-plain-speak removal note. THE MID-ASK NEXT ▶ FIX is BUILT
-and phone-proven: a half-made ask refuses Next ▶ with
-"Select 3 or 0 cards in Ann's column first" (live count,
-the asker's name; "Me's column" on your own turn — Patrick's
-rule: anything labeled Me says Me); the zero-pick pass
-untouched; wrapper copy diff-verified; Patrick's Xcode build
-and phone walk proved all faces. Steps 27.5–27.6 went in
-phone-proven (§27: 31 → 33; the follow-on step reworded to
-"Tap Card 21."), the appendix's §27 references swept by two.
-Verification both rebuilds: every typed map reference
-(451/453) checked against the computed numbering; the docx
-machine-verified row-for-row (398 then 400 rows, zero
-errors). The appendix-d-draft.md file is done — Patrick
-deletes it by hand. Detail: build-history.md #127.**
+**#128 closed both its goals and the doc side is quiet. THE
+§31 CHECKING PASS ran CLEAN: all seventeen steps of "31 —
+End of Game" (Patrick widened it from the eleven moved
+steps) checked wording-against-code, every quoted message
+read from mystery-clues-tracker.html — not one mismatch,
+nothing changed, no rebuild needed from the pass itself.
+THE INDEX is in the test spec (Patrick #119): computed from
+the sections array at build time — never typed — one line
+per section ("1 — First Launch, Steps 1–9") plus the four
+appendix titles, sitting between the ⚠ precaution and the
+table. APPENDIX D was reshaped on Patrick's review: renamed
+"The Coverage Map & Function List", the map now leads as
+Part 1, the function list follows as Part 2 opening with
+the storage keys; the conclusion unchanged. PENDING brought
+current both ways: pending.txt refreshed (#128 state, two
+next items), and the ten-sessions-stale pending.docx
+rebuilt from it, machine-checked line-for-line, its #114
+zoom setting dropped. Two items left pending BY DECISION:
+LANDSCAPE (already SETTLED portrait-only in upgrade-scope
+at #115 — the pending entry was stale) and the #98
+black-on-gold revisit (the Setup strip stays as built).
+Every docx rebuild machine-verified: 400 step rows
+word-for-word, zero errors, every time. No app code
+touched; the phone stays current at #127. Detail:
+build-history.md #128.**
 
-Still open: the #128 goal below; the test-spec index
-(Patrick #119); the Feedback-modal bug question (noted
-#111); the web-spec evaluation (#87). Small and parked: the
-"Every other cell is clean" gloss in 24.x/25.11 (Patrick:
-stays parked); the docx message-font distinction (a
-build-script styling discussion); the docx zoom quirk
-(#114).
+Still open: the #129 goal below; the Feedback-modal bug
+question (noted #111); the web-spec evaluation (#87). Small
+and parked: the "Every other cell is clean" gloss in
+24.x/25.11 (Patrick: stays parked); the docx
+message-font distinction (a build-script styling
+discussion). The #114 docx zoom quirk is DROPPED (Patrick,
+#128 — "totally").
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -163,41 +165,39 @@ waits until the free product is finished. At listing time: confirm
 - #125 (2026-07-23): code cleanup 2 of 2 — the messaging review CLOSED (dim-until-picked in three modals; two leave-alone rulings); the passed-turn Log line; the column-naming refusal; the modal rubber-band fix; GAME OVER and the ⭐ ACCUSATION FLOW built (Patrick's in-session design — endings, freeze, undoable accusation, 390-step spec); the wrapper-and-phone pass run — the phone CURRENT.
 - #126 (2026-07-23): the appendix SETTLED (Appendix D = list + two-column map, eight new functions not nine); §31 "End of Game" split out; six new tests placed and phone-proven; the mid-ask Next ▶ ruling ("Select 3 or 0…"); the docx at 398, machine-verified; docs and script only, no app code.
 - #127 (2026-07-23): Appendix D BUILT (list, map, conclusion; two dead-code finds made accurate); the mid-ask Next ▶ fix BUILT, phone-proven, steps 27.5–27.6 in with the §27 sweep; the docx at 400, machine-verified twice.
+- #128 (2026-07-24): the §31 pass CLEAN (17/17, widened from 11); the test-spec INDEX in (computed, never typed); Appendix D reordered — "The Coverage Map & Function List", map first; pending.txt and pending.docx brought current; landscape and the black-on-gold revisit closed by decision; no app code.
 
-## Next session's goal (#128, from #127)
+## Next session's goal (#129, from #128)
 
-**THE §31 CHECKING PASS (goal 2 of #126, twice deferred):
-the eleven moved steps (old 30.45–55, now §31) checked
-wording-against-code as their own pass — every quoted
-message read from mystery-clues-tracker.html, never from
-memory. Then pending item 2 (the test-spec index, Patrick
-#119) if bandwidth allows. Standing caution: the spec quotes
-messages word for word — every wording change carries its
-spec-alignment pass and docx rebuild, machine-verified, and
-the appendix's map references ride along with any
-renumbering.**
+**REVISIT PUBLISHING-STRATEGY.DOCX (the north star) — the
+publishing/business side — to see where the strategy stands
+now that the free mobile product's test doc is complete at
+§1–31/400 steps, and to set what comes next. A #129 session
+lives in App-Docs: connect App-Docs, read this file, then
+the strategy doc itself (its own "Start here" sync block
+applies). The strategy doc's "Next session — start here"
+note points at this goal (refreshed #128 — it had sat at
+#72). No app code is in scope.**
 
 The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
 
 ## Commit status: Patrick's commits, when ready
 
-From #124–#127 — MysteryCluesTracker: mystery-clues-tracker.html
-(#124/#125 changes; #127: the mid-ask Next ▶ refusal branch),
-wrapper/MysteryCluesTrackSheet/MysteryCluesTrackSheet/www/
-mystery-clues-tracker.html (the diff-verified copy),
-docs/build-mcts-test.js (#125 alignments; #126: the §31
-split and six new steps; #127: Appendix D and steps
-27.5–27.6 with the sweep), docs/mcts-master-test.docx
-(final at 400 steps, machine-verified),
-docs/chat&test-spec-styling.md (the #124 rule),
-docs/pending.txt (#127 rewrite), docs/build-history.md
-(#124–#127 sections), docs/upgrade-scope.md (GAME ENDINGS;
-MID-ASK NEXT ▶ now BUILT #127). Deleted by Patrick's hand:
-docs/appendix-d-draft.md (its work is done). App-Docs:
-master-handoff.md (this refresh). Neither CLAUDE.md touched.
-pending.docx and mcts-function-appendix.md untouched. Xcode
-project: whatever the #125/#127 builds changed, if anything.
+Committed by Patrick mid-#128: the index/Appendix D round —
+docs/build-mcts-test.js and docs/mcts-master-test.docx.
+Still uncommitted from #128 — MysteryCluesTracker:
+docs/pending.txt (the #128 rewrite, then the two
+dropped-by-decision removals), docs/pending.docx (rebuilt
+current from pending.txt — first touch since #117),
+docs/build-history.md (the #128 section),
+docs/session-start.md (the pending.docx session-end step),
+docs/upgrade-scope.md (the black-on-gold decision line).
+App-Docs: master-handoff.md (this refresh),
+Publishing-Strategy.docx (the "Next session — start here"
+note refreshed to #129). Neither CLAUDE.md touched.
+mcts-function-appendix.md untouched. No app code, no
+wrapper, no Xcode changes in #128.
 
 ## Loose ends
 
@@ -216,7 +216,9 @@ project: whatever the #125/#127 builds changed, if anything.
 Claude refreshes this file — "Where things stand" rewritten in place,
 the finished session folded into ONE history-index line — plus the
 strategy doc's "Next session — start here" note and the active
-project's own docs. The refresh is discussed and gets Patrick's go
+project's own docs. If pending.txt changed, pending.docx is rebuilt
+from it to match, machine-checked line-for-line (Patrick, #128).
+The refresh is discussed and gets Patrick's go
 like any other change (#79). Claude also scripts a short opener note
 and hands it to Patrick in chat — goal, what's decided, the
 reading list, and the working rules — at session end
