@@ -63,35 +63,42 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-24, session #128 — the §31 pass CLEAN, the INDEX in, Appendix D reordered, pending brought current)
+## Where things stand (updated 2026-07-24, session #129 — Publishing-Strategy.docx revisited and four stale spots fixed, the PWA loose end closed, ROADMAP.md created, the App Store Connect app record made)
 
-**#128 closed both its goals and the doc side is quiet. THE
-§31 CHECKING PASS ran CLEAN: all seventeen steps of "31 —
-End of Game" (Patrick widened it from the eleven moved
-steps) checked wording-against-code, every quoted message
-read from mystery-clues-tracker.html — not one mismatch,
-nothing changed, no rebuild needed from the pass itself.
-THE INDEX is in the test spec (Patrick #119): computed from
-the sections array at build time — never typed — one line
-per section ("1 — First Launch, Steps 1–9") plus the four
-appendix titles, sitting between the ⚠ precaution and the
-table. APPENDIX D was reshaped on Patrick's review: renamed
-"The Coverage Map & Function List", the map now leads as
-Part 1, the function list follows as Part 2 opening with
-the storage keys; the conclusion unchanged. PENDING brought
-current both ways: pending.txt refreshed (#128 state, two
-next items), and the ten-sessions-stale pending.docx
-rebuilt from it, machine-checked line-for-line, its #114
-zoom setting dropped. Two items left pending BY DECISION:
-LANDSCAPE (already SETTLED portrait-only in upgrade-scope
-at #115 — the pending entry was stale) and the #98
-black-on-gold revisit (the Setup strip stays as built).
-Every docx rebuild machine-verified: 400 step rows
-word-for-word, zero errors, every time. No app code
-touched; the phone stays current at #127. Detail:
-build-history.md #128.**
+**#129 revisited Publishing-Strategy.docx end to end, now that the
+free mobile product and its test doc are complete. Four stale spots
+were found and fixed: the leftover #72 "For Claude — read first"
+build-order block was retired (the #70 standing lesson about never
+giving directions for a screen Claude cannot see was kept, since it
+is also written into this file's own standing rules); product two's
+line in the four products list was renamed to Mystery Clues Track
+Sheet and its status updated to reflect the Xcode/WKWebView wrapper
+build rather than the old PWA plan; the two lanes sentence and the
+fork-in-the-road sentence were both corrected to the current name,
+and the two lanes sentence now notes that Mystery Clues Track Sheet
+goes through the App Store; and the rollout strategy section's
+"Mystery Tracker mobile" phrase, confirmed by Patrick to mean the
+same app, was renamed to match. The old #72 PWA re-upload loose end
+was chased down and closed: a real earlier PWA build exists, in its
+own project folder and on GitHub, confirmed by Patrick to be the old
+phone version and no longer needed. Three reference-only copies were
+deleted from App-Docs by Patrick: mtr-master-test-v2.docx,
+mtr-master-test.docx, and MysteryTracker-spec.md, each with its real
+copy confirmed living in the MysteryTracker folder. A new file,
+MysteryCluesTracker/docs/ROADMAP.md, now holds the ten remaining
+steps to the App Store, and the session then began working it
+directly: Patrick confirmed he already holds an Apple Developer
+Program account, and together we created the App Store Connect app
+record for Mystery Clues Track Sheet — step one of ten, done.
+Apple's Name field rejected the ✓ character, so the registered
+listing name is "Mystery Clues Track Sheet" without it, while the
+in-app title keeps the ✓ unchanged; pending.txt reflects this. Two
+Apple facts worth remembering: an app name, once its app record is
+created, is reserved across the whole App Store, not only within
+Patrick's own account; and a reserved name lapses after six months
+if no build is ever uploaded to it. No app code was touched.**
 
-Still open: the #129 goal below; the Feedback-modal bug
+Still open: the #130 goal below; the Feedback-modal bug
 question (noted #111); the web-spec evaluation (#87). Small
 and parked: the "Every other cell is clean" gloss in
 24.x/25.11 (Patrick: stays parked); the docx
@@ -104,8 +111,9 @@ wrapper's www/ and verify the copy matches exactly. Old/saved games
 don't exist and don't matter — no migration concerns, ever (#75).
 The free script doubles as the paid tier's future answer key (#90).
 The paid-tier design/build (upgrade-scope.md "Decided — session #76")
-waits until the free product is finished. At listing time: confirm
-"Mystery Clues Track Sheet" is available.
+waits until the free product is finished. The App Store listing name
+question is settled and the name is registered (#129) — see
+MysteryCluesTracker/docs/pending.txt and ROADMAP.md.
 
 ## Session history index (detail: the matching section in MysteryCluesTracker/docs/build-history.md)
 
@@ -166,38 +174,35 @@ waits until the free product is finished. At listing time: confirm
 - #126 (2026-07-23): the appendix SETTLED (Appendix D = list + two-column map, eight new functions not nine); §31 "End of Game" split out; six new tests placed and phone-proven; the mid-ask Next ▶ ruling ("Select 3 or 0…"); the docx at 398, machine-verified; docs and script only, no app code.
 - #127 (2026-07-23): Appendix D BUILT (list, map, conclusion; two dead-code finds made accurate); the mid-ask Next ▶ fix BUILT, phone-proven, steps 27.5–27.6 in with the §27 sweep; the docx at 400, machine-verified twice.
 - #128 (2026-07-24): the §31 pass CLEAN (17/17, widened from 11); the test-spec INDEX in (computed, never typed); Appendix D reordered — "The Coverage Map & Function List", map first; pending.txt and pending.docx brought current; landscape and the black-on-gold revisit closed by decision; no app code.
+- #129 (2026-07-24): Publishing-Strategy.docx revisited and four stale spots fixed (the #72 build-order block retired, product two's name and status, the two lanes sentence, the rollout strategy's old phrasing); the old PWA re-upload loose end chased down and closed; three reference-only files deleted from App-Docs; ROADMAP.md created; the App Store Connect app record for Mystery Clues Track Sheet created — step one of ten, registered without the ✓; no app code.
 
-## Next session's goal (#129, from #128)
+## Next session's goal (#130, from #129)
 
-**REVISIT PUBLISHING-STRATEGY.DOCX (the north star) — the
-publishing/business side — to see where the strategy stands
-now that the free mobile product's test doc is complete at
-§1–31/400 steps, and to set what comes next. A #129 session
-lives in App-Docs: connect App-Docs, read this file, then
-the strategy doc itself (its own "Start here" sync block
-applies). The strategy doc's "Next session — start here"
-note points at this goal (refreshed #128 — it had sat at
-#72). No app code is in scope.**
+**CONTINUE MYSTERYCLUESTRACKER/DOCS/ROADMAP.MD FROM STEP TWO —
+write and host a privacy policy at a public web address, and build
+a working Support URL, a real reachable page distinct from the
+in-app feedback button — since neither exists on elyfont.com today
+and both are required before the App Store listing can go further.
+A #130 session lives in MysteryCluesTracker: connect that folder,
+read ROADMAP.md, and pick up from step two. No app code is expected
+to be in scope.**
 
 The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
 
 ## Commit status: Patrick's commits, when ready
 
-Committed by Patrick mid-#128: the index/Appendix D round —
-docs/build-mcts-test.js and docs/mcts-master-test.docx.
-Still uncommitted from #128 — MysteryCluesTracker:
-docs/pending.txt (the #128 rewrite, then the two
-dropped-by-decision removals), docs/pending.docx (rebuilt
-current from pending.txt — first touch since #117),
-docs/build-history.md (the #128 section),
-docs/session-start.md (the pending.docx session-end step),
-docs/upgrade-scope.md (the black-on-gold decision line).
-App-Docs: master-handoff.md (this refresh),
-Publishing-Strategy.docx (the "Next session — start here"
-note refreshed to #129). Neither CLAUDE.md touched.
-mcts-function-appendix.md untouched. No app code, no
-wrapper, no Xcode changes in #128.
+Still uncommitted from #129 — App-Docs: master-handoff.md (this
+refresh), Publishing-Strategy.docx (the four stale-spot fixes: the
+retired For-Claude block, product two's line, the two lanes
+sentence, and the rollout strategy name fix), and the deletion of
+mtr-master-test-v2.docx, mtr-master-test.docx, and
+MysteryTracker-spec.md. MysteryCluesTracker: docs/pending.txt (the
+PWA loose end closed, the app-name correction), docs/ROADMAP.md (new
+file, step one marked done). Neither CLAUDE.md touched. No app code,
+no wrapper, no Xcode changes in #129 — the App Store Connect work
+happened directly in Patrick's Apple developer account, not through
+any repo.
 
 ## Loose ends
 
@@ -210,6 +215,15 @@ wrapper, no Xcode changes in #128.
 - App-Docs git status CONFIRMED (#97, by file-reading .git/logs —
   no git commands): the repo is real, 29 commits, current through
   "MCTS #96 post-gameplay code fixes warning text."
+- The old #72 PWA re-upload loose end is CLOSED (#129, Patrick): the
+  earlier PWA build of Mystery Clues Tracker is the old phone
+  version, from before the Xcode/WKWebView wrapper. Patrick
+  confirmed it is no longer needed or relevant. No re-upload, no
+  further action.
+- Three reference-only copies were deleted from App-Docs (#129,
+  Patrick): mtr-master-test-v2.docx, mtr-master-test.docx, and
+  MysteryTracker-spec.md. Each has its real, current copy living in
+  the MysteryTracker folder, so nothing was lost.
 
 ## At session end
 
