@@ -63,42 +63,39 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-23, session #126 — the appendix SETTLED, §31 "End of Game" split out, six new tests phone-proven; the docx at 398)
+## Where things stand (updated 2026-07-23, session #127 — Appendix D BUILT, the mid-ask Next ▶ fix BUILT and phone-proven, steps 27.5–27.6 in; the docx at 400)
 
-**#126 settled the whole function-appendix question and grew
-the spec, no app code touched. Appendix D holds BOTH the
-function list and the coverage map — the list as the map's
-counterpart checkpoint, the map the star, rendered as a
-two-column table (function | test steps). Brought current:
-EIGHT new #125 functions (not nine — there is no accuseWrong;
-accuseRight carries both endings), the Welcome Back seven
-deleted, the spent harvest section out, seven stale entries
-rewritten from today's code. The full draft lives in the #126
-chat; the BUILD into the script is #127's first job. The
-unwalked review resolved all seven items: five became steps,
-placed and PHONE-PROVEN in-session (the 😢 ending 31.15, the
-out-of-order "Tap Yes above first" 31.4, the quit-road freeze
-corners 27.31, the armed button's width in 23.6, offline
-26.4); "Nothing to undo" proved unreachable (dead branch —
-↩ Undo is pointer-dead whenever it could fire); and mid-ask
-Next ▶ got its RULING: wrong behavior, must refuse with
-"Select 3 or 0 cards in Ann's column first" — steps 27.5–27.6
-settled in chat, waiting on the fix (upgrade-scope has the
-ledger). §31 "End of Game" split out of §30 (old 30.45–55)
-with a five-step tail: the won ending UNDONE after a reopen,
-then Ann out by the 😢 door, the locked freeze, the ending
-surviving the close. §26 went screen-agnostic so its "No
-prep needed" banner stays true. The docx: 390 → 398 steps,
-31 sections, machine-verified row-for-row at every rebuild
-(398 rows, zero errors). Detail: build-history.md #126.**
+**#127 built what #126 settled. APPENDIX D is in the test
+spec: the storage keys, the function list (108 entries, 26
+families, anchors refreshed from today's code), the
+two-column coverage map, and a written conclusion (Patrick's
+ask). Two NEW dead-code finds on the way — goBackFromPanel
+and pInitial are called by nothing (the #80 note was right;
+the draft's map rows for them were wrong) — Patrick's ruling
+"make them accurate": both now carry dead-code standing
+everywhere, six dead pieces total, all on pending's
+plain-speak removal note. THE MID-ASK NEXT ▶ FIX is BUILT
+and phone-proven: a half-made ask refuses Next ▶ with
+"Select 3 or 0 cards in Ann's column first" (live count,
+the asker's name; "Me's column" on your own turn — Patrick's
+rule: anything labeled Me says Me); the zero-pick pass
+untouched; wrapper copy diff-verified; Patrick's Xcode build
+and phone walk proved all faces. Steps 27.5–27.6 went in
+phone-proven (§27: 31 → 33; the follow-on step reworded to
+"Tap Card 21."), the appendix's §27 references swept by two.
+Verification both rebuilds: every typed map reference
+(451/453) checked against the computed numbering; the docx
+machine-verified row-for-row (398 then 400 rows, zero
+errors). The appendix-d-draft.md file is done — Patrick
+deletes it by hand. Detail: build-history.md #127.**
 
-Still open: the #127 goal below; the test-spec index (item
-1, Patrick #119); the Feedback-modal bug question (item 2,
-noted #111); the web-spec evaluation (item 3, #87). Small
-and parked: the "Every other cell is clean" gloss in
-24.x/25.11 (Patrick: stays parked); the docx message-font
-distinction (a build-script styling discussion); the docx
-zoom quirk (#114).
+Still open: the #128 goal below; the test-spec index
+(Patrick #119); the Feedback-modal bug question (noted
+#111); the web-spec evaluation (#87). Small and parked: the
+"Every other cell is clean" gloss in 24.x/25.11 (Patrick:
+stays parked); the docx message-font distinction (a
+build-script styling discussion); the docx zoom quirk
+(#114).
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -165,47 +162,42 @@ waits until the free product is finished. At listing time: confirm
 - #124 (2026-07-23): code cleanup 1 of 2 — items 2 and 5 BUILT; the messaging review opened, its "Me" group BUILT (you-form refusals, the dotless turn bar) and spec-aligned (99 rows, docx at 382); all browser-verified; the styling doc renamed chat&test-spec-styling.md, its shape now law for all chat; the wrapper copy deliberately deferred to #125.
 - #125 (2026-07-23): code cleanup 2 of 2 — the messaging review CLOSED (dim-until-picked in three modals; two leave-alone rulings); the passed-turn Log line; the column-naming refusal; the modal rubber-band fix; GAME OVER and the ⭐ ACCUSATION FLOW built (Patrick's in-session design — endings, freeze, undoable accusation, 390-step spec); the wrapper-and-phone pass run — the phone CURRENT.
 - #126 (2026-07-23): the appendix SETTLED (Appendix D = list + two-column map, eight new functions not nine); §31 "End of Game" split out; six new tests placed and phone-proven; the mid-ask Next ▶ ruling ("Select 3 or 0…"); the docx at 398, machine-verified; docs and script only, no app code.
+- #127 (2026-07-23): Appendix D BUILT (list, map, conclusion; two dead-code finds made accurate); the mid-ask Next ▶ fix BUILT, phone-proven, steps 27.5–27.6 in with the §27 sweep; the docx at 400, machine-verified twice.
 
-## Next session's goal (#127, from #126)
+## Next session's goal (#128, from #127)
 
-**BUILD WHAT #126 SETTLED (Patrick's order, #126): (1) build
-Appendix D into the test spec — the function list and the
-two-column coverage map, exactly as drafted in the #126 chat
-(the draft is the law; the map's step numbers are typed into
-the appendix text, so they get a final check against the
-computed numbering) — docx rebuilt and machine-verified;
-(2) build the mid-ask Next ▶ fix ("Select 3 or 0 cards in
-Ann's column first", refuse and stand), then the wrapper www/
-copy diff-verified, Patrick's Xcode build and phone proof,
-then steps 27.5–27.6 into the script (they shift §27's
-later numbers by two — the appendix map's §27 references
-move with them); (3) the §31 checking pass — the eleven
-moved steps checked wording-against-code as their own pass;
-(4) pending item 1 (the test-spec index) if bandwidth
-allows. Standing caution: the spec quotes messages word for
-word — every wording change carries its spec-alignment pass
-and docx rebuild, machine-verified.**
+**THE §31 CHECKING PASS (goal 2 of #126, twice deferred):
+the eleven moved steps (old 30.45–55, now §31) checked
+wording-against-code as their own pass — every quoted
+message read from mystery-clues-tracker.html, never from
+memory. Then pending item 2 (the test-spec index, Patrick
+#119) if bandwidth allows. Standing caution: the spec quotes
+messages word for word — every wording change carries its
+spec-alignment pass and docx rebuild, machine-verified, and
+the appendix's map references ride along with any
+renumbering.**
 
 The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
 
 ## Commit status: Patrick's commits, when ready
 
-From #124–#126 — MysteryCluesTracker: mystery-clues-tracker.html
-(all #124 and #125 changes; #126 touched NO app code),
+From #124–#127 — MysteryCluesTracker: mystery-clues-tracker.html
+(#124/#125 changes; #127: the mid-ask Next ▶ refusal branch),
 wrapper/MysteryCluesTrackSheet/MysteryCluesTrackSheet/www/
 mystery-clues-tracker.html (the diff-verified copy),
 docs/build-mcts-test.js (#125 alignments; #126: the §31
-split, six new steps, the 23.6/26.x wordings, Patrick's
-30.9 cross-reference edit), docs/mcts-master-test.docx
-(final at 398 steps, machine-verified), docs/
-chat&test-spec-styling.md (the #124 rule), docs/pending.txt
-(#126 rewrite — six items), docs/build-history.md (#124,
-#125, and #126 sections), docs/upgrade-scope.md (GAME
-ENDINGS; the #126 MID-ASK NEXT ▶ entry). App-Docs:
+split and six new steps; #127: Appendix D and steps
+27.5–27.6 with the sweep), docs/mcts-master-test.docx
+(final at 400 steps, machine-verified),
+docs/chat&test-spec-styling.md (the #124 rule),
+docs/pending.txt (#127 rewrite), docs/build-history.md
+(#124–#127 sections), docs/upgrade-scope.md (GAME ENDINGS;
+MID-ASK NEXT ▶ now BUILT #127). Deleted by Patrick's hand:
+docs/appendix-d-draft.md (its work is done). App-Docs:
 master-handoff.md (this refresh). Neither CLAUDE.md touched.
 pending.docx and mcts-function-appendix.md untouched. Xcode
-project: whatever the #125 build changed, if anything.
+project: whatever the #125/#127 builds changed, if anything.
 
 ## Loose ends
 
