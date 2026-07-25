@@ -63,42 +63,38 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-24, session #129 — Publishing-Strategy.docx revisited and four stale spots fixed, the PWA loose end closed, ROADMAP.md created, the App Store Connect app record made)
+## Where things stand (updated 2026-07-24, session #130 — the privacy policy and Support pages written, published live, and saved into App Store Connect; roadmap steps two and three done)
 
-**#129 revisited Publishing-Strategy.docx end to end, now that the
-free mobile product and its test doc are complete. Four stale spots
-were found and fixed: the leftover #72 "For Claude — read first"
-build-order block was retired (the #70 standing lesson about never
-giving directions for a screen Claude cannot see was kept, since it
-is also written into this file's own standing rules); product two's
-line in the four products list was renamed to Mystery Clues Track
-Sheet and its status updated to reflect the Xcode/WKWebView wrapper
-build rather than the old PWA plan; the two lanes sentence and the
-fork-in-the-road sentence were both corrected to the current name,
-and the two lanes sentence now notes that Mystery Clues Track Sheet
-goes through the App Store; and the rollout strategy section's
-"Mystery Tracker mobile" phrase, confirmed by Patrick to mean the
-same app, was renamed to match. The old #72 PWA re-upload loose end
-was chased down and closed: a real earlier PWA build exists, in its
-own project folder and on GitHub, confirmed by Patrick to be the old
-phone version and no longer needed. Three reference-only copies were
-deleted from App-Docs by Patrick: mtr-master-test-v2.docx,
-mtr-master-test.docx, and MysteryTracker-spec.md, each with its real
-copy confirmed living in the MysteryTracker folder. A new file,
-MysteryCluesTracker/docs/ROADMAP.md, now holds the ten remaining
-steps to the App Store, and the session then began working it
-directly: Patrick confirmed he already holds an Apple Developer
-Program account, and together we created the App Store Connect app
-record for Mystery Clues Track Sheet — step one of ten, done.
-Apple's Name field rejected the ✓ character, so the registered
-listing name is "Mystery Clues Track Sheet" without it, while the
-in-app title keeps the ✓ unchanged; pending.txt reflects this. Two
-Apple facts worth remembering: an app name, once its app record is
-created, is reserved across the whole App Store, not only within
-Patrick's own account; and a reserved name lapses after six months
-if no build is ever uploaded to it. No app code was touched.**
+**#130 completed roadmap steps two and three. Two single-file pages
+were written into a new MysteryCluesTracker/store-pages/ folder:
+privacy-policy.html (the app collects no personal data of any kind;
+the one outside connection is the 💬 Feedback mailto, which only
+opens the user's own Mail app — nothing sends unless the user sends
+it; code-verified in-session) and support.html (contact:
+jojoMurphy@tuta.com — Patrick's choice, matching the app's feedback
+address and keeping his personal email off the public listing). By
+Patrick's decision the policy covers Mystery Clues Track Sheet ONLY —
+the web app writes its own policy when its own day comes. Patrick
+published both through the GitHub website upload into the public
+mystery-tracker repo (which serves all of elyfont.com, not just the
+web app); both pages were fetched and verified live word-for-word.
+A new MysteryCluesTracker/docs/DEPLOY.md documents how these pages
+publish, adapted from MysteryTracker's DEPLOY.md. Then, with Claude
+viewing Chrome and Patrick's hands doing the clicks and typing, both
+addresses were saved into App Store Connect: the Support URL on the
+version 1.0 page, the Privacy Policy URL on the App Privacy page —
+both verified on-screen after saving. Lesson learned there: Apple
+discards typed entries left unsaved, which is how Patrick's earlier
+entries had vanished. Working-rule reset mid-session (after one
+go-rule breach, honestly logged in build-history #130): Patrick says
+what gets done and Claude narrates before acting, always; the
+economy split — Patrick's fingers, Claude's checkpoints — held from
+there. The home-page-card idea (linking the two pages from
+elyfont.com's home) was raised and parked to the Loose ends below
+and pending.txt. No app code was touched; the phone stays current
+at #127.**
 
-Still open: the #130 goal below; the Feedback-modal bug
+Still open: the #131 goal below; the Feedback-modal bug
 question (noted #111); the web-spec evaluation (#87). Small
 and parked: the "Every other cell is clean" gloss in
 24.x/25.11 (Patrick: stays parked); the docx
@@ -175,34 +171,40 @@ MysteryCluesTracker/docs/pending.txt and ROADMAP.md.
 - #127 (2026-07-23): Appendix D BUILT (list, map, conclusion; two dead-code finds made accurate); the mid-ask Next ▶ fix BUILT, phone-proven, steps 27.5–27.6 in with the §27 sweep; the docx at 400, machine-verified twice.
 - #128 (2026-07-24): the §31 pass CLEAN (17/17, widened from 11); the test-spec INDEX in (computed, never typed); Appendix D reordered — "The Coverage Map & Function List", map first; pending.txt and pending.docx brought current; landscape and the black-on-gold revisit closed by decision; no app code.
 - #129 (2026-07-24): Publishing-Strategy.docx revisited and four stale spots fixed (the #72 build-order block retired, product two's name and status, the two lanes sentence, the rollout strategy's old phrasing); the old PWA re-upload loose end chased down and closed; three reference-only files deleted from App-Docs; ROADMAP.md created; the App Store Connect app record for Mystery Clues Track Sheet created — step one of ten, registered without the ✓; no app code.
+- #130 (2026-07-24): roadmap steps two and three DONE — privacy-policy.html and support.html written (store-pages/), published live on elyfont.com by Patrick, and saved into App Store Connect (Support URL on the version page, Privacy Policy URL on the App Privacy page); docs/DEPLOY.md created for this project; the separate-docs policy decision; the home-page-card idea parked; no app code.
 
-## Next session's goal (#130, from #129)
+## Next session's goal (#131, from #130)
 
-**CONTINUE MYSTERYCLUESTRACKER/DOCS/ROADMAP.MD FROM STEP TWO —
-write and host a privacy policy at a public web address, and build
-a working Support URL, a real reachable page distinct from the
-in-app feedback button — since neither exists on elyfont.com today
-and both are required before the App Store listing can go further.
-A #130 session lives in MysteryCluesTracker: connect that folder,
-read ROADMAP.md, and pick up from step two. No app code is expected
-to be in scope.**
+**CONTINUE MYSTERYCLUESTRACKER/DOCS/ROADMAP.MD FROM STEP FOUR —
+complete the App Privacy declarations inside the app record (the
+"Get Started" questionnaire on the App Privacy page; short for this
+app, since it collects nothing), with steps five (the age rating
+questionnaire) and six (the primary category) as natural companions
+if the session has room. All three happen inside App Store Connect
+in Patrick's Apple account; the working method settled #130 —
+Patrick's fingers, Claude narrating each step before it happens and
+watching checkpoints through Chrome. No app code is expected to be
+in scope.**
 
 The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
 
 ## Commit status: Patrick's commits, when ready
 
-Still uncommitted from #129 — App-Docs: master-handoff.md (this
-refresh), Publishing-Strategy.docx (the four stale-spot fixes: the
-retired For-Claude block, product two's line, the two lanes
-sentence, and the rollout strategy name fix), and the deletion of
-mtr-master-test-v2.docx, mtr-master-test.docx, and
-MysteryTracker-spec.md. MysteryCluesTracker: docs/pending.txt (the
-PWA loose end closed, the app-name correction), docs/ROADMAP.md (new
-file, step one marked done). Neither CLAUDE.md touched. No app code,
-no wrapper, no Xcode changes in #129 — the App Store Connect work
-happened directly in Patrick's Apple developer account, not through
-any repo.
+From #130 — App-Docs: master-handoff.md (this refresh, plus the
+new Loose-ends bullet). MysteryCluesTracker: store-pages/
+privacy-policy.html and store-pages/support.html (new),
+docs/DEPLOY.md (new), docs/ROADMAP.md (steps two and three marked
+done), docs/build-history.md (the #130 section), docs/pending.txt
+(header line, the parked home-page-card bullet), docs/pending.docx
+(rebuilt to match). Possibly still uncommitted from #129 — App-Docs:
+Publishing-Strategy.docx (the four stale-spot fixes) and the
+deletion of mtr-master-test-v2.docx, mtr-master-test.docx, and
+MysteryTracker-spec.md — confirm with git before committing. Neither
+CLAUDE.md touched. No app code, no wrapper, no Xcode changes in
+#130 — the App Store Connect entries live in Patrick's Apple
+account, not in any repo; the two pages' LIVE copies live in the
+public mystery-tracker GitHub repo, uploaded by Patrick #130.
 
 ## Loose ends
 
@@ -224,6 +226,11 @@ any repo.
   Patrick): mtr-master-test-v2.docx, mtr-master-test.docx, and
   MysteryTracker-spec.md. Each has its real, current copy living in
   the MysteryTracker folder, so nothing was lost.
+- elyfont.com home page: add a Mystery Clues Track Sheet card linking
+  privacy-policy.html and support.html (both pages live as of #130,
+  unlinked from the home page). Deferred by Patrick, #130 — pairs
+  naturally with fixing the home card's book-reading mis-description
+  (the loose end above).
 
 ## At session end
 
