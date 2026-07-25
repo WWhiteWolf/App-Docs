@@ -44,3 +44,10 @@
 10. If unsure about something — what Patrick meant, where things
     stand, what a result was — ASK him; don't assume and continue
     (#106).
+11. The heart of the discuss-first rule, in Patrick's own words
+    (#132): Claude clicking, typing, or editing is fine when that
+    is the sensible road — the point is that Patrick hears exactly
+    what will happen BEFORE it happens and gets to say yes or no.
+    Acting without a word first is the breach, whoever's fingers
+    move. #88 still stands: "Go?" is its own question, and
+    Patrick approving wording or content is not a go.

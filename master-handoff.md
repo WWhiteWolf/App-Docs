@@ -63,44 +63,47 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-24, session #130 — the privacy policy and Support pages written, published live, and saved into App Store Connect; roadmap steps two and three done)
+## Where things stand (updated 2026-07-25, session #132 — roadmap step seven done: the store screenshots uploaded; the Log shower line rebuilt)
 
-**#130 completed roadmap steps two and three. Two single-file pages
-were written into a new MysteryCluesTracker/store-pages/ folder:
-privacy-policy.html (the app collects no personal data of any kind;
-the one outside connection is the 💬 Feedback mailto, which only
-opens the user's own Mail app — nothing sends unless the user sends
-it; code-verified in-session) and support.html (contact:
-jojoMurphy@tuta.com — Patrick's choice, matching the app's feedback
-address and keeping his personal email off the public listing). By
-Patrick's decision the policy covers Mystery Clues Track Sheet ONLY —
-the web app writes its own policy when its own day comes. Patrick
-published both through the GitHub website upload into the public
-mystery-tracker repo (which serves all of elyfont.com, not just the
-web app); both pages were fetched and verified live word-for-word.
-A new MysteryCluesTracker/docs/DEPLOY.md documents how these pages
-publish, adapted from MysteryTracker's DEPLOY.md. Then, with Claude
-viewing Chrome and Patrick's hands doing the clicks and typing, both
-addresses were saved into App Store Connect: the Support URL on the
-version 1.0 page, the Privacy Policy URL on the App Privacy page —
-both verified on-screen after saving. Lesson learned there: Apple
-discards typed entries left unsaved, which is how Patrick's earlier
-entries had vanished. Working-rule reset mid-session (after one
-go-rule breach, honestly logged in build-history #130): Patrick says
-what gets done and Claude narrates before acting, always; the
-economy split — Patrick's fingers, Claude's checkpoints — held from
-there. The home-page-card idea (linking the two pages from
-elyfont.com's home) was raised and parked to the Loose ends below
-and pending.txt. No app code was touched; the phone stays current
-at #127.**
+**#132 completed roadmap step seven. Apple's requirements were
+verified against Apple's own specification page: only the 6.9-inch
+display class is required, and the iPhone 16 Pro Max's native
+1320 × 2868 screenshots fit it unaltered. Patrick's first set was
+caught by the standing Clue caution — it showed the default
+three-category 6/6/9 deck, the famous game's exact shape, on a
+public surface the caution names — so everything was reshot on a
+9/9/9/3 four-category deck with real shrinking-game turns. Seven
+screenshots were uploaded by Patrick's own drag into Media
+Manager's 6.9-inch slot, in his settled order: Game, Setup, Log,
+Guide, Seat, Category and Card Edit, New. Claude verified the
+reloaded version page: "7 of 10 Screenshots," smaller classes
+inheriting. Along the way Patrick found the Log's shower line
+wanting; his two rulings (You-form for the player as a person; the
+shown card named when the player knows it) were BUILT in-session by
+Claude on Patrick's go — four lines in mystery-clues-tracker.html,
+wrapper copy diff-verified, Patrick's Xcode rebuild — the phone is
+CURRENT at #132. Two more finds went to pending: the accusation
+door is invisible on a fully-starred board (the #125 road exists
+but even Patrick couldn't find it), and the win ending is
+anticlimactic — one quiet bar line. The Apps-page social-media
+notice was read and closed: Apple's new questions (July 9, 2026,
+for iOS 27 Time Allowances) define social media capability as
+user-generated-content features the app simply doesn't have, so
+#131's answers stand and 4+ holds. Patrick also clarified the
+working rule's heart — announce first, then his yes or no; whose
+fingers move is not the point — now rule 11 in both CLAUDE.md
+files. An eighth "You won" screenshot waits for the ending's
+drama.**
 
-Still open: the #131 goal below; the Feedback-modal bug
-question (noted #111); the web-spec evaluation (#87). Small
-and parked: the "Every other cell is clean" gloss in
-24.x/25.11 (Patrick: stays parked); the docx
-message-font distinction (a build-script styling
-discussion). The #114 docx zoom quirk is DROPPED (Patrick,
-#128 — "totally").
+Still open: the #133 goal below (the ending's drama first, then
+step eight — the description, the Subtitle left open at #131, and
+the #78 disclaimer); the Log spec ripple (pending 5); the
+narrow-width evaluation (pending 6); the Feedback-modal bug
+question (noted #111); the web-spec evaluation (#87). Small and
+parked: the "Every other cell is clean" gloss in 24.x/25.11
+(Patrick: stays parked); the docx message-font distinction (a
+build-script styling discussion). The #114 docx zoom quirk is
+DROPPED (Patrick, #128 — "totally").
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -172,39 +175,41 @@ MysteryCluesTracker/docs/pending.txt and ROADMAP.md.
 - #128 (2026-07-24): the §31 pass CLEAN (17/17, widened from 11); the test-spec INDEX in (computed, never typed); Appendix D reordered — "The Coverage Map & Function List", map first; pending.txt and pending.docx brought current; landscape and the black-on-gold revisit closed by decision; no app code.
 - #129 (2026-07-24): Publishing-Strategy.docx revisited and four stale spots fixed (the #72 build-order block retired, product two's name and status, the two lanes sentence, the rollout strategy's old phrasing); the old PWA re-upload loose end chased down and closed; three reference-only files deleted from App-Docs; ROADMAP.md created; the App Store Connect app record for Mystery Clues Track Sheet created — step one of ten, registered without the ✓; no app code.
 - #130 (2026-07-24): roadmap steps two and three DONE — privacy-policy.html and support.html written (store-pages/), published live on elyfont.com by Patrick, and saved into App Store Connect (Support URL on the version page, Privacy Policy URL on the App Privacy page); docs/DEPLOY.md created for this project; the separate-docs policy decision; the home-page-card idea parked; no app code.
+- #131 (2026-07-24): roadmap steps four through six DONE — App Privacy declarations answered "No" and published ("Data Not Collected"); the age rating questionnaire answered None/No throughout, with one genuine edge case (Social Media Disabled for Users Under 13) worked through to a 4+ rating; primary category set to Entertainment, secondary to Utilities; the Subtitle raised and deliberately left open for step eight; a mid-session conduct reset after Claude broke the click-directions and one-question rules; no app code.
+- #132 (2026-07-25): roadmap step seven DONE — seven screenshots reshot on a 9/9/9/3 deck (the Clue-caution catch) and uploaded to the 6.9-inch slot in Patrick's order; the Log shower line rebuilt in-session (You-form, the known card named); the invisible accusation door and the anticlimactic ending logged — the ending's drama named #133's opener; the social-media notice closed (#131 answers stand); rule 11 (announce-and-consent) into both CLAUDE.md files.
 
-## Next session's goal (#131, from #130)
+## Next session's goal (#133, from #132)
 
-**CONTINUE MYSTERYCLUESTRACKER/DOCS/ROADMAP.MD FROM STEP FOUR —
-complete the App Privacy declarations inside the app record (the
-"Get Started" questionnaire on the App Privacy page; short for this
-app, since it collects nothing), with steps five (the age rating
-questionnaire) and six (the primary category) as natural companions
-if the session has room. All three happen inside App Store Connect
-in Patrick's Apple account; the working method settled #130 —
-Patrick's fingers, Claude narrating each step before it happens and
-watching checkpoints through Chrome. No app code is expected to be
-in scope.**
+**GIVE THE ENDING ITS DRAMA FIRST (Patrick's call, #132): design
+and build a win moment worth the name — pending items 3 and 4 (the
+anticlimactic one-line ending and the invisible accusation door)
+taken together as one piece of design work; when it's built and
+phone-proven, the "You won" screenshot joins the store set as slot
+eight. THEN roadmap step eight follows if the session has room —
+the app description, the Subtitle field left open at #131, and the
+disclaimer decided at session seventy-eight. Working method per
+rule 11 (clarified #132): Claude may click, type, and edit where
+that's the sensible road, but announces exactly what will happen
+BEFORE it happens and waits for Patrick's yes or no; "Go?" stays
+its own question (#88), and app-code design gets discussed and
+mocked before it gets built.**
 
 The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
 
 ## Commit status: Patrick's commits, when ready
 
-From #130 — App-Docs: master-handoff.md (this refresh, plus the
-new Loose-ends bullet). MysteryCluesTracker: store-pages/
-privacy-policy.html and store-pages/support.html (new),
-docs/DEPLOY.md (new), docs/ROADMAP.md (steps two and three marked
-done), docs/build-history.md (the #130 section), docs/pending.txt
-(header line, the parked home-page-card bullet), docs/pending.docx
-(rebuilt to match). Possibly still uncommitted from #129 — App-Docs:
-Publishing-Strategy.docx (the four stale-spot fixes) and the
-deletion of mtr-master-test-v2.docx, mtr-master-test.docx, and
-MysteryTracker-spec.md — confirm with git before committing. Neither
-CLAUDE.md touched. No app code, no wrapper, no Xcode changes in
-#130 — the App Store Connect entries live in Patrick's Apple
-account, not in any repo; the two pages' LIVE copies live in the
-public mystery-tracker GitHub repo, uploaded by Patrick #130.
+From #132 — App-Docs: master-handoff.md (this refresh) and
+CLAUDE.md (rule 11). MysteryCluesTracker: mystery-clues-tracker.html
+and the wrapper's www/ copy (the four Log shower-line edits),
+CLAUDE.md (rule 11), docs/ROADMAP.md (step seven marked done),
+docs/build-history.md (the #132 section), docs/pending.txt and
+docs/pending.docx (four new items; the docx rebuilt and
+machine-checked), and docs/upgrade-scope.md (the shower-line
+bullet). The screenshots themselves live in Patrick's Apple account
+inside App Store Connect, not in any repo. Earlier sessions'
+possibles are CLEAR — Patrick confirmed at the top of #132 that
+the #129/#130/#131 commits are all done.
 
 ## Loose ends
 
