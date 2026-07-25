@@ -63,42 +63,27 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-25, session #132 — roadmap step seven done: the store screenshots uploaded; the Log shower line rebuilt)
+## Where things stand (updated 2026-07-25, session #133 — the ending's drama built: the ⭐ Accuse door and the win moment; slot eight uploaded)
 
-**#132 completed roadmap step seven. Apple's requirements were
-verified against Apple's own specification page: only the 6.9-inch
-display class is required, and the iPhone 16 Pro Max's native
-1320 × 2868 screenshots fit it unaltered. Patrick's first set was
-caught by the standing Clue caution — it showed the default
-three-category 6/6/9 deck, the famous game's exact shape, on a
-public surface the caution names — so everything was reshot on a
-9/9/9/3 four-category deck with real shrinking-game turns. Seven
-screenshots were uploaded by Patrick's own drag into Media
-Manager's 6.9-inch slot, in his settled order: Game, Setup, Log,
-Guide, Seat, Category and Card Edit, New. Claude verified the
-reloaded version page: "7 of 10 Screenshots," smaller classes
-inheriting. Along the way Patrick found the Log's shower line
-wanting; his two rulings (You-form for the player as a person; the
-shown card named when the player knows it) were BUILT in-session by
-Claude on Patrick's go — four lines in mystery-clues-tracker.html,
-wrapper copy diff-verified, Patrick's Xcode rebuild — the phone is
-CURRENT at #132. Two more finds went to pending: the accusation
-door is invisible on a fully-starred board (the #125 road exists
-but even Patrick couldn't find it), and the win ending is
-anticlimactic — one quiet bar line. The Apps-page social-media
-notice was read and closed: Apple's new questions (July 9, 2026,
-for iOS 27 Time Allowances) define social media capability as
-user-generated-content features the app simply doesn't have, so
-#131's answers stand and 4+ holds. Patrick also clarified the
-working rule's heart — announce first, then his yes or no; whose
-fingers move is not the point — now rule 11 in both CLAUDE.md
-files. An eighth "You won" screenshot waits for the ending's
-drama.**
+**#133 gave the ending its drama: the accusation flow rebuilt
+around the turn bar's always-present ⭐ Accuse button — any player
+may accuse, one card per category with cards, then a two-tap
+verdict ("Are you right?" / "Are they right?"). Your right
+accusation wins with the glowing "⭐ Game over — you won!"; your
+wrong one loses; an opponent's right one ends the game somber
+(same letters, no glow); an opponent's wrong one is the permanent
+😢 sideline — play on, unless they were the last live opponent
+("…accusation was wrong — game over, you won"). No verdict can be
+undone; the Out modal is quits-only; the ∑ watcher keeps only its
+more-than-one-⭐ warning; the accusation card list stays
+deliberately unmuted. Browser- and phone-proven — the phone is
+CURRENT at #133. The "You won" screenshot joined the store set as
+slot eight; pending items 3 and 4 closed.**
 
-Still open: the #133 goal below (the ending's drama first, then
-step eight — the description, the Subtitle left open at #131, and
-the #78 disclaimer); the Log spec ripple (pending 5); the
-narrow-width evaluation (pending 6); the Feedback-modal bug
+Still open: the #134 goal below (roadmap step eight — the
+description, the Subtitle left open at #131, the #78 disclaimer);
+the test-doc catch-up to the code (pending 3, grown #133); the
+narrow-width evaluation (pending 4); the Feedback-modal bug
 question (noted #111); the web-spec evaluation (#87). Small and
 parked: the "Every other cell is clean" gloss in 24.x/25.11
 (Patrick: stays parked); the docx message-font distinction (a
@@ -177,39 +162,28 @@ MysteryCluesTracker/docs/pending.txt and ROADMAP.md.
 - #130 (2026-07-24): roadmap steps two and three DONE — privacy-policy.html and support.html written (store-pages/), published live on elyfont.com by Patrick, and saved into App Store Connect (Support URL on the version page, Privacy Policy URL on the App Privacy page); docs/DEPLOY.md created for this project; the separate-docs policy decision; the home-page-card idea parked; no app code.
 - #131 (2026-07-24): roadmap steps four through six DONE — App Privacy declarations answered "No" and published ("Data Not Collected"); the age rating questionnaire answered None/No throughout, with one genuine edge case (Social Media Disabled for Users Under 13) worked through to a 4+ rating; primary category set to Entertainment, secondary to Utilities; the Subtitle raised and deliberately left open for step eight; a mid-session conduct reset after Claude broke the click-directions and one-question rules; no app code.
 - #132 (2026-07-25): roadmap step seven DONE — seven screenshots reshot on a 9/9/9/3 deck (the Clue-caution catch) and uploaded to the 6.9-inch slot in Patrick's order; the Log shower line rebuilt in-session (You-form, the known card named); the invisible accusation door and the anticlimactic ending logged — the ending's drama named #133's opener; the social-media notice closed (#131 answers stand); rule 11 (announce-and-consent) into both CLAUDE.md files.
+- #133 (2026-07-25): the ending's drama — the ⭐ Accuse door (any accuser, four verdicts, no undo past a verdict), the glowing win moment, the quits-only Out modal; slot eight uploaded.
 
-## Next session's goal (#133, from #132)
+## Next session's goal (#134, from #133)
 
-**GIVE THE ENDING ITS DRAMA FIRST (Patrick's call, #132): design
-and build a win moment worth the name — pending items 3 and 4 (the
-anticlimactic one-line ending and the invisible accusation door)
-taken together as one piece of design work; when it's built and
-phone-proven, the "You won" screenshot joins the store set as slot
-eight. THEN roadmap step eight follows if the session has room —
-the app description, the Subtitle field left open at #131, and the
-disclaimer decided at session seventy-eight. Working method per
-rule 11 (clarified #132): Claude may click, type, and edit where
-that's the sensible road, but announces exactly what will happen
-BEFORE it happens and waits for Patrick's yes or no; "Go?" stays
-its own question (#88), and app-code design gets discussed and
-mocked before it gets built.**
+**#134 (underway 2026-07-25): FIRST the #133 docs catch-up — done
+at #134's top — THEN roadmap step eight: the app description with
+the #78 nobody-named disclaimer, and the Subtitle left open at
+#131. The Clue caution governs every word of both.**
 
 The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
 
 ## Commit status: Patrick's commits, when ready
 
-From #132 — App-Docs: master-handoff.md (this refresh) and
-CLAUDE.md (rule 11). MysteryCluesTracker: mystery-clues-tracker.html
-and the wrapper's www/ copy (the four Log shower-line edits),
-CLAUDE.md (rule 11), docs/ROADMAP.md (step seven marked done),
-docs/build-history.md (the #132 section), docs/pending.txt and
-docs/pending.docx (four new items; the docx rebuilt and
-machine-checked), and docs/upgrade-scope.md (the shower-line
-bullet). The screenshots themselves live in Patrick's Apple account
-inside App Store Connect, not in any repo. Earlier sessions'
-possibles are CLEAR — Patrick confirmed at the top of #132 that
-the #129/#130/#131 commits are all done.
+From #133 — MysteryCluesTracker: mystery-clues-tracker.html and
+the wrapper's www/ copy (the accusation flow, the win moment, the
+Guide rewrite). From #134's docs catch-up — MysteryCluesTracker:
+docs/build-history.md, docs/upgrade-scope.md, docs/pending.txt,
+docs/pending.docx (rebuilt, machine-checked), and
+docs/ROADMAP.md; App-Docs: master-handoff.md (this refresh). The
+screenshot lives in Patrick's Apple account. The #132 commits are
+DONE (Patrick confirmed at the top of #134).
 
 ## Loose ends
 
