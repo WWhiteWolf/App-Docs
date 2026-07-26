@@ -63,38 +63,40 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-25, session #135 — roadmap step nine: the build archived, validated, and uploaded)
+## Where things stand (updated 2026-07-26, session #136 — roadmap step ten: the last two store fields written and the app SUBMITTED FOR REVIEW)
 
-**THE BUILD IS IN APPLE'S HANDS. #135 finished roadmap step nine:
-build 1.0 (1) archived at 10:32 PM, validated clean on the first
-try with no warnings, and uploaded to App Store Connect at 10:43
-PM as build number 1. It is sitting in Patrick's account — not
-submitted, not published, nobody can see it. TestFlight was left
-unused on purpose, exactly as the goal scoped it: available, never
-required. Two project settings changed on the way, both decided
-from the code rather than guessed and both verified in
-project.pbxproj afterwards. The minimum iOS came down from 26.5
-(Xcode's own SDK default, nobody's choice) to 16.6 — the page
-needs 16.0 for the #125 overscroll-behavior fix, the Swift needs
-16.4 for a Debug-only isInspectable line, Xcode's list offers
-whole versions and fills 16.6, and 16.6 still reaches the iPhone 8
-and iPhone X, which topped out at 16.7. And export compliance is
-declared (INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO, both
-configurations), so Apple never marks a build "Missing Compliance"
-again. Nine of ten roadmap steps are done. No app code was
-touched; the phone stays current at #133.**
+**THE APP IS SUBMITTED. #136 finished roadmap step ten — all ten
+are now done. Keywords (95 bytes of 100) and Promotional Text (169
+of 170) were written and saved, then six unanswered things were
+cleared before Apple would take the submission: the build attached
+to the version (uploading and attaching are separate acts, and
+#135 had done only the first), the Sign-in-required checkbox
+unticked, Copyright filled ("2026 Patrick Murphy"), Content Rights
+answered, a price chosen (Add Pricing → base United States → Free;
+the "All Prices and Currencies" link is only a reference table),
+and availability set to all countries. The "You won" screenshot
+was reshot and swapped first — which surfaced the 6.5-inch trap:
+that display class owns no files and merely borrows the 6.9-inch
+set, so it refuses 1320 × 2868 files; swaps belong in Media
+Manager's 6.9" row. Submitted 2026-07-26: "1 Item Submitted," up
+to 48 hours to review, an email when decided. Release is set to
+AUTOMATIC, so an approval puts the app on the store by itself
+(Apple: up to 24 hours to appear). Verified rather than assumed:
+Apple's own help page says Keywords IS required and Promotional
+Text is not. Patrick ruled "clue" out of both fields even though
+he judged it would pass, since the name already carries it. No app
+code was touched; the phone stays current at #133.**
 
-Still open: the #136 goal below (Keywords and Promotional Text,
-pending 5 — now the gate on step ten); the test-doc catch-up to
-the code (pending 3); the narrow-width evaluation (pending 4); the
-Feedback-modal bug question (noted #111); the web-spec evaluation
-(#87); and the stale comment tail at line 810 of
-mystery-clues-tracker.html ("Undo can clear it." — false since
-#133), parked by Patrick at #135. Small and
-parked: the "Every other cell is clean" gloss in 24.x/25.11
-(Patrick: stays parked); the docx message-font distinction (a
-build-script styling discussion). The #114 docx zoom quirk is
-DROPPED (Patrick, #128 — "totally").
+Still open: the test-doc catch-up to the code (pending 3); the
+narrow-width evaluation (pending 4); the Feedback-modal bug
+question (noted #111); the web-spec evaluation (#87); and the
+stale comment tail at line 810 of mystery-clues-tracker.html
+("Undo can clear it." — verified false at #136 by reading every
+place the variable is touched), parked by Patrick and now pending
+5. Small and parked: the "Every other cell is clean" gloss in
+24.x/25.11 (Patrick: stays parked); the docx message-font
+distinction (a build-script styling discussion). The #114 docx
+zoom quirk is DROPPED (Patrick, #128 — "totally").
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -171,42 +173,50 @@ MysteryCluesTracker/docs/pending.txt and ROADMAP.md.
 - #133 (2026-07-25): the ending's drama — the ⭐ Accuse door (any accuser, four verdicts, no undo past a verdict), the glowing win moment, the quits-only Out modal; slot eight uploaded.
 - #134 (2026-07-25): the #133 docs catch-up written and verified; roadmap step eight DONE — description and Subtitle saved and verified on Apple's pages; the ⭐-rejected-in-Description find; the DSA non-trader question closed by reading.
 - #135 (2026-07-25): roadmap step nine DONE — the minimum iOS lowered 26.5 → 16.6 and export compliance declared (both code-verified), then build 1.0 (1) archived, validated clean, and uploaded; TestFlight left unused; the unset-shows-"No" encryption find and the Xcode Cloud wrong turn logged; no app code.
+- #136 (2026-07-26): roadmap step ten DONE — Keywords (95 bytes) and Promotional Text (169 characters) written from Patrick's own words and saved, "clue" ruled out of both; the Keywords-is-required question answered from Apple's own page; the build attached, six submission blockers cleared, the "You won" shot reshot (the 6.5-inch inheritance trap found by Patrick), and THE APP SUBMITTED FOR REVIEW; no app code.
 
-## Next session's goal (#136, from #135)
+## Next session's goal (#137, from #136)
 
-**Keywords and Promotional Text — the two empty fields on the
-version page (pending 5), now the only thing standing between the
-uploaded build and step ten. Keywords is 100 characters and
-decides whether anyone ever finds the app; the standing Clue
-caution governs every one of them exactly as it governed the
-description. Promotional Text is 170 characters and can be changed
-any time without a new build. Patrick raised these himself
-mid-upload and asked that they get their own run rather than be
-squeezed in — this is that run. To check first, not assume:
-whether Apple strictly requires the Keywords field before it will
-accept a submission. Then step ten, submit for review. Still
-parked and available if wanted instead: the stale comment tail at
-line 810 of mystery-clues-tracker.html.**
+**MISTOUCHING ON THE GRID — Patrick's own find, from playing his
+own app. Taps land on the wrong cell, worst in the two narrowest
+columns: the summary (∑) column and the board (🏠) column. They
+sit beside cells that mean something entirely different, so a
+slip is not harmless. NOTHING IS DIAGNOSED YET and nothing is
+decided: the grid's sizing code has not been read. The session
+starts by reading how the grid lays its columns out and how wide
+those two actually are, measures that against what a finger
+needs, weighs what widening them would cost the rest of the row,
+and only then discusses what to change. Note the shape of it:
+this is the first change since the app was submitted, so it means
+a code change, a new version number, and a fresh submission —
+ordinary, but a different kind of session than the docs and store
+runs of #129–#136. Apple's review answer may also arrive first
+and set its own agenda. Also still available if wanted instead:
+the test-doc catch-up (pending 3), the Feedback-modal bug
+question (pending 1), the web-spec evaluation (pending 2), the
+narrow-width screens (pending 4), and the one-sentence stale
+comment at line 810 (pending 5).**
 
 The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
 
 ## Commit status: Patrick's commits, when ready
 
-From #135 — MysteryCluesTracker: the Xcode project file
-(wrapper/MysteryCluesTrackSheet/MysteryCluesTrackSheet.xcodeproj/
-project.pbxproj — the 16.6 floor and the encryption declaration,
-two settings in each of the two target configurations),
-docs/ROADMAP.md, docs/upgrade-scope.md, docs/pending.txt,
-docs/pending.docx (rebuilt from the txt, machine-checked clean —
-27 paragraphs, bold included), docs/build-history.md; App-Docs:
-master-handoff.md (this refresh), Publishing-Strategy.docx (the
-next-session note). The uploaded build itself lives in Patrick's
-Apple account, not in any repo.
+The #135 list is COMMITTED. Patrick committed it mid-session at
+#136, after a file-reading check (no git commands) confirmed that
+the last commit in both repositories was "MCTS #133 ending
+design," 2026-07-25 at 7:47 PM, and that everything #134 and #135
+wrote was still waiting — including store-pages/app-description.txt,
+the #134 file the hand-off had flagged for checking.
 
-The #134 commit list is superseded by the above — check whether
-those files were committed before this session's changes landed on
-top of them.
+From #136 — MysteryCluesTracker: store-pages/app-description.txt
+(the Keywords and Promotional Text blocks, the extended limits
+line, four new notes), docs/ROADMAP.md (step ten done),
+docs/pending.txt, docs/pending.docx (rebuilt from the txt and
+machine-checked line for line — 27 paragraphs, five bold headers),
+docs/build-history.md (the #136 entry); App-Docs:
+master-handoff.md (this refresh), Publishing-Strategy.docx (the
+next-session note). Nothing in App Store Connect lives in a repo.
 
 ## Loose ends
 
