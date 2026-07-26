@@ -63,28 +63,34 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-25, session #133 — the ending's drama built: the ⭐ Accuse door and the win moment; slot eight uploaded)
+## Where things stand (updated 2026-07-25, session #135 — roadmap step nine: the build archived, validated, and uploaded)
 
-**#133 gave the ending its drama: the accusation flow rebuilt
-around the turn bar's always-present ⭐ Accuse button — any player
-may accuse, one card per category with cards, then a two-tap
-verdict ("Are you right?" / "Are they right?"). Your right
-accusation wins with the glowing "⭐ Game over — you won!"; your
-wrong one loses; an opponent's right one ends the game somber
-(same letters, no glow); an opponent's wrong one is the permanent
-😢 sideline — play on, unless they were the last live opponent
-("…accusation was wrong — game over, you won"). No verdict can be
-undone; the Out modal is quits-only; the ∑ watcher keeps only its
-more-than-one-⭐ warning; the accusation card list stays
-deliberately unmuted. Browser- and phone-proven — the phone is
-CURRENT at #133. The "You won" screenshot joined the store set as
-slot eight; pending items 3 and 4 closed.**
+**THE BUILD IS IN APPLE'S HANDS. #135 finished roadmap step nine:
+build 1.0 (1) archived at 10:32 PM, validated clean on the first
+try with no warnings, and uploaded to App Store Connect at 10:43
+PM as build number 1. It is sitting in Patrick's account — not
+submitted, not published, nobody can see it. TestFlight was left
+unused on purpose, exactly as the goal scoped it: available, never
+required. Two project settings changed on the way, both decided
+from the code rather than guessed and both verified in
+project.pbxproj afterwards. The minimum iOS came down from 26.5
+(Xcode's own SDK default, nobody's choice) to 16.6 — the page
+needs 16.0 for the #125 overscroll-behavior fix, the Swift needs
+16.4 for a Debug-only isInspectable line, Xcode's list offers
+whole versions and fills 16.6, and 16.6 still reaches the iPhone 8
+and iPhone X, which topped out at 16.7. And export compliance is
+declared (INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO, both
+configurations), so Apple never marks a build "Missing Compliance"
+again. Nine of ten roadmap steps are done. No app code was
+touched; the phone stays current at #133.**
 
-Still open: the #134 goal below (roadmap step eight — the
-description, the Subtitle left open at #131, the #78 disclaimer);
-the test-doc catch-up to the code (pending 3, grown #133); the
-narrow-width evaluation (pending 4); the Feedback-modal bug
-question (noted #111); the web-spec evaluation (#87). Small and
+Still open: the #136 goal below (Keywords and Promotional Text,
+pending 5 — now the gate on step ten); the test-doc catch-up to
+the code (pending 3); the narrow-width evaluation (pending 4); the
+Feedback-modal bug question (noted #111); the web-spec evaluation
+(#87); and the stale comment tail at line 810 of
+mystery-clues-tracker.html ("Undo can clear it." — false since
+#133), parked by Patrick at #135. Small and
 parked: the "Every other cell is clean" gloss in 24.x/25.11
 (Patrick: stays parked); the docx message-font distinction (a
 build-script styling discussion). The #114 docx zoom quirk is
@@ -163,27 +169,44 @@ MysteryCluesTracker/docs/pending.txt and ROADMAP.md.
 - #131 (2026-07-24): roadmap steps four through six DONE — App Privacy declarations answered "No" and published ("Data Not Collected"); the age rating questionnaire answered None/No throughout, with one genuine edge case (Social Media Disabled for Users Under 13) worked through to a 4+ rating; primary category set to Entertainment, secondary to Utilities; the Subtitle raised and deliberately left open for step eight; a mid-session conduct reset after Claude broke the click-directions and one-question rules; no app code.
 - #132 (2026-07-25): roadmap step seven DONE — seven screenshots reshot on a 9/9/9/3 deck (the Clue-caution catch) and uploaded to the 6.9-inch slot in Patrick's order; the Log shower line rebuilt in-session (You-form, the known card named); the invisible accusation door and the anticlimactic ending logged — the ending's drama named #133's opener; the social-media notice closed (#131 answers stand); rule 11 (announce-and-consent) into both CLAUDE.md files.
 - #133 (2026-07-25): the ending's drama — the ⭐ Accuse door (any accuser, four verdicts, no undo past a verdict), the glowing win moment, the quits-only Out modal; slot eight uploaded.
+- #134 (2026-07-25): the #133 docs catch-up written and verified; roadmap step eight DONE — description and Subtitle saved and verified on Apple's pages; the ⭐-rejected-in-Description find; the DSA non-trader question closed by reading.
+- #135 (2026-07-25): roadmap step nine DONE — the minimum iOS lowered 26.5 → 16.6 and export compliance declared (both code-verified), then build 1.0 (1) archived, validated clean, and uploaded; TestFlight left unused; the unset-shows-"No" encryption find and the Xcode Cloud wrong turn logged; no app code.
 
-## Next session's goal (#134, from #133)
+## Next session's goal (#136, from #135)
 
-**#134 (underway 2026-07-25): FIRST the #133 docs catch-up — done
-at #134's top — THEN roadmap step eight: the app description with
-the #78 nobody-named disclaimer, and the Subtitle left open at
-#131. The Clue caution governs every word of both.**
+**Keywords and Promotional Text — the two empty fields on the
+version page (pending 5), now the only thing standing between the
+uploaded build and step ten. Keywords is 100 characters and
+decides whether anyone ever finds the app; the standing Clue
+caution governs every one of them exactly as it governed the
+description. Promotional Text is 170 characters and can be changed
+any time without a new build. Patrick raised these himself
+mid-upload and asked that they get their own run rather than be
+squeezed in — this is that run. To check first, not assume:
+whether Apple strictly requires the Keywords field before it will
+accept a submission. Then step ten, submit for review. Still
+parked and available if wanted instead: the stale comment tail at
+line 810 of mystery-clues-tracker.html.**
 
 The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
 
 ## Commit status: Patrick's commits, when ready
 
-From #133 — MysteryCluesTracker: mystery-clues-tracker.html and
-the wrapper's www/ copy (the accusation flow, the win moment, the
-Guide rewrite). From #134's docs catch-up — MysteryCluesTracker:
-docs/build-history.md, docs/upgrade-scope.md, docs/pending.txt,
-docs/pending.docx (rebuilt, machine-checked), and
-docs/ROADMAP.md; App-Docs: master-handoff.md (this refresh). The
-screenshot lives in Patrick's Apple account. The #132 commits are
-DONE (Patrick confirmed at the top of #134).
+From #135 — MysteryCluesTracker: the Xcode project file
+(wrapper/MysteryCluesTrackSheet/MysteryCluesTrackSheet.xcodeproj/
+project.pbxproj — the 16.6 floor and the encryption declaration,
+two settings in each of the two target configurations),
+docs/ROADMAP.md, docs/upgrade-scope.md, docs/pending.txt,
+docs/pending.docx (rebuilt from the txt, machine-checked clean —
+27 paragraphs, bold included), docs/build-history.md; App-Docs:
+master-handoff.md (this refresh), Publishing-Strategy.docx (the
+next-session note). The uploaded build itself lives in Patrick's
+Apple account, not in any repo.
+
+The #134 commit list is superseded by the above — check whether
+those files were committed before this session's changes landed on
+top of them.
 
 ## Loose ends
 
