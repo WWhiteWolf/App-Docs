@@ -63,37 +63,50 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-26, session #136 — roadmap step ten: the last two store fields written and the app SUBMITTED FOR REVIEW)
+## Where things stand (updated 2026-07-26, session #137 — the grid's mistouching diagnosed from the code; the phone's own dwell filter found; nothing built)
 
-**THE APP IS SUBMITTED. #136 finished roadmap step ten — all ten
-are now done. Keywords (95 bytes of 100) and Promotional Text (169
-of 170) were written and saved, then six unanswered things were
-cleared before Apple would take the submission: the build attached
-to the version (uploading and attaching are separate acts, and
-#135 had done only the first), the Sign-in-required checkbox
-unticked, Copyright filled ("2026 Patrick Murphy"), Content Rights
-answered, a price chosen (Add Pricing → base United States → Free;
-the "All Prices and Currencies" link is only a reference table),
-and availability set to all countries. The "You won" screenshot
-was reshot and swapped first — which surfaced the 6.5-inch trap:
-that display class owns no files and merely borrows the 6.9-inch
-set, so it refuses 1320 × 2868 files; swaps belong in Media
-Manager's 6.9" row. Submitted 2026-07-26: "1 Item Submitted," up
-to 48 hours to review, an email when decided. Release is set to
-AUTOMATIC, so an approval puts the app on the store by itself
-(Apple: up to 24 hours to appear). Verified rather than assumed:
-Apple's own help page says Keywords IS required and Promotional
-Text is not. Patrick ruled "clue" out of both fields even though
-he judged it would pass, since the name already carries it. No app
-code was touched; the phone stays current at #133.**
+**THE APP IS STILL WITH APPLE.** Submitted 2026-07-26 at #136 with
+all ten roadmap steps done — up to 48 hours to review, an email
+when decided, release set to AUTOMATIC so an approval puts it on
+the store by itself (Apple: up to 24 hours to appear). No answer
+had arrived by the end of #137.
 
-Still open: the test-doc catch-up to the code (pending 3); the
-narrow-width evaluation (pending 4); the Feedback-modal bug
-question (noted #111); the web-spec evaluation (#87); and the
-stale comment tail at line 810 of mystery-clues-tracker.html
-("Undo can clear it." — verified false at #136 by reading every
-place the variable is touched), parked by Patrick and now pending
-5. Small and parked: the "Every other cell is clean" gloss in
+**#137 DIAGNOSED THE MISTOUCHING AND BUILT NOTHING.** Patrick's own
+find was traced through the code, and it is bigger than the
+hand-off's framing. The row is exactly full — 82 + 24 + 24 + six
+player columns at 50 = 430, against a body capped at 430 — so
+width is zero-sum. Six player columns are always built however
+many are playing, leaving 150 dead pixels in a small game. A
+player cell is 50 × 28 and the ∑ and 🏠 cells are 24 × 28, against
+Apple's 44 × 44 minimum; the whole cell is the target, so there is
+no inner room to reclaim; nothing absorbs a near miss
+(`border-collapse`) and nothing shows where the finger landed
+(the line-51 tap-highlight reset). 🏠 is the only cell that acts on
+first touch. The worst spot is the one Patrick named — the active
+column during a card pick — where a sideways slip pops a box but a
+slip one row off says NOTHING and quietly becomes part of the
+claim. It has been on the record since #122's "fat-finger asked
+Card 5 for Card 6." Patrick's own insight carried the session: the
+trouble starts before contact, as a finger travels low across the
+glass, and a dwell filter is the one thing that catches that on
+timing alone. **The phone already has it** — Settings →
+Accessibility → Touch → Touch Accommodations (Hold Duration, Tap
+Assistance "Use Final Touch Location", Gesture Delay, Ignore
+Repeat), verified on Apple's own page. **Patrick's decision: the
+settings first, the code afterward if anything is left over.** Also
+proven in passing: the #86 grid-clip caveat is real, since the
+column minimums make 430 a floor and the grid never scrolls
+sideways — which makes pending 1 and pending 5 ONE fix. No app
+code was touched; the phone stays current at #133.
+
+Still open (pending.txt numbering, corrected here — the old
+hand-off numbers did not match the file): the Feedback-modal bug
+question (pending 2, noted #111); the web-spec evaluation
+(pending 3, open since #87); the test-doc catch-up to the code
+(pending 4) — **#138's goal**; the narrow-width screens (pending 5,
+now the same fix as pending 1); and the stale comment tail at line
+810 of mystery-clues-tracker.html (pending 6), parked by Patrick.
+Small and parked: the "Every other cell is clean" gloss in
 24.x/25.11 (Patrick: stays parked); the docx message-font
 distinction (a build-script styling discussion). The #114 docx
 zoom quirk is DROPPED (Patrick, #128 — "totally").
@@ -174,49 +187,51 @@ MysteryCluesTracker/docs/pending.txt and ROADMAP.md.
 - #134 (2026-07-25): the #133 docs catch-up written and verified; roadmap step eight DONE — description and Subtitle saved and verified on Apple's pages; the ⭐-rejected-in-Description find; the DSA non-trader question closed by reading.
 - #135 (2026-07-25): roadmap step nine DONE — the minimum iOS lowered 26.5 → 16.6 and export compliance declared (both code-verified), then build 1.0 (1) archived, validated clean, and uploaded; TestFlight left unused; the unset-shows-"No" encryption find and the Xcode Cloud wrong turn logged; no app code.
 - #136 (2026-07-26): roadmap step ten DONE — Keywords (95 bytes) and Promotional Text (169 characters) written from Patrick's own words and saved, "clue" ruled out of both; the Keywords-is-required question answered from Apple's own page; the build attached, six submission blockers cleared, the "You won" shot reshot (the 6.5-inch inheritance trap found by Patrick), and THE APP SUBMITTED FOR REVIEW; no app code.
+- #137 (2026-07-26): the grid's mistouching DIAGNOSED from the code (the 430 floor, the always-six columns, 24 × 28 against 44 × 44, no gap and no flash, 🏠 alone acting on first touch, the silent row-off pick in the active column); the #122 fat-finger line found as corroboration; the #86 grid-clip caveat proven and merged with pending 1; Patrick's before-contact insight answered by Apple's Touch Accommodations, and his decision to try the settings before any code; one bug reported and withdrawn; no app code.
 
-## Next session's goal (#137, from #136)
+## Next session's goal (#138, from #137)
 
-**MISTOUCHING ON THE GRID — Patrick's own find, from playing his
-own app. Taps land on the wrong cell, worst in the two narrowest
-columns: the summary (∑) column and the board (🏠) column. They
-sit beside cells that mean something entirely different, so a
-slip is not harmless. NOTHING IS DIAGNOSED YET and nothing is
-decided: the grid's sizing code has not been read. The session
-starts by reading how the grid lays its columns out and how wide
-those two actually are, measures that against what a finger
-needs, weighs what widening them would cost the rest of the row,
-and only then discusses what to change. Note the shape of it:
-this is the first change since the app was submitted, so it means
-a code change, a new version number, and a fresh submission —
-ordinary, but a different kind of session than the docs and store
-runs of #129–#136. Apple's review answer may also arrive first
-and set its own agenda. Also still available if wanted instead:
-the test-doc catch-up (pending 3), the Feedback-modal bug
-question (pending 1), the web-spec evaluation (pending 2), the
-narrow-width screens (pending 4), and the one-sentence stale
-comment at line 810 (pending 5).**
+**THE TEST-DOC CATCH-UP TO THE CODE — pending item 4, open since
+#132 and grown at #133. The spec is a step behind the phone. Three
+things need it: the #132 shower line, the #133 undo and accusation
+Log wordings, and every step still describing the OLD accusation
+flow — the auto-opening modal and the undoable endings are gone
+from the code, so those sections and the matching Appendix D
+entries need the rewrite. It all goes through
+`docs/build-mcts-test.js`; the docx is generated and never
+hand-edited, then verified row-for-row. How big it is IS NOT KNOWN
+YET: counting which of the 400 steps still describe the old flow is
+the first piece of work, not a preliminary to it.**
+
+**Two things may take the agenda first.** Apple's review answer may
+arrive and set its own. And Patrick was going to try the phone's
+Touch Accommodations settings against the mistouching — whatever
+that leaves over is what a code change has to earn, and any code
+change now means a new version number and a fresh submission.
+Also still available if wanted instead: the Feedback-modal bug
+question (pending 2), the web-spec evaluation (pending 3), the
+narrow-width screens (pending 5, the same fix as pending 1), and
+the one-sentence stale comment at line 810 (pending 6).
 
 The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
 
 ## Commit status: Patrick's commits, when ready
 
-The #135 list is COMMITTED. Patrick committed it mid-session at
-#136, after a file-reading check (no git commands) confirmed that
-the last commit in both repositories was "MCTS #133 ending
-design," 2026-07-25 at 7:47 PM, and that everything #134 and #135
-wrote was still waiting — including store-pages/app-description.txt,
-the #134 file the hand-off had flagged for checking.
+The #135 and #136 lists are both COMMITTED — #135 mid-session at
+#136, and #136 confirmed by Patrick at #137. Nothing is left
+waiting from either.
 
-From #136 — MysteryCluesTracker: store-pages/app-description.txt
-(the Keywords and Promotional Text blocks, the extended limits
-line, four new notes), docs/ROADMAP.md (step ten done),
-docs/pending.txt, docs/pending.docx (rebuilt from the txt and
-machine-checked line for line — 27 paragraphs, five bold headers),
-docs/build-history.md (the #136 entry); App-Docs:
+From #137 — MysteryCluesTracker: docs/build-history.md (the #137
+entry), docs/pending.txt (item 1 rewritten with the diagnosis and
+the settings-first order, item 5 merged with it, the standing block
+and the header date), docs/pending.docx (rebuilt from the txt and
+machine-checked line for line — 31 paragraphs, five bold headers,
+9,704 characters matching the source exactly); App-Docs:
 master-handoff.md (this refresh), Publishing-Strategy.docx (the
-next-session note). Nothing in App Store Connect lives in a repo.
+next-session note). No app code was touched, so
+mystery-clues-tracker.html and the wrapper are unchanged. Nothing
+in App Store Connect lives in a repo.
 
 ## Loose ends
 
