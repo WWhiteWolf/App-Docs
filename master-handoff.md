@@ -63,53 +63,71 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-26, session #137 — the grid's mistouching diagnosed from the code; the phone's own dwell filter found; nothing built)
+## Where things stand (updated 2026-07-27, session #139 — #138 reconstructed from the code, §25 of the test doc rebuilt to 20 steps, §31 scoped for a full rewrite)
 
 **THE APP IS STILL WITH APPLE.** Submitted 2026-07-26 at #136 with
 all ten roadmap steps done — up to 48 hours to review, an email
 when decided, release set to AUTOMATIC so an approval puts it on
 the store by itself (Apple: up to 24 hours to appear). No answer
-had arrived by the end of #137.
+had arrived by the end of #139.
 
-**#137 DIAGNOSED THE MISTOUCHING AND BUILT NOTHING.** Patrick's own
-find was traced through the code, and it is bigger than the
-hand-off's framing. The row is exactly full — 82 + 24 + 24 + six
-player columns at 50 = 430, against a body capped at 430 — so
-width is zero-sum. Six player columns are always built however
-many are playing, leaving 150 dead pixels in a small game. A
-player cell is 50 × 28 and the ∑ and 🏠 cells are 24 × 28, against
-Apple's 44 × 44 minimum; the whole cell is the target, so there is
-no inner room to reclaim; nothing absorbs a near miss
-(`border-collapse`) and nothing shows where the finger landed
-(the line-51 tap-highlight reset). 🏠 is the only cell that acts on
-first touch. The worst spot is the one Patrick named — the active
-column during a card pick — where a sideways slip pops a box but a
-slip one row off says NOTHING and quietly becomes part of the
-claim. It has been on the record since #122's "fat-finger asked
-Card 5 for Card 6." Patrick's own insight carried the session: the
-trouble starts before contact, as a finger travels low across the
-glass, and a dwell filter is the one thing that catches that on
-timing alone. **The phone already has it** — Settings →
-Accessibility → Touch → Touch Accommodations (Hold Duration, Tap
-Assistance "Use Final Touch Location", Gesture Delay, Ignore
-Repeat), verified on Apple's own page. **Patrick's decision: the
-settings first, the code afterward if anything is left over.** Also
-proven in passing: the #86 grid-clip caveat is real, since the
-column minimums make 430 a floor and the grid never scrolls
-sideways — which makes pending 1 and pending 5 ONE fix. No app
-code was touched; the phone stays current at #133.
+**#138 DERAILED AND LEFT NOTHING WRITTEN.** Its goal was the
+test-spec catch-up. Patrick proposed that §31 be rewritten whole
+rather than patched and pasted a few paragraphs of the #133 record
+in as reference; after that paste Claude lost track of which
+session it was in, a model switch made it worse, and Patrick ended
+it before anything else went wrong. But it was not empty: he found
+a real bug during it and it was fixed in two lines. After a close
+and reopen, with the ask made and the shower already tapped, the
+turn bar named the ASKER instead of the shower — `lastShowerName`
+was set as a turn played out but never saved, so the reopen brought
+it back empty and line 2013 fell through to the current player. The
+fix rides the snapshot (line 2812 saves it, line 2850 restores it).
+The Log was never affected. The wrapper copy is byte-identical, and
+Patrick has rebuilt in Xcode — **the phone is now current at
+#139.** The build sitting with Apple predates the fix.
 
-Still open (pending.txt numbering, corrected here — the old
-hand-off numbers did not match the file): the Feedback-modal bug
+**#139 RECONSTRUCTED #138 AND REBUILT §25.** The gap was closed
+from the code and Patrick's own line numbers, not from memory.
+§25 had no step that woke the app with the shower tapped and the
+turn not yet advanced — exactly the bug's state — so 25.18 now
+closes and reopens straight off the shower tap and checks the bar
+reads "Turn 1 — Dan showed ✓"; a new 25.19 carries the Log check
+(no second close: 25.14 already proves the Log page wakes); and
+25.20 picked up Next ▶, because the tap matters to the document's
+single pass even though the Log is written at the shower tap.
+§25 is 19 steps → 20, **the docx at 401**, read back by machine.
+Patrick proved 25.18 on his phone himself. Also recorded: the
+code's phase names and the screen's words nearly invert — phase
+`waiting` is the screen's "showed ✓".
+
+**§31 IS THE NEXT PIECE, AND IT IS A WHOLE REWRITE.** All
+seventeen steps describe the accusation flow #133 removed — the
+modal opening by itself on the fourth ⭐, the two-question "Do you
+want to make an accusation?" over "Were you right?", undoable
+endings, and Out's 😢 road. Its first two steps are duplicates,
+not orphans: §18.5 already tests the more-than-one-⭐ warning, and
+Patrick ruled the watcher tests belong there. The whole accusation
+flow was read out of the code at #139 and written into
+build-history.md "#139" in full — the modal's three parts, both
+refusal messages, all four ending lines, the Log line's shape —
+**so #140 drafts from that record and does not re-read the code.**
+**One question has to be answered first: which ending §31 finishes
+on.** Three of the four endings are terminal and no verdict can be
+undone, so the section reaches exactly one of them and the
+document stops there.
+
+Still open (pending.txt numbering): the Feedback-modal bug
 question (pending 2, noted #111); the web-spec evaluation
-(pending 3, open since #87); the test-doc catch-up to the code
-(pending 4) — **#138's goal**; the narrow-width screens (pending 5,
-now the same fix as pending 1); and the stale comment tail at line
-810 of mystery-clues-tracker.html (pending 6), parked by Patrick.
-Small and parked: the "Every other cell is clean" gloss in
-24.x/25.11 (Patrick: stays parked); the docx message-font
-distinction (a build-script styling discussion). The #114 docx
-zoom quirk is DROPPED (Patrick, #128 — "totally").
+(pending 3, open since #87); the test-doc catch-up (pending 4) —
+half done, §31 is what remains, and it is **#140's goal**; the
+mistouching (pending 1, diagnosed #137 — Patrick's next move is
+the phone's Touch Accommodations settings, not the code); the
+narrow-width screens (pending 5, the same fix as pending 1); and
+the stale comment tail at line 810 of mystery-clues-tracker.html
+(pending 6), parked by Patrick. Small and parked: the "Every other
+cell is clean" gloss in 24.x/25.11; the docx message-font
+distinction. The #114 docx zoom quirk is DROPPED (Patrick, #128).
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -188,20 +206,37 @@ MysteryCluesTracker/docs/pending.txt and ROADMAP.md.
 - #135 (2026-07-25): roadmap step nine DONE — the minimum iOS lowered 26.5 → 16.6 and export compliance declared (both code-verified), then build 1.0 (1) archived, validated clean, and uploaded; TestFlight left unused; the unset-shows-"No" encryption find and the Xcode Cloud wrong turn logged; no app code.
 - #136 (2026-07-26): roadmap step ten DONE — Keywords (95 bytes) and Promotional Text (169 characters) written from Patrick's own words and saved, "clue" ruled out of both; the Keywords-is-required question answered from Apple's own page; the build attached, six submission blockers cleared, the "You won" shot reshot (the 6.5-inch inheritance trap found by Patrick), and THE APP SUBMITTED FOR REVIEW; no app code.
 - #137 (2026-07-26): the grid's mistouching DIAGNOSED from the code (the 430 floor, the always-six columns, 24 × 28 against 44 × 44, no gap and no flash, 🏠 alone acting on first touch, the silent row-off pick in the active column); the #122 fat-finger line found as corroboration; the #86 grid-clip caveat proven and merged with pending 1; Patrick's before-contact insight answered by Apple's Touch Accommodations, and his decision to try the settings before any code; one bug reported and withdrawn; no app code.
+- #138 (2026-07-26): DERAILED — Claude lost the session number after a #133 paste, a model switch made it worse, Patrick ended it and no docs were written; but his own find, the turn bar naming the asker instead of the shower after a reopen, was fixed in two lines (lastShowerName into the snapshot) and copied to the wrapper.
+- #139 (2026-07-26/27): #138 reconstructed from the code and written up; §25 rebuilt to 20 steps so the doc proves the #138 fix (25.18 reshaped, 25.19 new, Next ▶ into 25.20) — the docx at 401, machine-verified; §31 scoped as a whole rewrite and the entire ⭐ accusation flow harvested from the code into build-history.md; the phase-name inversion recorded; no app code.
 
-## Next session's goal (#138, from #137)
+## Next session's goal (#140, from #139)
 
-**THE TEST-DOC CATCH-UP TO THE CODE — pending item 4, open since
-#132 and grown at #133. The spec is a step behind the phone. Three
-things need it: the #132 shower line, the #133 undo and accusation
-Log wordings, and every step still describing the OLD accusation
-flow — the auto-opening modal and the undoable endings are gone
-from the code, so those sections and the matching Appendix D
-entries need the rewrite. It all goes through
-`docs/build-mcts-test.js`; the docx is generated and never
-hand-edited, then verified row-for-row. How big it is IS NOT KNOWN
-YET: counting which of the 400 steps still describe the old flow is
-the first piece of work, not a preliminary to it.**
+**THE §31 REWRITE — the last of pending item 4.** All seventeen
+steps of "31 — End of Game" describe the accusation flow #133
+removed, so the section is written fresh, not patched (Patrick's
+call). Its first two steps are dropped rather than moved: §18.5
+already tests the more-than-one-⭐ warning, and the watcher tests
+belong there (Patrick, #139).
+
+**Read `MysteryCluesTracker/docs/build-history.md` "#139" first.**
+The whole flow is written out there from the code — the ⭐ Accuse
+button as the one door, the modal's three parts and their exact
+headings, both dim-tap refusals, the four ending lines and which
+one glows, the Log line's format, and the frozen-tap message. It is
+there so the code need not be read again.
+
+**The first question, and it shapes everything after it: which
+ending does §31 finish on?** Three of the four endings are terminal
+and no verdict can be undone — only an opponent's wrong accusation
+leaves the game alive. So the section may walk as many
+opponent-wrong accusations as it likes but reaches exactly ONE
+ending, and the document stops there for good.
+
+It all goes through `docs/build-mcts-test.js`; the docx is
+generated and never hand-edited, then verified row-for-row. Still
+in item 4 besides §31: the #132 shower line and the #133 Log
+wordings wherever else they appear in the 401 steps, and Appendix
+D's matching entries.
 
 **Two things may take the agenda first.** Apple's review answer may
 arrive and set its own. And Patrick was going to try the phone's
@@ -222,16 +257,23 @@ The #135 and #136 lists are both COMMITTED — #135 mid-session at
 #136, and #136 confirmed by Patrick at #137. Nothing is left
 waiting from either.
 
-From #137 — MysteryCluesTracker: docs/build-history.md (the #137
-entry), docs/pending.txt (item 1 rewritten with the diagnosis and
-the settings-first order, item 5 merged with it, the standing block
-and the header date), docs/pending.docx (rebuilt from the txt and
-machine-checked line for line — 31 paragraphs, five bold headers,
-9,704 characters matching the source exactly); App-Docs:
+The #137 list was committed by Patrick at the start of #139.
+
+From #138 — MysteryCluesTracker: mystery-clues-tracker.html (the
+two-line turn-bar fix at 2811–2812 and 2850) and the wrapper's
+www/ copy of the same file. Nothing else; that session wrote no
+docs.
+
+From #139 — MysteryCluesTracker: docs/build-mcts-test.js (§25's
+three steps), docs/mcts-master-test.docx (regenerated, 401 steps,
+machine-verified), docs/build-history.md (the #138 and #139
+sections), docs/pending.txt (the header date, the standing block,
+item 4 rewritten), docs/pending.docx (rebuilt from the txt and
+machine-checked — 32 paragraphs, five bold headers, 11,198
+characters matching the source exactly); App-Docs:
 master-handoff.md (this refresh), Publishing-Strategy.docx (the
-next-session note). No app code was touched, so
-mystery-clues-tracker.html and the wrapper are unchanged. Nothing
-in App Store Connect lives in a repo.
+next-session note). #139 touched no app code. Nothing in App Store
+Connect lives in a repo.
 
 ## Loose ends
 
