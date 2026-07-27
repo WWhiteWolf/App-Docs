@@ -63,7 +63,7 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-27, session #142 — §19 rewritten and built; the test document at 401 steps, and no section of it lags the code)
+## Where things stand (updated 2026-07-27, session #143 — the wordings sweep run: the Log lines clean, and §22 and Appendix D found to lag the code)
 
 **THE APP IS WITH APPLE AND CARRIES THE RIGHT CODE.** Build
 **1.0 (2)** went back in at #140 after the version was pulled from
@@ -71,59 +71,66 @@ review; status at that session's end was **1.0 Waiting for Review**.
 The release setting is **MANUAL**, so an approval waits for Patrick
 rather than putting the app on the store by itself. Nothing in
 App Store Connect lives in a repo, so the docs are the only record.
-No word from Apple had arrived by the end of #142.
+No word from Apple had arrived by the end of #143.
 
-**§19 "CELL NOTES" IS DONE — the session's whole work, and with it
-NO SECTION OF THE TEST DOCUMENT LAGS THE CODE.** Eleven steps became
-ten, on Patrick's rulings throughout. **The merge:** old 19.2 proved
-that Set saved in place, which no longer happens, so Patrick ruled
-that 19.2 should prove that **Done saves and closes** — which old
-19.3 already did, so the two became one and everything after slid up
-a number. **The note text:** "shown?" was six characters and the box
-takes four; Patrick chose **"XXXX"**, literally four capital X's,
-confirmed when asked. **The cap:** the step now types **"XXXX?"** and
-the box holds "XXXX" — the fifth character is deliberately not an X,
-because a question mark that fails to land is missed by nobody while
-four identical marks against five must be counted.
+**THE WORDINGS SWEEP IS RUN, AND THE WORDINGS ARE CLEAN.** Both
+lines the hand-off named were read out of the code first, then
+checked at every step that opens and reads the Log. The **#132
+shower line** (`logTurn`, now line 889 — "You" for your own column,
+the card appended only when one is known) is correct as written at
+**25.19** and **29.20**; **21.5** is incomplete rather than wrong,
+calling Turn 7 "the re-run ask (Ann showed)" when the line now reads
+"Ann showed Card 2"; and **the You-form and the named card are
+proven nowhere in the 401 steps.** The **#133 accusation lines**
+(`Turn N — ⭐ {who} accused {cards} — right|wrong`) are quoted
+exactly at **30.36** and **31.18**, and nowhere else in the document.
 
-**THE ONE REAL FIND: Close does not save, and the document said it
-did.** build-history's "#140" note covered the four-character cap,
-the deleted Set button and Done's new `saveCellNote()`, but said
-nothing about Close, so the modal's markup was read directly (lines
-624–639). `Done` is `saveCellNote(); closeModal(...)`; **`Close` at
-the top is `closeModal(...)` alone.** Old 19.8 asserted "Close closes
-like Done" — false, and untested either way. It became the new
-**19.7**: tap the cell, tap Clear, tap Close, and "XXXX" is STILL in
-the corner. Patrick had phone-checked the draft before it was built.
+**BUT THE SWEEP FOUND TWO PLACES THAT DO LAG THE CODE, so #142's
+claim that no section lags it is RETIRED.** Neither is a wording.
 
-**A QUOTING RULE SETTLED, and it governs every future section.**
-Patrick's principle: when text is handled as an object — a string —
-rather than as conversation, it must be marked, in the Do cell as
-well as the Make sure. A count of the script settled the form:
-fourteen steps already used straight double quotes and three ran
-bare. Italics are NOT available — the cell builder puts a single run
-in a cell. Written into `chat&test-spec-styling.md`.
+**§22 "PLAYER OUT" STILL TESTS THE PRE-#133 OUT MODAL — six steps.**
+The modal's markup was read (mystery-clues-tracker.html 575–597): it
+offers ONE choice, "👋 Quits — cards shown to everyone", and line 583
+carries the comment recording that the 😢 Wrong Accusation road moved
+to the ⭐ Accusation modal. **22.1** says two choices; **22.2**,
+**22.5** and **22.6** tap 😢 Wrong Accusation, and 22.6 expects "Ann
+is out — no more turns, still shows cards", a sentence not anywhere
+in the file; **22.17** goes through Out for the "already out on a
+wrong accusation" refusal, which now speaks from the ⭐ modal (line
+1748); and **22.24** reads a Log entry the app can no longer write —
+`logOut` is called from one place (line 2524) and always passes
+`'quit'`. Ann's 😢 rides forward into §23's and §25's start banners,
+so this is a design job of the same shape as §19 and §31.
 
-**THE TEST DOCUMENT NOW STANDS AT 401 STEPS,** machine-verified:
-all ten §19 cells matching the script word for word, the tester's
-columns empty, no 19.11 anywhere, no mention of Set left in the
-section, 18.8 and 20.1 untouched. The step count and the Index line
-("19 — Cell Notes, Steps 1–10") are computed and never typed.
+**APPENDIX D LAGS IT FURTHER THAN ITS KNOWN CELL-NOTE ENTRY.** A
+census of every `function` name in the file found **three functions
+the appendix lists and describes that do not exist** — `accuseYes`,
+`accuseRight(won)` and `wrongAccTap()`, all #125-era and gone with
+#133. `openAccuseModal`, `checkStars`, `undoTurn`, `logTurn` and
+`logOut` are each described as they were before #133. The coverage
+map still points at the OLD §31's step numbers in six places. And
+every line number in the function list has drifted with #133 and
+#140 — `logTurn` given as 860 sits at 889, `renderTurnBar` as 1846
+sits at 1978, `saveState` as 2682 sits at 2800.
+
+**A CONDUCT NOTE.** The load flag was given by feel and undercounted
+badly — "roughly twenty-five tool calls, four code reads" against a
+real 39 and fifteen. Patrick caught it by asking. The correction
+then grew into a long explanation that spent the rest of a 23-minute
+session. Rule 7 says count, do not feel; and the counting is Claude's
+housekeeping, not the foreground of Patrick's session.
 
 Still open (pending.txt numbering): the test-doc catch-up
-(pending 4) is now **only a wordings sweep** — the #132 shower line
-and the #133 accusation Log wordings wherever else they appear in
-the 401 steps, and Appendix D's matching entries. Found at #142 and
-deliberately left alone: Appendix D's `clearCellNote` entry names two
-steps where Clear is tapped at four. The mistouching (pending 1) is
-part built and **Patrick has parked the remainder** (#141) — the
-phone's Touch Accommodations settings, a visible pressed state and
-taller rows are not to be raised again until he calls for them;
-reclaiming the never-used seats' width is the same fix as the
-narrow-width screens (pending 5). Also live: the Feedback-modal bug
-question (pending 2), the web-spec evaluation (pending 3), the stale
-comment tail at line 810 (pending 6), and the step-by-step pipeline
-document Patrick asked for at #140 and parked into NICE-TO-HAVE.
+(pending 4) is now **§22 and Appendix D**, with the wordings sweep
+behind it. The mistouching (pending 1) is part built and **Patrick
+has parked the remainder** (#141) — the phone's Touch Accommodations
+settings, a visible pressed state and taller rows are not to be
+raised again until he calls for them; reclaiming the never-used
+seats' width is the same fix as the narrow-width screens
+(pending 5). Also live: the Feedback-modal bug question (pending 2),
+the web-spec evaluation (pending 3), the stale comment tail at line
+810 (pending 6), and the step-by-step pipeline document Patrick asked
+for at #140 and parked into NICE-TO-HAVE.
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -207,33 +214,47 @@ MysteryCluesTracker/docs/pending.txt and ROADMAP.md.
 - #140 (2026-07-27): Patrick's own agenda in place of §31 — the release paused to MANUAL, the grid rebalanced (∑ and 🏠 24 → 33, players 50 → 47, two borders thinned), the cell note rebuilt (4 characters, Set deleted, Done now saves) and the Guide corrected; the version pulled from review and resubmitted with build 1.0 (2); §19 joined §31 in the test-doc debt; a step-by-step pipeline document asked for and parked.
 - #141 (2026-07-27): §31 "End of Game" rewritten to 18 steps on Patrick's design — a fresh three-player game, Seats 2/4/5 un-seated, no turns played, ending on the last live opponent's wrong accusation — phone-run by Patrick and built into the script and the docx (402 steps, machine-verified); three code finds logged; the mistouching remainder parked at his direction; no app code.
 - #142 (2026-07-27): §19 "Cell Notes" rewritten to 10 steps — old 19.2/19.3 merged to prove Done saves and closes, "XXXX" and the "XXXX?" cap, the Set button gone from every step, and a new 19.7 proving Close DISCARDS (read out of the modal's markup; the old step had it backwards); the string-quoting rule settled into the styling doc; Appendix D's four map lines renumbered; the docx at 401, machine-verified; no app code.
+- #143 (2026-07-27): the wordings sweep RUN — the #132 shower line and the #133 accusation lines checked at every Log-reading step and found clean (21.5 incomplete, the You-form and named card proven nowhere); §22 "Player Out" found still testing the pre-#133 Out modal (six steps) and Appendix D found listing three functions that no longer exist, with its map on the old §31 and its line numbers drifted; nothing built, no app code; the load flag miscounted by feel and corrected.
 
-## Next session's goal (#143, from #142)
+## Next session's goal (#144, from #143) — Patrick's, set at the end of #143
 
-**THE WORDINGS SWEEP — what is left of pending item 4, and the only
-piece of it still owed.** Every section of the test document now
-matches the code; what has never been checked is whether wordings
-changed in #132 and #133 are current WHEREVER ELSE they appear in
-the 401 steps.
+**BUILD THE UPDATES #143 DOCUMENTED. Everything the sweep found the
+test spec needs, implemented.** No fresh investigation is owed — the
+finding work is done and the code has been read. #144 is a build
+session.
 
-Three things to look for:
+**§22 "Player Out" — six steps.** They still walk the pre-#133 Out
+modal, which has had ONE door since #133 ("👋 Quits — cards shown to
+everyone"; markup at mystery-clues-tracker.html 575–597, the comment
+at 583). 22.1 says two choices. 22.2, 22.5 and 22.6 tap 😢 Wrong
+Accusation, and 22.6 expects "Ann is out — no more turns, still shows
+cards", which is nowhere in the app. 22.17 uses Out for the "already
+out on a wrong accusation" refusal, which now speaks from the
+⭐ Accusation modal (line 1748). 22.24 reads a Log entry the app can
+no longer write (`logOut` is called once, at 2524, always with
+`'quit'`). **The design question to settle first: how Ann goes out
+now** — her 😢 rides forward into §23's and §25's start banners, so
+it cannot simply be deleted. Same shape as §19 (#142) and §31 (#141):
+Patrick's rulings, a phone run, then the build.
 
-- **The #132 Log shower line** — "You" when it is you showing, and
-  the card named when you already know it.
-- **The #133 accusation Log wordings** — the four verdicts, written
-  when the ⭐ Accuse door was built.
-- **Appendix D's matching entries**, which quote some of the same
-  lines.
+**Appendix D.** Remove the three functions that no longer exist
+(`accuseYes`, `accuseRight`, `wrongAccTap`); bring five descriptions
+current (`openAccuseModal`, `checkStars`, `undoTurn`, `logTurn`,
+`logOut`); renumber the coverage map's six references to the OLD
+§31; refresh the drifted line numbers (`logTurn` 860 → 889,
+`renderTurnBar` 1846 → 1978, `saveState` 2682 → 2800, `undoTurn`
+2241 → 2393); and finish the `clearCellNote` entry, which names two
+steps where Clear is tapped at four (19.4, 19.7, 19.8, 19.9).
 
-Also found at #142 and left alone on purpose: Appendix D's
-`clearCellNote` entry names two steps where Clear is tapped at four
-(19.4, 19.7, 19.8, 19.9). It was already incomplete before #142;
-the numbers were renumbered faithfully rather than expanded without
-Patrick's say-so. A sweep session is the natural place to settle it.
+**The two small wording items the sweep produced.** 21.5 calls Turn 7
+"the re-run ask (Ann showed)" when the line now reads "Ann showed
+Card 2". And the #132 You-form and named card are proven NOWHERE in
+the 401 steps — whether to spend a step proving them is Patrick's
+call.
 
 It all goes through `docs/build-mcts-test.js`; the docx is generated
-and never hand-edited, then verified row-for-row. The document
-stands at 401 steps as of #142.
+and never hand-edited, then verified row-for-row. The document stands
+at 401 steps and #143 did not change it.
 
 **What may take the agenda instead.** Apple's answer on build
 1.0 (2) may arrive and set its own — the release is MANUAL, so an
@@ -315,6 +336,17 @@ source word for word by machine check); docs/chat&test-spec-styling.md
 refresh), Publishing-Strategy.docx (the next-session note). #142
 touched NO app code, and no draft file was made — the §19 draft
 lived in chat and Patrick phone-checked it there.
+
+From #143 — MysteryCluesTracker: docs/build-history.md (the #143
+section), docs/pending.txt (the header, the test-doc line in the
+standing block, and item 4 rewritten around the sweep's result),
+docs/pending.docx (rebuilt from the txt and machine-checked
+paragraph by paragraph); App-Docs: master-handoff.md (this refresh),
+Publishing-Strategy.docx (the next-session note). **#143 changed
+NOTHING in the app and NOTHING in the test document** —
+build-mcts-test.js and mcts-master-test.docx are untouched, and the
+document still stands at 401 steps. No draft file was made and no
+git commands were run.
 
 ## Loose ends
 
