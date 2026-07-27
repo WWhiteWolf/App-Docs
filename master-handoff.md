@@ -63,71 +63,91 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-27, session #139 — #138 reconstructed from the code, §25 of the test doc rebuilt to 20 steps, §31 scoped for a full rewrite)
+## Where things stand (updated 2026-07-27, session #140 — the grid rebalanced, the cell note rebuilt, and the submission pulled back and resent carrying the right app)
 
-**THE APP IS STILL WITH APPLE.** Submitted 2026-07-26 at #136 with
-all ten roadmap steps done — up to 48 hours to review, an email
-when decided, release set to AUTOMATIC so an approval puts it on
-the store by itself (Apple: up to 24 hours to appear). No answer
-had arrived by the end of #139.
+**THE APP IS BACK WITH APPLE, AND THIS TIME IT IS THE RIGHT ONE.**
+The build that had been waiting in the queue since #136 was made
+before the #138 turn-bar fix and before everything built at #140,
+so an approval would have released the wrong app. At #140 Patrick
+switched the release setting from AUTOMATIC to **MANUAL** (which
+costs no queue position), then pulled the version out of review,
+uploaded and attached build **1.0 (2)**, and sent it back in.
+Status as of session end: **1.0 Waiting for Review**. Because the
+setting is Manual, an approval will now wait for him rather than
+putting the app on the store by itself.
 
-**#138 DERAILED AND LEFT NOTHING WRITTEN.** Its goal was the
-test-spec catch-up. Patrick proposed that §31 be rewritten whole
-rather than patched and pasted a few paragraphs of the #133 record
-in as reference; after that paste Claude lost track of which
-session it was in, a model switch made it worse, and Patrick ended
-it before anything else went wrong. But it was not empty: he found
-a real bug during it and it was fixed in two lines. After a close
-and reopen, with the ask made and the shower already tapped, the
-turn bar named the ASKER instead of the shower — `lastShowerName`
-was set as a turn played out but never saved, so the reopen brought
-it back empty and line 2013 fell through to the current player. The
-fix rides the snapshot (line 2812 saves it, line 2850 restores it).
-The Log was never affected. The wrapper copy is byte-identical, and
-Patrick has rebuilt in Xcode — **the phone is now current at
-#139.** The build sitting with Apple predates the fix.
+**#140 ANSWERED THE MISTOUCHING IN CODE — Patrick's own design.**
+The Summary and House columns went from 24 pixels to **33**, the
+width taken evenly out of all six player columns, which dropped
+from 50 to **47**; the row still sums to exactly 430. Two thick
+borders were thinned to 1 pixel at the same time — the card-name
+column's right edge and the House column's left edge — with the
+House column's right edge left at 2 pixels gold. Seven numbers in
+the stylesheet, no JavaScript touched: #137 had ranked this last
+of four and hardest, but that ranking described REMOVING the
+never-used seats, and simply rebalancing widths leaves
+`buildTrackerTable` and `colSpan = 9` alone. **The 430 floor did
+NOT move**, so the narrow-screen item is untouched.
 
-**#139 RECONSTRUCTED #138 AND REBUILT §25.** The gap was closed
-from the code and Patrick's own line numbers, not from memory.
-§25 had no step that woke the app with the shower tapped and the
-turn not yet advanced — exactly the bug's state — so 25.18 now
-closes and reopens straight off the shower tap and checks the bar
-reads "Turn 1 — Dan showed ✓"; a new 25.19 carries the Log check
-(no second close: 25.14 already proves the Log page wakes); and
-25.20 picked up Next ▶, because the tap matters to the document's
-single pass even though the Log is written at the shower tap.
-§25 is 19 steps → 20, **the docx at 401**, read back by machine.
-Patrick proved 25.18 on his phone himself. Also recorded: the
-code's phase names and the screen's words nearly invert — phase
-`waiting` is the screen's "showed ✓".
+**THE CELL NOTE WAS REBUILT AND THE GUIDE CAUGHT UP.** Also
+Patrick's design: four characters instead of six, the **Set button
+deleted**, and **Done** now saves before it closes — before this,
+text typed and then Done'd was silently thrown away. The corner
+note's cap came down from 44 pixels to 28. Then a search of the
+file caught the Guide still saying "6 characters" in two places,
+one of which told the reader to tap the Set button that no longer
+existed; both were corrected before the archive. The store
+description needed nothing. Fourteen lines of code in all, the
+wrapper copy verified byte-for-byte twice, rebuilt in Xcode and
+**phone-verified by Patrick — the phone is current at #140.**
 
-**§31 IS THE NEXT PIECE, AND IT IS A WHOLE REWRITE.** All
-seventeen steps describe the accusation flow #133 removed — the
-modal opening by itself on the fourth ⭐, the two-question "Do you
-want to make an accusation?" over "Were you right?", undoable
-endings, and Out's 😢 road. Its first two steps are duplicates,
-not orphans: §18.5 already tests the more-than-one-⭐ warning, and
-Patrick ruled the watcher tests belong there. The whole accusation
-flow was read out of the code at #139 and written into
-build-history.md "#139" in full — the modal's three parts, both
-refusal messages, all four ending lines, the Log line's shape —
-**so #140 drafts from that record and does not re-read the code.**
-**One question has to be answered first: which ending §31 finishes
-on.** Three of the four endings are terminal and no verdict can be
-undone, so the section reaches exactly one of them and the
-document stops there.
+**WHAT THE RESUBMISSION TAUGHT, worth keeping.** Build status
+lives in **TestFlight → iOS builds**, not on the version page —
+each upload reads "Processing" and then "Ready to Submit", and the
+version page only ever offers builds that reached the second
+(build 2 took about forty minutes). On the version page the red
+minus detaches the old build without deleting it, and an easily
+missed **Add Build** control attaches the new one. And **"Add for
+Review" is not the submission** — it stages the version and a
+separate **Submit for Review** button appears in a Draft
+Submissions panel; stopping at Add for Review leaves a draft
+nobody at Apple ever sees. Version numbers: 1.0 stayed, because a
+build's version string must match the version record ("1.0", not
+"1"), and the build number had to rise to 2 because build 1 is
+spent and removal from review does not release it. All of it read
+off Apple's own pages, quoted in build-history.md "#140".
 
-Still open (pending.txt numbering): the Feedback-modal bug
+**THE TEST DOC NOW LAGS THE CODE IN TWO PLACES — this is #141's
+goal.** §31 "End of Game" was already owed: all seventeen steps
+describe the accusation flow #133 removed, so it is a whole
+rewrite, and the flow was harvested from the code into
+build-history.md "#139" so the code need not be read again. **One
+question has to be answered first: which ending §31 finishes on** —
+three of the four are terminal, so the section reaches exactly one
+and the document stops there. **§19 "Cell Notes" joined it at
+#140**: eleven steps, ten of them broken by the modal rebuild —
+19.1 expects "max 6 characters" and a Set button; 19.2, 19.3, 19.7
+and 19.8 tap Set; three steps type the six-character "shown?"; and
+19.9 expects the box to stop at six.
+
+Still open (pending.txt numbering): the test-doc catch-up
+(pending 4) — §19 and §31, and **#141's goal**; the mistouching
+(pending 1) — part built at #140, with three ideas still unbuilt:
+the phone's own Touch Accommodations settings (whether Patrick
+ever tried them was never reported), a visible pressed state on
+the cells, and taller rows; reclaiming the never-used seats' width
+is the hardest and is the same fix as the narrow-width screens
+(pending 5), which #140 did not touch; the Feedback-modal bug
 question (pending 2, noted #111); the web-spec evaluation
-(pending 3, open since #87); the test-doc catch-up (pending 4) —
-half done, §31 is what remains, and it is **#140's goal**; the
-mistouching (pending 1, diagnosed #137 — Patrick's next move is
-the phone's Touch Accommodations settings, not the code); the
-narrow-width screens (pending 5, the same fix as pending 1); and
-the stale comment tail at line 810 of mystery-clues-tracker.html
-(pending 6), parked by Patrick. Small and parked: the "Every other
-cell is clean" gloss in 24.x/25.11; the docx message-font
-distinction. The #114 docx zoom quirk is DROPPED (Patrick, #128).
+(pending 3, open since #87); and the stale comment tail at line
+810 of mystery-clues-tracker.html (pending 6), parked by Patrick.
+New and parked at #140: a step-by-step pipeline document, from
+first edit to submission, covering VS Code, GitHub, Xcode and App
+Store Connect — Patrick's ask, and it lives in
+MysteryCluesTracker/docs when written. Small and parked: the
+"Every other cell is clean" gloss in 24.x/25.11; the docx
+message-font distinction. The #114 docx zoom quirk is DROPPED
+(Patrick, #128).
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -208,25 +228,40 @@ MysteryCluesTracker/docs/pending.txt and ROADMAP.md.
 - #137 (2026-07-26): the grid's mistouching DIAGNOSED from the code (the 430 floor, the always-six columns, 24 × 28 against 44 × 44, no gap and no flash, 🏠 alone acting on first touch, the silent row-off pick in the active column); the #122 fat-finger line found as corroboration; the #86 grid-clip caveat proven and merged with pending 1; Patrick's before-contact insight answered by Apple's Touch Accommodations, and his decision to try the settings before any code; one bug reported and withdrawn; no app code.
 - #138 (2026-07-26): DERAILED — Claude lost the session number after a #133 paste, a model switch made it worse, Patrick ended it and no docs were written; but his own find, the turn bar naming the asker instead of the shower after a reopen, was fixed in two lines (lastShowerName into the snapshot) and copied to the wrapper.
 - #139 (2026-07-26/27): #138 reconstructed from the code and written up; §25 rebuilt to 20 steps so the doc proves the #138 fix (25.18 reshaped, 25.19 new, Next ▶ into 25.20) — the docx at 401, machine-verified; §31 scoped as a whole rewrite and the entire ⭐ accusation flow harvested from the code into build-history.md; the phase-name inversion recorded; no app code.
+- #140 (2026-07-27): Patrick's own agenda in place of §31 — the release paused to MANUAL, the grid rebalanced (∑ and 🏠 24 → 33, players 50 → 47, two borders thinned), the cell note rebuilt (4 characters, Set deleted, Done now saves) and the Guide corrected; the version pulled from review and resubmitted with build 1.0 (2); §19 joined §31 in the test-doc debt; a step-by-step pipeline document asked for and parked.
 
-## Next session's goal (#140, from #139)
+## Next session's goal (#141, from #140)
 
-**THE §31 REWRITE — the last of pending item 4.** All seventeen
-steps of "31 — End of Game" describe the accusation flow #133
-removed, so the section is written fresh, not patched (Patrick's
-call). Its first two steps are dropped rather than moved: §18.5
-already tests the more-than-one-⭐ warning, and the watcher tests
-belong there (Patrick, #139).
+**THE TEST-SPEC UPDATES — §19 AND §31, all of pending item 4.**
+Patrick named this at the end of #140.
 
-**Read `MysteryCluesTracker/docs/build-history.md` "#139" first.**
-The whole flow is written out there from the code — the ⭐ Accuse
-button as the one door, the modal's three parts and their exact
-headings, both dim-tap refusals, the four ending lines and which
-one glows, the Log line's format, and the frozen-tap message. It is
-there so the code need not be read again.
+**§19 "Cell Notes" is the smaller and newer of the two.** The
+modal was rebuilt at #140 and ten of §19's eleven steps now
+describe something that is gone: 19.1 expects the line "max 6
+characters" and a Set button beside the box; 19.2, 19.3, 19.7 and
+19.8 all tap Set, and 19.2 asserts the modal stays open
+afterward; 19.2, 19.7 and 19.8 type "shown?", six characters the
+box will no longer take; and 19.9 types seven expecting it to
+stop at six. What the modal does NOW: four characters, no Set
+button, Done saves and then closes, Clear still empties it. The
+exact code lines are in build-history.md "#140".
 
-**The first question, and it shapes everything after it: which
-ending does §31 finish on?** Three of the four endings are terminal
+**§31 "End of Game" is a whole rewrite, not a patch.** All
+seventeen steps describe the accusation flow #133 removed, so the
+section is written fresh (Patrick's call). Its first two steps are
+dropped rather than moved: §18.5 already tests the
+more-than-one-⭐ warning, and the watcher tests belong there
+(Patrick, #139).
+
+**Read `MysteryCluesTracker/docs/build-history.md` "#139" before
+starting §31.** The whole flow is written out there from the code
+— the ⭐ Accuse button as the one door, the modal's three parts and
+their exact headings, both dim-tap refusals, the four ending lines
+and which one glows, the Log line's format, and the frozen-tap
+message. It is there so the code need not be read again.
+
+**§31's first question, and it shapes everything after it: which
+ending does it finish on?** Three of the four endings are terminal
 and no verdict can be undone — only an opponent's wrong accusation
 leaves the game alive. So the section may walk as many
 opponent-wrong accusations as it likes but reaches exactly ONE
@@ -234,19 +269,22 @@ ending, and the document stops there for good.
 
 It all goes through `docs/build-mcts-test.js`; the docx is
 generated and never hand-edited, then verified row-for-row. Still
-in item 4 besides §31: the #132 shower line and the #133 Log
+in item 4 besides those two: the #132 shower line and the #133 Log
 wordings wherever else they appear in the 401 steps, and Appendix
 D's matching entries.
 
-**Two things may take the agenda first.** Apple's review answer may
-arrive and set its own. And Patrick was going to try the phone's
-Touch Accommodations settings against the mistouching — whatever
-that leaves over is what a code change has to earn, and any code
-change now means a new version number and a fresh submission.
+**Two things may take the agenda first.** Apple's answer on build
+1.0 (2) may arrive and set its own — and note the release is now
+MANUAL, so an approval waits for Patrick rather than shipping
+itself. And the mistouching is only part answered: the phone's own
+Touch Accommodations settings, a visible pressed state, and taller
+rows are all still unbuilt, and any code change means another
+version number and another submission.
 Also still available if wanted instead: the Feedback-modal bug
 question (pending 2), the web-spec evaluation (pending 3), the
-narrow-width screens (pending 5, the same fix as pending 1), and
-the one-sentence stale comment at line 810 (pending 6).
+narrow-width screens (pending 5, unchanged by #140), the
+one-sentence stale comment at line 810 (pending 6), and the
+step-by-step pipeline document Patrick asked for and parked.
 
 The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
@@ -271,9 +309,29 @@ sections), docs/pending.txt (the header date, the standing block,
 item 4 rewritten), docs/pending.docx (rebuilt from the txt and
 machine-checked — 32 paragraphs, five bold headers, 11,198
 characters matching the source exactly); App-Docs:
-master-handoff.md (this refresh), Publishing-Strategy.docx (the
+master-handoff.md, Publishing-Strategy.docx (the
 next-session note). #139 touched no app code. Nothing in App Store
 Connect lives in a repo.
+
+From #140 — MysteryCluesTracker, APP CODE THIS TIME:
+mystery-clues-tracker.html (fourteen lines — seven for the grid
+widths and borders at 134/143/153/156/158/159/162, five for the
+cell note at 183/629/631/632/636, and the two Guide lines at 397
+and 430); the wrapper's www/ copy of the same file (verified
+byte-for-byte); and the wrapper's
+MysteryCluesTrackSheet.xcodeproj/project.pbxproj
+(CURRENT_PROJECT_VERSION 1 → 2 in both Debug and Release —
+MARKETING_VERSION unchanged at 1.0). Docs: docs/build-history.md
+(the #140 section), docs/pending.txt (header, standing block,
+items 1 and 4, and the pipeline document into NICE-TO-HAVE),
+docs/pending.docx (rebuilt from the txt — 44 paragraphs, five bold
+headers, word-for-word identical to the source by machine check),
+docs/upgrade-scope.md (the 🏠 mockup entry amended — 33px, and only
+the right gold border still 2px);
+App-Docs: master-handoff.md (this refresh), Publishing-Strategy.docx
+(the next-session note). Nothing in App Store Connect lives in a
+repo, so the release setting, the removal from review and the
+resubmission are recorded in the docs only.
 
 ## Loose ends
 
