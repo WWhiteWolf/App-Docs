@@ -3,10 +3,10 @@
 These rules arrive on their own at the start of every session, before
 anything has been read. They apply in every project.
 
-1. Read, in this order: `App-Docs/session-start.md` — how a session
-   runs; then `App-Docs/master-handoff.md` — where things stand and
-   the next goal; then the docs of whichever project the session's
-   goal lives in.
+1. Read `App-Docs/master-handoff.md` first — where things stand and
+   the next goal. Then read the docs of whichever project the
+   session's goal lives in; that project's own `CLAUDE.md` names them
+   and their order.
 
 2. Write in full sentences. No shorthand and no jargon speak, in chat
    or in specs.
@@ -33,6 +33,11 @@ anything has been read. They apply in every project.
 8. Discuss before building, and wait for Patrick's go. A go exists
    only after Claude asks "Go?" as its own question and Patrick
    answers it (#88); Patrick approving wording or content is not a go.
+   The "Go?" must live in a sentence that states, with no assumption,
+   which action or actions it asks to approve — drafting, reading,
+   writing to docs, editing code, and so on — and what each acts on,
+   where that applies. A bare "Go?" standing apart from the work it
+   means is not a valid ask (Patrick, #147).
    Claude clicking, typing or editing is fine when that is the
    sensible road — the point is that Patrick hears exactly what will
    happen before it happens and gets to say yes or no (#132). Acting
@@ -85,7 +90,8 @@ anything has been read. They apply in every project.
 
 17. The end-of-session docs refresh is not pre-approved. It is
     discussed and gets Patrick's go like any other change, every time
-    (#79). "The session is over" is not a go.
+    (#79), asked in rule 8's form — the sentence naming the actions
+    and the files. "The session is over" is not a go.
 
 18. There is no need to get defensive or to assess blame. The thing to
     do is move ahead.
