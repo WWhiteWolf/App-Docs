@@ -24,28 +24,29 @@ paragraphs accumulate here. Git holds every old version of this file.
    and reads THAT project's own docs (each app keeps its own material).
 4. Patrick names ONE goal; scope it together; Claude waits for his "go."
 
-Patrick's opener line: "#NN — name. Read CLAUDE.md, session-start.md,
-and the hand-off, then tell me where things stand."
+Patrick's opener line: "#NN — name. Read CLAUDE.md and the hand-off,
+then tell me where things stand."
 
-## Standing rules (short form — the full set is in the strategy doc and elderlyassistant/docs/session-start.md)
+## Standing rules
 
-- Patrick does ALL git commits. Claude runs NO git commands at all in
-  Patrick's repos — in #71 even a read-only `git status` left index.lock
-  files behind that would have blocked his commits. Look at files
-  directly instead.
-- One step at a time; discuss before building; wait for the go — a go
-  exists only after Claude asks "Go?" as its own question and Patrick
-  answers it (#88).
-- Verify before asserting — read the actual code/files, don't guess.
-- One question at a time; genuinely open questions — no boxed
-  choices, no "X or Y?" questions.
-- Never give click-directions for a screen Claude can't see.
-- Patrick leads; Claude doesn't steer. No urgency — his pace. He's
-  retired; this is a hobby — no deadlines, no clerk-abrupt tone; warm
-  and conversational. Not wasteful of his time, but never hurried.
-  Patrick lives alone; Claude's tone is sometimes the only
-  conversation he gets all day — it matters. The conversation is
-  part of the work, not overhead.
+How Claude conducts itself lives in `App-Docs/CLAUDE.md`, which
+arrives at the start of every session before anything is read. It is
+not repeated here.
+
+## The build-and-test commit rhythm (standing — never trimmed at a refresh)
+
+When a session's work needs a device test, Patrick splits it into two
+commits at two different times. First the code commit, before the
+build: Patrick commits the code so the build captures the right state,
+then triggers it and tests on the phone. Then the docs commit, after
+the test: once the phone run confirms the work, Patrick tells Claude
+the result, Claude refreshes the project's docs, and Patrick commits
+them separately — often in a later session.
+
+What this means at a session start: the previous session's code should
+already be committed, but the docs may lag. If the docs still say
+"awaiting build or device test," confirm with Patrick how the test
+went before assuming the work shipped clean.
 
 ## The products (all to be published — decided #71)
 
@@ -63,7 +64,7 @@ and the hand-off, then tell me where things stand."
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-27, session #144 — the #143 findings built: 21.4 corrected and §22 rebuilt onto the ⭐ Accuse road)
+## Where things stand (updated 2026-07-28, session #145 — nothing built: 22.28's wording settled in chat, then the carry-over rule dropped for sections under rework — §22 to be rebuilt on a fresh setup)
 
 **THE APP IS WITH APPLE AND CARRIES THE RIGHT CODE.** Build
 **1.0 (2)** went back in at #140 after the version was pulled from
@@ -99,19 +100,38 @@ wearing her 😢 (2446, 2460) and will let her be picked — only a quit
 leaves both rings. Four in-section cross-references and §23's start
 banner were renumbered twice as the section grew.
 
-**WHAT IS LEFT OF THE #143 LIST — two pieces.** **§22's Log step,
-now 22.28**, still reads "Turn 9 — 😢 Ann: Wrong Accusation", which
-the app can no longer write (`logOut` is called once, at 2524,
-always with `'quit'`); Ann's exit now writes
-"Turn 9 — ⭐ Ann accused Card 2, Card 11, Card 20 — wrong". The same
-step still says the Undo entry has two detail lines, and calls both
-entries "out entries" when only one is. **And APPENDIX D is
-untouched** — three functions that no longer exist (`accuseYes`,
-`accuseRight`, `wrongAccTap`), five descriptions written before
-#133, a coverage map pointing at the OLD §31's numbers in six places
-and now at §22's old numbers in about a dozen entries, drifted line
-numbers (`logTurn` 860 → 889, `renderTurnBar` 1846 → 1978,
-`saveState` 2682 → 2800), and the incomplete `clearCellNote` entry.
+**#145 CHANGED THE PLAN FOR §22 — NOTHING BUILT.** Patrick's
+ruling, in his own words: almost all sections take over from where
+the last one ended; that served a purpose essential for the first
+run of tests, and after that first long run it serves no purpose —
+it is making things harder with the restriction. There is no reason
+to change sections that are correct as they are now, so it applies
+only to sections under rework — which is §22. **§22 will be rebuilt
+on a fresh setup that meets its own needs** instead of inheriting
+the scripted game; §23's start banner (now "straight off 22.29")
+moves to name whatever the fresh §22 ends with. His guiding note:
+a proof carried from another section can be lost with no harm.
+Checked against the whole document: of the four things §22
+inherits, three are proved elsewhere (the held-row dimming — §30;
+the asker-never-crossed rule — 12.5; the full Log walk — §21), and
+one is proved nowhere else — 22.25's "a ✅ replaces hearsay with
+fact" (a quitter's ✅ turning another player's old "!" into a ❌) —
+which is cheap to keep in the fresh section. **22.28's corrected
+wording was settled in chat BEFORE the ruling and never built**
+(the one Undo detail line, Ann's ⭐ accusation entry, "Dan's out
+entry and Ann's accusation are both permanent history"); the fresh
+rebuild will likely fold it in. Full detail: build-history.md #145.
+
+**WHAT IS LEFT OF THE CATCH-UP — the same two pieces.** §22 (now
+the fresh-setup rebuild, above) **and APPENDIX D, untouched** —
+three functions that no longer exist (`accuseYes`, `accuseRight`,
+`wrongAccTap`), five descriptions written before #133, a coverage
+map pointing at the OLD §31's numbers in six places and now at
+§22's old numbers in about a dozen entries, drifted line numbers
+(`logTurn` 860 → 889, `renderTurnBar` 1846 → 1978, `saveState`
+2682 → 2800), and the incomplete `clearCellNote` entry. Note the
+fresh §22 will move Appendix D's §22 targets again — build the
+section first, then the appendix.
 
 **A WORKING NOTE.** Patrick said plainly that he could not track the
 renumbering in his head, and a plain numbered list of the section's
@@ -214,44 +234,45 @@ MysteryCluesTracker/docs/pending.txt and ROADMAP.md.
 - #142 (2026-07-27): §19 "Cell Notes" rewritten to 10 steps — old 19.2/19.3 merged to prove Done saves and closes, "XXXX" and the "XXXX?" cap, the Set button gone from every step, and a new 19.7 proving Close DISCARDS (read out of the modal's markup; the old step had it backwards); the string-quoting rule settled into the styling doc; Appendix D's four map lines renumbered; the docx at 401, machine-verified; no app code.
 - #143 (2026-07-27): the wordings sweep RUN — the #132 shower line and the #133 accusation lines checked at every Log-reading step and found clean (21.5 incomplete, the You-form and named card proven nowhere); §22 "Player Out" found still testing the pre-#133 Out modal (six steps) and Appendix D found listing three functions that no longer exist, with its map on the old §31 and its line numbers drifted; nothing built, no app code; the load flag miscounted by feel and corrected.
 - #144 (2026-07-27): the #143 findings BUILT — 21.4 corrected (the card in the shower line, the Undo entry's one detail line, the quoting), and #143's own numbering slip recorded; §22 rebuilt from 25 steps to 29 as far as its Log step — the one-door Out modal, Ann's exit moved to the ⭐ Accuse road at 22.5–22.10 with the arm-and-lapse restored, the "already out" refusal moved to the ⭐ modal, and two rounds of renumbering; the docx at 405, machine-verified after every step; §22.28 and Appendix D left; no app code.
+- #145 (2026-07-28): NOTHING BUILT — 22.28's corrected wording settled in chat from the code; then Patrick's ruling: the section-to-section carry-over rule is dropped for sections under rework, §22 to be rebuilt on a fresh setup of its own (§23's banner moves with it; only 22.25's ✅-replaces-hearsay proof is unique and kept); docx confirmed in sync at 405; ended early — model usage out after a switch from Opus 5.
 
-## Next session's goal (#145, from #144)
+## Next session's goal (#146, from #145)
 
-**FINISH THE TEST-DOC CATCH-UP. Two pieces are left, and both are
-build work — the finding is done and the code has been read.**
+**REBUILD §22 "PLAYER OUT" ON A FRESH SETUP, then Appendix D.**
 
-**§22's Log step, now 22.28.** It reads "Turn 9 — 😢 Ann: Wrong
-Accusation", which the app can no longer write: `logOut` is called
-from one place (2524) and always passes `'quit'`. Ann's exit now
-writes an accusation entry — "Turn 9 — ⭐ Ann accused Card 2,
-Card 11, Card 20 — wrong" (the cards go in deck order, line 1811).
-The same step still says the ↩ Undo entry has "two detail lines"
-when it draws one, and it closes by calling both entries "out
-entries" when only Dan's is one now.
+**§22 first.** Under Patrick's #145 ruling (the carry-over rule is
+dropped for sections under rework), §22 no longer inherits the
+scripted game — it opens on a fresh setup that meets its own needs.
+Claude's standing offer, held over from #145: draft the fresh §22
+in the two-column chat shape for Patrick to mark up, per the §22
+pattern in chat&test-spec-styling.md — draft, mark-up, phone run,
+then into the script on his go. What the draft must carry: Ann,
+Bob, Me and Dan seated; the modal's one door and its refusals; the
+arm-and-lapse; Ann's exit by the ⭐ Accuse road; the skip forward
+and backward; Dan's quit; the quit marks' permanence under Undo;
+the settled 22.28 wording folded in; and the one inherited proof
+that lives nowhere else — 22.25's "a ✅ replaces hearsay with
+fact" (one ask where somebody shows, then the quit holding that
+card). §23's start banner moves to name the fresh §22's ending.
 
-**Appendix D, untouched.** Remove the three functions that no longer
-exist (`accuseYes`, `accuseRight`, `wrongAccTap`); bring five
-descriptions current (`openAccuseModal`, `checkStars`, `undoTurn`,
-`logTurn`, `logOut`); renumber the coverage map's six references to
-the OLD §31 AND its §22 references, which #144 moved by four;
-refresh the drifted line numbers (`logTurn` 860 → 889,
-`renderTurnBar` 1846 → 1978, `saveState` 2682 → 2800, `undoTurn`
-2241 → 2393); and finish the `clearCellNote` entry, which names two
-steps where Clear is tapped at four (19.4, 19.7, 19.8, 19.9).
+**Appendix D after — not before.** The fresh §22 will move the
+map's §22 targets again, so the appendix waits for the section.
+Its list from #143 stands: remove `accuseYes`, `accuseRight`,
+`wrongAccTap`; bring five descriptions current (`openAccuseModal`,
+`checkStars`, `undoTurn`, `logTurn`, `logOut`); renumber the
+map's six old-§31 references and its §22 references; refresh the
+drifted line numbers (`logTurn` 860 → 889, `renderTurnBar`
+1846 → 1978, `saveState` 2682 → 2800, `undoTurn` 2241 → 2393);
+finish the `clearCellNote` entry (19.4, 19.7, 19.8, 19.9).
 
 **One note, not a job.** The #132 You-form and the named card are
 still proven nowhere in the document. Nothing contradicts them and
-nothing tests them; whether to spend a step is Patrick's call.
+nothing tests them; whether to spend a step is Patrick's call —
+the fresh §22 may be a natural home.
 
 It all goes through `docs/build-mcts-test.js`; the docx is generated
 and never hand-edited, then verified row-for-row. The document
-stands at 405 steps, §22 at 29.
-
-**How #144 worked, and it worked well.** Patrick named the section,
-Claude went straight to the file, and the section was walked step by
-step — each step either reported as reading true and passed over, or
-corrected, proposed in full, and built on his go. Steps that need no
-change do not get a stop.
+stands at 405 steps, §22 at 29 — #145 changed no files but docs.
 
 **What may take the agenda instead.** Apple's answer on build
 1.0 (2) may arrive and set its own — the release is MANUAL, so an
@@ -361,6 +382,16 @@ check); App-Docs: `master-handoff.md` (this refresh),
 `Publishing-Strategy.docx` (the next-session note). **#144 touched NO
 app code and no draft file was made** — every step was settled in
 chat. No git commands were run.
+
+From #145 — MysteryCluesTracker: `docs/build-history.md` (the #145
+section), `docs/pending.txt` (the header, the standing block's
+test-doc line, and item 4's new "WHAT #145 DECIDED" and "ALSO
+SETTLED" passages), `docs/pending.docx` (rebuilt from the txt and
+machine-checked); App-Docs: `master-handoff.md` (this refresh).
+**#145 touched NO app code, NO test-script file, and NO docx but
+pending.docx** — build-mcts-test.js and mcts-master-test.docx are
+untouched at 405 steps. No draft file was made. No git commands
+were run.
 
 ## Loose ends
 
