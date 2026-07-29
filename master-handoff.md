@@ -67,7 +67,7 @@ went before assuming the work shipped clean.
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-29, session #150 — the coverage gaps filled and proved at 424, and #151 takes the pending cleanup)
+## Where things stand (updated 2026-07-29, session #151 — the cold-start opening written into rule 1 and the hand-off, and the pending list cut from 252 lines to 158)
 
 **THE APP IS WITH APPLE.** Build **1.0 (2)**, status **Waiting for
 Review**, release setting **MANUAL** — so an approval waits for
@@ -75,59 +75,53 @@ Patrick rather than putting the app on the store by itself. No word
 from Apple as of #143. Nothing in App Store Connect lives in a repo,
 so this is the only record.
 
-**#150 FILLED THE COVERAGE GAPS.** Seven steps added, each drafted
-in chat from the real code paths and phone-run by Patrick before
-the paste: §27 grew to 36 steps (27.34 the quit ending surviving a
-kill-and-relaunch, 27.35 the freeze re-proved after the wake,
-27.36 the Log, the Notepad, and the Guide all opening at game
-over), and §31 grew to 31 (31.28 the frozen screen on the
-accusation road, 31.29 the glowing win surviving the relaunch,
-31.30 the freeze after the wake, 31.31 the three doors at this
-ending too). Nine Appendix D rows brought current — gameOverGuard
-now cites both roads by name. The document stands at 424 steps;
-after every edit the docx was rebuilt from an exact copy of the
-script and machine-verified — the step table's 488 rows and the
-coverage map's 134 rows both at zero mismatches, the copy into
-docs proved by checksum. One finding corrected the record: before
-#150 NO ending's survival was proved anywhere — the old note that
-§27 proved the quit ending's survival was wrong; §27 had no reopen
-step at all. Full detail: build-history.md #150.
+**THE TEST DOCUMENT IS FINISHED AND PROVED (#150).** 424 steps,
+§1–31, with §27 at 36 and §31 at 31. Every edit was regenerated from
+an exact copy of the script and machine-verified — the step table's
+488 rows and the coverage map's 134 rows both at zero mismatches.
+Full detail: build-history.md #150.
 
-**THE CONDUCT DOCS SPLIT (#150, Patrick's call).**
-`chat&test-spec-styling.md` is renamed `test-spec-styling.md` and
-trimmed to spec-only; its chat-reporting section now lives solely
-in `App-Docs/CLAUDE.md` — the one home for conduct — where rule 16
-gained the one line it lacked ("If Claude's checking starts to
-thin as the session fills, it says so out loud").
-`MysteryCluesTracker/CLAUDE.md`'s reading list points at the new
-name. Patrick did the rename; Claude made the three edits.
+**THE OPENING PROCEDURE IS WRITTEN (#151).** The edit paused at #150
+is done. CLAUDE.md rule 1 now says to ask through the
+folder-permission button for App-Docs, read it and this hand-off, let
+this file name the project the goal lives in, ask the same way for
+that folder, read its docs, and give ONE status report after all the
+reading. No project folder is named there, so the rule serves every
+product. The "At session end" section carries the matching passage
+for the opener note, which DOES name the real folder — at session end
+the next project is known. Corrected in passing: CLAUDE.md's own text
+reaches Claude before any folder is connected; only the files inside
+the folders are out of reach.
 
-**THE OPENING-PROCEDURE EDIT IS STILL OPEN (#150).** Patrick asked
-for CLAUDE.md rule 1 to become a two-button opening: Claude asks
-through the folder-permission button to connect App-Docs, reads
-its CLAUDE.md and the hand-off; then asks the same way for
-MysteryCluesTracker and reads its CLAUDE.md and
-test-spec-styling.md; ONE status report after all the reading,
-never one per folder. The wording was drafted and approved in
-shape, then paused by Patrick before writing. It waits for his go.
+**THE PENDING LIST IS HALF TIDIED (#151).** pending.txt went from 252
+lines to 158. "What's next" now holds three items, all of them stale
+or dead code: the line-810 comment, the #80 dust list, and the six
+bits of leftover code. "Nice-to-have later" holds three: the pipeline
+document, the Notepad Guide button, and the Capitalize item. Dropped
+as dead at Patrick's word: the web-spec evaluation (its App-Docs path
+died at #129 — the spec lives at
+MysteryTracker/docs/MysteryTracker-spec.md), the mistouching item,
+the Feedback-modal bug question, the narrow-width screens, the
+grid-clip caveat, and the elyfont.com home-page bullet, that last one
+surviving under "Loose ends" below. The web app's stray Clue echo was
+rehomed to MysteryTracker/docs/PARKED-ITEMS.md as item 25 before its
+bullet went.
 
 **A WORKING NOTE (#149).** Patrick said plainly that he could not
 track renumbering in his head, and a plain numbered list of the
-section's Do cells fixed it at once. When a section's numbers
-shift under him, print the list without being asked.
+section's Do cells fixed it at once. When a section's numbers shift
+under him, print the list without being asked.
 
-Still open: **pending.txt is STALE — cleaning it up is #151's
-goal (Patrick's call, #150).** At #150 it was updated only for the
-finished coverage-gaps work; every other line stands as earlier
-sessions left it and wants a going-over with Patrick, the docx
-rebuilt at the end. The mistouching remainder stays **parked by
-Patrick** (#141) — the phone's Touch Accommodations settings, a
+Still open: **pending.docx no longer matches pending.txt.** Patrick
+deferred the rebuild, and the standing rule is that the docx is
+rebuilt from the txt and machine-checked whenever the txt changes, so
+it rides with #152's goal. The rest of pending.txt still wants a
+going-over — "Where things stand right now" (ten bullets, several of
+them still calling #140 "this session"), "At listing time", and
+"Waiting on purpose". The mistouching remainder stays **parked by
+Patrick** (#141): the phone's Touch Accommodations settings, a
 visible pressed state and taller rows are not to be raised again
-until he calls for them; reclaiming the never-used seats' width is
-the same fix as the narrow-width screens. Also live: the
-Feedback-modal bug question, the web-spec evaluation, the stale
-comment tail at line 810, and the step-by-step pipeline document
-Patrick asked for at #140 and parked into NICE-TO-HAVE.
+until he calls for them.
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -148,27 +142,25 @@ copy here.
 
 Kept here only while they still bear on live work:
 
-- #150 (2026-07-29): THE COVERAGE GAPS FILLED — seven steps added, drafted in chat and phone-run before the paste (§27 → 36: the quit ending's reopen proof, the freeze after the wake, the three doors at game over; §31 → 31: the accusation-road freeze, the glowing win's reopen proof, the doors again); nine Appendix D rows brought current; the document at 424, the step table (488 rows) and the coverage map (134 rows) machine-verified at zero mismatches; the finding that NO ending's survival had been proved anywhere before; the conduct docs split (test-spec-styling.md spec-only, chat rules solely in CLAUDE.md); the rule-1 two-button opening drafted and paused; the pending cleanup set as #151's goal.
+- #151 (2026-07-29): THE COLD-START OPENING WRITTEN — CLAUDE.md rule 1 rewritten twice (the second folder left unnamed so the rule serves every project, which put the hand-off read BEFORE the second folder ask), and the hand-off's "At session end" given the passage that makes every opener note carry the folder asks; the "only carrier" claim dropped after CLAUDE.md's text proved to arrive before any folder is connected. The pending list cleaned top to bottom: "What's next" from five items to three all-code ones, "Nice-to-have later" from eight bullets to three, the web app's stray Clue echo rehomed to MysteryTracker's PARKED-ITEMS.md as item 25, the header rewritten to describe this session, 252 lines down to 158. pending.docx deferred by Patrick. Patrick made several of the edits by hand, and flagged that each read of a file needs its own ask.
 
-## Next session's goal (#151, from #150)
+## Next session's goal (#152, from #151)
 
-**CLEAN UP pending.txt — the list is stale (Patrick's call,
-#150).** Go through it with Patrick top to bottom, bring every
-line current, and drop what is done or dead. #150 already
-corrected the two blocks its own work touched (the header and the
-test-doc standing note, plus the coverage-gaps item's removal);
-the rest stands as sessions around #140 left it. When the txt is
-settled, `pending.docx` is rebuilt from it and machine-checked
-against it, as always.
+**FINISH THE PENDING TIDY, THEN REBUILD pending.docx.** Three
+sections have not been through it: "Where things stand right now"
+(ten bullets, several still speaking of #140 as "this session"), "At
+listing time", and "Waiting on purpose". When the txt is settled,
+pending.docx is rebuilt from it and machine-checked line-for-line, as
+always.
 
 **What may take the agenda instead.** Apple's answer on build
 1.0 (2) may arrive and set its own — the release is MANUAL, so an
 approval waits for Patrick. **The mistouching remainder is PARKED
 by Patrick (#141)** and is not to be raised until he calls for it.
-Also available: the paused rule-1 two-button opening edit, the
-Feedback-modal bug question, the web-spec evaluation, the
-narrow-width screens, the one-sentence stale comment at line 810,
-and the step-by-step pipeline document.
+Available once the tidy is done: all three items in "What's next" —
+the line-810 comment, the #80 dust list and the six bits of leftover
+code — bearing in mind that each is a code change, meaning a new
+version number and a fresh submission while 1.0 (2) sits with Apple.
 
 The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
@@ -220,7 +212,21 @@ reading list, and the working rules — at session end
 (Patrick, #114/#124). The opener note always begins with
 Patrick's scripted line — "#NN — name. Read CLAUDE.md and the
 hand-off, then tell me where things stand." — before anything
-else (Patrick, #149). Claude also drafts a commit text for each
+else (Patrick, #149). The note itself must carry the cold start.
+It opens with the folder asks in rule 1's order —
+`Projects/App-Docs` through the folder-permission button first,
+then the project folder the next session's goal lives in, named
+outright rather than left to a guess — and ONE status report
+after all the reading, never one per folder; then it closes with
+a one-line summary of the working rules. A fresh session holds
+nothing but the paste until the first folder is connected: the
+conduct rules in `App-Docs/CLAUDE.md` arrive on their own, but no
+file in any folder can be opened, so the note has to carry the
+opening itself (proved at #151's opening; Patrick, #150/#151).
+Every session-end note is built to that shape.
+The note is handed as its OWN message,
+separate from the refresh report — folded into a long report
+it gets missed (Patrick, #150). Claude also drafts a commit text for each
 repo touched, handed in chat beside the opener note
 (Patrick, #147). A commit text's first line must fit the summary
 field — about 50 characters — with anything more handed as a

@@ -3,10 +3,16 @@
 These rules arrive on their own at the start of every session, before
 anything has been read. They apply in every project.
 
-1. Read `App-Docs/master-handoff.md` first — where things stand and
-   the next goal. Then read the docs of whichever project the
-   session's goal lives in; that project's own `CLAUDE.md` names them
-   and their order.
+1. Ask for the folders first, then read. A session opens with nothing
+   connected, so no file can be opened until Patrick approves the
+   folder it sits in. Ask through the folder-permission button for
+   `Projects/App-Docs`, then read this file and
+   `App-Docs/master-handoff.md` — where things stand and the next
+   goal. The hand-off names which project the session's goal lives
+   in; ask the same way for that folder, then read the docs of that
+   project — its own `CLAUDE.md` names them and their order. ONE
+   status report after all the reading, never one per folder
+   (Patrick, #150/#151).
 
 2. Write in full sentences. No shorthand and no jargon speak, in chat
    or in specs.
