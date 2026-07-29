@@ -67,7 +67,7 @@ went before assuming the work shipped clean.
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-28, session #147 — the fresh §22 is built into the spec, the document stands at 408 steps, and Appendix D is the one catch-up piece left)
+## Where things stand (updated 2026-07-28, session #148 — Appendix D's line numbers current, the accusation family settled awaiting paste, §31 holds the three ending proofs, and the docx is one regeneration behind)
 
 **#146 RESTRUCTURED THE DOCS — NO APP CODE, NO TEST DOCUMENT.**
 `App-Docs/CLAUDE.md` now holds how Claude conducts itself, in twenty
@@ -89,37 +89,48 @@ Patrick rather than putting the app on the store by itself. No word
 from Apple as of #143. Nothing in App Store Connect lives in a repo,
 so this is the only record.
 
-**#147 BUILT THE FRESH §22 — 32 STEPS, THE DOCUMENT AT 408.**
-Patrick's #145 ruling executed: the section opens on its own game
-(New Game — Same Players, Same Deck, by design, keeping §23's deck
-proofs standing — and a 3-card hand) and inherits nothing. Beyond
-the old section's ground it proves one new thing at Patrick's call:
-a wrongly-accused player can then QUIT and leave both rings — Ann
-quits on top of her 😢, showing nothing. The section keeps the one
-proof unique to it (a quitter's ✅ turning Bob's old "!" into a ❌)
-and folds in the 22.28 Log wording settled at #145. Patrick
-phone-verified the draft during mark-up BEFORE it touched the
-script; the docx was regenerated and machine-verified row-for-row.
-§23's opening — banner and five lines — now runs straight off
-22.32. Full detail: build-history.md #147.
+**#148 BROUGHT APPENDIX D'S LINE NUMBERS CURRENT AND BUILT THE
+THREE ENDING PROOFS INTO §31.** The sweep: every function entry in
+Appendix D now carries the position its code holds in
+mystery-clues-tracker.html today, dated "as of #148" — 109
+name-and-number pairs machine-checked afresh after the edit, zero
+mismatches; the three dead functions' entries were left untouched
+for their own piece. Then, at Patrick's call, §31 gained three
+short games at its end (31.19–31.27): "Game over — you lost",
+"Game over — Ann won" — bigger letters, no glow — and "⭐ Game
+over — you won!" breathing its glow to close the document, with
+the Log's "— right" line proved in the last game. A page-wide
+"— THE END OF TESTING —" banner now follows the last step, styled
+like the section banners. §31 stands at 27 steps, the document at
+417. Full detail: build-history.md #148.
 
-**THE BARS HAVE NAMES (Patrick, #147): the Turn Bar and the
-Message Bar**, declared where the layout walk meets them (8.6 and
-8.7) and used throughout the document. "Bottom strip", "message
-strip" and "status strip" are gone — three names for one thing,
-and on the Game screen "bottom" was simply wrong: messages take
-over the hint line between ↩ Undo and Next ▶ (verified at
-`showStatus`, line 2765). Inside modals the name stays "the
-modal's message line", checked consistent.
+**THE DOCX IS ONE REGENERATION BEHIND THE SCRIPT (Patrick's
+ruling, #148).** mcts-master-test.docx still holds 408 steps
+against the script's 417. Regenerating it and verifying it
+row-for-row is #149's first job.
 
-**WHAT IS LEFT OF THE CATCH-UP — APPENDIX D ALONE.** Three
-functions that no longer exist (`accuseYes`, `accuseRight`,
-`wrongAccTap`), five descriptions written before #133, a coverage
-map pointing at the OLD §31's numbers in six places and at §22
-numbers that #147 has now moved again — its §22 targets must map
-to the fresh 22.1–22.32 — drifted line numbers (`logTurn`
-860 → 889, `renderTurnBar` 1846 → 1978, `saveState` 2682 → 2800),
-and the incomplete `clearCellNote` entry.
+**THE ACCUSATION FAMILY IS SETTLED BUT NOT YET PASTED.** Family
+M's rewrite from the #133 code — four functions replacing the dead
+three — was drafted, reviewed and settled at #148. The settled
+wording is preserved word for word in build-history.md #148; #149
+pastes it into Appendix D. The reading also taught: checkStars no
+longer opens the accusation modal, and undoTurn's take-back is
+gone from the code — no verdict can be undone.
+
+**REVIEW AND TEST TOGETHER (Patrick's rule, #148).** Written into
+chat&test-spec-styling.md step 3: whenever the current code is
+already loaded on Patrick's phone, his review IS a phone run — he
+runs a draft as he reads it. The phone is the only real proof.
+
+**WHAT IS LEFT OF APPENDIX D.** Pasting the settled family M
+(entries and map rows in; `accuseYes`, `accuseRight` and
+`wrongAccTap` out); four descriptions brought current
+(`checkStars`, `undoTurn`, `logTurn`, `logOut`); the coverage map
+re-derived — its §31 references against the rebuilt section (the
+old numbers predate even the 18-step rebuild, and #148 took it to
+27) and its §22 references against the fresh 22.1–22.32; the
+`clearCellNote` entry finished (19.4, 19.7, 19.8, 19.9); and the
+stray word "ink" taken out of `addMark`'s map row.
 
 **A WORKING NOTE.** Patrick said plainly that he could not track the
 renumbering in his head, and a plain numbered list of the section's
@@ -127,7 +138,7 @@ Do cells fixed it at once. When a section's numbers shift under him,
 print the list without being asked.
 
 Still open (pending.txt numbering): the test-doc catch-up
-(pending 4) is now **Appendix D alone**. The
+(pending 4) is **Appendix D, part done at #148**. The
 mistouching (pending 1) is part built and **Patrick
 has parked the remainder** (#141) — the phone's Touch Accommodations
 settings, a visible pressed state and taller rows are not to be
@@ -161,28 +172,29 @@ Kept here only while they still bear on live work:
 
 - #147 (2026-07-28): THE FRESH §22 BUILT INTO THE SPEC — 32 steps on its own game (document 405 → 408), drafted in chat, marked up, and phone-verified by Patrick before entering the script; Ann's quit-after-wrong-accusation proof added at his call; §23's opening aligned (six lines); the Turn Bar and Message Bar named at 8.6/8.7 and carried through the whole document; CLAUDE.md rule 8 tightened — every "Go?" must live in a sentence naming its actions and targets — and commit-text drafting added to the session-end routine.
 
-## Next session's goal (#148, from #147)
+- #148 (2026-07-28): APPENDIX D'S LINE NUMBERS SWEPT AND THE THREE ENDINGS BUILT — every function entry's line number brought current ("as of #148"; 109 pairs machine-checked, zero mismatches); the accusation family rewritten from the #133 code and settled in chat, preserved in build-history #148 for #149's paste; §31 extended 18 → 27 steps with the you-lost, Ann-won and glowing-win endings and the page-wide "— THE END OF TESTING —" banner (document 408 → 417; the docx NOT regenerated, by Patrick's ruling); the review-and-test-together rule written into the styling doc; two ideas parked in NICE-TO-HAVE (capitalizing the game-over lines; the Log copied to the clipboard at game over); the stale You-form note dropped.
 
-**APPENDIX D — bring the function list and coverage map current.**
+## Next session's goal (#149, from #148)
 
-The list from #143 stands, with one update from #147: remove
-`accuseYes`, `accuseRight` and `wrongAccTap`; bring five
-descriptions current (`openAccuseModal`, `checkStars`, `undoTurn`,
-`logTurn`, `logOut`); renumber the map's six old-§31 references;
-re-point its §22 references at the fresh 22.1–22.32 built at #147;
-refresh the drifted line numbers (`logTurn` 860 → 889,
-`renderTurnBar` 1846 → 1978, `saveState` 2682 → 2800, `undoTurn`
-2241 → 2393); finish the `clearCellNote` entry (19.4, 19.7, 19.8,
-19.9).
+**FINISH APPENDIX D — the docx first.**
 
-**One note, not a job.** The #132 You-form and the named card are
-still proven nowhere in the document. The fresh §22 gave them no
-home — it has no ask of Patrick's that somebody shows. Whether to
-spend a step is Patrick's call.
+1. Regenerate `docs/mcts-master-test.docx` and verify it
+   row-for-row: 417 steps, §31 at 27, the end-of-testing banner —
+   the script moved at #148 and the docx did not.
+2. Paste the settled accusation-family wording from
+   build-history.md #148 into Appendix D: the four new entries and
+   map rows in; `accuseYes`, `accuseRight` and `wrongAccTap` out.
+3. Bring the four descriptions current: `checkStars`, `undoTurn`,
+   `logTurn`, `logOut`.
+4. Re-derive the coverage map's §31 and §22 references (the
+   rebuilt 27-step §31; the fresh 22.1–22.32).
+5. The tail: `clearCellNote`'s 19.7 and 19.8; the "ink" in
+   `addMark`'s map row.
 
 It all goes through `docs/build-mcts-test.js`; the docx is generated
 and never hand-edited, then verified row-for-row. The document
-stands at 408 steps, §22 at 32.
+stands at 417 steps in the script, 408 in the docx until step 1
+runs.
 
 **What may take the agenda instead.** Apple's answer on build
 1.0 (2) may arrive and set its own — the release is MANUAL, so an
@@ -197,10 +209,6 @@ The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
 
 ## Loose ends
-
-- The commit texts for #147's work were handed in chat at session
-  end; if the App-Docs or MysteryCluesTracker commits are missing
-  at the next start, ask Patrick before assuming either way.
 
 - Memory's #69 badge-reorder commit/build/phone-check may still be
   pending — confirm with Patrick.
