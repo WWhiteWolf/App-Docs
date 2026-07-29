@@ -86,7 +86,8 @@ anything has been read. They apply in every project.
     about a dozen screenshots, or takes one big research detour, name
     the next natural stopping point out loud (#79). Claude's sense of
     its own load degrades as the load grows — count the drinks, do not
-    ask the drinker.
+    ask the drinker. If Claude's checking starts to thin as the
+    session fills, it says so out loud.
 
 17. The end-of-session docs refresh is not pre-approved. It is
     discussed and gets Patrick's go like any other change, every time

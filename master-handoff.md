@@ -67,7 +67,7 @@ went before assuming the work shipped clean.
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-29, session #149 — Appendix D finished, the script and docx agree at 417, and #150 takes the two coverage gaps)
+## Where things stand (updated 2026-07-29, session #150 — the coverage gaps filled and proved at 424, and #151 takes the pending cleanup)
 
 **THE APP IS WITH APPLE.** Build **1.0 (2)**, status **Waiting for
 Review**, release setting **MANUAL** — so an approval waits for
@@ -75,56 +75,59 @@ Patrick rather than putting the app on the store by itself. No word
 from Apple as of #143. Nothing in App Store Connect lives in a repo,
 so this is the only record.
 
-**#149 FINISHED APPENDIX D.** The docx regenerated and
-machine-verified row-for-row — 417 steps, §31 at 27, the
-end-of-testing banner (zero mismatches, all 481 rows compared);
-the #148 settled accusation family pasted word for word (four
-functions in; `accuseYes`, `accuseRight` and `wrongAccTap` out,
-entries and map rows both); the four stale descriptions
-(`checkStars`, `undoTurn`, `logTurn`, `logOut`) brought current
-from fresh code reads and Patrick's approval; all 31 coverage-map
-rows citing §22 or §31 re-derived against the current sections;
-`clearCellNote`'s row completed (19.4, 19.7, 19.8, 19.9); the
-stray "ink" removed; and renderLog and copyLog corrected to
-"seven living entry kinds" — the take-back entry can no longer be
-written. Every edit went through `build-mcts-test.js`, the docx
-regenerated and re-verified after each one. The test-doc catch-up
-that led the agenda since the code rebuilds is DONE. Full detail:
-build-history.md #149.
+**#150 FILLED THE COVERAGE GAPS.** Seven steps added, each drafted
+in chat from the real code paths and phone-run by Patrick before
+the paste: §27 grew to 36 steps (27.34 the quit ending surviving a
+kill-and-relaunch, 27.35 the freeze re-proved after the wake,
+27.36 the Log, the Notepad, and the Guide all opening at game
+over), and §31 grew to 31 (31.28 the frozen screen on the
+accusation road, 31.29 the glowing win surviving the relaunch,
+31.30 the freeze after the wake, 31.31 the three doors at this
+ending too). Nine Appendix D rows brought current — gameOverGuard
+now cites both roads by name. The document stands at 424 steps;
+after every edit the docx was rebuilt from an exact copy of the
+script and machine-verified — the step table's 488 rows and the
+coverage map's 134 rows both at zero mismatches, the copy into
+docs proved by checksum. One finding corrected the record: before
+#150 NO ending's survival was proved anywhere — the old note that
+§27 proved the quit ending's survival was wrong; §27 had no reopen
+step at all. Full detail: build-history.md #150.
 
-**TWO COVERAGE GAPS — #150's GOAL (Patrick's call, #149).** The
-re-derivation showed the rebuilt §31 has no close-and-reopen
-step, so no step anywhere proves an accusation ending surviving a
-kill-and-relaunch (§27 still proves the quit ending's survival);
-and gameOverGuard's frozen-screen proof now rests on §27's quit
-road alone. Filling both is the next session's goal.
+**THE CONDUCT DOCS SPLIT (#150, Patrick's call).**
+`chat&test-spec-styling.md` is renamed `test-spec-styling.md` and
+trimmed to spec-only; its chat-reporting section now lives solely
+in `App-Docs/CLAUDE.md` — the one home for conduct — where rule 16
+gained the one line it lacked ("If Claude's checking starts to
+thin as the session fills, it says so out loud").
+`MysteryCluesTracker/CLAUDE.md`'s reading list points at the new
+name. Patrick did the rename; Claude made the three edits.
 
-**THE OPENER-NOTE RULE (Patrick, #149).** Every session-end
-opener note now begins with Patrick's scripted line — the #148
-note had dropped it and this session opened on a stumble because
-of it. The requirement is written into "At session end" below.
+**THE OPENING-PROCEDURE EDIT IS STILL OPEN (#150).** Patrick asked
+for CLAUDE.md rule 1 to become a two-button opening: Claude asks
+through the folder-permission button to connect App-Docs, reads
+its CLAUDE.md and the hand-off; then asks the same way for
+MysteryCluesTracker and reads its CLAUDE.md and
+test-spec-styling.md; ONE status report after all the reading,
+never one per folder. The wording was drafted and approved in
+shape, then paused by Patrick before writing. It waits for his go.
 
-**THE LOG-AFTER-GAME-OVER IDEA IS CLOSED (Patrick, #149).** He
-rethought the parked NICE-TO-HAVE, checked his phone, and the Log
-button already stays active at game over — steps 31.18 and 31.27
-prove the use. Nothing to build; the entry is out of pending.
+**A WORKING NOTE (#149).** Patrick said plainly that he could not
+track renumbering in his head, and a plain numbered list of the
+section's Do cells fixed it at once. When a section's numbers
+shift under him, print the list without being asked.
 
-**A WORKING NOTE.** Patrick said plainly that he could not track the
-renumbering in his head, and a plain numbered list of the section's
-Do cells fixed it at once. When a section's numbers shift under him,
-print the list without being asked.
-
-Still open (pending.txt numbering): the two coverage gaps
-(pending 4) are **#150's goal**. The
-mistouching (pending 1) is part built and **Patrick
-has parked the remainder** (#141) — the phone's Touch Accommodations
-settings, a visible pressed state and taller rows are not to be
-raised again until he calls for them; reclaiming the never-used
-seats' width is the same fix as the narrow-width screens
-(pending 5). Also live: the Feedback-modal bug question (pending 2),
-the web-spec evaluation (pending 3), the stale comment tail at line
-810 (pending 6), and the step-by-step pipeline document Patrick asked
-for at #140 and parked into NICE-TO-HAVE.
+Still open: **pending.txt is STALE — cleaning it up is #151's
+goal (Patrick's call, #150).** At #150 it was updated only for the
+finished coverage-gaps work; every other line stands as earlier
+sessions left it and wants a going-over with Patrick, the docx
+rebuilt at the end. The mistouching remainder stays **parked by
+Patrick** (#141) — the phone's Touch Accommodations settings, a
+visible pressed state and taller rows are not to be raised again
+until he calls for them; reclaiming the never-used seats' width is
+the same fix as the narrow-width screens. Also live: the
+Feedback-modal bug question, the web-spec evaluation, the stale
+comment tail at line 810, and the step-by-step pipeline document
+Patrick asked for at #140 and parked into NICE-TO-HAVE.
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -145,36 +148,27 @@ copy here.
 
 Kept here only while they still bear on live work:
 
-- #148 (2026-07-28): APPENDIX D'S LINE NUMBERS SWEPT AND THE THREE ENDINGS BUILT — every function entry's line number brought current ("as of #148"; 109 pairs machine-checked, zero mismatches); the accusation family rewritten from the #133 code and settled in chat, preserved in build-history #148 for #149's paste; §31 extended 18 → 27 steps with the you-lost, Ann-won and glowing-win endings and the page-wide "— THE END OF TESTING —" banner (document 408 → 417; the docx NOT regenerated, by Patrick's ruling); the review-and-test-together rule written into the styling doc; two ideas parked in NICE-TO-HAVE (capitalizing the game-over lines; the Log copied to the clipboard at game over); the stale You-form note dropped.
+- #150 (2026-07-29): THE COVERAGE GAPS FILLED — seven steps added, drafted in chat and phone-run before the paste (§27 → 36: the quit ending's reopen proof, the freeze after the wake, the three doors at game over; §31 → 31: the accusation-road freeze, the glowing win's reopen proof, the doors again); nine Appendix D rows brought current; the document at 424, the step table (488 rows) and the coverage map (134 rows) machine-verified at zero mismatches; the finding that NO ending's survival had been proved anywhere before; the conduct docs split (test-spec-styling.md spec-only, chat rules solely in CLAUDE.md); the rule-1 two-button opening drafted and paused; the pending cleanup set as #151's goal.
 
-- #149 (2026-07-29): APPENDIX D FINISHED — the docx regenerated to 417 and verified row-for-row; the settled accusation family pasted (accuseYes, accuseRight, wrongAccTap out); checkStars, undoTurn, logTurn and logOut brought current; all 31 coverage-map §22/§31 rows re-derived; clearCellNote completed and the "ink" removed; renderLog and copyLog corrected to seven living entry kinds; two coverage gaps found (an accusation ending surviving close-and-reopen; the frozen screen after an accusation ending) and set as #150's goal; the opener-note rule added to "At session end"; the Log-after-game-over NICE-TO-HAVE closed by Patrick's phone check.
+## Next session's goal (#151, from #150)
 
-## Next session's goal (#150, from #149)
-
-**FILL THE TWO COVERAGE GAPS — the test document's known holes
-(#149's find, Patrick's call).**
-
-1. An ending surviving close-and-reopen: no step proves an
-   accusation ending survives a kill-and-relaunch (§27 proves the
-   quit ending's survival; the rebuilt §31 proves none).
-2. The frozen screen after an accusation ending: gameOverGuard is
-   proved only on §27's quit road — no step taps the frozen
-   screen after an accusation ending.
-
-Both likely land as a few steps in §31's ending games, born the
-§22 way: drafted in chat from the real code paths, Patrick
-phone-runs the draft as he reads it, then the paste into
-`docs/build-mcts-test.js`, the docx regenerated and verified
-row-for-row.
+**CLEAN UP pending.txt — the list is stale (Patrick's call,
+#150).** Go through it with Patrick top to bottom, bring every
+line current, and drop what is done or dead. #150 already
+corrected the two blocks its own work touched (the header and the
+test-doc standing note, plus the coverage-gaps item's removal);
+the rest stands as sessions around #140 left it. When the txt is
+settled, `pending.docx` is rebuilt from it and machine-checked
+against it, as always.
 
 **What may take the agenda instead.** Apple's answer on build
 1.0 (2) may arrive and set its own — the release is MANUAL, so an
 approval waits for Patrick. **The mistouching remainder is PARKED
 by Patrick (#141)** and is not to be raised until he calls for it.
-Also available: the Feedback-modal bug question (pending 2), the
-web-spec evaluation (pending 3), the narrow-width screens
-(pending 5), the one-sentence stale comment at line 810
-(pending 6), and the step-by-step pipeline document.
+Also available: the paused rule-1 two-button opening edit, the
+Feedback-modal bug question, the web-spec evaluation, the
+narrow-width screens, the one-sentence stale comment at line 810,
+and the step-by-step pipeline document.
 
 The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
@@ -228,5 +222,7 @@ Patrick's scripted line — "#NN — name. Read CLAUDE.md and the
 hand-off, then tell me where things stand." — before anything
 else (Patrick, #149). Claude also drafts a commit text for each
 repo touched, handed in chat beside the opener note
-(Patrick, #147). Patrick commits (this repo and any project repos
-touched).
+(Patrick, #147). A commit text's first line must fit the summary
+field — about 50 characters — with anything more handed as a
+separate body below it (Patrick, #149). Patrick commits (this
+repo and any project repos touched).
