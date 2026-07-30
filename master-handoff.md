@@ -67,13 +67,27 @@ went before assuming the work shipped clean.
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-29, session #151 — the cold-start opening written into rule 1 and the hand-off, and the pending list cut from 252 lines to 158)
+## Where things stand (updated 2026-07-29, session #152 — the pending
+tidy finished, pending.docx rebuilt and proved, the project set down)
+
+**THE PROJECT IS SET DOWN (Patrick, #152)** until the app is in the
+store. The code is done, holding only stale/dead items that wait for
+a larger reason to build again; the test procedure is full and clean;
+the status docs are current and tidy.
 
 **THE APP IS WITH APPLE.** Build **1.0 (2)**, status **Waiting for
 Review**, release setting **MANUAL** — so an approval waits for
-Patrick rather than putting the app on the store by itself. No word
-from Apple as of #143. Nothing in App Store Connect lives in a repo,
-so this is the only record.
+Patrick rather than putting the app on the store by itself. Nothing
+in App Store Connect lives in a repo, so this is the only record.
+
+**THE PENDING LIST IS FULLY TIDIED (#152).** pending.txt stands at 85
+lines, down from 252 two sessions ago. "Where things stand right now"
+and "At listing time" were dropped whole at Patrick's word — this
+hand-off is the home for where things stand. What remains: "What's
+next" (three all-code items), "Waiting on purpose" (the paid tier),
+and "Nice-to-have later" (three items). pending.docx was rebuilt from
+the settled txt and machine-checked line-for-line — 13 paragraphs
+against 13, zero mismatches.
 
 **THE TEST DOCUMENT IS FINISHED AND PROVED (#150).** 424 steps,
 §1–31, with §27 at 36 and §31 at 31. Every edit was regenerated from
@@ -81,47 +95,8 @@ an exact copy of the script and machine-verified — the step table's
 488 rows and the coverage map's 134 rows both at zero mismatches.
 Full detail: build-history.md #150.
 
-**THE OPENING PROCEDURE IS WRITTEN (#151).** The edit paused at #150
-is done. CLAUDE.md rule 1 now says to ask through the
-folder-permission button for App-Docs, read it and this hand-off, let
-this file name the project the goal lives in, ask the same way for
-that folder, read its docs, and give ONE status report after all the
-reading. No project folder is named there, so the rule serves every
-product. The "At session end" section carries the matching passage
-for the opener note, which DOES name the real folder — at session end
-the next project is known. Corrected in passing: CLAUDE.md's own text
-reaches Claude before any folder is connected; only the files inside
-the folders are out of reach.
-
-**THE PENDING LIST IS HALF TIDIED (#151).** pending.txt went from 252
-lines to 158. "What's next" now holds three items, all of them stale
-or dead code: the line-810 comment, the #80 dust list, and the six
-bits of leftover code. "Nice-to-have later" holds three: the pipeline
-document, the Notepad Guide button, and the Capitalize item. Dropped
-as dead at Patrick's word: the web-spec evaluation (its App-Docs path
-died at #129 — the spec lives at
-MysteryTracker/docs/MysteryTracker-spec.md), the mistouching item,
-the Feedback-modal bug question, the narrow-width screens, the
-grid-clip caveat, and the elyfont.com home-page bullet, that last one
-surviving under "Loose ends" below. The web app's stray Clue echo was
-rehomed to MysteryTracker/docs/PARKED-ITEMS.md as item 25 before its
-bullet went.
-
-**A WORKING NOTE (#149).** Patrick said plainly that he could not
-track renumbering in his head, and a plain numbered list of the
-section's Do cells fixed it at once. When a section's numbers shift
-under him, print the list without being asked.
-
-Still open: **pending.docx no longer matches pending.txt.** Patrick
-deferred the rebuild, and the standing rule is that the docx is
-rebuilt from the txt and machine-checked whenever the txt changes, so
-it rides with #152's goal. The rest of pending.txt still wants a
-going-over — "Where things stand right now" (ten bullets, several of
-them still calling #140 "this session"), "At listing time", and
-"Waiting on purpose". The mistouching remainder stays **parked by
-Patrick** (#141): the phone's Touch Accommodations settings, a
-visible pressed state and taller rows are not to be raised again
-until he calls for them.
+**A WORKING NOTE (#149).** When a section's numbers shift under
+Patrick, print the plain numbered list without being asked.
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -130,7 +105,7 @@ The free script doubles as the paid tier's future answer key (#90).
 The paid-tier design/build (upgrade-scope.md "Decided — session #76")
 waits until the free product is finished. The App Store listing name
 question is settled and the name is registered (#129) — see
-MysteryCluesTracker/docs/pending.txt and ROADMAP.md.
+MysteryCluesTracker/docs/ROADMAP.md.
 
 ## Session history
 
@@ -143,24 +118,37 @@ copy here.
 Kept here only while they still bear on live work:
 
 - #151 (2026-07-29): THE COLD-START OPENING WRITTEN — CLAUDE.md rule 1 rewritten twice (the second folder left unnamed so the rule serves every project, which put the hand-off read BEFORE the second folder ask), and the hand-off's "At session end" given the passage that makes every opener note carry the folder asks; the "only carrier" claim dropped after CLAUDE.md's text proved to arrive before any folder is connected. The pending list cleaned top to bottom: "What's next" from five items to three all-code ones, "Nice-to-have later" from eight bullets to three, the web app's stray Clue echo rehomed to MysteryTracker's PARKED-ITEMS.md as item 25, the header rewritten to describe this session, 252 lines down to 158. pending.docx deferred by Patrick. Patrick made several of the edits by hand, and flagged that each read of a file needs its own ask.
+- #152 (2026-07-29): A scare about the styling docs settled by git
+  archaeology — chat&test-spec-styling.md recovered, the #150 split
+  proved clean, nothing lost. The pending tidy finished: two sections
+  dropped whole, 85 lines, header rewritten; pending.docx rebuilt and
+  machine-checked at zero mismatches. Project set down until the app
+  is in the store; next: prepare the transition to Memory — the
+  HTML cleanup waits for the store.
 
-## Next session's goal (#152, from #151)
+## Next session's goal (from #152)
 
-**FINISH THE PENDING TIDY, THEN REBUILD pending.docx.** Three
-sections have not been through it: "Where things stand right now"
-(ten bullets, several still speaking of #140 as "this session"), "At
-listing time", and "Waiting on purpose". When the txt is settled,
-pending.docx is rebuilt from it and machine-checked line-for-line, as
-always.
+**PREPARE THE TRANSITION TO MEMORY (Patrick, #152).** With Mystery
+set down until the app reaches the store, the next session prepares
+the way to resume A Place To Remember
+(Projects/elderlyassistant). Its paperwork is stale — frozen at
+#71, with a dead pointer, an old copy of the conduct rules, and the
+app's name recorded differently from doc to doc — and Patrick wants
+the project's files brought into symmetry with Mystery's: the same
+shapes, current and tidy, before any code is touched. The survey's
+detail lives in build-history.md "#152". Patrick expects to run
+Memory in its own chat stream with its own numbering; its records
+live in its own project docs. The shape matters beyond Memory:
+Patrick will move between projects and add new ones, so the prep
+should settle the pattern any project follows — this hand-off as
+the switchboard, each project's own docs current and in the same
+shapes, so every pickup opens the same way.
 
-**What may take the agenda instead.** Apple's answer on build
-1.0 (2) may arrive and set its own — the release is MANUAL, so an
-approval waits for Patrick. **The mistouching remainder is PARKED
-by Patrick (#141)** and is not to be raised until he calls for it.
-Available once the tidy is done: all three items in "What's next" —
-the line-810 comment, the #80 dust list and the six bits of leftover
-code — bearing in mind that each is a code change, meaning a new
-version number and a fresh submission while 1.0 (2) sits with Apple.
+**Waiting behind it:** the MCTS stale/dead HTML cleanup — the three
+"What's next" items in MysteryCluesTracker/docs/pending.txt, each a
+code change, sitting naturally after the app reaches the store.
+Apple's answer on build 1.0 (2) may set its own agenda when it
+comes.
 
 The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
