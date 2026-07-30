@@ -61,14 +61,14 @@ went before assuming the work shipped clean.
    Project: `Projects/MysteryCluesTracker` — read
    `docs/upgrade-scope.md` FIRST; it holds every decision.
 3. **A Place To Remember (Memory) — iPhone** — Alpha, mostly built.
-   Project: `Projects/elderlyassistant` (its own docs: docs/handoff.md,
-   pending.txt, parked-items.md, session-start.md). Store prep after
-   the Mystery rehearsal; Android eventually (#72).
+   Project: `Projects/elderlyassistant` (its CLAUDE.md names the
+   reading order: this hand-off, then docs/build-history.md). Store
+   prep after the Mystery rehearsal; Android eventually (#72).
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-30, session 153 > 0 — the
-Memory transition mapped and settled; the carpentry is next)
+## Where things stand (updated 2026-07-30, session 0 — the Memory
+carpentry done; Memory's chain begins at #1-new)
 
 **MYSTERY IS SET DOWN AND UNCHANGED (#152).** The app is with
 Apple: build **1.0 (2)**, status **Waiting for Review**, release
@@ -77,47 +77,41 @@ Store Connect lives in a repo, so this is the only record. Its docs
 are current and tidy; the stale/dead HTML cleanup waits for the
 store.
 
-**THE MEMORY TRANSITION IS MAPPED AND SETTLED (153 > 0).** Memory
-(Projects/elderlyassistant) mirrors Mystery's file shapes:
+**THE MEMORY TRANSITION IS COMPLETE (session 0, 2026-07-30).**
+The carpentry is done — Memory (Projects/elderlyassistant) now
+mirrors Mystery's file shapes:
 
-- a short project CLAUDE.md pointing at App-Docs and naming the
-  reading order (to be rewritten at the carpentry);
-- a fresh docs/build-history.md as the new chain's detail home
-  (to be created);
-- docs/pending.txt as the plain pending list (part-tidied this
-  session; its header and title line are still owed);
+- CLAUDE.md rewritten to the short-pointer shape: conduct lives
+  in App-Docs/CLAUDE.md; the reading order is this hand-off,
+  then docs/build-history.md.
+- docs/build-history.md created fresh as the new chain's detail
+  home; its first entry records the transition — that home
+  settled by Patrick's go.
+- pending.txt's header and title line finished: "A PLACE TO
+  REMEMBER (badge: Memory)", the numbering rule's first working
+  use, and the stale pointers to the quiet files dropped.
+- pending.docx DECIDED and BUILT: the txt is Claude's working
+  copy, the docx is what Patrick himself reads — generated from
+  the txt and machine-checked word for word (613 words each
+  side, zero mismatches at session 0).
 - NO project hand-off: this master hand-off carries Memory's
-  where-things-stand, exactly as it carries Mystery's;
-- the old files — handoff.md, session-start.md, parked-items.md,
-  publishing.md — go quiet in place, out of every reading order
-  but deleted not at all (prudence, Patrick). The archives
-  (reminder-audit.md, the two Siri briefs) keep sitting, as
-  Mystery's pre74 reference does.
+  where-things-stand, exactly as it carries Mystery's.
+- The old files — handoff.md, session-start.md, parked-items.md,
+  publishing.md — stay quiet in place, out of every reading
+  order but deleted not at all. The archives (reminder-audit.md,
+  the two Siri briefs) keep sitting. pending(X).txt is Patrick's
+  to delete by hand.
 
-**SETTLED AT 153 > 0:**
+The numbering rule, amended at session 0 (Patrick's word): bare
+session numbers always mean the old shared chain; Memory's own
+chain is written "#1-new, #2-new, …" — no old reference is ever
+edited. The name is "A Place To Remember"; the badge under the
+icon is "Memory". Memory runs in its own chat stream.
 
-- The numbering rule: bare session numbers always mean the old
-  shared chain; Memory's new chain is written "new#1, new#2, …" —
-  no old reference is ever edited, no tracking, no collisions.
-- The app's name is "A Place To Remember"; the badge under the
-  icon is "Memory". The docs speak both consistently from the
-  carpentry on.
-- Memory runs in its own chat stream. Patrick names the next
-  session "0 Memory project transition build"; "new#1" begins
-  once Memory proper starts.
-- pending.txt part-tidied at Patrick's word: the "Where things
-  stand right now" snapshot dropped whole, "What's next" / "Needs
-  a phone test" / "Decisions to make" emptied with headings
-  standing, the #40/#41 tombstone section deleted, and the
-  Vault-import item re-homed under "Parked on purpose".
-
-**STILL OPEN AFTER 153 > 0:** whether Memory gets a pending.docx;
-where the 153 > 0 transition detail is recorded (the fresh
-build-history's first entry is the proposal, not yet Patrick's
-word); and the Cowork "Projects" feature — explored, then parked
-by Patrick: an accidental "App-Docs" project sits harmless in the
-app's Projects panel, and whether a chat inside a project can
-connect a second folder is untested.
+**STILL OPEN:** the Cowork "Projects" feature — explored, then
+parked by Patrick: an accidental "App-Docs" project sits harmless
+in the app's Projects panel, and whether a chat inside a project
+can connect a second folder is untested.
 
 Standing habits and notes: after any HTML change, re-copy into the
 wrapper's www/ and verify the copy matches exactly. Old/saved games
@@ -154,21 +148,21 @@ Kept here only while they still bear on live work:
   deleted); the numbering rule fixed (bare = old chain, "new#" =
   Memory's new chain); the name settled ("A Place To Remember",
   badge "Memory"); Cowork Projects explored and parked.
+- 0 (2026-07-30): The Memory carpentry, all four pieces on their
+  own gos — CLAUDE.md to the short-pointer shape; build-history.md
+  created, first entry the transition record; pending.txt's header
+  and title line finished; pending.docx decided and built,
+  machine-checked at zero mismatches. The numbering style amended
+  to "#1-new" at Patrick's word. Memory's chain begins at #1-new.
 
-## Next session's goal (from 153 > 0)
+## Next session's goal (from session 0)
 
-**"0 MEMORY PROJECT TRANSITION BUILD" (Patrick's name for it).**
-The carpentry of the map settled at 153 > 0, still on the
-transition's "0" side — no code. The pieces, each discussed and
-given its own go, one at a time: rewrite
-elderlyassistant/CLAUDE.md to Mystery's short-pointer shape;
-create docs/build-history.md fresh (its first entry recording the
-transition, if Patrick confirms that home); finish pending.txt's
-header and title line — "A Place To Remember", badge "Memory",
-and the numbering rule's first working use; and decide with
-Patrick whether Memory gets a pending.docx. The old files stay
-untouched. After the carpentry, Memory begins its own chain at
-new#1.
+**#1-NEW — MEMORY'S CHAIN BEGINS.** The first goal, Patrick's
+word at session 0: fill pending.txt's "What's Next" with new
+items. Patrick names the items; the "Still broken or unfinished"
+list and the roadmap's milestone tracks are natural quarries, but
+the choosing is his. pending.docx is rebuilt to match when the
+txt changes.
 
 **Waiting behind it:** the MCTS stale/dead HTML cleanup — the three
 "What's next" items in MysteryCluesTracker/docs/pending.txt, each a
