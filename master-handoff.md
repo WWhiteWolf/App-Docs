@@ -67,47 +67,47 @@ went before assuming the work shipped clean.
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-31, #2-new — the three
-"What's Next" items built and sim-verified)
+## Where things stand (updated 2026-07-31, #3-new — round header
+buttons & optional Day times built and phone-verified)
 
 **MYSTERY IS SET DOWN AND UNCHANGED (#152).** The app is with
 Apple: build **1.0 (2)**, status **Waiting for Review**, release
 setting **MANUAL** — an approval waits for Patrick. Nothing in App
 Store Connect lives in a repo, so this is the only record. Its docs
 are current and tidy; the stale/dead HTML cleanup waits for the
-store.
+store. Amendment (Patrick, #3-new): session-start status reports
+no longer mention Mystery — this paragraph stays as the written
+record, left out of the spoken report until the app moves.
 
-**MEMORY'S CHAIN IS RUNNING (#2-new, 2026-07-31).** The three
-"What's Next" items are BUILT, and Patrick ran the app in the
-iOS Simulator and confirmed everything works:
+**MEMORY'S CHAIN IS RUNNING (#3-new, 2026-07-31).** Both
+"What's Next" items are BUILT, and Patrick verified everything
+on the phone through a full EAS build:
 
-- the Home screen's Settings gear enlarged 22 to 32, matching
-  the icon face (Patrick's own hand),
-- My Day and Pets Day logging in one tap — the Log button and
-  the counter + buttons act immediately, five notes modals
-  removed across the two files, the log's tap-to-edit modal
-  staying as the home for notes,
+- every screen's header buttons are now 54-point circles, the
+  labels trimmed to "Home", "+ Add", and "Back" at Patrick's
+  word (Vault's "+ New" and To-Do's "New Task" became "+ Add"
+  along the way),
+- My Day and Pets Day items no longer require a time — the
+  shared control gained an optional-time setting (spinners
+  dulled at 12:00 PM, box empty, a "No time set" hint), and an
+  item without a time shows just its label and gets no
+  reminder,
 and
-- the Shopping List no longer highlighting rows in Shopping
-  view (a leftover Full Inventory selection clears on tab
-  switch), with the tiles hugging the Need/Stocked button in
-  both views.
+- the two header fixes his Simulator test surfaced: the
+  thirteen screens without edges={['top']} got it, plus 8
+  points of bottom padding, all matching Home and Look Ahead
+  (the old #62 taller-header decision reversed — settings.tsx's
+  comment records it).
 
-The full TypeScript check came back clean, and a search
-confirmed no leftover references (My Week and Look Ahead keep
-their own separate log modals, untouched by design). The code
-commit is Patrick's, made in-session. pending.txt now carries
-two new "What's Next" items in their place — the round
-header-button outlines, and the Days' optional times.
+TypeScript came back clean after every piece. The code commit
+is Patrick's, made in-session before the build. pending.txt now
+carries three new "What's Next" items: Look Ahead's tile format
+and its Snooze, the Timer tile's Stop/Continue button and log,
+and the Vault restructuring's Home-to-Back change.
 
 Quiet-file note (this one session only, per the amended rule):
-docs/reminder-audit.md — the archive — was deleted by Patrick's
-own hand at #2-new.
-
-Opener-note amendment (Patrick, #2-new): the session-end opener
-note carries the folder asks and reads straight through, both
-folders, with the single status report only after everything is
-read — no wording that invites a report along the way.
+docs/publishing.md gained a "Build steps" section at its end —
+Patrick's EAS build-and-submit steps, in his own words.
 
 The numbering rule, amended at session 0 (Patrick's word): bare
 session numbers always mean the old shared chain; Memory's own
@@ -175,16 +175,24 @@ Kept here only while they still bear on live work:
   thinned — TypeScript check clean, Patrick verified all in the
   Simulator and committed. reminder-audit.md deleted by Patrick.
   Two new items filed; the opener-note shape amended.
+- #3-new (2026-07-31): Round header buttons on all fifteen
+  screens (54-point circles, labels Home / + Add / Back) and
+  optional times in My Day / Pets Day (control asleep at dulled
+  12:00 PM, no reminder without a time); headers re-leveled with
+  edges top and bottom padding after the Simulator test; all
+  phone-verified through EAS and committed by Patrick. Three new
+  items filed; publishing.md gained Build steps; status reports
+  drop Mystery.
 
-## Next session's goal (from #2-new)
+## Next session's goal (from #3-new)
 
-**#3-NEW — HEADER BUTTONS TO ROUND & DAYS NO TIME SET.**
-Patrick's word at #2-new: take up pending.txt's two "What's
-Next" items — every screen carrying the "Home" and "+" header
-buttons gets its pill outline changed to round; and in My Day /
-Pets Day an item no longer requires a time, so an item saved
-without one simply gets no reminder. Each is a code change;
-scope them together at the session start.
+**#4-NEW — TAKE UP THE "WHAT'S NEXT" ITEMS.**
+Patrick's word at #3-new: take up pending.txt's three "What's
+Next" items — Look Ahead's tile format changed and its Snooze
+changed or dropped; the Timer tile gaining a Stop (Pause) /
+Continue (Go) button and a log; and the Vault restructuring's
+"Home"-to-"Back" button change. Each is a code change; scope
+them together at the session start.
 
 **Waiting behind it:** the MCTS stale/dead HTML cleanup — the three
 "What's next" items in MysteryCluesTracker/docs/pending.txt, each a
