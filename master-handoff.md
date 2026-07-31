@@ -27,8 +27,10 @@ paragraphs accumulate here. Git holds every old version of this file.
    "go", asked as CLAUDE.md rule 8 requires — a sentence naming the
    actions and what they act on.
 
-Patrick's opener line: "#NN — name. Read CLAUDE.md and the hand-off,
-then tell me where things stand."
+Patrick's opener line: "#NN — name. Read CLAUDE.md and the hand-off."
+The where-things-stand report comes only after ALL the reading — both
+folders, every named doc — never after the first folder alone
+(Patrick, #154, correcting a mistake made a dozen times).
 
 ## Standing rules
 
@@ -279,8 +281,10 @@ and hands it to Patrick in chat — goal, what's decided, the
 reading list, and the working rules — at session end
 (Patrick, #114/#124). The opener note always begins with
 Patrick's scripted line — "#NN — name. Read CLAUDE.md and the
-hand-off, then tell me where things stand." — before anything
-else (Patrick, #149). The note itself must carry the cold start.
+hand-off." — before anything else (Patrick, #149; the "then tell
+me where things stand" tail moved out of the first line at #154 —
+it closes the folder-ask paragraph instead, after the second
+folder's reading). The note itself must carry the cold start.
 It opens with the folder asks in rule 1's order —
 `Projects/App-Docs` through the folder-permission button first,
 then the project folder the next session's goal lives in, named
