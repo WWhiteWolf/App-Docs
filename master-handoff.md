@@ -67,8 +67,8 @@ went before assuming the work shipped clean.
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-30, #1-new — Memory's chain
-begun: "What's Next" filled and the pending list tidied)
+## Where things stand (updated 2026-07-31, #2-new — the three
+"What's Next" items built and sim-verified)
 
 **MYSTERY IS SET DOWN AND UNCHANGED (#152).** The app is with
 Apple: build **1.0 (2)**, status **Waiting for Review**, release
@@ -77,33 +77,37 @@ Store Connect lives in a repo, so this is the only record. Its docs
 are current and tidy; the stale/dead HTML cleanup waits for the
 store.
 
-**MEMORY'S CHAIN IS RUNNING (#1-new, 2026-07-30).** The chain's
-first working session filled pending.txt's "What's Next" with
-three items, Patrick's word:
+**MEMORY'S CHAIN IS RUNNING (#2-new, 2026-07-31).** The three
+"What's Next" items are BUILT, and Patrick ran the app in the
+iOS Simulator and confirmed everything works:
 
-- the Home screen's Settings gear in symmetry with the logo,
-- the My Day / Pets Day counters losing the log pop-up — editing
-  happens in the log itself,
+- the Home screen's Settings gear enlarged 22 to 32, matching
+  the icon face (Patrick's own hand),
+- My Day and Pets Day logging in one tap — the Log button and
+  the counter + buttons act immediately, five notes modals
+  removed across the two files, the log's tap-to-edit modal
+  staying as the home for notes,
 and
-- the Shopping List's Shopping-mode highlighting stopped and the
-  tiles made thinner.
+- the Shopping List no longer highlighting rows in Shopping
+  view (a leftover Full Inventory selection clears on tab
+  switch), with the tiles hugging the Need/Stocked button in
+  both views.
 
-The list got a deep tidy besides: the five-piece Parked bullet
-dissolved (the reminder test checklist passed in full and the
-My Week done-date fix confirmed — both recorded in Memory's
-build-history — the exact-item tap routing re-homed to Parked,
-the dark startup flash to Decisions), the "Memory Assist"
-subtitle item re-homed by Patrick's hand to docs/publishing.md,
-and two items deleted outright. pending.docx was rebuilt from the
-txt and machine-checked word for word (548 words each side, zero
-mismatches). The #69 badge-reorder loose end closed — finished,
-built, and phone-verified.
+The full TypeScript check came back clean, and a search
+confirmed no leftover references (My Week and Look Ahead keep
+their own separate log modals, untouched by design). The code
+commit is Patrick's, made in-session. pending.txt now carries
+two new "What's Next" items in their place — the round
+header-button outlines, and the Days' optional times.
 
-Quiet-file notes (this one session only, per the amended rule):
-docs/publishing.md now carries the App Store subtitle item, added
-by Patrick's hand at #1-new. Memory's CLAUDE.md was amended at
-Patrick's word — the quiet files are "quiet until needed," and
-any change to one is noted here for the next one session only.
+Quiet-file note (this one session only, per the amended rule):
+docs/reminder-audit.md — the archive — was deleted by Patrick's
+own hand at #2-new.
+
+Opener-note amendment (Patrick, #2-new): the session-end opener
+note carries the folder asks and reads straight through, both
+folders, with the single status report only after everything is
+read — no wording that invites a report along the way.
 
 The numbering rule, amended at session 0 (Patrick's word): bare
 session numbers always mean the old shared chain; Memory's own
@@ -165,16 +169,22 @@ Kept here only while they still bear on live work:
   "quiet until needed" with one-session notes; the pending header
   now updated at every refresh; pending.docx rebuilt at zero
   mismatches; the #69 badge-reorder loose end closed.
+- #2-new (2026-07-31): The three "What's Next" items built —
+  gear to 32 (Patrick's hand), one-tap Log and counters in
+  My Day / Pets Day, Shopping highlighting stopped and tiles
+  thinned — TypeScript check clean, Patrick verified all in the
+  Simulator and committed. reminder-audit.md deleted by Patrick.
+  Two new items filed; the opener-note shape amended.
 
-## Next session's goal (from #1-new)
+## Next session's goal (from #2-new)
 
-**#2-NEW — WORK THE "WHAT'S NEXT" ITEMS.** Patrick's word at
-#1-new: take up pending.txt's three "What's Next" items — the
-Home screen's Settings gear in symmetry with the logo; the
-My Day / Pets Day counters editing in the log instead of the log
-pop-up; and the Shopping List's highlighting stopped in Shopping
-mode with thinner tiles. Each is a code change; scope them
-together at the session start.
+**#3-NEW — HEADER BUTTONS TO ROUND & DAYS NO TIME SET.**
+Patrick's word at #2-new: take up pending.txt's two "What's
+Next" items — every screen carrying the "Home" and "+" header
+buttons gets its pill outline changed to round; and in My Day /
+Pets Day an item no longer requires a time, so an item saved
+without one simply gets no reminder. Each is a code change;
+scope them together at the session start.
 
 **Waiting behind it:** the MCTS stale/dead HTML cleanup — the three
 "What's next" items in MysteryCluesTracker/docs/pending.txt, each a
