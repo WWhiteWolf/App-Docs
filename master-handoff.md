@@ -67,8 +67,8 @@ went before assuming the work shipped clean.
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-30, session 0 — the Memory
-carpentry done; Memory's chain begins at #1-new)
+## Where things stand (updated 2026-07-30, #1-new — Memory's chain
+begun: "What's Next" filled and the pending list tidied)
 
 **MYSTERY IS SET DOWN AND UNCHANGED (#152).** The app is with
 Apple: build **1.0 (2)**, status **Waiting for Review**, release
@@ -77,30 +77,33 @@ Store Connect lives in a repo, so this is the only record. Its docs
 are current and tidy; the stale/dead HTML cleanup waits for the
 store.
 
-**THE MEMORY TRANSITION IS COMPLETE (session 0, 2026-07-30).**
-The carpentry is done — Memory (Projects/elderlyassistant) now
-mirrors Mystery's file shapes:
+**MEMORY'S CHAIN IS RUNNING (#1-new, 2026-07-30).** The chain's
+first working session filled pending.txt's "What's Next" with
+three items, Patrick's word:
 
-- CLAUDE.md rewritten to the short-pointer shape: conduct lives
-  in App-Docs/CLAUDE.md; the reading order is this hand-off,
-  then docs/build-history.md.
-- docs/build-history.md created fresh as the new chain's detail
-  home; its first entry records the transition — that home
-  settled by Patrick's go.
-- pending.txt's header and title line finished: "A PLACE TO
-  REMEMBER (badge: Memory)", the numbering rule's first working
-  use, and the stale pointers to the quiet files dropped.
-- pending.docx DECIDED and BUILT: the txt is Claude's working
-  copy, the docx is what Patrick himself reads — generated from
-  the txt and machine-checked word for word (613 words each
-  side, zero mismatches at session 0).
-- NO project hand-off: this master hand-off carries Memory's
-  where-things-stand, exactly as it carries Mystery's.
-- The old files — handoff.md, session-start.md, parked-items.md,
-  publishing.md — stay quiet in place, out of every reading
-  order but deleted not at all. The archives (reminder-audit.md,
-  the two Siri briefs) keep sitting. pending(X).txt is Patrick's
-  to delete by hand.
+- the Home screen's Settings gear in symmetry with the logo,
+- the My Day / Pets Day counters losing the log pop-up — editing
+  happens in the log itself,
+and
+- the Shopping List's Shopping-mode highlighting stopped and the
+  tiles made thinner.
+
+The list got a deep tidy besides: the five-piece Parked bullet
+dissolved (the reminder test checklist passed in full and the
+My Week done-date fix confirmed — both recorded in Memory's
+build-history — the exact-item tap routing re-homed to Parked,
+the dark startup flash to Decisions), the "Memory Assist"
+subtitle item re-homed by Patrick's hand to docs/publishing.md,
+and two items deleted outright. pending.docx was rebuilt from the
+txt and machine-checked word for word (548 words each side, zero
+mismatches). The #69 badge-reorder loose end closed — finished,
+built, and phone-verified.
+
+Quiet-file notes (this one session only, per the amended rule):
+docs/publishing.md now carries the App Store subtitle item, added
+by Patrick's hand at #1-new. Memory's CLAUDE.md was amended at
+Patrick's word — the quiet files are "quiet until needed," and
+any change to one is noted here for the next one session only.
 
 The numbering rule, amended at session 0 (Patrick's word): bare
 session numbers always mean the old shared chain; Memory's own
@@ -154,15 +157,24 @@ Kept here only while they still bear on live work:
   and title line finished; pending.docx decided and built,
   machine-checked at zero mismatches. The numbering style amended
   to "#1-new" at Patrick's word. Memory's chain begins at #1-new.
+- #1-new (2026-07-30): Memory's chain begun — "What's Next" filled
+  with three items (gear symmetry, counters without the log
+  pop-up, Shopping List highlighting and tiles); the five-piece
+  Parked bullet dissolved, two pieces recorded done; the subtitle
+  item re-homed to publishing.md; the quiet-files rule amended to
+  "quiet until needed" with one-session notes; the pending header
+  now updated at every refresh; pending.docx rebuilt at zero
+  mismatches; the #69 badge-reorder loose end closed.
 
-## Next session's goal (from session 0)
+## Next session's goal (from #1-new)
 
-**#1-NEW — MEMORY'S CHAIN BEGINS.** The first goal, Patrick's
-word at session 0: fill pending.txt's "What's Next" with new
-items. Patrick names the items; the "Still broken or unfinished"
-list and the roadmap's milestone tracks are natural quarries, but
-the choosing is his. pending.docx is rebuilt to match when the
-txt changes.
+**#2-NEW — WORK THE "WHAT'S NEXT" ITEMS.** Patrick's word at
+#1-new: take up pending.txt's three "What's Next" items — the
+Home screen's Settings gear in symmetry with the logo; the
+My Day / Pets Day counters editing in the log instead of the log
+pop-up; and the Shopping List's highlighting stopped in Shopping
+mode with thinner tiles. Each is a code change; scope them
+together at the session start.
 
 **Waiting behind it:** the MCTS stale/dead HTML cleanup — the three
 "What's next" items in MysteryCluesTracker/docs/pending.txt, each a
@@ -175,8 +187,6 @@ not stored here (Patrick, #124).
 
 ## Loose ends
 
-- Memory's #69 badge-reorder commit/build/phone-check may still be
-  pending — confirm with Patrick.
 - The elyfont.com home card mis-describes the web app (says
   book-reading; it's a board-game companion).
 - The 266-step web test procedure as a tickable web page remains a
@@ -211,8 +221,10 @@ at the top of Claude's where-things-stand report at a session start —
 the app's status with Apple changing is the type — and that is the
 moment to ask whether the strategy doc needs a line.
 
-If pending.txt changed, pending.docx is rebuilt
-from it to match, machine-checked line-for-line (Patrick, #128).
+If pending.txt changed, its header line is brought up to date
+first — every time (Patrick, #1-new) — then pending.docx is
+rebuilt from it to match, machine-checked line-for-line
+(Patrick, #128).
 The refresh is discussed and gets Patrick's go
 like any other change (#79), asked in rule 8's form. Claude also scripts a short opener note
 and hands it to Patrick in chat — goal, what's decided, the

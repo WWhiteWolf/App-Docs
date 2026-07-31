@@ -113,6 +113,9 @@ anything has been read. They apply in every project.
     own line before the last (#119). When Claude proposes or applies
     an edit, the changed text is bold-italicized in the chat copy so
     it can be spotted at a glance; the file itself stays plain.
+    A commit paste is handed as one plain block — the summary line,
+    a blank line, then the body — with no "Summary line:"/"Body:"
+    labels and no code boxes around it (Patrick, session 0).
 
 20. The master hand-off names the next session's goal. Read it back to
     Patrick at the start rather than asking him what the goal is — he
