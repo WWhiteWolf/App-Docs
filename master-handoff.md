@@ -67,17 +67,34 @@ went before assuming the work shipped clean.
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-31, #3-new — round header
-buttons & optional Day times built and phone-verified)
+## Where things stand (updated 2026-07-31, #154 — Mystery's
+Android branch opened and scoped end to end)
 
-**MYSTERY IS SET DOWN AND UNCHANGED (#152).** The app is with
-Apple: build **1.0 (2)**, status **Waiting for Review**, release
-setting **MANUAL** — an approval waits for Patrick. Nothing in App
-Store Connect lives in a repo, so this is the only record. Its docs
-are current and tidy; the stale/dead HTML cleanup waits for the
-store. Amendment (Patrick, #3-new): session-start status reports
-no longer mention Mystery — this paragraph stays as the written
-record, left out of the spoken report until the app moves.
+**MYSTERY HAS OPENED AN ANDROID BRANCH (#154, 2026-07-31).** With
+Apple, nothing moved: build **1.0 (2)**, status **Waiting for
+Review**, release setting **MANUAL** — an approval waits for
+Patrick. Nothing in App Store Connect lives in a repo, so this is
+the only record. The #154 session explored the Android path end to
+end and Patrick chose the road: a signed APK downloadable from
+elyfont.com — no Play account, no store paperwork, no testers, no
+waiting. The Play Store itself is on the back burner: Google's own
+help page confirms a new personal account must run a closed test
+with 12 testers opted in for 14 continuous days before public
+release, and Patrick counted eight Android phones in reach — four
+short. The wrapper is scoped at roughly 150–250 lines of Kotlin in
+Android Studio, mirroring the Swift wrapper's three bridges
+(storage mirror, clipboard, mailto), the game HTML shipping
+untouched; estimate four to six sessions. Also scoped, not yet
+decided as work: the game page served from an elyfont.com
+subfolder (never the root — its service worker must not seize the
+site), and the iOS side, which is an App Store badge when the app
+releases, never a file — iOS offers no sideloading. The
+elyfont.com home card's book-reading mis-description was fixed
+live by Patrick's own hand at #154 ("game you're playing" …
+"between turns"). The stale/dead HTML cleanup still waits for the
+store. Amendment note: the #3-new ruling that left Mystery out of
+spoken status reports was made while Mystery lay dormant; how it
+applies now that the branch is live was not re-discussed at #154.
 
 **MEMORY'S CHAIN IS RUNNING (#3-new, 2026-07-31).** Both
 "What's Next" items are BUILT, and Patrick verified everything
@@ -183,16 +200,31 @@ Kept here only while they still bear on live work:
   phone-verified through EAS and committed by Patrick. Three new
   items filed; publishing.md gained Build steps; status reports
   drop Mystery.
+- #154 (2026-07-31): Mystery's Android branch opened and scoped —
+  the road chosen is a signed APK downloadable from elyfont.com
+  (wrapper ~150–250 lines of Kotlin, four to six sessions); the
+  Play Store parked after Google's 12-tester/14-day gate was
+  verified against eight phones counted; the /clues/ page and the
+  iOS badge road mapped; elyfont.com fetched (web page reports
+  Ver. 5.0, the mobile game absent); the home-card mis-description
+  fixed live by Patrick.
 
-## Next session's goal (from #3-new)
+## Next session's goal (from #3-new and #154)
 
-**#4-NEW — TAKE UP THE "WHAT'S NEXT" ITEMS.**
+**#4-NEW (MEMORY) — TAKE UP THE "WHAT'S NEXT" ITEMS.**
 Patrick's word at #3-new: take up pending.txt's three "What's
 Next" items — Look Ahead's tile format changed and its Snooze
 changed or dropped; the Timer tile gaining a Stop (Pause) /
 Continue (Go) button and a log; and the Vault restructuring's
 "Home"-to-"Back" button change. Each is a code change; scope
 them together at the session start.
+
+**#155 (MYSTERY) — BUILD THE ANDROID WRAPPER.**
+Patrick's word at #154: build/wrap the Android app so a signed
+APK can go up on elyfont.com. Android Studio, a Kotlin WebView
+wrapper mirroring the Swift wrapper's three bridges, tested in
+the emulator and then on Patrick's Android phone. The Play Store
+stays on the back burner.
 
 **Waiting behind it:** the MCTS stale/dead HTML cleanup — the three
 "What's next" items in MysteryCluesTracker/docs/pending.txt, each a
@@ -205,8 +237,6 @@ not stored here (Patrick, #124).
 
 ## Loose ends
 
-- The elyfont.com home card mis-describes the web app (says
-  book-reading; it's a board-game companion).
 - The 266-step web test procedure as a tickable web page remains a
   liked idea.
 - App-Docs git status CONFIRMED (#97, by file-reading .git/logs —
@@ -223,9 +253,9 @@ not stored here (Patrick, #124).
   the MysteryTracker folder, so nothing was lost.
 - elyfont.com home page: add a Mystery Clues Track Sheet card linking
   privacy-policy.html and support.html (both pages live as of #130,
-  unlinked from the home page). Deferred by Patrick, #130 — pairs
-  naturally with fixing the home card's book-reading mis-description
-  (the loose end above).
+  unlinked from the home page). Deferred by Patrick, #130. The home
+  card's book-reading mis-description that once paired with this was
+  fixed live by Patrick at #154; this card item now stands alone.
 
 ## At session end
 
