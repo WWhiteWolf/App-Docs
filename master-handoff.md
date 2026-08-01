@@ -69,34 +69,42 @@ went before assuming the work shipped clean.
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-07-31, #154 — Mystery's
-Android branch opened and scoped end to end)
+## Where things stand (updated 2026-08-01, #155 — Mystery's
+Android wrapper built, signed, and phone-proven in one session)
 
-**MYSTERY HAS OPENED AN ANDROID BRANCH (#154, 2026-07-31).** With
-Apple, nothing moved: build **1.0 (2)**, status **Waiting for
-Review**, release setting **MANUAL** — an approval waits for
-Patrick. Nothing in App Store Connect lives in a repo, so this is
-the only record. The #154 session explored the Android path end to
-end and Patrick chose the road: a signed APK downloadable from
-elyfont.com — no Play account, no store paperwork, no testers, no
-waiting. The Play Store itself is on the back burner: Google's own
-help page confirms a new personal account must run a closed test
-with 12 testers opted in for 14 continuous days before public
-release, and Patrick counted eight Android phones in reach — four
-short. The wrapper is scoped at roughly 150–250 lines of Kotlin in
-Android Studio, mirroring the Swift wrapper's three bridges
-(storage mirror, clipboard, mailto), the game HTML shipping
-untouched; estimate four to six sessions. Also scoped, not yet
-decided as work: the game page served from an elyfont.com
-subfolder (never the root — its service worker must not seize the
-site), and the iOS side, which is an App Store badge when the app
-releases, never a file — iOS offers no sideloading. The
-elyfont.com home card's book-reading mis-description was fixed
-live by Patrick's own hand at #154 ("game you're playing" …
-"between turns"). The stale/dead HTML cleanup still waits for the
-store. Amendment note: the #3-new ruling that left Mystery out of
-spoken status reports was made while Mystery lay dormant; how it
-applies now that the branch is live was not re-discussed at #154.
+**MYSTERY'S ANDROID WRAPPER IS BUILT, SIGNED, AND PHONE-PROVEN
+(#155, 2026-08-01).** With Apple, still nothing moved: build
+**1.0 (2)**, status **Waiting for Review**, release setting
+**MANUAL** — an approval waits for Patrick, and nothing in App
+Store Connect lives in a repo, so this is the only record. The
+wrapper #154 scoped at four to six sessions took one: Android
+Studio (Quail 3) on the Mac, the project at
+`MysteryCluesTracker/wrapper-android` (package
+com.elyfont.mysteryclues, Kotlin, minimum API 26), one
+MainActivity.kt whose injected shim fakes Apple's bridge object —
+Patrick's ruling: the game HTML is NEVER changed; the wrapper
+adapts. All three bridges were exercised on the emulator; storage
+and clipboard proven again on Patrick's own Android phone; the
+mailto compose half waits for a phone with email configured. Two
+wrapper bugs found and fixed along the way: WebView ignoring its
+own inset padding (a container carries it now), and the sixth
+player column clipped — the sheet's columns total exactly 430 CSS
+pixels, wider than most Android screens, so the wrapper pins the
+viewport at 430 and scales the page down whole. The signing key
+lives at iCloud Drive → AndroidKeys (alias mystery; passwords in
+Patrick's paper notes; the key must never enter a repo, and every
+future update needs it). `app-release.apk` reached the phone by
+the real elyfont.com road — browser download over Wi-Fi,
+unknown-source walk, install. One lesson for the download page:
+Chrome re-served its stale cached APK until history was cleared,
+so the page wants a version note, a versioned filename would
+sidestep the cache, and the next release build should bump
+versionCode. Still ahead: the elyfont.com upload and download
+page, the testing-depth call (424 steps on Android is Patrick's,
+undecided), and the /clues/ page question. The stale/dead HTML
+cleanup still waits for the store. Amendment note (standing from
+#154): how the #3-new no-Mystery-in-status-reports ruling applies
+now the branch is live has not been re-discussed.
 
 **MEMORY'S CHAIN IS RUNNING (#3-new, 2026-07-31).** Both
 "What's Next" items are BUILT, and Patrick verified everything
@@ -159,13 +167,6 @@ copy here.
 Kept here only while they still bear on live work:
 
 - #151 (2026-07-29): THE COLD-START OPENING WRITTEN — CLAUDE.md rule 1 rewritten twice (the second folder left unnamed so the rule serves every project, which put the hand-off read BEFORE the second folder ask), and the hand-off's "At session end" given the passage that makes every opener note carry the folder asks; the "only carrier" claim dropped after CLAUDE.md's text proved to arrive before any folder is connected. The pending list cleaned top to bottom: "What's next" from five items to three all-code ones, "Nice-to-have later" from eight bullets to three, the web app's stray Clue echo rehomed to MysteryTracker's PARKED-ITEMS.md as item 25, the header rewritten to describe this session, 252 lines down to 158. pending.docx deferred by Patrick. Patrick made several of the edits by hand, and flagged that each read of a file needs its own ask.
-- #152 (2026-07-29): A scare about the styling docs settled by git
-  archaeology — chat&test-spec-styling.md recovered, the #150 split
-  proved clean, nothing lost. The pending tidy finished: two sections
-  dropped whole, 85 lines, header rewritten; pending.docx rebuilt and
-  machine-checked at zero mismatches. Project set down until the app
-  is in the store; next: prepare the transition to Memory — the
-  HTML cleanup waits for the store.
 - 153 > 0 (2026-07-30): The Memory transition session, the bridge
   between the chains. Memory's pending.txt part-tidied (snapshot and
   #40/#41 tombstones out, three sections emptied, Vault import
@@ -210,8 +211,17 @@ Kept here only while they still bear on live work:
   iOS badge road mapped; elyfont.com fetched (web page reports
   Ver. 5.0, the mobile game absent); the home-card mis-description
   fixed live by Patrick.
+- #155 (2026-08-01): The Android wrapper built, signed, and
+  phone-proven in ONE session against #154's four-to-six estimate —
+  shim faking Apple's bridge (Patrick's ruling: the HTML is never
+  changed), all bridges exercised, two wrapper bugs fixed (ignored
+  insets padding; the sixth column clipped by the 430-pixel column
+  arithmetic — viewport pinned at 430 and scaled), the signing key
+  made and kept in iCloud Drive → AndroidKeys, the APK installed on
+  Patrick's phone by the real browser-download road, and Chrome's
+  stale-cache lesson recorded for the download page.
 
-## Next session's goal (from #3-new and #154)
+## Next session's goal (from #3-new and #155)
 
 **#4-NEW (MEMORY) — TAKE UP THE "WHAT'S NEXT" ITEMS.**
 Patrick's word at #3-new: take up pending.txt's three "What's
@@ -221,18 +231,22 @@ Continue (Go) button and a log; and the Vault restructuring's
 "Home"-to-"Back" button change. Each is a code change; scope
 them together at the session start.
 
-**#155 (MYSTERY) — BUILD THE ANDROID WRAPPER.**
-Patrick's word at #154: build/wrap the Android app so a signed
-APK can go up on elyfont.com. Android Studio, a Kotlin WebView
-wrapper mirroring the Swift wrapper's three bridges, tested in
-the emulator and then on Patrick's Android phone. The Play Store
-stays on the back burner.
+**#156 (MYSTERY) — SCOPE A LIGHT THEME FOR THE IPHONE APP.**
+Patrick's word at #155: a scoping session — light colors, a
+daytime look — for Mystery Clues Track Sheet on the iPhone. The
+sheet today is all dark wood and gold. A scoping session, not a
+build; upgrade-scope.md is in play, since theming touches
+standing design decisions.
 
-**Waiting behind it:** the MCTS stale/dead HTML cleanup — the three
-"What's next" items in MysteryCluesTracker/docs/pending.txt, each a
-code change, sitting naturally after the app reaches the store.
-Apple's answer on build 1.0 (2) may set its own agenda when it
-comes.
+**Waiting behind it:** the Android road's remaining legs — the APK
+upload to the public mystery-tracker repo and the elyfont.com
+download page (with its version note; a versioned filename
+sidesteps Chrome's cache; bump versionCode first), and the
+Android testing-depth call. Also the MCTS stale/dead HTML cleanup —
+the three "What's next" items in
+MysteryCluesTracker/docs/pending.txt, each a code change, sitting
+naturally after the app reaches the store. Apple's answer on
+build 1.0 (2) may set its own agenda when it comes.
 
 The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
