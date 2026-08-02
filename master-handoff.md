@@ -69,57 +69,33 @@ went before assuming the work shipped clean.
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-08-01, #156 -> MT#0 — the light
-theme scoped, the order reversed to the web first, Mystery Tracker
-given its own chain)
+## Where things stand (updated 2026-08-02, MT#1 — the light theme's
+palette built in the web app)
 
-**THE LIGHT THEME IS SCOPED, AND THE ORDER IS REVERSED
-(#156 -> MT#0, 2026-08-01).** Patrick's direction is a warm daytime
-look — oranges, yellows, tans, browns — NOT the cold white kind, and
-NOT the web app's existing light theme, which he does not like. That
-excepts the light theme from the #72 mirror-the-web rule; the rule
-stands everywhere else. Still OPEN: whether the headers hold their
-present colors or shift to blend with a lighter grid. The palette now
-gets designed in the WEB app first and the iPhone app follows later,
-because the web already carries the apparatus — a dark `:root` and a
-`:root.light` under the same variable names, plus a no-flash script —
-while the iPhone app has no theme switch at all and about sixty-six
-literal colors sitting outside its thirteen variables. Mystery Tracker
-also gained its own numbering chain, `MT#N`, and MT#1 is the first
-real session in it. Nothing was built and no app code was touched;
-full detail in build-history.md's `#156 -> MT#0` section.
+**THE LIGHT THEME IS LARGELY BUILT (MT#1, 2026-08-02).** The warm
+daytime palette Patrick asked for is in `MysteryTracker.html` and he
+has seen every step of it in Firefox. The page background is now the
+amber the mobile app uses across its own header; eight pale surfaces
+went tan and cream, stepped so the grid still reads apart; the four
+category banners took the mobile app's brick red, slate blue, forest
+green and olive brown, written identically into BOTH themes; the two
+bars above the grid became dark islands in the light theme by
+borrowing the dark theme's whole color set, which also turned the game
+bar deep green instead of near-white; the grid's heading band went
+warm cream with dark letters, putting the light theme in the dark
+theme's arrangement; the ✓ and ✕ cell tints were softened, deepened
+and then the green brightened; and the two turn tints became one soft
+blue, Patrick's call to stop distinguishing his own column from
+anyone else's. Three changes reach BOTH themes on purpose — the
+category banners, the game log's swapped shades, and the cell tints.
+The headers question that #156 -> MT#0 left open is SETTLED: they hold
+the dark theme's arrangement rather than blending into a lighter grid.
+Six theme items remain, parked as 26–31 in
+`MysteryTracker/docs/PARKED-ITEMS.md`. Nothing was committed by Claude;
+no git was run. Full detail in `MysteryTracker/docs/handoff.md`.
 
-**MYSTERY'S ANDROID WRAPPER IS BUILT, SIGNED, AND PHONE-PROVEN
-(#155, 2026-08-01).** *(This paragraph rides one more refresh at
-Patrick's word, #156 -> MT#0, then goes.)* The
-wrapper #154 scoped at four to six sessions took one: Android
-Studio (Quail 3) on the Mac, the project at
-`MysteryCluesTracker/wrapper-android` (package
-com.elyfont.mysteryclues, Kotlin, minimum API 26), one
-MainActivity.kt whose injected shim fakes Apple's bridge object —
-Patrick's ruling: the game HTML is NEVER changed; the wrapper
-adapts. All three bridges were exercised on the emulator; storage
-and clipboard proven again on Patrick's own Android phone; the
-mailto compose half waits for a phone with email configured. Two
-wrapper bugs found and fixed along the way: WebView ignoring its
-own inset padding (a container carries it now), and the sixth
-player column clipped — the sheet's columns total exactly 430 CSS
-pixels, wider than most Android screens, so the wrapper pins the
-viewport at 430 and scales the page down whole. The signing key
-lives at iCloud Drive → AndroidKeys (alias mystery; passwords in
-Patrick's paper notes; the key must never enter a repo, and every
-future update needs it). `app-release.apk` reached the phone by
-the real elyfont.com road — browser download over Wi-Fi,
-unknown-source walk, install. One lesson for the download page:
-Chrome re-served its stale cached APK until history was cleared,
-so the page wants a version note, a versioned filename would
-sidestep the cache, and the next release build should bump
-versionCode. Still ahead: the elyfont.com upload and download
-page, the testing-depth call (424 steps on Android is Patrick's,
-undecided), and the /clues/ page question. The stale/dead HTML
-cleanup still waits for the store. Amendment note (standing from
-#154): how the #3-new no-Mystery-in-status-reports ruling applies
-now the branch is live has not been re-discussed.
+**UNDECIDED, and not decided at MT#1:** whether a palette change means
+the spec and its Word file need updating.
 
 **MEMORY'S CHAIN IS RUNNING (#3-new, 2026-07-31).** Both
 "What's Next" items are BUILT, and Patrick verified everything
@@ -252,7 +228,19 @@ Kept here only while they still bear on live work:
   still name `SESSION-HANDOFF.md`. Nothing built; no app code
   touched.
 
-## Next session's goal (from #3-new and #156 -> MT#0)
+- MT#1 (2026-08-02): the light theme's palette BUILT in the web app —
+  the amber page background reached by warming the light background
+  toward the mobile header rather than adding a band, eight pale
+  surfaces taken to tan and cream, the four category banners set to
+  the mobile app's colors in both themes, the two bars above the grid
+  turned into dark islands that borrow the dark theme's whole color
+  set (which fixed the near-white game bar), the heading band turned
+  cream with dark letters, the ✓/✕ cell tints softened and deepened,
+  and the two turn tints made one soft blue. Six theme items parked as
+  26–31; three filing repairs discussed and deliberately not built,
+  parked as 32.
+
+## Next session's goal (from #3-new and MT#1)
 
 **#4-NEW (MEMORY) — TAKE UP THE "WHAT'S NEXT" ITEMS.**
 Patrick's word at #3-new: take up pending.txt's three "What's
@@ -262,32 +250,34 @@ Continue (Go) button and a log; and the Vault restructuring's
 "Home"-to-"Back" button change. Each is a code change; scope
 them together at the session start.
 
-**MT#1 (MYSTERY TRACKER — WEB) — THE LIGHT THEME, DESIGNED IN THE
-WEB APP.** Patrick's word at #156 -> MT#0: the palette gets made
-where it can be seen changing. Connect `Projects/MysteryTracker`
-and read its `CLAUDE.md`, `docs/handoff.md` and `docs/ROADMAP.md`
-— with the warning that the filing has drifted, so treat them as
-how things were LEFT, not how they are. The direction is a warm
-daytime look — oranges, yellows, tans, browns — and NOT the light
-theme that file already carries, which Patrick does not like. Open
-question to settle: whether the headers hold their present colors
-or shift to blend with a lighter grid. The web's `:root.light`
-block is where a candidate palette gets tried; parked item 24 (the
-dead `--sum-dot-fg` variable, defined in both theme blocks and
-referenced nowhere) is already a theme item and belongs in the
-same pass. Two things to remember: `DEPLOY.md` says the live site
-is served from a DIFFERENT public repo (`WWhiteWolf/mystery-tracker`)
-so a private-repo commit changes nothing anyone can see, and
-Patrick's browser is Firefox — hard-reload with Cmd+Shift+R after
-every edit or the old file gets served. Whether a palette change
-touches the spec and its docx is UNDECIDED.
+**MT#2 (MYSTERY TRACKER — WEB) — CARRY THE LIGHT THEME ON.**
+Patrick's word at the close of MT#1: the next session continues
+this same effort. What is left of it is parked items 26 through 31
+in `MysteryTracker/docs/PARKED-ITEMS.md` — the New Game button no
+longer reading as a button, the fourth category not activating
+(app behavior, Patrick's word: its own session), the fourth
+banner's thin gold outline, the ∑ and 🏠 headings in the DARK
+theme, the gridlines washing out under the cell tints together
+with the alternating row shading showing in one theme but not the
+other, and the colors still outside the warm family. Patrick picks
+the order at the session start. Two things to remember: `DEPLOY.md`
+says the live site is served from a DIFFERENT public repo
+(`WWhiteWolf/mystery-tracker`) so a private-repo commit changes
+nothing anyone can see, and Patrick's browser is Firefox —
+hard-reload with Cmd+Shift+R after every edit or the old file gets
+served. Whether a palette change touches the spec and its docx is
+still UNDECIDED.
 
-**Repairs waiting in that project, deliberately not done at
-#156 -> MT#0:** `docs/session-start.md` does not exist even though
-the master hand-off and that project's own `CLAUDE.md` rule 1 both
-name it as the first read, and the older commit notes in
-`handoff.md` and `ROADMAP.md` still name `SESSION-HANDOFF.md`,
-which became `docs/handoff.md`. Each wants its own discussion.
+**Repairs waiting in that project, discussed at MT#1 and
+deliberately not built — parked as item 32:**
+`docs/session-start.md` does not exist even though the master
+hand-off and that project's own `CLAUDE.md` rule 1 both name it as
+the first read, and Patrick's word is that one gets created;
+`ROADMAP.md` still names `SESSION-HANDOFF.md` in twelve of its
+notes, which became `docs/handoff.md` (`handoff.md` itself carried
+none); and the comment above the theme blocks in
+`MysteryTracker.html` says light is opt-in via `body.light` when
+the code puts the class on `html`. Each wants its own discussion.
 
 **Waiting behind it:** the Android road's remaining legs — the APK
 upload to the public mystery-tracker repo and the elyfont.com
