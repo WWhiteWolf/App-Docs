@@ -69,14 +69,29 @@ went before assuming the work shipped clean.
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-08-01, #155 — Mystery's
-Android wrapper built, signed, and phone-proven in one session)
+## Where things stand (updated 2026-08-01, #156 -> MT#0 — the light
+theme scoped, the order reversed to the web first, Mystery Tracker
+given its own chain)
+
+**THE LIGHT THEME IS SCOPED, AND THE ORDER IS REVERSED
+(#156 -> MT#0, 2026-08-01).** Patrick's direction is a warm daytime
+look — oranges, yellows, tans, browns — NOT the cold white kind, and
+NOT the web app's existing light theme, which he does not like. That
+excepts the light theme from the #72 mirror-the-web rule; the rule
+stands everywhere else. Still OPEN: whether the headers hold their
+present colors or shift to blend with a lighter grid. The palette now
+gets designed in the WEB app first and the iPhone app follows later,
+because the web already carries the apparatus — a dark `:root` and a
+`:root.light` under the same variable names, plus a no-flash script —
+while the iPhone app has no theme switch at all and about sixty-six
+literal colors sitting outside its thirteen variables. Mystery Tracker
+also gained its own numbering chain, `MT#N`, and MT#1 is the first
+real session in it. Nothing was built and no app code was touched;
+full detail in build-history.md's `#156 -> MT#0` section.
 
 **MYSTERY'S ANDROID WRAPPER IS BUILT, SIGNED, AND PHONE-PROVEN
-(#155, 2026-08-01).** With Apple, still nothing moved: build
-**1.0 (2)**, status **Waiting for Review**, release setting
-**MANUAL** — an approval waits for Patrick, and nothing in App
-Store Connect lives in a repo, so this is the only record. The
+(#155, 2026-08-01).** *(This paragraph rides one more refresh at
+Patrick's word, #156 -> MT#0, then goes.)* The
 wrapper #154 scoped at four to six sessions took one: Android
 Studio (Quail 3) on the Mac, the project at
 `MysteryCluesTracker/wrapper-android` (package
@@ -136,9 +151,11 @@ Quiet-file note (this one session only, per the amended rule):
 docs/publishing.md gained a "Build steps" section at its end —
 Patrick's EAS build-and-submit steps, in his own words.
 
-The numbering rule, amended at session 0 (Patrick's word): bare
+The numbering rule, amended at session 0 and again at
+#156 -> MT#0 (Patrick's word): there are THREE chains — bare
 session numbers always mean the old shared chain; Memory's own
-chain is written "#1-new, #2-new, …" — no old reference is ever
+chain is written "#1-new, #2-new, …"; and Mystery Tracker's own
+chain is written "MT#1, MT#2, …". No old reference is ever
 edited. The name is "A Place To Remember"; the badge under the
 icon is "Memory". Memory runs in its own chat stream.
 
@@ -220,8 +237,22 @@ Kept here only while they still bear on live work:
   made and kept in iCloud Drive → AndroidKeys, the APK installed on
   Patrick's phone by the real browser-download road, and Chrome's
   stale-cache lesson recorded for the download page.
+- #156 -> MT#0 (2026-08-01): light theme scope iPhone & web — a
+  scoping session that became the transition into a new chain.
+  Patrick's palette direction set (warm oranges, yellows, tans,
+  browns; headers still open), the #72 mirror-the-web rule excepted
+  for the light theme, and the ORDER REVERSED — the web app first,
+  the iPhone app after — on the code evidence that the web already
+  has the theme apparatus and the iPhone app has none. Mystery
+  Tracker given its own chain, `MT#N`. Three stale items cut from
+  the hand-off's "Where things stand." Mystery Tracker's docs read
+  for the first time in the new chain: paused since 2026-06-13, all
+  committed, no must-do item, and two broken pointers found —
+  `docs/session-start.md` does not exist, and the older commit notes
+  still name `SESSION-HANDOFF.md`. Nothing built; no app code
+  touched.
 
-## Next session's goal (from #3-new and #155)
+## Next session's goal (from #3-new and #156 -> MT#0)
 
 **#4-NEW (MEMORY) — TAKE UP THE "WHAT'S NEXT" ITEMS.**
 Patrick's word at #3-new: take up pending.txt's three "What's
@@ -231,12 +262,32 @@ Continue (Go) button and a log; and the Vault restructuring's
 "Home"-to-"Back" button change. Each is a code change; scope
 them together at the session start.
 
-**#156 (MYSTERY) — SCOPE A LIGHT THEME FOR THE IPHONE APP.**
-Patrick's word at #155: a scoping session — light colors, a
-daytime look — for Mystery Clues Track Sheet on the iPhone. The
-sheet today is all dark wood and gold. A scoping session, not a
-build; upgrade-scope.md is in play, since theming touches
-standing design decisions.
+**MT#1 (MYSTERY TRACKER — WEB) — THE LIGHT THEME, DESIGNED IN THE
+WEB APP.** Patrick's word at #156 -> MT#0: the palette gets made
+where it can be seen changing. Connect `Projects/MysteryTracker`
+and read its `CLAUDE.md`, `docs/handoff.md` and `docs/ROADMAP.md`
+— with the warning that the filing has drifted, so treat them as
+how things were LEFT, not how they are. The direction is a warm
+daytime look — oranges, yellows, tans, browns — and NOT the light
+theme that file already carries, which Patrick does not like. Open
+question to settle: whether the headers hold their present colors
+or shift to blend with a lighter grid. The web's `:root.light`
+block is where a candidate palette gets tried; parked item 24 (the
+dead `--sum-dot-fg` variable, defined in both theme blocks and
+referenced nowhere) is already a theme item and belongs in the
+same pass. Two things to remember: `DEPLOY.md` says the live site
+is served from a DIFFERENT public repo (`WWhiteWolf/mystery-tracker`)
+so a private-repo commit changes nothing anyone can see, and
+Patrick's browser is Firefox — hard-reload with Cmd+Shift+R after
+every edit or the old file gets served. Whether a palette change
+touches the spec and its docx is UNDECIDED.
+
+**Repairs waiting in that project, deliberately not done at
+#156 -> MT#0:** `docs/session-start.md` does not exist even though
+the master hand-off and that project's own `CLAUDE.md` rule 1 both
+name it as the first read, and the older commit notes in
+`handoff.md` and `ROADMAP.md` still name `SESSION-HANDOFF.md`,
+which became `docs/handoff.md`. Each wants its own discussion.
 
 **Waiting behind it:** the Android road's remaining legs — the APK
 upload to the public mystery-tracker repo and the elyfont.com
@@ -246,7 +297,10 @@ Android testing-depth call. Also the MCTS stale/dead HTML cleanup —
 the three "What's next" items in
 MysteryCluesTracker/docs/pending.txt, each a code change, sitting
 naturally after the app reaches the store. Apple's answer on
-build 1.0 (2) may set its own agenda when it comes.
+build 1.0 (2) may set its own agenda when it comes. And the light
+theme's second half — carrying the settled palette into the iPhone
+app, which first needs its sixty-six literal colors pulled into
+named variables before any light color can be looked at there.
 
 The opener note is handed to Patrick in chat at session end —
 not stored here (Patrick, #124).
