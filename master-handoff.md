@@ -69,40 +69,37 @@ went before assuming the work shipped clean.
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-08-03, MT#2 — the light theme's
-gridwork in the web app)
+## Where things stand (updated 2026-08-03, MT#3 — the Mystery Tracker
+docs restructured)
 
-**THE LIGHT THEME'S PALETTE IS BUILT AND ITS GRIDWORK IS WELL ALONG
-(MT#1 2026-08-02, MT#2 2026-08-03).** MT#1 laid the warm daytime palette
-into `MysteryTracker.html` — amber page background, tan and cream
-surfaces, the mobile app's four category banners written into both
-themes, the two bars above the grid turned into dark islands, a cream
-heading band, and the turn tints collapsed to one color. MT#2 then went
-at the grid itself, Patrick watching every step in Firefox:
+**MYSTERY TRACKER'S LIGHT THEME IS BUILT AND COMMITTED.** MT#1 laid the
+warm daytime palette into `MysteryTracker.html` and MT#2 settled the
+gridwork — the honey-gold turn column, the alternating bands gone from
+both themes, the gridlines given their own variable, and the ✓/✕ tints
+split per theme so the approved dark theme is frozen. Patrick confirmed
+at MT#3 that MT#1 and MT#2 are both committed. Two subjects were scoped
+and deliberately not built: the grid's cream field and the light chips
+under the small marks. Full detail in `MysteryTracker/docs/handoff.md`.
 
-- the turn column went from soft blue to a honey gold, `#f5da96`,
-  carrying the focused card-name box and the live log entry with it;
-- the alternating row bands were REMOVED from both themes at Patrick's
-  word, which also cured a faint unevenness in the dark theme;
-- the gridlines were given their own `--grid-line` variable, away from
-  the nine other things sharing `--border-lt`, and strengthened to
-  `#c6a87b` light and `#8c6a38` dark;
-- the ✓/✕ cell tints were brightened, thinned and given a crisp inner
-  ring, the ✕ ring then toned down — Patrick called the DARK theme
-  perfect at that point;
-and
-- those tints were then SPLIT PER THEME into four variables each, so the
-  dark theme's settled values are frozen and the light theme's can be
-  tuned alone.
+**MT#3 RESTRUCTURED THAT PROJECT'S DOCS (2026-08-03).** Patrick's ruling:
+these files are for Claude's use, not his — he reads a pending file to
+orient himself to a project. The measure became the cost of the opening
+read, which was 1,477 lines that morning. Mystery Tracker gained a
+`build-history.md` for finished work, `PARKED-ITEMS.md` dropped to open
+items only and is no longer read at a session opening, `handoff.md` fell
+from 375 lines to about 120, and the project's working habits moved into
+its own `CLAUDE.md`, which arrives without being fetched.
 
-Two things were scoped and deliberately NOT built: the grid's cream
-field, and the light squares under the small `?` / `!` / `✓*` marks.
-Nothing was committed by Claude; no git was run in either session. Full
-detail in `MysteryTracker/docs/handoff.md`.
+**THE SESSION OPENING CHANGES SHAPE (MT#3, Patrick's word).** App-Docs is
+connected and read as before; then Claude ASKS Patrick which project the
+session is in and sends the folder ask for it. The goal lives in the
+project, not here, because Patrick runs three projects and the goal has
+to stay flexible. This file is to narrow to four things — the projects
+and their folders, one line of status each, what is true across all
+three, and the loose ends belonging to no single project. **That trim is
+NOT yet done, so App-Docs' `CLAUDE.md` rule 1 and this file still
+describe the older opening.**
 
-**UNDECIDED, and not decided at MT#1 or MT#2:** whether a palette change
-means the spec and its Word file need updating. Neither session touched
-the spec or regenerated the docx.
 
 **MEMORY'S CHAIN IS RUNNING (#3-new, 2026-07-31).** Both
 "What's Next" items are BUILT, and Patrick verified everything
@@ -258,6 +255,18 @@ Kept here only while they still bear on live work:
   chips under the small marks — parked as 33, 34 and 35. Patrick asked
   for a docs-trimming session next.
 
+- MT#3 (2026-08-03): Mystery Tracker's docs restructured, on Patrick's
+  ruling that they exist for Claude's use and that the opening read is
+  what needs to shrink. `build-history.md` created and given the closed
+  section, the June commit notes, the MT#1/MT#2 session records and item
+  6's built record; `PARKED-ITEMS.md` cut from 546 lines to 158 and
+  dropped from the opening read; `handoff.md` rewritten around the
+  app's current state; the project's own habits moved into its
+  `CLAUDE.md`. The opening reshaped so Claude asks which project the
+  session is in. Three pieces left for MT#4 — a pending file for
+  Patrick, this file's trim, and the two `CLAUDE.md` files, which
+  Patrick named as MT#4's goal.
+
 ## Next session's goal (from #3-new and MT#1)
 
 **#4-NEW (MEMORY) — TAKE UP THE "WHAT'S NEXT" ITEMS.**
@@ -268,34 +277,19 @@ Continue (Go) button and a log; and the Vault restructuring's
 "Home"-to-"Back" button change. Each is a code change; scope
 them together at the session start.
 
-**MT#3 (MYSTERY TRACKER — WEB) — TRIM THE DOCS, THEN THE GRID'S
-FIELD.** Patrick raised it twice during MT#2 and asked for it to be
-its own piece of work rather than folded into an end-of-session
-refresh. Parked item 32 holds the known repairs:
-`docs/session-start.md` does not exist even though the master
-hand-off and that project's own `CLAUDE.md` rule 1 both name it as
-the first read, and Patrick's word is that one gets created;
-`ROADMAP.md` still names `SESSION-HANDOFF.md` in twelve of its
-notes, which became `docs/handoff.md` (`handoff.md` itself carried
-none); and the comment above the theme blocks in
-`MysteryTracker.html` says light is opt-in via `body.light` when
-the code puts the class on `html`. Patrick's "the docs need
-trimming" is broader than that list, so scope it with him at the
-start.
+**MT#4 (MYSTERY TRACKER — WEB) — THE TWO `CLAUDE.md` FILES.**
+Patrick's word at MT#3. They are 207 lines together and are the only
+real weight left at a session opening. App-Docs' rule 1 also still
+describes the old opening and needs bringing into line. Riding with it,
+by MT#3's own list: a pending file for Patrick in Memory's shape, and
+this hand-off's trim to its four things.
 
-**Waiting behind it — the piece MT#2 stopped mid-question:** the
-grid's cream field, parked as item 33. The light theme's
-`--surface` is what every unmarked cell now shows, but it also
-paints the ∑ and 🏠 columns, the log entries, the panels, the
-Guide and Rules buttons and several overlays, so it wants a
-grid-only variable of its own. The color was never chosen.
-Deepening it is also the lever that would fix item 35, the light
-theme's tints reading weaker than the dark theme's from the same
-numbers.
+**Waiting behind that:** the grid's cream field, parked as item 33 —
+the piece MT#2 stopped mid-question on. The color was never chosen, and
+deepening it is the lever that would fix item 35. Also open from the
+light theme: items 26, 28, 29, 31 and 34. Item 27 stays Patrick's word
+for its own session, being app behavior rather than color.
 
-Also still open from the light theme: items 26, 28, 29, 31 and 34.
-Item 27 stays Patrick's word for its own session, being app
-behavior rather than color.
 
 Two things to remember: `DEPLOY.md` says the live site is served
 from a DIFFERENT public repo (`WWhiteWolf/mystery-tracker`) so a
