@@ -69,33 +69,40 @@ went before assuming the work shipped clean.
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
 
-## Where things stand (updated 2026-08-02, MT#1 — the light theme's
-palette built in the web app)
+## Where things stand (updated 2026-08-03, MT#2 — the light theme's
+gridwork in the web app)
 
-**THE LIGHT THEME IS LARGELY BUILT (MT#1, 2026-08-02).** The warm
-daytime palette Patrick asked for is in `MysteryTracker.html` and he
-has seen every step of it in Firefox. The page background is now the
-amber the mobile app uses across its own header; eight pale surfaces
-went tan and cream, stepped so the grid still reads apart; the four
-category banners took the mobile app's brick red, slate blue, forest
-green and olive brown, written identically into BOTH themes; the two
-bars above the grid became dark islands in the light theme by
-borrowing the dark theme's whole color set, which also turned the game
-bar deep green instead of near-white; the grid's heading band went
-warm cream with dark letters, putting the light theme in the dark
-theme's arrangement; the ✓ and ✕ cell tints were softened, deepened
-and then the green brightened; and the two turn tints became one soft
-blue, Patrick's call to stop distinguishing his own column from
-anyone else's. Three changes reach BOTH themes on purpose — the
-category banners, the game log's swapped shades, and the cell tints.
-The headers question that #156 -> MT#0 left open is SETTLED: they hold
-the dark theme's arrangement rather than blending into a lighter grid.
-Six theme items remain, parked as 26–31 in
-`MysteryTracker/docs/PARKED-ITEMS.md`. Nothing was committed by Claude;
-no git was run. Full detail in `MysteryTracker/docs/handoff.md`.
+**THE LIGHT THEME'S PALETTE IS BUILT AND ITS GRIDWORK IS WELL ALONG
+(MT#1 2026-08-02, MT#2 2026-08-03).** MT#1 laid the warm daytime palette
+into `MysteryTracker.html` — amber page background, tan and cream
+surfaces, the mobile app's four category banners written into both
+themes, the two bars above the grid turned into dark islands, a cream
+heading band, and the turn tints collapsed to one color. MT#2 then went
+at the grid itself, Patrick watching every step in Firefox:
 
-**UNDECIDED, and not decided at MT#1:** whether a palette change means
-the spec and its Word file need updating.
+- the turn column went from soft blue to a honey gold, `#f5da96`,
+  carrying the focused card-name box and the live log entry with it;
+- the alternating row bands were REMOVED from both themes at Patrick's
+  word, which also cured a faint unevenness in the dark theme;
+- the gridlines were given their own `--grid-line` variable, away from
+  the nine other things sharing `--border-lt`, and strengthened to
+  `#c6a87b` light and `#8c6a38` dark;
+- the ✓/✕ cell tints were brightened, thinned and given a crisp inner
+  ring, the ✕ ring then toned down — Patrick called the DARK theme
+  perfect at that point;
+and
+- those tints were then SPLIT PER THEME into four variables each, so the
+  dark theme's settled values are frozen and the light theme's can be
+  tuned alone.
+
+Two things were scoped and deliberately NOT built: the grid's cream
+field, and the light squares under the small `?` / `!` / `✓*` marks.
+Nothing was committed by Claude; no git was run in either session. Full
+detail in `MysteryTracker/docs/handoff.md`.
+
+**UNDECIDED, and not decided at MT#1 or MT#2:** whether a palette change
+means the spec and its Word file need updating. Neither session touched
+the spec or regenerated the docx.
 
 **MEMORY'S CHAIN IS RUNNING (#3-new, 2026-07-31).** Both
 "What's Next" items are BUILT, and Patrick verified everything
@@ -240,6 +247,17 @@ Kept here only while they still bear on live work:
   26–31; three filing repairs discussed and deliberately not built,
   parked as 32.
 
+- MT#2 (2026-08-03): the light theme's GRIDWORK — the turn column taken
+  from soft blue to a honey gold, the alternating row bands removed from
+  both themes, the gridlines given their own `--grid-line` variable and
+  strengthened twice, and the ✓/✕ tints brightened, thinned, ringed, the
+  ✕ ring toned down, then split into per-theme variables so the dark
+  theme's approved values are frozen. One road tried and rejected by
+  Patrick (recoloring the cell border instead of ringing it). Two
+  subjects scoped and not built — the grid's cream field and the light
+  chips under the small marks — parked as 33, 34 and 35. Patrick asked
+  for a docs-trimming session next.
+
 ## Next session's goal (from #3-new and MT#1)
 
 **#4-NEW (MEMORY) — TAKE UP THE "WHAT'S NEXT" ITEMS.**
@@ -250,26 +268,10 @@ Continue (Go) button and a log; and the Vault restructuring's
 "Home"-to-"Back" button change. Each is a code change; scope
 them together at the session start.
 
-**MT#2 (MYSTERY TRACKER — WEB) — CARRY THE LIGHT THEME ON.**
-Patrick's word at the close of MT#1: the next session continues
-this same effort. What is left of it is parked items 26 through 31
-in `MysteryTracker/docs/PARKED-ITEMS.md` — the New Game button no
-longer reading as a button, the fourth category not activating
-(app behavior, Patrick's word: its own session), the fourth
-banner's thin gold outline, the ∑ and 🏠 headings in the DARK
-theme, the gridlines washing out under the cell tints together
-with the alternating row shading showing in one theme but not the
-other, and the colors still outside the warm family. Patrick picks
-the order at the session start. Two things to remember: `DEPLOY.md`
-says the live site is served from a DIFFERENT public repo
-(`WWhiteWolf/mystery-tracker`) so a private-repo commit changes
-nothing anyone can see, and Patrick's browser is Firefox —
-hard-reload with Cmd+Shift+R after every edit or the old file gets
-served. Whether a palette change touches the spec and its docx is
-still UNDECIDED.
-
-**Repairs waiting in that project, discussed at MT#1 and
-deliberately not built — parked as item 32:**
+**MT#3 (MYSTERY TRACKER — WEB) — TRIM THE DOCS, THEN THE GRID'S
+FIELD.** Patrick raised it twice during MT#2 and asked for it to be
+its own piece of work rather than folded into an end-of-session
+refresh. Parked item 32 holds the known repairs:
 `docs/session-start.md` does not exist even though the master
 hand-off and that project's own `CLAUDE.md` rule 1 both name it as
 the first read, and Patrick's word is that one gets created;
@@ -277,7 +279,30 @@ the first read, and Patrick's word is that one gets created;
 notes, which became `docs/handoff.md` (`handoff.md` itself carried
 none); and the comment above the theme blocks in
 `MysteryTracker.html` says light is opt-in via `body.light` when
-the code puts the class on `html`. Each wants its own discussion.
+the code puts the class on `html`. Patrick's "the docs need
+trimming" is broader than that list, so scope it with him at the
+start.
+
+**Waiting behind it — the piece MT#2 stopped mid-question:** the
+grid's cream field, parked as item 33. The light theme's
+`--surface` is what every unmarked cell now shows, but it also
+paints the ∑ and 🏠 columns, the log entries, the panels, the
+Guide and Rules buttons and several overlays, so it wants a
+grid-only variable of its own. The color was never chosen.
+Deepening it is also the lever that would fix item 35, the light
+theme's tints reading weaker than the dark theme's from the same
+numbers.
+
+Also still open from the light theme: items 26, 28, 29, 31 and 34.
+Item 27 stays Patrick's word for its own session, being app
+behavior rather than color.
+
+Two things to remember: `DEPLOY.md` says the live site is served
+from a DIFFERENT public repo (`WWhiteWolf/mystery-tracker`) so a
+private-repo commit changes nothing anyone can see, and Patrick's
+browser is Firefox — hard-reload with Cmd+Shift+R after every edit
+or the old file gets served. Whether a palette change touches the
+spec and its docx is still UNDECIDED.
 
 **Waiting behind it:** the Android road's remaining legs — the APK
 upload to the public mystery-tracker repo and the elyfont.com
