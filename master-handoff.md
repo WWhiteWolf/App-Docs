@@ -10,15 +10,15 @@ Session history lives in the projects' build-history files.
 ## The projects
 
 1. **Mystery Tracker — web** — live at elyfont.com, Beta.
-   Folder: `Projects/MysteryTracker`. Status: MT#6 is COMMITTED,
-   confirmed at MT#7. MT#7 (2026-08-05) completed the mobile-v-web
-   comparison (`docs/MT7-comparison.md`) and produced the rebuild
-   decisions list (`docs/MT7-rebuild-decisions.md`); those docs and
-   the hand-off await Patrick's commit. Working direction (Patrick,
-   not yet a formal commitment): one shared game heart, separate
-   mobile and web packagings, UI converged where it makes sense.
-   Next: settle the decisions one per sitting, deck shape first.
-   The theme work still waits behind the plan.
+   Folder: `Projects/MysteryTracker`. Status: MT#7 is COMMITTED,
+   confirmed at MT#8. MT#8 (2026-08-05) settled rebuild decisions
+   1–13 in `docs/MT7-rebuild-decisions.md` (10 as a direction, its
+   details deferred); its docs updates await Patrick's commit.
+   Working direction (Patrick, not yet a formal commitment): one
+   shared game heart, separate mobile and web packagings, UI
+   converged where it makes sense. Next: decisions 14–17, one at a
+   time (input caps first — MT#8 stopped there). The theme work
+   still waits behind the plan.
 2. **Mystery Clues Track Sheet — mobile, App Store, FREE.**
    Folder: `Projects/MysteryCluesTracker`; read
    `docs/upgrade-scope.md` first. Status: awaiting Apple's
@@ -53,9 +53,11 @@ Session history lives in the projects' build-history files.
   rules — and hands it as its OWN message, with a commit text
   for each repo touched (summary line about 50 characters, any
   more as a body below).
-- If a project's pending.txt changed, bring its header line up
-  to date first, then rebuild pending.docx to match,
-  machine-checked line for line (#128, #1-new).
+- At session end, always ask Patrick whether he wants the
+  project's pending.txt updated (Patrick, MT#7) — pending goes
+  stale on major decisions and new docs files, not just code
+  changes. If yes: header line first, then rebuild pending.docx
+  to match, machine-checked line for line (#128, #1-new).
 
 ## Loose ends belonging to no single project
 
