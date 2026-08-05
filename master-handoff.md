@@ -10,14 +10,17 @@ Session history lives in the projects' build-history files.
 ## The projects
 
 1. **Mystery Tracker — web** — live at elyfont.com, Beta.
-   Folder: `Projects/MysteryTracker`. Status: MT#7 is COMMITTED,
-   confirmed at MT#8. MT#8 (2026-08-05) settled rebuild decisions
-   1–13 in `docs/MT7-rebuild-decisions.md` (10 as a direction, its
-   details deferred); its docs updates await Patrick's commit.
+   Folder: `Projects/MysteryTracker`. Status: everything through
+   MT#8 is COMMITTED, confirmed at MT#9. MT#9 (2026-08-05) settled
+   rebuild decisions 14–17 — Part 1 of
+   `docs/MT7-rebuild-decisions.md` is complete (decision 10 as a
+   direction, its details deferred) — and cleaned up the session
+   rules in App-Docs; its docs updates await Patrick's commit.
    Working direction (Patrick, not yet a formal commitment): one
    shared game heart, separate mobile and web packagings, UI
-   converged where it makes sense. Next: decisions 14–17, one at a
-   time (input caps first — MT#8 stopped there). The theme work
+   converged where it makes sense. Next: the decision-10 details
+   session (the canonical mark shape; the mobile !/✗ undo bug),
+   then the Part 2 dial and Part 3 structure. The theme work
    still waits behind the plan.
 2. **Mystery Clues Track Sheet — mobile, App Store, FREE.**
    Folder: `Projects/MysteryCluesTracker`; read

@@ -42,12 +42,20 @@ before anything has been read. They apply in every project.
    answer does not settle the exact question asked, the question
    is still open — do not fill the gap with an assumption.
 
-8. Discuss before building, and wait for Patrick's go (#88). A
-   go exists only after Claude asks "Go?" as its own question —
-   in a sentence naming the actions it covers and what each acts
-   on — and Patrick answers it. Approving wording or content is
-   not a go. Acting without a word first is the breach, whoever's
-   fingers move.
+8. Ask before acting, and wait for Patrick's go (#88). This
+   covers every kind of action — edits, builds, reads, searches,
+   commands, anything else — not just building, and holds with
+   extra force for long work like long reads and long searches.
+   A go exists only after Claude asks "Go?" as its own question —
+   in a sentence naming the piece of work it covers and what it
+   acts on — and Patrick answers it. Approving wording or
+   content is not a go. A go covers the whole piece as described,
+   including the small steps inside it — no fresh ask for every
+   baby step — but anything beyond the described piece waits for
+   its own ask. The reads Patrick's opener itself names need no
+   fresh ask. If it is unclear whether something is covered, it
+   is not — ask. Acting without a word first is the breach,
+   whoever's fingers move.
 
 9. One change at a time, with room to breathe. A change is one
    whole sensible piece of work, not the smallest edit possible.
@@ -98,8 +106,11 @@ before anything has been read. They apply in every project.
     each item on its own line, the "and" on its own line before
     the last. A proposed or applied edit shows its changed text
     bold-italicized in chat; the file stays plain. A commit
-    paste is one plain block — summary line, blank line, body —
-    with no labels and no code boxes. After a go, the report says
+    paste is one plain block — a summary line of about 50
+    characters, then a blank line, then the body — with no
+    labels and no code boxes, handed as its own message with
+    nothing else in it; when there are several, each gets its
+    own message. After a go, the report says
     only what differed from what was described — what went
     differently, what turned up, what is left. It does not repeat
     the plan back.
@@ -127,3 +138,9 @@ before anything has been read. They apply in every project.
     straight to files and are never printed in the chat. Do not
     re-print a file's contents after writing it, and do not
     present file cards — just name where the file landed.
+
+24. Rules are applied by their purpose, not their letter (MT#9).
+    Every rule exists to serve the work; when the letter of a
+    rule and its plain purpose pull apart, say so out loud and
+    ask rather than follow the letter into a foolish result. No
+    rule excuses the absence of common sense.
