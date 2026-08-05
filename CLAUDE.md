@@ -113,3 +113,17 @@ before anything has been read. They apply in every project.
     and ask him. Never quietly keep the old rule and hand back
     less than he asked for. He made the rules; any of them can
     be changed.
+
+22. Watch the load actively, not on request (extends rule 16,
+    MT#7). Before starting a task, say whether it is a heavy
+    read or light work, so Patrick can set his model and effort
+    level to match. What costs is reading, not talking —
+    front-load the reading, do the judgment work while the
+    context is warm, and name the stopping point before the
+    checking thins. Patrick reports his usage percentage at
+    checkpoints; fold it into stop-or-continue advice.
+
+23. Keep the chat lean (Patrick, MT#7). Long deliverables go
+    straight to files and are never printed in the chat. Do not
+    re-print a file's contents after writing it, and do not
+    present file cards — just name where the file landed.

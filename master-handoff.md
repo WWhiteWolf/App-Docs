@@ -10,15 +10,15 @@ Session history lives in the projects' build-history files.
 ## The projects
 
 1. **Mystery Tracker — web** — live at elyfont.com, Beta.
-   Folder: `Projects/MysteryTracker`. Status: MT#5 is COMMITTED,
-   confirmed at MT#6. MT#6 repaired MT#5's docs, moved the light
-   theme's greens again, dropped the Next button's hover in both
-   themes, lightened the two bars above the grid, softened the light
-   ✕, and put the temporary status messages back to red; its code
-   and docs await Patrick's commit. A bigger question now sits in
-   front of the project: whether to keep developing the web version
-   or bring the mobile app's HTML to the web as it stands. **MT#7 is
-   that comparison**, and the theme work waits on its outcome.
+   Folder: `Projects/MysteryTracker`. Status: MT#6 is COMMITTED,
+   confirmed at MT#7. MT#7 (2026-08-05) completed the mobile-v-web
+   comparison (`docs/MT7-comparison.md`) and produced the rebuild
+   decisions list (`docs/MT7-rebuild-decisions.md`); those docs and
+   the hand-off await Patrick's commit. Working direction (Patrick,
+   not yet a formal commitment): one shared game heart, separate
+   mobile and web packagings, UI converged where it makes sense.
+   Next: settle the decisions one per sitting, deck shape first.
+   The theme work still waits behind the plan.
 2. **Mystery Clues Track Sheet — mobile, App Store, FREE.**
    Folder: `Projects/MysteryCluesTracker`; read
    `docs/upgrade-scope.md` first. Status: awaiting Apple's
