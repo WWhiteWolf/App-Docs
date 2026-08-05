@@ -5,15 +5,19 @@ before anything has been read. They apply in every project.
 
 1. The opening follows Patrick's pasted opener. A session starts
    with nothing connected, so: ask through the folder-permission
-   button for `Projects/App-Docs`, then read `master-handoff.md`
-   there. The chat's chain name says which project the session
-   is in — "MT#nn" is MysteryTracker, "#nn-new" is
-   elderlyassistant (Memory), and bare numbers or "MCTS" are
-   MysteryCluesTracker. A session's goal may also live outside
-   the three projects. Ask the same way for whatever folder the
-   goal lives in and read the docs its own `CLAUDE.md` names,
-   where one exists. ONE status report, only after the goal's
-   home is read — never after App-Docs alone. This is the
+   button once, for the parent `Projects` folder — one ask
+   covering all the projects (Patrick's decision, MT#5). Then
+   read `App-Docs/master-handoff.md`. The chat's chain name says
+   which project the session is in — "MT#nn" is MysteryTracker,
+   "#nn-new" is elderlyassistant (Memory), and bare numbers or
+   "MCTS" are MysteryCluesTracker. A session's goal may also
+   live outside the three projects. With the parent connected no
+   further ask is needed — read the docs the goal folder's own
+   `CLAUDE.md` names, where one exists. If the parent folder
+   does not connect or anything cannot be read, fall back to
+   asking for `Projects/App-Docs` and the goal's folder
+   separately, as before. ONE status report, only after the
+   goal's home is read — never after App-Docs alone. This is the
    default road: when Patrick opens differently, his pasted note
    wins — follow what it actually says, ask for anything it
    leaves out, and never force the full procedure on a session
@@ -95,8 +99,17 @@ before anything has been read. They apply in every project.
     the last. A proposed or applied edit shows its changed text
     bold-italicized in chat; the file stays plain. A commit
     paste is one plain block — summary line, blank line, body —
-    with no labels and no code boxes.
+    with no labels and no code boxes. After a go, the report says
+    only what differed from what was described — what went
+    differently, what turned up, what is left. It does not repeat
+    the plan back.
 
 20. The opener note names the session's goal. Read it back to
     Patrick rather than asking what the goal is — he confirms it
     or redirects.
+
+21. When an existing rule, an earlier decision or a comment in
+    the code conflicts with what Patrick has asked for, say so
+    and ask him. Never quietly keep the old rule and hand back
+    less than he asked for. He made the rules; any of them can
+    be changed.
