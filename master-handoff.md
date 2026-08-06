@@ -11,19 +11,21 @@ Session history lives in the projects' build-history files.
 
 1. **Mystery Tracker — web** — live at elyfont.com, Beta.
    Folder: `Projects/MysteryTracker`. Status: everything through
-   MT#9 is COMMITTED, confirmed at MT#10. MT#10 (2026-08-06)
-   settled Part 2 of `docs/MT7-rebuild-decisions.md` — every
-   piece except the light theme — amended decision 4's manner to
-   the ∑ picker modal, and added the standing build rules (no
-   dead code carries over, best-practice searchable comments,
-   named-variable colors); its docs updates await Patrick's
+   MT#10 is COMMITTED, confirmed at MT#11. MT#11 (2026-08-06)
+   completed `docs/MT7-rebuild-decisions.md`: the light theme
+   settled (both themes in both packagings as a second
+   named-variable block, dark the first-launch default), and all
+   four Part 3 items — the heart in its own engine file; the
+   whole rebuild living in `Projects/MysteryCluesTracker`,
+   shipping as the same App Store app upgraded, with
+   `Projects/MysteryTracker` becoming the archive of the old web
+   app; one encompassing test spec. Docs updates await Patrick's
    commit. Working direction (Patrick, not yet a formal
    commitment): one shared game heart, separate mobile and web
    packagings, UI converged where it makes sense. Next: the
-   light theme closes Part 2, then the decision-10 details
-   session (the canonical mark shape; the mobile !/✗ undo bug),
-   then Part 3 structure. The theme work still waits behind the
-   plan.
+   decision-10 details session (the canonical mark shape; the
+   mobile !/✗ undo bug) — the plan's last open ground. The MT#6
+   theme color values still wait behind the plan.
 2. **Mystery Clues Track Sheet — mobile, App Store, FREE.**
    Folder: `Projects/MysteryCluesTracker`; read
    `docs/upgrade-scope.md` first. Status: awaiting Apple's
