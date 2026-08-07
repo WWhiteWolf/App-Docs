@@ -10,27 +10,26 @@ Session history lives in the projects' build-history files.
 ## The projects
 
 1. **Mystery Tracker — web** — live at elyfont.com, Beta.
-   Folder: `Projects/MysteryTracker`. Status: everything through
-   MT#10 is COMMITTED; MT#11/MT#12 docs commits unconfirmed —
-   ask. The rebuild decisions list is complete but for decision
-   10's canonical mark shape. MT#12 (2026-08-06/07) verified the
-   mobile !/✗ undo bug (`docs/MT12-decision10-findings.md`) and
-   built the fix in the mobile project's working file — untested,
-   uncommitted. Next: THE TURNING POINT — the two projects
-   converge into one; slim the doc set to purposeful short-read
-   files (Patrick: "I can't remember what goes where"); decide
-   the new chat chain and doc homes. The MT#6 theme colors still
-   wait behind the plan.
-2. **Mystery Clues Track Sheet — mobile, App Store, FREE.**
-   Folder: `Projects/MysteryCluesTracker`; read
-   `docs/upgrade-scope.md` first. Status: awaiting Apple's
-   answer on build 1.0 (2); the Android APK is built, signed
-   and phone-proven (#155), its repo upload and elyfont.com
-   download page pending. The working file carries the MT#12
-   undo-bug fix, untested and uncommitted; the committed Store
-   version is clean, shelved byte-identical at
-   `Projects/locked-mcts.html`. Its standing habits live in its
-   own CLAUDE.md and docs/handoff.md.
+   Folder: `Projects/MysteryTracker`. Status: ARCHIVED (Y-1,
+   2026-08-07) — the finished archive of the old web app, its
+   docs untouched, opened only when something needs tracing.
+   The MT chain is closed as history; the rebuild lives in
+   `Projects/MysteryCluesTracker` under the Y chain. The live
+   site stays as it is until the rebuilt web page replaces it.
+   The MT#6 theme colors still wait behind the plan.
+2. **Mystery Clues Track Sheet — mobile, App Store, FREE — and
+   the rebuild's home.** Folder: `Projects/MysteryCluesTracker`;
+   its CLAUDE.md names the reads (`docs` is the active set,
+   `docs-ref` the reference set). Status: LIVE on the App Store
+   since 2026-08-06 (#157). Y-1 (2026-08-07) was the turning
+   point: the two Mystery projects converged into one here, the
+   chain named Y, the docs sorted, the plan condensed into
+   `docs/rebuild-plan.md`. Next, at Y-2: the rebuild begins. The
+   working file carries the undo fix — browser-verified, the
+   phone test waiting for a bigger reason to reload the
+   wrappers; the committed Store version is clean, shelved
+   byte-identical at `Projects/locked-mcts.html`. The Android
+   legs wait until the merged app is done.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
    Folder: `Projects/elderlyassistant`. Status: #3-new is
    phone-verified and committed; next is #4-new — the three
@@ -40,9 +39,11 @@ Session history lives in the projects' build-history files.
 
 ## True across all three
 
-- The three chains: bare numbers or "MCTS" are the old shared
-  chain, "#nn-new" is Memory, "MT#nn" is Mystery Tracker. No
-  old reference is ever edited.
+- The chains: bare numbers or "MCTS" are the old shared chain,
+  "#nn-new" is Memory, "MT#nn" is Mystery Tracker. "Y-n" (no
+  "#" before numbers) is the converged Mystery rebuild, begun
+  Y-1 (2026-08-07); the MT and MCTS chains are closed as
+  history. No old reference is ever edited.
 - The build-and-test commit rhythm: the code commit comes
   before the build, the docs commit after the device test — so
   at a session start the code should be committed but the docs
@@ -52,17 +53,14 @@ Session history lives in the projects' build-history files.
   something moves the strategy (Patrick, #146) — not at the
   routine refresh.
 - At session end: the docs refresh gets its own rule-8 go,
-  every time. Claude scripts the opener note — it begins with
-  Patrick's line "#NN — name. Read CLAUDE.md and the hand-off.",
-  carries the folder asks, and closes with one line of working
-  rules — and hands it as its OWN message, with a commit text
-  for each repo touched (summary line about 50 characters, any
-  more as a body below).
+  every time. Claude drafts nothing at session end — no opener
+  note and no commit texts; Patrick writes his own (Y-1).
 - At session end, always ask Patrick whether he wants the
   project's pending.txt updated (Patrick, MT#7) — pending goes
   stale on major decisions and new docs files, not just code
-  changes. If yes: header line first, then rebuild pending.docx
-  to match, machine-checked line for line (#128, #1-new).
+  changes. If yes: header line first. The pending.docx reading
+  copies are retired (Y-1) — pending.txt is Patrick's direct
+  read, shown large by TextEdit's plain-text font setting.
 
 ## Loose ends belonging to no single project
 
