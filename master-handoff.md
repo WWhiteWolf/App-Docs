@@ -11,28 +11,26 @@ Session history lives in the projects' build-history files.
 
 1. **Mystery Tracker — web** — live at elyfont.com, Beta.
    Folder: `Projects/MysteryTracker`. Status: everything through
-   MT#10 is COMMITTED, confirmed at MT#11. MT#11 (2026-08-06)
-   completed `docs/MT7-rebuild-decisions.md`: the light theme
-   settled (both themes in both packagings as a second
-   named-variable block, dark the first-launch default), and all
-   four Part 3 items — the heart in its own engine file; the
-   whole rebuild living in `Projects/MysteryCluesTracker`,
-   shipping as the same App Store app upgraded, with
-   `Projects/MysteryTracker` becoming the archive of the old web
-   app; one encompassing test spec. Docs updates await Patrick's
-   commit. Working direction (Patrick, not yet a formal
-   commitment): one shared game heart, separate mobile and web
-   packagings, UI converged where it makes sense. Next: the
-   decision-10 details session (the canonical mark shape; the
-   mobile !/✗ undo bug) — the plan's last open ground. The MT#6
-   theme color values still wait behind the plan.
+   MT#10 is COMMITTED; MT#11/MT#12 docs commits unconfirmed —
+   ask. The rebuild decisions list is complete but for decision
+   10's canonical mark shape. MT#12 (2026-08-06/07) verified the
+   mobile !/✗ undo bug (`docs/MT12-decision10-findings.md`) and
+   built the fix in the mobile project's working file — untested,
+   uncommitted. Next: THE TURNING POINT — the two projects
+   converge into one; slim the doc set to purposeful short-read
+   files (Patrick: "I can't remember what goes where"); decide
+   the new chat chain and doc homes. The MT#6 theme colors still
+   wait behind the plan.
 2. **Mystery Clues Track Sheet — mobile, App Store, FREE.**
    Folder: `Projects/MysteryCluesTracker`; read
    `docs/upgrade-scope.md` first. Status: awaiting Apple's
    answer on build 1.0 (2); the Android APK is built, signed
    and phone-proven (#155), its repo upload and elyfont.com
-   download page pending. Its standing habits live in its own
-   CLAUDE.md and docs/handoff.md.
+   download page pending. The working file carries the MT#12
+   undo-bug fix, untested and uncommitted; the committed Store
+   version is clean, shelved byte-identical at
+   `Projects/locked-mcts.html`. Its standing habits live in its
+   own CLAUDE.md and docs/handoff.md.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
    Folder: `Projects/elderlyassistant`. Status: #3-new is
    phone-verified and committed; next is #4-new — the three
