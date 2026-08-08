@@ -100,7 +100,11 @@ before anything has been read. They apply in every project.
 
 19. Report in the shapes Patrick reads best (#39, #119). After a
     build step: "What happened" in a sentence or two, then "How
-    it was done" in short bullets. For a substantive reply: the
+    it was done" in short bullets. Build reports are plain
+    English throughout (Y-3): name each subject, explain it in
+    a sentence, then its details as short bullets below it — no
+    compressed technical wording; one read should be enough.
+    For a substantive reply: the
     subject and its source first, a bridge sentence, then short
     bullets — and a list carried in a sentence is broken open,
     each item on its own line, the "and" on its own line before
