@@ -21,10 +21,12 @@ Session history lives in the projects' build-history files.
    the rebuild's home.** Folder: `Projects/MysteryCluesTracker`;
    its CLAUDE.md names the reads (`docs` is the active set,
    `docs-ref` the reference set). Status: LIVE on the App Store
-   since 2026-08-06 (#157). Y-1 (2026-08-07) was the turning
-   point: the two Mystery projects converged into one here, the
-   chain named Y, the docs sorted, the plan condensed into
-   `docs/rebuild-plan.md`. Next, at Y-2: the rebuild begins. The
+   since 2026-08-06 (#157). Y-1 (2026-08-07) converged the two
+   Mystery projects here under the Y chain. The rebuild's engine
+   is complete (Y-5, 166 tests) and both themes are settled
+   (Y-6 — Patrick's area law, the in-house theme tuner, the
+   palettes ruling from `docs/palettes-tuned.css`). Next, at
+   Y-7: the packagings — three homes. The
    working file carries the undo fix — browser-verified, the
    phone test waiting for a bigger reason to reload the
    wrappers; the committed Store version is clean, shelved
