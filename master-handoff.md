@@ -23,10 +23,13 @@ Session history lives in the projects' build-history files.
    `docs-ref` the reference set). Status: LIVE on the App Store
    since 2026-08-06 (#157). Y-1 (2026-08-07) converged the two
    Mystery projects here under the Y chain. The rebuild's engine
-   is complete (Y-5, 166 tests) and both themes are settled
-   (Y-6 — Patrick's area law, the in-house theme tuner, the
-   palettes ruling from `docs/palettes-tuned.css`). Next, at
-   Y-7: the packagings — three homes. The
+   is complete (173 tests after Y-8's amendment: the ? never
+   hides, only the !), both themes are settled (Y-6), and the
+   phone page `mystery-phone.html` carries Setup (Y-7) and the
+   whole Game screen (Y-8), green in the simulated browser.
+   Next: two Y-8 test findings — the turn bar's stage wording
+   (carry the shipped words) and the envelope in the counts
+   window (ruling open) — then the endings and side pages. The
    working file carries the undo fix — browser-verified, the
    phone test waiting for a bigger reason to reload the
    wrappers; the committed Store version is clean, shelved
