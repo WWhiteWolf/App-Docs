@@ -27,12 +27,14 @@ Session history lives in the projects' build-history files.
    turn-holder's wrong accusation passes the turn in every
    state, an abandoned ask leaving no trace), both themes are
    settled (Y-6), and the phone page `mystery-phone.html`
-   carries Setup (Y-7), the whole Game screen (Y-8), and the
-   endings (Y-11) — all phone-verified through the wrapper,
-   which now opens the rebuilt page (Y-9). Next: Y-12 opens
-   with the column drag (moving ∑ and 🏠 too, only the Card
-   column fixed), then the side pages — direct ports from the
-   shipped page. The committed Store version stays shelved
+   carries Setup (Y-7), the whole Game screen (Y-8), the endings
+   (Y-11), and the column drag (Y-12) — all phone-verified
+   through the wrapper, which opens the rebuilt page (Y-9).
+   Y-12 also built the Log and Notes screens as direct ports,
+   awaiting their phone test at Patrick's next reload. Next:
+   the Guide screen (its text needs rewording for the rebuild)
+   and the log-title color in the tuner (Y-12).
+   The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
