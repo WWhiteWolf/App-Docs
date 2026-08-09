@@ -23,16 +23,16 @@ Session history lives in the projects' build-history files.
    `docs-ref` the reference set). Status: LIVE on the App Store
    since 2026-08-06 (#157). Y-1 (2026-08-07) converged the two
    Mystery projects here under the Y chain. The rebuild's engine
-   is complete (173 tests after Y-8's amendment: the ? never
-   hides, only the !), both themes are settled (Y-6), and the
-   phone page `mystery-phone.html` carries Setup (Y-7) and the
-   whole Game screen (Y-8), green in the simulated browser.
-   Next: two Y-8 test findings — the turn bar's stage wording
-   (carry the shipped words) and the envelope in the counts
-   window (ruling open) — then the endings and side pages. The
-   working file carries the undo fix — browser-verified, the
-   phone test waiting for a bigger reason to reload the
-   wrappers; the committed Store version is clean, shelved
+   is complete (177 tests after Y-11's amendment: the
+   turn-holder's wrong accusation passes the turn in every
+   state, an abandoned ask leaving no trace), both themes are
+   settled (Y-6), and the phone page `mystery-phone.html`
+   carries Setup (Y-7), the whole Game screen (Y-8), and the
+   endings (Y-11) — all phone-verified through the wrapper,
+   which now opens the rebuilt page (Y-9). Next: Y-12 opens
+   with the column drag (moving ∑ and 🏠 too, only the Card
+   column fixed), then the side pages — direct ports from the
+   shipped page. The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
