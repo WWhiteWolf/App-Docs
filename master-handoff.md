@@ -33,8 +33,15 @@ this one holds where everything stands (Patrick, Y-15).
    Y-15 (2026-08-10) settled the color-naming law and the names
    on paper without touching the page. Y-16 (2026-08-10) closed
    the docs gap, so `docs-ref/build-history.md` now runs unbroken
-   from #73 through Y-16 and `docs/handoff.md` carries continuity
-   only. The detail lives in the project's own docs.
+   from #73 through Y-17 and `docs/handoff.md` carries continuity
+   only. Y-17 (2026-08-10) checked the naming record before
+   building on it and corrected it — twenty-six new names, not
+   twenty-two, taking the app from seventy-five to a hundred and
+   one — and settled that no further color list is wanted: the
+   values are recorded permanently in `docs/palettes-tuned.css`
+   and the names, purposes and grouping in `theme-tuner.html`.
+   No names were applied. The detail lives in the project's own
+   docs.
    Next, in order: applying the settled color names, then the
    feedback popup behind the Guide's sleeping Suggest button
    (Y-13), then the Guide's rewording (Y-12).
