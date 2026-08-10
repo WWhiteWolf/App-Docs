@@ -24,31 +24,24 @@ this one holds where everything stands (Patrick, Y-15).
    the rebuild's home.** Folder: `Projects/MysteryCluesTracker`;
    its CLAUDE.md names the reads (`docs` is the active set,
    `docs-ref` the reference set). Status: LIVE on the App Store
-   since 2026-08-06 (#157). Y-1 (2026-08-07) converged the two
-   Mystery projects here under the Y chain. The rebuild's engine
-   is complete (177 tests after Y-11's amendment: the
-   turn-holder's wrong accusation passes the turn in every
-   state, an abandoned ask leaving no trace), both themes are
-   settled (Y-6), and the phone page `mystery-phone.html` is
-   whole: Setup (Y-7), the Game screen (Y-8), the endings
-   (Y-11), the column drag (Y-12), and the side pages — Log,
-   Notes, and the Guide (Y-12–Y-13) — all phone-verified
-   through the wrapper, which opens the rebuilt page (Y-9).
-   Y-14 (2026-08-09) installed Patrick's tuned palette through
-   the record, the page and the wrapper, phone-verified. Y-15
-   (2026-08-10) was a paper session: the color-naming rule was
-   refined and made a standing law in the project's CLAUDE.md,
-   every name following from it was settled, and the shipped
-   feedback popup was read end to end. Nothing on the phone
-   changed. The detail lives in the project's own docs.
-   Next, in order: a docs tidy (the project's hand-off has been
-   standing in as its build history for nine sessions), then
-   applying the settled color names, then the feedback popup
-   behind the Guide's sleeping Suggest button (Y-13), then the
-   Guide's rewording (Y-12).
+   since 2026-08-06 (#157), and the Y-chain rebuild is whole on
+   the phone: the engine complete at 177 tests, both themes
+   settled (Y-6), and every screen of `mystery-phone.html` built
+   and phone-verified through the wrapper, which opens the
+   rebuilt page (Y-9). Y-14 (2026-08-09) installed Patrick's
+   tuned palette through the record, the page and the wrapper.
+   Y-15 (2026-08-10) settled the color-naming law and the names
+   on paper without touching the page. Y-16 (2026-08-10) closed
+   the docs gap, so `docs-ref/build-history.md` now runs unbroken
+   from #73 through Y-16 and `docs/handoff.md` carries continuity
+   only. The detail lives in the project's own docs.
+   Next, in order: applying the settled color names, then the
+   feedback popup behind the Guide's sleeping Suggest button
+   (Y-13), then the Guide's rewording (Y-12).
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
-   legs wait until the merged app is done.
+   legs wait until the merged app is done, and `wrapper-android`
+   has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
    Folder: `Projects/elderlyassistant`. Status: #3-new is
    phone-verified and committed; next is #4-new — the three
