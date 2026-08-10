@@ -31,9 +31,14 @@ Session history lives in the projects' build-history files.
    (Y-11), the column drag (Y-12), and the side pages — Log,
    Notes, and the Guide (Y-12–Y-13) — all phone-verified
    through the wrapper, which opens the rebuilt page (Y-9).
-   Next: the feedback popup behind the Guide's sleeping
-   Suggest button (Y-13), the Guide's rewording (Y-12), and
-   the log-title color in the tuner (Y-12).
+   Y-14 (2026-08-09) installed Patrick's tuned palette through
+   the record, the page and the wrapper, phone-verified, and
+   mapped the feedback popup without building it.
+   Next: the palette naming pass, whose scope Patrick has yet
+   to settle — his Y-14 rule is that every color's use gets a
+   name saying what it is for — then the feedback popup behind
+   the Guide's sleeping Suggest button (Y-13), and the Guide's
+   rewording (Y-12).
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done.
