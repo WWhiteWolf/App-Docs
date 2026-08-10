@@ -6,6 +6,9 @@ every commit. Keep this file to four things only: the projects
 and their folders, one line of status each, what is true across
 all three, and the loose ends belonging to no single project.
 Session history lives in the projects' build-history files.
+This file is brought current at every session's docs refresh and
+is never left to lag — a project's own docs hold the detail, and
+this one holds where everything stands (Patrick, Y-15).
 
 ## The projects
 
@@ -32,13 +35,17 @@ Session history lives in the projects' build-history files.
    Notes, and the Guide (Y-12–Y-13) — all phone-verified
    through the wrapper, which opens the rebuilt page (Y-9).
    Y-14 (2026-08-09) installed Patrick's tuned palette through
-   the record, the page and the wrapper, phone-verified, and
-   mapped the feedback popup without building it.
-   Next: the palette naming pass, whose scope Patrick has yet
-   to settle — his Y-14 rule is that every color's use gets a
-   name saying what it is for — then the feedback popup behind
-   the Guide's sleeping Suggest button (Y-13), and the Guide's
-   rewording (Y-12).
+   the record, the page and the wrapper, phone-verified. Y-15
+   (2026-08-10) was a paper session: the color-naming rule was
+   refined and made a standing law in the project's CLAUDE.md,
+   every name following from it was settled, and the shipped
+   feedback popup was read end to end. Nothing on the phone
+   changed. The detail lives in the project's own docs.
+   Next, in order: a docs tidy (the project's hand-off has been
+   standing in as its build history for nine sessions), then
+   applying the settled color names, then the feedback popup
+   behind the Guide's sleeping Suggest button (Y-13), then the
+   Guide's rewording (Y-12).
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done.
