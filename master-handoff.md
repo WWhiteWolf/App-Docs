@@ -40,7 +40,10 @@ this one holds where everything stands (Patrick, Y-15).
    one — and settled that no further color list is wanted: the
    values are recorded permanently in `docs/palettes-tuned.css`
    and the names, purposes and grouping in `theme-tuner.html`.
-   No names were applied. The detail lives in the project's own
+   No names were applied. Y-18 (2026-08-11) went entirely to the
+   session tooling — the rules moved to the `Projects` root and the
+   opening became two folder asks — and did not touch the app.
+   The detail lives in the project's own
    docs.
    Next, in order: applying the settled color names, then the
    feedback popup behind the Guide's sleeping Suggest button
@@ -58,6 +61,21 @@ this one holds where everything stands (Patrick, Y-15).
 
 ## True across all three
 
+- **Where the session rules live, settled at Y-18.** The conduct
+  rules are `Projects/CLAUDE.md`, at the root of the parent folder.
+  That location is the whole point: a `CLAUDE.md` arrives on its own
+  only when it sits at the root of a *connected* folder, and the old
+  `App-Docs/CLAUDE.md` sat a level below and so never did. Each
+  project keeps its own `CLAUDE.md` for its own laws, and none of
+  them is duplicated at the root. `App-Docs/CLAUDE.md` is deleted.
+  The rules file now sits outside git, which Patrick accepted
+  knowingly.
+- **The opening asks for two folders, not one (Y-18, overturning
+  MT#5).** The parent `Projects` folder first, then the folder of the
+  session's goal, so that project's own `CLAUDE.md` arrives on its
+  own as well. The first connection has to come from Patrick's opener
+  note, since nothing is connected before it. His opener now needs
+  only the two folders and the chain name and goal.
 - The chains: bare numbers or "MCTS" are the old shared chain,
   "#nn-new" is Memory, "MT#nn" is Mystery Tracker. "Y-n" (no
   "#" before numbers) is the converged Mystery rebuild, begun
