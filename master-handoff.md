@@ -68,8 +68,11 @@ this one holds where everything stands (Patrick, Y-15).
   `App-Docs/CLAUDE.md` sat a level below and so never did. Each
   project keeps its own `CLAUDE.md` for its own laws, and none of
   them is duplicated at the root. `App-Docs/CLAUDE.md` is deleted.
-  The rules file now sits outside git, which Patrick accepted
-  knowingly.
+  The `Projects` root is a git repository of its own, added at the
+  end of Y-18 so the rules file keeps a version history.
+  `Projects/.gitignore` lists all four project folders, each already
+  a repository, so the root one tracks only the loose files at its
+  own level and never nests.
 - **The opening asks for two folders, not one (Y-18, overturning
   MT#5).** The parent `Projects` folder first, then the folder of the
   session's goal, so that project's own `CLAUDE.md` arrives on its
