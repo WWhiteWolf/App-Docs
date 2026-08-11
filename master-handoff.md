@@ -43,11 +43,18 @@ this one holds where everything stands (Patrick, Y-15).
    No names were applied. Y-18 (2026-08-11) went entirely to the
    session tooling — the rules moved to the `Projects` root and the
    opening became two folder asks — and did not touch the app.
-   The detail lives in the project's own
-   docs.
-   Next, in order: applying the settled color names, then the
-   feedback popup behind the Guide's sleeping Suggest button
-   (Y-13), then the Guide's rewording (Y-12).
+   Y-19 (2026-08-11) applied the naming pass whole — all twenty-six
+   names into the page, the record, the wrapper and the tuner,
+   verified row for row, nothing changed to the eye by design.
+   Y-20 (2026-08-11) built the feedback popup behind the Guide's
+   Suggest button and woke the button, cured the tuner's download
+   of its two dropped names, and reordered the ruling record, the
+   page's palette blocks and the wrapper copy into the tuner's
+   output order so downloads land line-identical; all of it awaits
+   the phone test.
+   The detail lives in the project's own docs.
+   Next, in order: the phone test, then tuning the whole set (the
+   Log's entry titles first), then the Guide's rewording (Y-12).
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
