@@ -87,11 +87,26 @@ this one holds where everything stands (Patrick, Y-15).
    tracked one included, so no kit is kept in the repo — it is rebuilt
    from the project's own files when there is something to send, and the
    recipe is recorded in the project's hand-off.
-   Next, in order: the counts wrinkle, a phone load for the two Y-22
-   changes, the Game grid's default column order (Cards, ∑, 🏠, then
-   P1 through P6 — raised and parked at Y-22), the Guide's rewording
-   (Y-12), and then the rebuilt kit to the designer and her palette
-   back.
+   Y-23 (2026-08-12) cured the counts wrinkle and settled the rule
+   behind it after two reversals: the counts' numbers carry through a
+   New Game when Same Players and Same Deck are both chosen, the
+   settled flag does not, and tapping Done is what settles them — so
+   nothing can return from a close and open claiming to be answered
+   for. The numbers are saved because they hold how a table plays,
+   spares in a house or dealt round the players, which no guess can
+   know; a first game gets the guess, an even share to the players and
+   the leftovers to House, always offered. The same session set the
+   Game grid's default column order to Cards, ∑, 🏠, then P1 through
+   P6, and raised the Next button into one tall block standing at the
+   right of both bars, its outline shared from `--turn-bar-text` on
+   Patrick's ruling — so the app stays at 113 names and the designer's
+   file still installs clean. 179 tests, all passing; both Game-page
+   changes seen and approved in the browser.
+   Next, in order: a phone load, now five changes deep with nothing on
+   the phone since Y-21; the generated master test document, unchecked
+   against any of Y-23; the Guide's rewording (Y-12); the
+   message-wording pass (Y-10) when Patrick calls it; and then the
+   rebuilt kit to the designer and her palette back.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
