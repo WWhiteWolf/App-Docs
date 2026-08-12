@@ -25,7 +25,7 @@ this one holds where everything stands (Patrick, Y-15).
    its CLAUDE.md names the reads (`docs` is the active set,
    `docs-ref` the reference set). Status: LIVE on the App Store
    since 2026-08-06 (#157), and the Y-chain rebuild is whole on
-   the phone: the engine complete at 177 tests, both themes
+   the phone: the engine complete at 179 tests, both themes
    settled (Y-6), and every screen of `mystery-phone.html` built
    and phone-verified through the wrapper, which opens the
    rebuilt page (Y-9). Y-14 (2026-08-09) installed Patrick's
@@ -64,10 +64,34 @@ this one holds where everything stands (Patrick, Y-15).
    the standing lag note), and the Setup seats lost their redundant
    third line. `theme-tuner-kit.zip` went by email to a designer
    friend of Patrick's, who is tuning the colors.
+   Y-22 (2026-08-12) began the layout polish, to the standard Patrick
+   named out loud — he wants the app to look and feel smart. The Setup
+   seats went from three rows of two to two rows of three, same height
+   and narrower, in one CSS rule. The card counts now carry through a
+   New Game when Same Players and Same Deck are both chosen, on
+   Patrick's reversal of his own earlier rule: the counts belong to the
+   group and its deck rather than to the deal, while the hand still
+   starts empty because a fresh shuffle really does change it. The
+   "Where are the cards?" button borrows the card chips' picked colors
+   to show when the counts are set, so no new color name was added and
+   the designer's file still installs as a clean replacement. The suite
+   is at 179 tests, all passing. One wrinkle was found in the browser
+   and deferred by Patrick: the highlight outlives a close and open of
+   the app, and his rule is that the set condition survives a New Game
+   only.
    The detail lives in the project's own docs.
-   Next, in order: the designer's palette when it comes back, a
-   phone load for the seat change, then the Guide's rewording
-   (Y-12).
+   Also settled at Y-22: the designer waits on us now rather than the
+   other way about. She has been asked to hold until the layout polish
+   is finished, so that one kit is built once after the page has stopped
+   moving. He then deleted every copy of `theme-tuner-kit.zip`, the
+   tracked one included, so no kit is kept in the repo — it is rebuilt
+   from the project's own files when there is something to send, and the
+   recipe is recorded in the project's hand-off.
+   Next, in order: the counts wrinkle, a phone load for the two Y-22
+   changes, the Game grid's default column order (Cards, ∑, 🏠, then
+   P1 through P6 — raised and parked at Y-22), the Guide's rewording
+   (Y-12), and then the rebuilt kit to the designer and her palette
+   back.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
@@ -116,11 +140,18 @@ this one holds where everything stands (Patrick, Y-15).
   every time. Claude drafts nothing at session end — no opener
   note and no commit texts; Patrick writes his own (Y-1).
 - At session end, always ask Patrick whether he wants the
-  project's pending.txt updated (Patrick, MT#7) — pending goes
+  project's pending list updated (Patrick, MT#7) — pending goes
   stale on major decisions and new docs files, not just code
   changes. If yes: header line first. The pending.docx reading
-  copies are retired (Y-1) — pending.txt is Patrick's direct
-  read, shown large by TextEdit's plain-text font setting.
+  copies are retired (Y-1) — the pending list is Patrick's direct
+  read, shown large. **Settled at Y-22:** in `MysteryCluesTracker`
+  that file is `docs/pending.rtf`. Rich Text is deliberate, because
+  RTF stores the font size inside the file so the large type travels
+  with it, where plain text leaves the size in TextEdit's own
+  preferences. Patrick ruled that the docs change to match the file
+  rather than the other way about. Whether Memory's own pending list
+  is `.txt` or `.rtf` is unchecked — that folder was not connected
+  at Y-22, so the reference to it above still reads `.txt`.
 
 ## Loose ends belonging to no single project
 
