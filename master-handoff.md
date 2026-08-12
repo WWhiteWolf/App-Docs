@@ -50,11 +50,24 @@ this one holds where everything stands (Patrick, Y-15).
    Suggest button and woke the button, cured the tuner's download
    of its two dropped names, and reordered the ruling record, the
    page's palette blocks and the wrapper copy into the tuner's
-   output order so downloads land line-identical; all of it awaits
-   the phone test.
+   output order so downloads land line-identical.
+   Y-21 (2026-08-11) passed that phone test with one wrinkle, cured
+   the same session: the Log's status strip never took itself down
+   and covered the footer buttons, because `statusTokens` carried no
+   `log` or `notes` key. Then the cross-cutting colors were split on
+   Patrick's ruling — `--lines` and `--faded` retired, fourteen
+   per-section names in, fifty CSS spots repointed, 101 names to 113
+   — the tuner was grown to show the side pages and the feedback
+   popup and given a four-section chooser so all 111 pickers finally
+   paint something, eighteen tuned light colors were installed, the
+   tuner's embedded defaults were brought up to the record (closing
+   the standing lag note), and the Setup seats lost their redundant
+   third line. `theme-tuner-kit.zip` went by email to a designer
+   friend of Patrick's, who is tuning the colors.
    The detail lives in the project's own docs.
-   Next, in order: the phone test, then tuning the whole set (the
-   Log's entry titles first), then the Guide's rewording (Y-12).
+   Next, in order: the designer's palette when it comes back, a
+   phone load for the seat change, then the Guide's rewording
+   (Y-12).
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
