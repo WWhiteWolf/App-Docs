@@ -102,11 +102,22 @@ this one holds where everything stands (Patrick, Y-15).
    Patrick's ruling — so the app stays at 113 names and the designer's
    file still installs clean. 179 tests, all passing; both Game-page
    changes seen and approved in the browser.
-   Next, in order: a phone load, now five changes deep with nothing on
-   the phone since Y-21; the generated master test document, unchecked
-   against any of Y-23; the Guide's rewording (Y-12); the
-   message-wording pass (Y-10) when Patrick calls it; and then the
-   rebuilt kit to the designer and her palette back.
+   Y-24 (2026-08-12) made the Game grid's lines uniform, which turned out
+   to be a phone problem rather than a color one: the browser had always
+   looked right. Every cell now draws only its own right and bottom line
+   and the table no longer collapses touching edges, so no two cells share
+   a line for a dense screen to round two different ways. The stage bar
+   keeps the top edge, the left edge is closed at the card column, and the
+   category banners draw the line beneath themselves. The ∑ and 🏠 shade
+   Patrick had already tuned was written into the files, keeping the name
+   alive so the app stays at 113. He loaded it and confirmed the grid and
+   the Setup are both where he wants them, so the phone is current and no
+   device is owed anything.
+   Next, in order: the message-wording pass (Y-10), which Patrick called
+   at Y-24 and deliberately left for a stronger model; the Guide's
+   rewording (Y-12); the generated master test document, unchecked
+   against Y-23 or Y-24; and then the rebuilt kit to the designer and her
+   palette back.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
