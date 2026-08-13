@@ -143,11 +143,69 @@ this one holds where everything stands (Patrick, Y-15).
    got the engine's test suite running under Node in Claude's sandbox,
    so every change was tested as it was made. 179 tests, all passing.
    The phone is owed both changed files.
-   Next, in order: the four wording strays still unruled; the Guide's
-   rewording (Y-12), always its own session; the generated master test
-   document, now further behind and knowingly so; the function map when
-   he calls it; and then the rebuilt kit to the designer and her
-   palette back.
+   Y-27 (2026-08-13) finished the wording pass. The last four strays and
+   all four extras are settled: the no-show line became "No player showed
+   — those cards are ❌-ed out for them", the New Game window was reworked
+   whole into "Select how you want the Setup to start in the new game."
+   and "The results of this game will be erased and forgotten. Your notes
+   will be kept.", the Feedback window lost all four question numbers so
+   its rating line stands as the fifth of five (the email it sends stays
+   numbered on purpose), the board marks became "Rope is on the board"
+   and "Rope board mark cleared" with the Turn Log brought into line, and
+   being shown a card now names who showed it. The must-show-first
+   refusal, which had been typed out twice in the engine, was made to
+   live in one place — the session's only structural change, and named as
+   such before it was made. Nothing in the app's own messages is
+   outstanding; the Player Guide was deliberately never part of it.
+   The session's other outcome was a ruling about the message map itself.
+   A script found about a hundred of its line numbers wrong, and the map
+   turned out to have been stale since Y-26 rather than only since that
+   morning — Claude reported the damage as smaller than it was, and
+   corrected itself once the script had looked. Patrick ruled that
+   keeping it by number is the wrong way in the first place, a number
+   being a position rather than a name, and proposed the replacement
+   himself: the message map points at the function a sentence lives in,
+   and the function map he has wanted since Y-25 says what each function
+   does. Neither carries a number, so neither goes stale. The numbers
+   were left wrong on purpose, since correcting them is work the rebuild
+   throws away.
+   179 tests, all passing, run in the sandbox after every change.
+   Y-28 (2026-08-13) began the function map and wrote its engine half
+   whole, touching no app code. The old map was read first, as Patrick
+   asked, and its shape taken: lettered families of plain-English
+   entries, one per function. The new one lives at
+   `docs-ref/function-map.md`, carries no line numbers anywhere, and
+   comes in two parts because the rebuild is two files — Part One the
+   engine, Part Two the phone page, not yet written. Patrick left the
+   shape to Claude, the document being for Claude's use, on the one
+   condition that it stay readable by him; the engine and the page were
+   kept apart so the engine half stands untouched when a second
+   packaging is finally given the rebuilt page. Part One runs fifteen
+   families following the engine's own section banners, with the public
+   door, the hooks, the state, the storage keys and the limits ahead of
+   them. Two things the reading turned up: the two private pickers'
+   fallback card lists can never be reached, and turn zero is why; and
+   whether "Nothing to undo" can ever fire was left open, since it
+   depends on the page. The same session flipped the color hold. Patrick
+   had built a tuner kit outside the project folder and sent it to his
+   designer friend, so the Y-22 position reverses — she no longer waits
+   on us, we wait on her. The hold on us covers anything to do with the
+   colors she is working with, values as much as names, because her file
+   lands as a clean replacement of the whole record; she has not
+   started; she will not be changing names; and the hold lifts when she
+   sends the download, which Patrick hands over to be plugged in.
+   Y-28 also settled that there will be two test specs rather than one.
+   The existing spec belongs to the old app and stays frozen beside
+   `locked-mcts.html`; a new one gets built for the rebuilt app, over
+   several sessions of its own. That overturns the Y-26 note about
+   extending the one script, and it means the old spec's "drift" was
+   never a fault — it and the locked HTML describe each other exactly.
+   Left unruled: the standing law in the project's `CLAUDE.md` still
+   describes extending and regenerating what is now a frozen document.
+   Next, in order: Part Two of the function map, the largest read in the
+   project and one that wants the front of a session; then the message
+   map rebuilt around function and window names; the Guide's rewording
+   (Y-12), always its own session; and the new test spec.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
