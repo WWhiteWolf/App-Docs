@@ -126,11 +126,28 @@ this one holds where everything stands (Patrick, Y-15).
    listed in the project's hand-off, none ruled on. He also said he wants
    a function map of the rebuilt code, as he has for the old one — raised,
    weighed, and deliberately shelved so the wording could go first.
-   Next, in order: the wording changes themselves, which need only
-   Patrick's rulings now that the reading is done; the Guide's rewording
-   (Y-12), always its own session; the generated master test document,
-   unchecked against Y-23 or Y-24; the function map when he calls it;
-   and then the rebuilt kit to the designer and her palette back.
+   Y-26 (2026-08-12) began the wording changes and settled five of the
+   nine: the half-made ask now says all or none rather than "3 or 0",
+   the counts refusal says the numbers do not match rather than reading
+   backwards, the Undo line was removed outright as a thing said too
+   often to be worth saying, the Play gate's seven refusals dropped
+   their "Play needs:" prefix for "You need to", and the three
+   sentences describing an empty-table ending were made to agree that
+   it is a win. The ⭐ was confined to the glowing turn-bar win, which
+   became "⭐ You Won!". The durable part is the standard Patrick ruled
+   and had written into `docs/message-map.md`: a message earns its
+   place by saying at a glance where the game stands, or why something
+   was refused, and the division is by when it speaks rather than what
+   it says — a line waiting on screen orients, a line firing after a
+   move to restate a rule already followed does not. The same session
+   got the engine's test suite running under Node in Claude's sandbox,
+   so every change was tested as it was made. 179 tests, all passing.
+   The phone is owed both changed files.
+   Next, in order: the four wording strays still unruled; the Guide's
+   rewording (Y-12), always its own session; the generated master test
+   document, now further behind and knowingly so; the function map when
+   he calls it; and then the rebuilt kit to the designer and her
+   palette back.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
