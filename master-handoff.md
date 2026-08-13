@@ -113,11 +113,24 @@ this one holds where everything stands (Patrick, Y-15).
    alive so the app stays at 113. He loaded it and confirmed the grid and
    the Setup are both where he wants them, so the phone is current and no
    device is owed anything.
-   Next, in order: the message-wording pass (Y-10), which Patrick called
-   at Y-24 and deliberately left for a stronger model; the Guide's
-   rewording (Y-12); the generated master test document, unchecked
-   against Y-23 or Y-24; and then the rebuilt kit to the designer and her
-   palette back.
+   Y-25 (2026-08-12) put every sentence the app says to the player on
+   paper, in `docs/message-map.md` — the words, the file and line, and one
+   sentence saying what puts each on screen — built from a full read of
+   both files. No app code was touched. Two things it settled: the engine
+   holds the bulk of the talking and hands its words to the page through
+   the `status` hook, and some sentences exist twice on purpose, the page
+   refusing a wrong move at the front door and the engine again at the
+   back, so a paired sentence must be changed in both files together.
+   Patrick ruled the pass is a hunt for a few stray lines, not a mass
+   edit, and that "3 or 0 should not exist"; nine candidate strays are
+   listed in the project's hand-off, none ruled on. He also said he wants
+   a function map of the rebuilt code, as he has for the old one — raised,
+   weighed, and deliberately shelved so the wording could go first.
+   Next, in order: the wording changes themselves, which need only
+   Patrick's rulings now that the reading is done; the Guide's rewording
+   (Y-12), always its own session; the generated master test document,
+   unchecked against Y-23 or Y-24; the function map when he calls it;
+   and then the rebuilt kit to the designer and her palette back.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
