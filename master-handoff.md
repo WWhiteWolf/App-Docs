@@ -389,6 +389,33 @@ this one holds where everything stands (Patrick, Y-15).
    behind it was talked through and is the settled one: confirm what
    cannot be undone, never confirm a constructive action, and prefer
    undo to a confirmation where undo exists.
+   Y-35 (2026-08-14) gave the Guide a reading copy, finished the
+   walkthrough, and reversed the shape of the long layer. No app code was
+   touched. Patrick asked for somewhere to read what was being written, so
+   a script now lifts the Guide's words out of the working file and builds
+   a Word document from them, generated and never hand-edited, which cannot
+   drift from its source. Word itself would not open or save on his Mac and
+   he gave up on it; the drafts were read in the chat instead. He read the
+   walkthrough whole for the first time and changed six things across the
+   opening, the theme note and the short Setup pass — the theme note is now
+   one line, its second paragraph and the glyph fact in it cut on purpose —
+   and the short game pass was drafted and agreed with one change of his,
+   which also closed the Y-34 question about step three. The durable ruling
+   is the reversal: the long layer is no longer to be cut, because it is
+   where a reader arrives looking for one particular thing. Things are
+   broken apart rather than tied together, each gets a heading so it can be
+   found, and each is explained fully — running long is not the fault, a
+   reader finding their part and still not being told what they needed is.
+   It does not have to read as one flow, and he meant the whole Guide
+   rather than one section. Playing a turn was rewritten whole under it and
+   is not agreed; its second half has never been in front of him. Three
+   smaller things settled: US spelling throughout the Guide, section
+   boundaries that must read clearly on the phone by styling or indents,
+   and the "Where are the cards?" button filling green once Done is tapped,
+   which the Guide had never mentioned and now does. Found and not acted
+   on: the Game screen section was written under the old shape and packs
+   several things under one heading, and both bars are now described in two
+   places.
    Next, in order: the rest of the Guide; and the new test spec, several
    sessions of its own.
    The committed Store version stays shelved
