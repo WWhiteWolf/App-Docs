@@ -299,8 +299,37 @@ this one holds where everything stands (Patrick, Y-15).
    changed mid-session as well — the opening was built a phrase at a time
    and Patrick said that at that rate the Guide would take dozens of
    sessions, so Claude now drafts a section whole and he reacts to it.
-   Next, in order: the rest of the Guide, the Game screen first and the
-   section order beyond Setup still open; and the new test spec, several
+   Y-32 (2026-08-14) settled the Guide's section order and wrote the
+   Game screen, touching no app code. Patrick ruled that the old Guide's
+   section layout is good all the way through, so it is adopted whole —
+   shape, which Y-31 had already set aside from the clean-start rule. It
+   was read out of the locked file before anything rested on it, and it
+   answers two Y-31 questions at once: the Game screen is two sections
+   rather than one, and the Log and the Notepad fall near the end as the
+   Setup introduction promised. What was adopted is the order, not the
+   heading wording — those names are the old app's and are decided one
+   at a time as each section is written. Patrick then noticed the layout
+   covers no theme button, the old app having had no themes, so a short
+   theme note now stands between the opening and Setup: the app arrives
+   dark and one tap changes it. It is deliberately not a numbered
+   section, being a comfort setting rather than a game instruction, and
+   it goes up front because a first-time reader is looking at a dark
+   screen they never chose. The Game screen itself was written whole to
+   a goal Patrick set — the player should recognise the sheet from the
+   ones the game manufacturers put in the box — and to an order he set
+   with it: recognition first, then comfort, then instruction. That
+   overturned the adopted layout's own sub-order, moving the grid from
+   seventh to first with the marks beside it, since the grid is the
+   thing the player recognises. The read forced three corrections: the
+   marks are a plain ✓ and ✗ rather than the old Guide's ✅ and ❌; Undo
+   wipes the whole turn rather than the last tap; and the player never
+   marks a ✓ themselves, but names who showed and has the rest written
+   for them. No colour is named anywhere in the section, because those
+   values were never checked and the Guide's rule is to name a colour
+   plainly or not at all. The Guide now has four agreed pieces — the
+   opening, the theme note, Setup and the Game screen — and Taking a
+   turn is next, the first section that has to teach rather than orient.
+   Next, in order: the rest of the Guide; and the new test spec, several
    sessions of its own.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
