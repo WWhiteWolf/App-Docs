@@ -354,6 +354,41 @@ this one holds where everything stands (Patrick, Y-15).
    over every section already written. Nothing was decided. Links were
    checked and are possible by the page's own tap-and-scroll road rather
    than an `href`, untested on the phone.
+   Y-34 (2026-08-14) settled the Guide's shape and wrote Setup's short
+   pass, touching no app code. Patrick opened by saying that what was
+   being built had become the chore he set out not to write, and named
+   what he wants instead: a warm document that walks a new player
+   through quickly, and that lets them find one specific thing fast
+   when they need it. That is two jobs, and it closes the Y-33
+   question in the affirmative — the Guide has a short walkthrough on
+   top, carrying the same opening and the same order of things in far
+   less space, pointing down to the long sections already written, most
+   of which become that lower layer unchanged. Setup's short pass is
+   written and agreed: five numbered steps holding the order of work
+   and the must-haves, ending at ▶ Play, and deliberately not listing
+   the seven conditions behind it. Its first draft was right in size
+   and shape and wrong in tone — Patrick said it read like a checklist
+   — so it was rewritten warmer at the same length. Checking it against
+   the long Setup section produced five corrections: the step labels
+   were changed to the headings they point down to, so a reader lands
+   on a name they recognise; step two now names the Save inside the
+   Edit pop-up, which a player could otherwise rename past and lose;
+   step four names Done, which is what settles the counts; step one
+   puts "This is Me" before Confirm; and the long introduction lost the
+   opening sentence the short pass had taken over. Its next line was
+   reframed as well, on Patrick's point that saving is about keeping up
+   to four decks and loading one back rather than about never doing the
+   work again. The Edit pop-up's Close was read from the page and is
+   now named in the Cards part — a plain word in the title bar, doing
+   exactly what Cancel does. One piece of future app work came out of
+   it and sits at item 5 of `docs/pending.rtf`: both of those buttons
+   throw the whole edit away on a single tap, which Patrick confirmed
+   on the phone, and they should take two — but only when something has
+   been typed, and only in that pop-up, the others costing seconds to
+   redo where this one can cost the ten minutes. The general rule
+   behind it was talked through and is the settled one: confirm what
+   cannot be undone, never confirm a constructive action, and prefer
+   undo to a confirmation where undo exists.
    Next, in order: the rest of the Guide; and the new test spec, several
    sessions of its own.
    The committed Store version stays shelved
