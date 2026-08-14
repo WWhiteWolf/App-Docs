@@ -329,6 +329,31 @@ this one holds where everything stands (Patrick, Y-15).
    plainly or not at all. The Guide now has four agreed pieces — the
    opening, the theme note, Setup and the Game screen — and Taking a
    turn is next, the first section that has to teach rather than orient.
+   Y-33 (2026-08-14) read the turn cycle end to end and drafted Playing
+   a turn whole, touching no app code. The read covered both files and
+   the ∑ and 🏠 columns with them, and its account is recorded so no
+   session repeats it; it corrected four things a remembered draft would
+   have got wrong, among them that a ! never lands in a box already
+   holding a ✓ or a ✗, and that Undo is not the only road back after a
+   show — a show between two other players can be taken back by tapping
+   that name again, until Next ▶ is tapped. The draft is recorded and
+   **not agreed**: it was stopped rather than finished, on Patrick's
+   word that he was tiring of reading it and that a player would tire
+   faster. Three rulings stand from it — pop-up is the Guide's word for
+   these rather than window or modal, with three agreed lines changed to
+   match; House comes before Summary, reversing the adopted layout,
+   because the Summary cannot be reached without knowing what is on the
+   board first; and a thing may be described by what it is not whenever
+   that helps the reader, but the Guide never measures one part of the
+   app against another. A fourth, that headings end with a colon,
+   collides with every heading written before it and was left unruled.
+   The session's last thought is its biggest: most players will not read
+   the Guide first and will not read it long, coming to it mid-game
+   wanting one specific thing, so the first part would explain the steps
+   quickly with links down to the full explanations — which reaches back
+   over every section already written. Nothing was decided. Links were
+   checked and are possible by the page's own tap-and-scroll road rather
+   than an `href`, untested on the phone.
    Next, in order: the rest of the Guide; and the new test spec, several
    sessions of its own.
    The committed Store version stays shelved
