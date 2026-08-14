@@ -268,8 +268,40 @@ this one holds where everything stands (Patrick, Y-15).
    its craft carries across, but its color claims cannot be true of an
    app with two themes and 113 names, and its shape is the old
    procedure's.
-   Next, in order: the new test spec, several sessions of its own; and
-   the Guide's rewording (Y-12), always its own session.
+   Y-31 (2026-08-13) began the Player Guide's rebuild and touched no app
+   code. What had been carried since Y-12 as a rewording turned out not to
+   be one: Patrick ruled at the top of the session that the existing Guide
+   is never edited, but left frozen where it already sits inside
+   `Projects/locked-mcts.html` and used only as a reference while a new
+   Guide is written from nothing. That was verified before anything rested
+   on it — the Guide in the locked file and the Guide in
+   `mystery-phone.html` are identical word for word, 117 lines of visible
+   text each, so nothing is lost when the new one replaces the working
+   copy. Everything about the rebuild lives in `docs/guide-rebuild.md`, a
+   working file that moves to `docs-ref` when the Guide is finished. The
+   standard is Patrick's and outranks the rest: a Guide a player wants to
+   keep reading, with a thing earning its place by what the player
+   actually needs rather than by what is true of the app — the same shape
+   as the standard governing the app's messages, so the app now judges its
+   words the same way in two places. Two sections are finished and agreed:
+   the opening, which the old Guide never had and whose absence Patrick
+   said had flown right over his head, and Setup entire. Both were written
+   from the app as it is, every claim checked against the page and the
+   engine first, which corrected several things the old Guide had said —
+   the play gate has seven conditions and not five, ▶ Play sits at the top
+   right, turn order is seat order, and marking a seat as Me discards the
+   name. A quick road Patrick had proposed was withdrawn by him once the
+   read showed the shipped deck is placeholders. Three rules came out of
+   the session: show the whole screen before walking through any part of
+   it; the Guide names a genre and never a game, a publisher or a
+   character; and the Guide names colours plainly, dealing with the
+   designer's tuning if and when it changes them. The working method
+   changed mid-session as well — the opening was built a phrase at a time
+   and Patrick said that at that rate the Guide would take dozens of
+   sessions, so Claude now drafts a section whole and he reacts to it.
+   Next, in order: the rest of the Guide, the Game screen first and the
+   section order beyond Setup still open; and the new test spec, several
+   sessions of its own.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
