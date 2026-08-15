@@ -416,8 +416,46 @@ this one holds where everything stands (Patrick, Y-15).
    on: the Game screen section was written under the old shape and packs
    several things under one heading, and both bars are now described in two
    places.
-   Next, in order: the rest of the Guide; and the new test spec, several
-   sessions of its own.
+   Y-36 (2026-08-15) finished Playing a turn — the first Guide section
+   agreed entire since Y-32 — and settled the form the long layer takes,
+   touching no app code. Under each sub-heading the paragraphs now stand
+   as bulleted items, with a bridge sentence above the list and a closing
+   sentence below where each is wanted. Patrick's reason is the durable
+   part and outranks any rule of thumb about length: his mind sees the
+   forest and immediately knows how to work its way through the woods,
+   so the shape tells a reader how to walk through a piece before they
+   have read a word of it. What forced it was the opposite experience —
+   the headings were vanishing into the prose, and he read two
+   sub-sections as one without ever seeing the second heading. A heading
+   followed by a bare paragraph is therefore what to avoid even when the
+   paragraph is short. The section was read one piece at a time, the
+   second half first and then the first half brought into the same form.
+   One claim was cut after his eye caught it and the engine bore him out:
+   the bullet saying no ! is written for a card already confirmed as
+   someone's was a repeat, because a confirmed card already puts a ✗ in
+   every other box and the engine refuses a ! there — which overturns one
+   of the three things Y-35 had let in under the explain-fully rule and
+   vindicates the Y-33 judgment that the player cannot see the
+   difference. That read is recorded so no session re-argues it, and it
+   turned up one thing about the app that nothing is proposed about: the
+   guard in `markShower` looks as though it can never bite. Shorthand
+   became a Guide rule as well as a chat rule, three phrases that told
+   Patrick nothing being written out in full. Settled for a later session
+   and belonging to the app rather than the Guide: the two Me pop-up
+   headers go into the past tense, reaching the page, the message map,
+   the Guide text that quotes them and the wrapper copy, which then owes
+   the phone a test. Two new open items were named at the close — Setup
+   and the Game screen want the same form, which Patrick asked to be its
+   own session, and the short walkthrough is still not linked down to the
+   sections it points at. The stale note telling the next session to come
+   to Playing a turn with cutting in mind was closed, the Y-35 reversal
+   having overtaken it. And `docs-ref/build-history.md` was found to end
+   at Y-33, neither Y-34 nor Y-35 having a section of their own; both were
+   written this session from the records made at the time, alongside
+   Y-36's.
+   Next, in order: Setup and the Game screen brought into the new form;
+   the rest of the Guide; and the new test spec, several sessions of its
+   own.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
