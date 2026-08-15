@@ -453,9 +453,47 @@ this one holds where everything stands (Patrick, Y-15).
    at Y-33, neither Y-34 nor Y-35 having a section of their own; both were
    written this session from the records made at the time, alongside
    Y-36's.
-   Next, in order: Setup and the Game screen brought into the new form;
-   the rest of the Guide; and the new test spec, several sessions of its
-   own.
+   Y-37 (2026-08-15) finished Setup in the new form and touched no app
+   code. It is the first section reshaped backwards under the Y-36
+   ruling, all six parts carrying their colon, their bridge sentence
+   and their bullets, and a seventh part added: Patrick said categories
+   wanted a sub-section of their own, so the single Cards part became
+   Cards, Categories and Rename → Edit, with deleting a category
+   described once instead of twice and two facts the Guide had never
+   carried — a thirty-card deck ceiling and card names unique across
+   the deck — read from the engine and taken in. Three rulings of his
+   came out of it. Every sub-heading ends with a colon, closing a
+   question open since Y-33, and his reason is the durable part: a
+   short line followed by a colon tells him it is about to be explained
+   below. The capitalized section names take none, and "Where are the
+   cards?:" takes one after its question mark, two marks of punctuation
+   being the accepted price of a promise a question mark cannot make.
+   No specific color is named any more, which narrows his own Y-31
+   ruling, with three standing exceptions where the color is the app's
+   only signal that a tap took — the card chip, the counts button after
+   Done, and the count of your own cards. And the Guide never assumes
+   when the game is played, so "tonight" and "the evening" both left
+   agreed text. A Game page layout note was written and agreed for the
+   top of the walkthrough's game pass, introducing New, Out, ⭐ Accuse,
+   the theme button, ↩ Undo and Next ▶ — his instruction being that the
+   reader should meet the page before the turns begin, and his first
+   correction being that it is the Game page and nothing else, ▶ Play
+   and Setup struck from the draft. The session's largest outcome is
+   open rather than closed: **all the pop-ups need explaining**. It
+   began with New, whose Y-32 exemption the note reverses, and Patrick
+   widened it to every pop-up in the app; where that explaining lives
+   was asked and not answered, and thirteen windows are in scope. One
+   thing worth carrying: when the Y-35 reversal was applied backwards
+   only its form came with it, and nothing swept the earlier sections
+   for what they had left out under the older standard — New is the
+   first item found in that gap and probably not the last. Left owed:
+   the Game screen's own reshaping, the ruling on two bars described in
+   two places, a verification pass over the reshaped Setup, and
+   "memorise" sitting twice in agreed text against the Y-35
+   US-spelling ruling.
+   Next, in order: the pop-ups' scope settled; the Game screen brought
+   into the new form; the rest of the Guide; and the new test spec,
+   several sessions of its own.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
