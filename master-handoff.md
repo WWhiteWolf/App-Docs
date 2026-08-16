@@ -491,9 +491,57 @@ this one holds where everything stands (Patrick, Y-15).
    two places, a verification pass over the reshaped Setup, and
    "memorise" sitting twice in agreed text against the Y-35
    US-spelling ruling.
-   Next, in order: the pop-ups' scope settled; the Game screen brought
-   into the new form; the rest of the Guide; and the new test spec,
-   several sessions of its own.
+   Y-38 (2026-08-15) produced nothing and left no record anywhere, so
+   no docs refresh happened and Y-37 remained the true state. What
+   went wrong in it is recorded at Y-39 because it is durable: a
+   placement instruction of Patrick's — say what is needed here, the
+   detail goes elsewhere — was converted into a ruling that Next ▶
+   need not appear in the Guide at all, and once that invented ruling
+   was in, every later answer was given against it. The rules were
+   then pared back on the suggestion that they were the obstacle, and
+   with fewer of them in the way the very things they guard against
+   happened; Patrick restored them all and ended the session. Y-39
+   settled what that says about model settings: a missed connection
+   does improve with more effort, while an invented ruling does not
+   and can get worse, a stronger model defending a wrong premise more
+   fluently.
+   Y-39 (2026-08-16) wrote the Guide's structure down for the first
+   time and built the first section under it, touching no app code.
+   The structure had been changed when Patrick abandoned the old
+   app's shape and explained at the time, but never recorded — so the
+   file still carried the Y-34 two-layer plan while the work was
+   being done to a three-part one, and he raised it himself on
+   noticing that "Details section" was a phrase with no home in the
+   notes. It now heads `docs/guide-rebuild.md`: an introduction; a
+   walkthrough of Setup then the Game page, enough to get started
+   without reading the whole Guide; and the details, following that
+   same flow in full and finishing with a section for each individual
+   modal, button and feature. Those come last because a player with
+   the basics leaves, which is the point, and returns later with one
+   specific question — the two flows answer most of those and the
+   trailing run catches the rest. Features is a catchall for whatever
+   is neither a modal nor a button. That closes the Y-37 question of
+   where the pop-ups get explained, and the Y-34 two-layer note is
+   marked superseded rather than deleted. Two rulings came with it,
+   both reaching every section: the whole story of each modal lives
+   in the details part while other places may still mention it
+   briefly, with one last pass over the finished Guide deciding what
+   those brief mentions keep — and a placement instruction is never
+   permission to leave a thing out; and a section is organized around
+   its own subject, in Patrick's words, "the aim is to imagine how
+   the user will expect, need, or want it." The Next ▶ section was
+   then drafted and agreed entire, the first built under the new
+   structure. It had never been unwritten, only un-gathered — all
+   four of its behaviors already sat scattered across four
+   sub-sections of Playing a turn, which stay put until the last
+   pass. Next ▶ opens no pop-up at all, established before a word was
+   drafted, and the read behind the section is recorded so no session
+   repeats it. Rule 8 was narrowed for reads on Patrick's word: an
+   essential read that is not humungous is simply done rather than
+   asked about.
+   Next, in order: the Game screen brought into the new form; the
+   rest of the trailing run of modals, buttons and features; the rest
+   of the Guide; and the new test spec, several sessions of its own.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
