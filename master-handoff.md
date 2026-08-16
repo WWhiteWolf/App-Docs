@@ -539,9 +539,60 @@ this one holds where everything stands (Patrick, Y-15).
    repeats it. Rule 8 was narrowed for reads on Patrick's word: an
    essential read that is not humungous is simply done rather than
    asked about.
-   Next, in order: the Game screen brought into the new form; the
-   rest of the trailing run of modals, buttons and features; the rest
-   of the Guide; and the new test spec, several sessions of its own.
+   Y-40 (2026-08-16) gave the trailing run its names and its order,
+   built Seat to agreed, and drafted two more sections, touching no
+   app code. The durable ruling is how a section is named: a button
+   or a pop-up is named by the name the reader will be looking for
+   rather than by what it does — Patrick's own sentence, rejecting a
+   working list that had described each of the thirteen windows by
+   its function. He then named all fifteen sections himself and set
+   their order, which follows the Guide's own earlier parts, each
+   thing placed where it first matters as the Setup flow and then
+   the Game flow run. Three changes of his shaped it: ▶ Play had
+   been missed altogether and is a button, so it closes the Setup
+   group; New moved to the foot of the Game group, a player needing
+   it only once a game has ended; and Feedback groups with ← Setup
+   and Game →, which the page bore out, the Guide's footer carrying
+   all three with Feedback between the two. Two of his names landed
+   on each other's rows and the untangling produced its own ruling —
+   💾 Save Card Deck is the name of both the Setup button and the
+   pop-up it opens, so one section covers both, and the window
+   reached by tapping a saved deck's chip is called the saved deck
+   chip rather than Saved Deck, that being the name the Guide has
+   already taught. Patrick then raised, unsure, that Close might be
+   explained once rather than in every section; the read bore him
+   out, all thirteen carrying a Close in the title bar and ten a
+   Cancel, every one of them calling the same one-line `closeModal`
+   that only hides the window, so both are explained once at the
+   head of the modals. A caveat Claude raised about the ∑ picker was
+   invited back for a rethink rather than corrected outright, and
+   withdrawn — and Patrick then corrected the rethink as well, the
+   picker closing the moment a pick is made, with ⭐ Solution? the
+   one exception. Names in the Guide's text are now italicized,
+   buttons above all, because without it the sentence reads wrong to
+   him; that reaches backwards over Seat and Next ▶ and the pass has
+   not been made. Seat was pared in three passes and agreed entire,
+   what came out mattering as much as what stayed. ＋ Add Category
+   and Rename – Edit are drafted and not agreed, the second having
+   gone from seven sub-headings to four on his reaction that just by
+   looking at it the reader is scared off, and the first having been
+   broken out of it because adding a category is something the Setup
+   page does rather than that pop-up. Where deleting a category is
+   told was settled and reverses Y-37: the whole story goes in
+   Rename – Edit, the Categories bullet standing as a brief mention
+   until the one last pass. Two things about how the work is done
+   came out as well — a bare session label like "the Y-37 ruling"
+   tells Patrick nothing and the ruling must be named in plain
+   words, and narrowing the ask-before-acting rule for reads cost
+   him his view of the load, so the size of a read is named before
+   it is done. Both of them thinned late in the session and Patrick
+   called it first, saying he should have called it over when he
+   first noticed.
+   Next, in order: the read-back and agreement of the two drafted
+   sections; the Close and Cancel note and the italics pass
+   backwards; the rest of the trailing run; the Game screen brought
+   into the new form; the rest of the Guide; and the new test spec,
+   several sessions of its own.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
