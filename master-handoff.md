@@ -588,11 +588,47 @@ this one holds where everything stands (Patrick, Y-15).
    it is done. Both of them thinned late in the session and Patrick
    called it first, saying he should have called it over when he
    first noticed.
-   Next, in order: the read-back and agreement of the two drafted
-   sections; the Close and Cancel note and the italics pass
-   backwards; the rest of the trailing run; the Game screen brought
-   into the new form; the rest of the Guide; and the new test spec,
-   several sessions of its own.
+   Y-41 (2026-08-17) settled how the work is done from here and built
+   one section under it, touching no app code. The largest outcome is
+   Patrick's ruling that the modals contain everything, no matter what
+   is said elsewhere — which sharpens Y-39 rather than replacing it: a
+   modal's section is complete in itself, and the question of whether
+   a thing is already said somewhere else has no say at all in what
+   goes into it. His image is the durable part, that even though it is
+   the trailing section it is like a foundation, the walkthrough and
+   the two flows standing on it as summaries; what happens when a
+   summary and a modal disagree was not raised. Its one recorded
+   consequence is that the one last pass now only ever looks at the
+   other places and never at a modal. Alongside it came the way of
+   working he asked for: a bite is one subject carried across all
+   three layers at once — the walkthrough, the details of both flows,
+   and the modals — because he could not hold them in mind separately,
+   and he corrected the count himself from two layers to three. A
+   first draft is now drafted trimmed rather than pared afterwards,
+   to his own limit of trimmed without being short-changed. And a bite
+   is finished and written into the file before the next begins, which
+   is his answer to a session that cannot finish all the work:
+   stopping anywhere costs nothing. He tested the method on 💾 Save
+   Card Deck, which is agreed entire — the fourth of the fifteen
+   trailing sections and the second to reach agreed — and he changed
+   one word in the whole of it, "opens a pop-up" becoming "opens as a
+   pop-up". Two facts went in that the Guide had never carried: the
+   three refusals, and that a saved deck is a copy frozen at the
+   moment of saving with no update door at all. Four observations were
+   recorded for the one last pass. The session ended on a miss worth
+   keeping: opening the next bite, Claude sorted the facts by whether
+   the Guide already said them and proposed a section shaped around
+   the gaps, which is the very question the ruling had abolished
+   hours earlier — Patrick named it and closed the session. Also
+   settled: the italics pass waits, and when it comes it is one pass
+   over the whole Guide rather than a section at a time. Three things
+   he set aside unruled: the read-backs of ＋ Add Category and
+   Rename – Edit, and the Close and Cancel note.
+   Next, in order: the saved deck chip, whose note is already waiting
+   in the working file; the rest of the trailing run; the three
+   pieces set aside unruled; the italics pass over the whole Guide;
+   the Game screen brought into the new form; the rest of the Guide;
+   and the new test spec, several sessions of its own.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
