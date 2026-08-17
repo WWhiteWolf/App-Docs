@@ -698,12 +698,57 @@ this one holds where everything stands (Patrick, Y-15).
    asserting the method off a stale file and then turning a "yes"
    about wording into a scheduled project — the same fault Y-42
    recorded, filling a gap with an assumption instead of asking.
-   Next, in order: Rename – Edit, whose read-back Y-43 never reached;
-   Where are the cards?, next in the run's own order; the rest of the
-   trailing run; the two remaining pieces set aside unruled; whether
-   the rules rewrite is carried past its one sample entry; the live
-   material stranded under a superseded heading; the italics pass over
-   the whole Guide; the Game screen brought into the new form; the
+   Y-44 (2026-08-17) built the Edit section and agreed it entire — the
+   fourth of the fifteen trailing sections to reach agreed — and touched
+   no app code, though it produced a one-line change to the app that is
+   owed. Patrick opened the work by renaming the button: it should read
+   *Edit* only. The page still says *Rename → Edit*, checked that day,
+   so his sentence was a decision about the app rather than a correction
+   of the record, and the section took the new name with it under his
+   own Y-40 rule that a thing is named by the name the reader will be
+   looking for. The button and the pop-up then carry one name between
+   them, the shape 💾 Save Card Deck already had. The app change was
+   deliberately kept out of the drafting bite because it is code and
+   belongs with the commit rhythm — `mystery-phone.html` line 1388, then
+   the wrapper copy and a phone test — so the Guide is ahead of the page
+   until it is made, and the rename also reaches three places left
+   untouched: Setup's agreed sub-heading, its two Categories bullets,
+   and the last bullet of the ＋ Add Category draft. The session's one
+   new fact about the app is Patrick's own find, raised before any
+   drafting began and verified rather than taken on memory: a Save with
+   nothing typed in clears the card counts, because `editCategory` calls
+   `clearCounts()` unconditionally and the page falls back to each box's
+   placeholder, so an untouched pop-up hands the engine a full set of
+   rows that look like edits. The entered flag goes back to false — one
+   of the seven things ▶ Play waits on — and the "Where are the cards?"
+   button loses its green with it. It is the one fact in the section the
+   Guide had never carried anywhere, and it closes the Y-40 note that
+   had pushed clearCounts out to the counts section, a judgment made a
+   session before the ruling that a modal's section carries everything
+   about it. One ruling of his governs the section's language: the hand
+   is not spoken of in it, his words being that the deck and your hand
+   are the same but this is about editing the deck — checked in the
+   engine before it was applied, and nothing is lost, the hand following
+   the deck in all three operations there. The section runs four
+   sub-headings in the order he set at Y-40, he made four wording
+   changes, and three judgment calls were named to him before he agreed
+   it and all three let stand. The session's other outcome is a record
+   rather than a build. Patrick said two-thirds of the way through that
+   nothing had been accomplished yet, and he was right: the heavy read
+   was over early and what consumed the session was questions. One was
+   asked about sequencing while a substantive one stood unanswered three
+   turns back, and one finding was reported as new when Claude had
+   quoted it from the Y-31 record himself before going to look. Blank
+   bullets in his edit list were also read as deletions when they were
+   spacing. What worked was naming judgment calls before he reacted and
+   verifying his counts claim in the code rather than agreeing with it.
+   Next, in order: Where are the cards?, next in the run's own order;
+   the one-line button rename in the app, with its wrapper copy and
+   phone test; the rest of the trailing run; the read-back of ＋ Add
+   Category and the Close and Cancel note, both set aside unruled;
+   whether the rules rewrite is carried past its one sample entry; the
+   live material stranded under a superseded heading; the italics pass
+   over the whole Guide; the Game screen brought into the new form; the
    rest of the Guide; and the new test spec, several sessions of its
    own.
    The committed Store version stays shelved
