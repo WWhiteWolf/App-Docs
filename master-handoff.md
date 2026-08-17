@@ -599,16 +599,13 @@ this one holds where everything stands (Patrick, Y-15).
    the two flows standing on it as summaries; what happens when a
    summary and a modal disagree was not raised. Its one recorded
    consequence is that the one last pass now only ever looks at the
-   other places and never at a modal. Alongside it came the way of
-   working he asked for: a bite is one subject carried across all
-   three layers at once — the walkthrough, the details of both flows,
-   and the modals — because he could not hold them in mind separately,
-   and he corrected the count himself from two layers to three. A
+   other places and never at a modal. Alongside it came a way of
+   working that carried one subject across three layers at once,
+   since replaced at Y-43 — how the work is done now is stated in the
+   project's `docs/guide-rebuild.md` and is not restated here. A
    first draft is now drafted trimmed rather than pared afterwards,
-   to his own limit of trimmed without being short-changed. And a bite
-   is finished and written into the file before the next begins, which
-   is his answer to a session that cannot finish all the work:
-   stopping anywhere costs nothing. He tested the method on 💾 Save
+   to his own limit of trimmed without being short-changed. He
+   tested the method on 💾 Save
    Card Deck, which is agreed entire — the fourth of the fifteen
    trailing sections and the second to reach agreed — and he changed
    one word in the whole of it, "opens a pop-up" becoming "opens as a
@@ -629,8 +626,8 @@ this one holds where everything stands (Patrick, Y-15).
    agreed — and touched no app code. Patrick narrowed the bite at the
    top of the session to the complete modal and nothing else, so
    neither the walkthrough nor either flow was opened; that was an
-   instruction for one piece of work rather than a new standing rule,
-   and the Y-41 three-layer method is not overturned. The section runs
+   instruction for one piece of work rather than a new standing rule
+   at the time; at Y-43 it became the standing method. The section runs
    four sub-headings, with the two-tap mechanic given one of its own
    rather than told twice under Load and again under Delete, and it
    answers the Y-41 note asking it to collect the two Setup bullets
@@ -658,11 +655,57 @@ this one holds where everything stands (Patrick, Y-15).
    early miss too, before anything was thin: a pronoun slip in one of
    Patrick's sentences was read one way, treated as fact, and three
    paragraphs built on it before he stopped it.
-   Next, in order: Where are the cards?, next in the run's own order;
-   the rest of the trailing run; the three pieces set aside unruled;
-   the italics pass over the whole Guide; the Game screen brought into
-   the new form; the rest of the Guide; and the new test spec, several
-   sessions of its own.
+   Y-43 (2026-08-17) replaced the three-layer method and began writing
+   the rules as one current form, touching no app code and never
+   beginning Rename – Edit, which its opener had named. The session
+   opened with Claude asserting the Y-41 three-layer method as
+   standing; Patrick said flatly that it is not a current ruling, and
+   the files bore Claude out only in the sense that they were the
+   thing that was wrong — this project's hand-off carried it as live
+   and this file said in two places that Y-42 had not overturned it.
+   What stands now is one modal at a time: the modal is the unit, a
+   modal's section carries everything about it no matter what any
+   other section says, the walkthrough waits until everything else is
+   written, and the two flow sections are left as they are. **How the
+   work is done is stated in the project's `docs/guide-rebuild.md` and
+   in no other file**, both hand-offs pointing at it rather than
+   restating it, which is the whole point of the change. Patrick's
+   complaint is the durable part — he spends the beginning of every
+   session correcting how the rule is made — and he named the
+   compounding cost himself, that these conversations are as thinning
+   as reads, which is Y-42's own finding turned back on us. The
+   diagnosis settled on is the form rather than the count: rulings are
+   recorded as a chronological stack, each dated note sitting on the
+   last, so a session has to work out what stands and the working-out
+   is where it fails. His own statement of the fix is the one to
+   carry: keep the rule, but the correct one only, with the superseded
+   wordings living on in the build history. It is expressly not Y-38,
+   which removed whole rules and failed; this removes only their older
+   drafts. Asked whether each entry should say if it is a rule or a
+   guide, he declined to decide and gave his preference instead —
+   the files are Claude's to construct as they best serve it, and if
+   it were up to him they would all be guides applied with common
+   sense — so no labels were added, but his name stays on the entries
+   that record his decisions rather than craft. He then stopped the
+   wholesale rewrite, worried about a mass changing and asking for one
+   or two entries targeted at the most benefit, so exactly one was
+   rewritten: the entry that had broken the session. He will not read
+   it and will judge it by how well the next session works. Two
+   findings came out of the read that nothing was done about: a
+   heading in the working file claims live agreed Guide text is
+   superseded, and five judgment calls written down for him have no
+   answer recorded anywhere. And Claude leapt twice the same way,
+   asserting the method off a stale file and then turning a "yes"
+   about wording into a scheduled project — the same fault Y-42
+   recorded, filling a gap with an assumption instead of asking.
+   Next, in order: Rename – Edit, whose read-back Y-43 never reached;
+   Where are the cards?, next in the run's own order; the rest of the
+   trailing run; the two remaining pieces set aside unruled; whether
+   the rules rewrite is carried past its one sample entry; the live
+   material stranded under a superseded heading; the italics pass over
+   the whole Guide; the Game screen brought into the new form; the
+   rest of the Guide; and the new test spec, several sessions of its
+   own.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
