@@ -624,11 +624,45 @@ this one holds where everything stands (Patrick, Y-15).
    over the whole Guide rather than a section at a time. Three things
    he set aside unruled: the read-backs of ＋ Add Category and
    Rename – Edit, and the Close and Cancel note.
-   Next, in order: the saved deck chip, whose note is already waiting
-   in the working file; the rest of the trailing run; the three
-   pieces set aside unruled; the italics pass over the whole Guide;
-   the Game screen brought into the new form; the rest of the Guide;
-   and the new test spec, several sessions of its own.
+   Y-42 (2026-08-17) built the saved deck chip section and agreed it
+   entire — the third of the fifteen trailing sections to reach
+   agreed — and touched no app code. Patrick narrowed the bite at the
+   top of the session to the complete modal and nothing else, so
+   neither the walkthrough nor either flow was opened; that was an
+   instruction for one piece of work rather than a new standing rule,
+   and the Y-41 three-layer method is not overturned. The section runs
+   four sub-headings, with the two-tap mechanic given one of its own
+   rather than told twice under Load and again under Delete, and it
+   answers the Y-41 note asking it to collect the two Setup bullets
+   that describe the Saved Deck window. The drafting was shown to be
+   right by a check worth carrying: a section built from the modal's
+   own subject must repeat things the summaries above it already say,
+   so overlap is the sign of health and a section with no overlap is
+   the tell — four of this one's facts are told elsewhere and stayed
+   in. Patrick rewrote Loading a deck over four passes, his verdict
+   being that it did too much repeating, and the settled bridge
+   sentence is his; three word choices inside it are his as well, and
+   four single-word completions were Claude's, marked as such before
+   he agreed them. One fact went in that the Guide had never carried
+   anywhere: a category left empty when a deck was saved does not come
+   back when it is loaded, and if that would leave none at all the app
+   substitutes its own starting categories. The session also struck a
+   sentence from rule 22, recorded below. Its last outcome is a
+   record rather than a build: a session between Y-41 and this one was
+   deleted and left nothing, having failed the same way Y-41 failed at
+   its close — the Y-41 text establishing the modals ruling was pasted
+   in, acknowledged, and then the same error made again and not seen
+   even after Patrick pointed the fact out. Stating a rule and
+   building under it are separate acts, and being able to state it
+   correctly is worth nothing as evidence. This session had its own
+   early miss too, before anything was thin: a pronoun slip in one of
+   Patrick's sentences was read one way, treated as fact, and three
+   paragraphs built on it before he stopped it.
+   Next, in order: Where are the cards?, next in the run's own order;
+   the rest of the trailing run; the three pieces set aside unruled;
+   the italics pass over the whole Guide; the Game screen brought into
+   the new form; the rest of the Guide; and the new test spec, several
+   sessions of its own.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
@@ -654,6 +688,14 @@ this one holds where everything stands (Patrick, Y-15).
   `Projects/.gitignore` lists all four project folders, each already
   a repository, so the root one tracks only the loose files at its
   own level and never nests.
+- **Rule 22 no longer names Patrick's usage percentage (Patrick,
+  Y-42).** Its closing sentence — "Patrick reports his usage
+  percentage at checkpoints; fold it into stop-or-continue advice" —
+  was struck from `Projects/CLAUDE.md`. His usage is a budget meter
+  and not a quality one, and it is not the gauge for whether Claude's
+  checking is thinning. He was sure the old meter goes, said he is not
+  yet sure what replaces it, and asked for no placeholder. The rest of
+  rule 22 stands untouched.
 - **The opening asks for two folders, not one (Y-18, overturning
   MT#5).** The parent `Projects` folder first, then the folder of the
   session's goal, so that project's own `CLAUDE.md` arrives on its
