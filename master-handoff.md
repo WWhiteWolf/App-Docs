@@ -751,6 +751,57 @@ this one holds where everything stands (Patrick, Y-15).
    over the whole Guide; the Game screen brought into the new form; the
    rest of the Guide; and the new test spec, several sessions of its
    own.
+   Y-45 (2026-08-17) replaced the Y-40 draft of ＋ Add Category whole
+   and agreed it entire, touching no app code. It is the fifth of the
+   fifteen trailing sections to reach agreed and it completes the
+   first five of the Setup group in the group's own order, so only
+   Where are the cards? and ▶ Play now stand between the Guide and a
+   finished Setup group. The session began by asking rather than
+   guessing: Patrick's opener named "＋ Add Card", which is not one of
+   the fifteen, and the page carries both that button and ＋ Add
+   Category as different things. His goal for the section is the
+   player's side rather than the app's — to be able to use the app for
+   a game that requires four categories, and to delete one so as to
+   play a two-category game — and although the goal names deleting,
+   he kept deleting out of the section entirely, the whole story
+   staying in Edit where Y-40 put it, along with the one deleting fact
+   that belongs to this button, that deleting brings ＋ Add Category
+   back. The collision between his goal and that agreed text was
+   flagged and put to him rather than resolved quietly. The durable
+   part of the session is four facts Claude reported and Patrick
+   corrected, every one wrong the same way: a true line of code read
+   and reported as though it were what the player meets. The counts is
+   the one to carry. `clearCounts` really does zero the numbers, and
+   that is where the reading stopped, but `openCounts` then finds no
+   numbers carried and fills the boxes from the app's own suggestion,
+   which is worked out from the deck and the seats, neither of which
+   an empty new category changes — so the player never sees a zero,
+   and one who took the suggestion sees the same numbers come back.
+   His correction was exact: the set condition is cleared, not the
+   count. The other three were the mid-game refusal, which cannot be
+   reached from the page and so earns no place in the Guide; "the only
+   thing that happens", which was untrue and whose missing half he
+   supplied himself; and his own word "pop-up", which was queried
+   rather than accepted or contradicted and produced "Good point, it
+   is a button". He also asked directly whether there is useless code
+   in the app, and the answer is his own Y-29 ruling — the
+   `setupClosed()` guard in `addCategory` cannot fire from the phone
+   page, but a guard stays when the only reason it cannot fire belongs
+   to the page, because the engine never relies on a packaging to
+   protect it, and nothing is proposed about it. One thing is now
+   owed: a short caution in the Guide's Where are the cards? section,
+   and expressly not in the app, saying that Setup changes made after
+   the counts are settled un-set them and that a player who set the
+   numbers by hand loses them. Next, in order: Where are the cards?,
+   which carries that caution; ▶ Play, which finishes the Setup group;
+   the one-line button rename in the app at `mystery-phone.html` line
+   1388, with its wrapper copy and phone test; the rest of the
+   trailing run; the Close and Cancel note, still set aside unruled;
+   whether the rules rewrite is carried past its one sample entry; the
+   live material stranded under a superseded heading; the italics pass
+   over the whole Guide; the Game screen brought into the new form;
+   the rest of the Guide; and the new test spec, several sessions of
+   its own.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
