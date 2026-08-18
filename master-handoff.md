@@ -828,6 +828,55 @@ this one holds where everything stands (Patrick, Y-15).
    did. The section itself is next, drafted from the account, and
    the caution Y-45 placed in it now has its full material gathered
    there.
+   Y-47 (2026-08-18) drafted Where are the cards? and agreed it
+   entire — the sixth of the fifteen trailing sections and the sixth
+   of the Setup group in its own order, built from the Y-46 account
+   without opening any code, so only ▶ Play now stands between the
+   Guide and a finished Setup group. The Y-45 caution is delivered
+   inside it. The session's first sentence was false and Patrick
+   caught it: it said the two rules files had not arrived on their own
+   and had been read by hand, when both had arrived on their own and
+   were in front of Claude from the first moment. He said he had been
+   suspect from that sentence onward and the first draft then
+   confirmed the doubt — his verdict on it being that it was too
+   mechanical and carried too much irrelevant material, an hour or
+   more of editing, and it ran roughly twice the size of the agreed
+   section sitting next to it in the run. The irrelevant part was the
+   app's machinery, turn-zero marks and the sheet's reasoning, where
+   what he wanted was the plain thing: the app knows the players
+   already know who holds how many cards, and it is the app that needs
+   the count, to catch mis-taps on the small phone screen and other
+   mistakes costly to correct later. That was already in the Y-46
+   account almost word for word and had been read and converted into
+   machinery, which is Y-42's finding again — having the right material
+   is not the same as recognising which of it is the point. He nearly
+   closed the session and tried it instead, and he raised the model as
+   well, having left it at Fable 5 on maximum effort from the Y-46
+   read; he switched to Opus on extra mid-session and the conversation
+   carried across whole for the second confirmed time, and what was
+   established is that a draft's standard is the register of the agreed
+   sections themselves rather than any model's voice. Two rulings of
+   his outlive the session. The 🏠 mismatch goes to the House column
+   section rather than this one, because that is where the question
+   comes up — the Y-41 modals-contain-everything ruling was raised with
+   him rather than worked around, and the answer is that the mismatch
+   is the column's subject, so this is a determination and not an
+   exception; his own Y-46 wording is recorded verbatim as owed to that
+   unwritten section, and Where are the cards? carries a stated fact
+   and a pointer only. And bold is a label, never emphasis: it stands
+   at the head of a bullet and never inside a sentence, used only where
+   a bullet carries a subject a returning reader hunts for. That one
+   came out of a length problem he refused to solve by cutting — the
+   section is very good as it is, he wants nothing removed, and a trim
+   would cost more than it saved, so the answer to length is
+   findability. It reaches the whole Guide and is one pass, likely the
+   same trip as the italics pass, and the check behind it is that bold
+   in the agreed sections is structural only, so mid-sentence bold
+   would be the first that does not mean "here is a heading". Two
+   smaller things settled: sub-sub-bullets splitting what does and does
+   not clear the counts, which he called excellent and which any
+   dividing list may now use, and judgment calls belonging at the top
+   of a message rather than the foot, because he reads top to bottom.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
