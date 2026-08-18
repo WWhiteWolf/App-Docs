@@ -802,6 +802,32 @@ this one holds where everything stands (Patrick, Y-15).
    over the whole Guide; the Game screen brought into the new form;
    the rest of the Guide; and the new test spec, several sessions of
    its own.
+   Y-46 (2026-08-17) did the whole-code read behind Where are the
+   cards? and drafted nothing, touching no app code. Patrick ruled
+   the read must be both files end to end because the counts feed
+   decisions throughout the game — 3,990 lines, the heaviest read
+   the project has had — and its account now stands in
+   `docs/guide-rebuild.md` in the run's own order, directly after
+   the saved deck chip with ▶ Play to land behind it, so no session
+   reads that code again. The governing ruling came after the read:
+   the counts are not for the players, who already know who has how
+   many cards — the count is for the app, which cannot see the deal;
+   what the player gets back is the app's only cross-check on the
+   tapped hand that founds the whole sheet at turn zero. The read's
+   one real surprise: stepping House refills every player row, so
+   the window expects House first, players after. Also recorded: the
+   counts never show on the Game screen and cannot be looked up
+   mid-game; any real seat change clears them, a rename included;
+   New Game with both choices Same carries the numbers but never the
+   settled flag; and the 🏠 marks do not have to match the House
+   count, stated plainly with Patrick's reason — you mark only the
+   board cards you see yourself, since other players' peeks are
+   their own. Patrick switched the model to Fable 5 for the read
+   after the mid-session switch was checked in Anthropic's
+   documentation — the conversation carries across whole, and it
+   did. The section itself is next, drafted from the account, and
+   the caution Y-45 placed in it now has its full material gathered
+   there.
    The committed Store version stays shelved
    byte-identical at `Projects/locked-mcts.html`. The Android
    legs wait until the merged app is done, and `wrapper-android`
