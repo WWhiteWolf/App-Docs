@@ -4,7 +4,7 @@ App-Docs (this folder) is the single home for cross-project
 docs (Patrick's decision, #71). It is a git repo; Patrick makes
 every commit. Keep this file to four things only: the projects
 and their folders, one line of status each, what is true across
-all three, and the loose ends belonging to no single project.
+them all, and the loose ends belonging to no single project.
 Session history lives in the projects' build-history files.
 This file is brought current at every session's docs refresh and
 is never left to lag — a project's own docs hold the detail, and
@@ -902,15 +902,59 @@ this one holds where everything stands (Patrick, Y-15).
    banner-delay bug was probably cured with it. What is owed is a
    build and a week of Patrick living with it; the three
    "What's Next" items in pending.txt are untouched. The other
-   thing that session produced is
-   `docs/college-app-draft-v1.md`, a feature draft for a college
-   student's assistant that would live on the web first, with a
-   copy of its chat at `Projects/Campus travel.rtf`. It has no
-   folder of its own and no session yet.
-4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer
+   thing that session produced is a feature draft for a college
+   student's assistant, which would live on the web first. It and
+   a copy of the chat behind it now sit in a folder of their own
+   at `Projects/Sudents-Assistant` — `college-app-draft-v1.md`
+   and `Campus travel.rtf`. That folder name went in misspelled;
+   Patrick renames it to `Students-Assistant` next session. The
+   new app got its own session and its own chain at SA-1
+   (2026-08-19); see project 4 below.
+4. **Students-Assistant — iPhone** — paper only, no code.
+   Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
+   reads, and the layout follows `MysteryCluesTracker` — `docs`
+   active, `docs-ref` reference. Status: SA-1 (2026-08-19) opened
+   the project and its chain. The folder rename from the
+   misspelled `Sudents-Assistant` was already done. Patrick
+   settled five things: the build platform is a native iPhone app
+   using Expo like Memory, which overturns the "web first" line
+   the Memory hand-off had carried and rests on the draft's F-5,
+   that only a native build can schedule its own local alarms; the
+   chain is "SA-##"; the file layout follows
+   `MysteryCluesTracker` with a Rich Text pending list; the app
+   reaches the public from elyfont.com as Memory does, with what
+   that means in practice not worked out; and the name is
+   Students-Assistant, a short badge name left for later. The
+   folder's documents were all built this session —
+   `CLAUDE.md`, `docs/handoff.md`, `docs/pending.rtf`,
+   `docs-ref/build-history.md` and a stub `docs-ref/ROADMAP.md` —
+   beside the two files it arrived with,
+   `college-app-draft-v1.md` and `Campus travel.rtf`.
+   The session's real finding is that F-2's dependency is
+   verified and open. StarTran's timetable and its live bus
+   positions are both public and need no key, the addresses are
+   recorded in the project's build history, and the crossing
+   between UNL's campuses runs on ordinary StarTran routes that
+   sit inside those same feeds — Route 24 Holdrege joins the
+   Nebraska Union to seven named East Campus stops. Route 23 is
+   UNL's own van and is outside them.
+   One question is live and blocks building on that data: a
+   StarTran staff member told Patrick by telephone that federal
+   law forbids using their data in an app because StarTran is
+   federally funded, and did not know the details. Everything in
+   the public record runs the other way — GTFS reporting to the
+   National Transit Database is now mandatory for federally
+   funded fixed-route agencies, those feeds enter the public
+   domain, and the FTA has said riders should be able to rely on
+   third-party apps — and no StarTran or Connexionz terms of use
+   could be found at all. An email asking StarTran directly is
+   drafted and Patrick has the address; it was unsent at the
+   close. Nothing is built on those feeds until his answer comes.
+   `Projects/.gitignore` needs `Students-Assistant/` added to it.
+5. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer
    to the App Store listing only.
 
-## True across all three
+## True across them all
 
 - **Where the session rules live, settled at Y-18.** The conduct
   rules are `Projects/CLAUDE.md`, at the root of the parent folder.
@@ -942,7 +986,8 @@ this one holds where everything stands (Patrick, Y-15).
   "#nn-new" is Memory, "MT#nn" is Mystery Tracker. "Y-n" (no
   "#" before numbers) is the converged Mystery rebuild, begun
   Y-1 (2026-08-07); the MT and MCTS chains are closed as
-  history. No old reference is ever edited.
+  history. "SA-n" is Students-Assistant, begun SA-1
+  (2026-08-19). No old reference is ever edited.
 - The build-and-test commit rhythm: the code commit comes
   before the build, the docs commit after the device test — so
   at a session start the code should be committed but the docs
