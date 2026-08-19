@@ -882,9 +882,31 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #3-new is
-   phone-verified and committed; next is #4-new — the three
-   "What's Next" items in pending.txt.
+   Folder: `Projects/elderlyassistant`. Status: #4-new
+   (2026-08-18) fixed the three notification defects and is
+   written but unbuilt — six files changed, TypeScript clean,
+   nothing on the phone. Patrick redirected the session to them
+   because he now uses Memory daily and the notifications are his
+   biggest gripe, and because a new app he wants will lean on
+   reminders heavily. The three defects came from a read-only
+   review made in a web session, saved at
+   `docs/ElderlyAssistant-notification-findings.md`; all three
+   were verified against the code before anything was changed,
+   and two of the document's claims were corrected. My Day's and
+   Pets' banner Done no longer destroys the daily repeat and now
+   sweeps up the item's pending snoozes, and all five routine
+   screens — My Day, Pets, My Week, Look Ahead and Orders — now
+   re-read storage when they regain focus and when the app
+   returns to the front, so a banner's check-off is visible
+   instead of being overwritten. The standing Look Ahead
+   banner-delay bug was probably cured with it. What is owed is a
+   build and a week of Patrick living with it; the three
+   "What's Next" items in pending.txt are untouched. The other
+   thing that session produced is
+   `docs/college-app-draft-v1.md`, a feature draft for a college
+   student's assistant that would live on the web first, with a
+   copy of its chat at `Projects/Campus travel.rtf`. It has no
+   folder of its own and no session yet.
 4. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer
    to the App Store listing only.
 
