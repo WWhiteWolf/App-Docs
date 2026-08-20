@@ -913,8 +913,144 @@ this one holds where everything stands (Patrick, Y-15).
 4. **Students-Assistant — iPhone** — paper only, no code.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: SA-1 (2026-08-19) opened
-   the project and its chain. The folder rename from the
+   active, `docs-ref` reference. Status: SA-4 (2026-08-19) settled
+   what an individual item is and what a reminder is for, and took
+   Memory's whole look across. **An item is the class with all its
+   information under it** — its full name, the times it meets, its
+   place or places, its books and syllabus, its due dates, an
+   estimate of size and time for a whole thing, and the pieces it
+   breaks into with their own sizes and times. Five courses means
+   five items rather than fifty, there are three levels with
+   sub-items under assignments, and the item is not a schedule but
+   feeds the Day and Week schedules and the travel warnings. The
+   session's harder half was the reminders, and Patrick sharpened it
+   himself by asking what a reminder is for: **they are a call to
+   action**, which gives the test that at the moment one speaks she
+   must be able to act on it. The six kinds of reminding the record
+   had committed to were listed in one place for the first time, and
+   two things fell out of the list — only the due-date warning is a
+   setting she makes, the other four being worked out from what the
+   item already holds, and **Done is a call for inaction, to relax**,
+   which was Patrick's correction of Claude's claim that it stood
+   outside the family. That folds the spine into one mechanism with
+   two directions; he called the reading a start rather than the
+   answer. He then corrected a proposal that would have hidden the
+   reminder option: **it is never demanded, but always presented**,
+   and entering asks nothing of her at all — she taps Done and fills
+   in later, the setting sitting at the top and falling downward with
+   a default underneath that makes her silence safe. To-Do's reminder
+   row is the model for how it looks, minus its ask on Save; which
+   lead times belong on it is not settled. Last, he asked for
+   something more general and took Memory's palette, styling and
+   buttons whole, fitting this app into that format. A three-search
+   look-up found the palette lifts cleanly as one file,
+   `constants/Themes.ts`, 337 lines, about sixty keys named by
+   meaning rather than by color, two themes, and the hook sixteen
+   screens read. Memory has no shared button component; Patrick
+   ruled that here a button doing the same job on two pages is one
+   shared piece. Before it, SA-3 (2026-08-19) read the
+   university's campus map and closed the app off from outside data,
+   which is the largest structural decision the project has made.
+   The app is self-contained — no syllabus import, no course system,
+   no bus feed, no automated travel — and everything in it is
+   entered by her. Patrick had hoped the syllabus could come off the
+   school's website and put that down himself rather than take on
+   importing and handshakes; his reason is the benefits of staying
+   self-contained. Three standing items fall away with it: the
+   StarTran legal question that has blocked since SA-1 no longer
+   blocks anything, the Canvas five-system merge cannot break what
+   the app does not use, and how the syllabus gets in is answered.
+   The leave-by alert survives, running on the travel time she
+   entered rather than on where a bus is. The session also gave the
+   app its first self-firing behavior, the squeeze warning: whenever
+   a squeeze occurs the app warns her, as she enters and on Save,
+   checked against everything already in, however many there are,
+   and not only at the start of a semester — and it is useful from
+   the second item on, since one item cannot conflict with anything,
+   so there is no complete setup to get through before the app pays
+   off. Patrick's own campus map PDF, dropped into `docs-ref`
+   mid-session, resolved all six building codes in her schedule and
+   showed that three of her five days cross between City and East
+   Campus, with the ten-minute Tuesday and Thursday gap running East
+   to City — which the map's own directions make a ride rather than
+   a walk. That collided with SA-2's ruling that the campus split
+   does not matter yet; put to Patrick rather than worked around, he
+   narrowed it himself: it is guidance and not a wall, and it was
+   for the travel effort, where this is scheduling. Two smaller
+   things settled: a task is entered by the size of its bite, some
+   fixed and some variable with reading cut to whatever the gap is;
+   and the first sitting is the beginning of a semester, its
+   contents recorded, with his own word on the list being "for
+   starters." The next subject is his: the structure of an item as a
+   whole and as pieces, opened and not started. He also asked
+   whether Fable 5 would suit this work better and had to ask twice,
+   the first answer being the record instead of an answer; the
+   answer is no while there is no heavy read in front of us.
+   Before it, SA-2 (2026-08-19) checked
+   the name against the app stores and settled the app's shape; the
+   working file for that is `docs/app-structure.md` and it is the
+   one to open when the structure question comes up again. The name
+   survives the check — nothing exists on the Apple App Store or
+   Google Play under "Students Assistant" or "Students-Assistant",
+   though the singular shelf is crowded with planners and trackers,
+   and Student-Aid is worse ground, that phrase belonging to
+   federal financial aid. Patrick's own verdict closed it: none of
+   those apps have the reminder features he wants, which is why he
+   built his own.
+   The session's real work was the shape. Its turn was his sentence
+   that there are bus route and time sites, organizers and
+   calendars, and not one reference among them to helping remember
+   to get it done, go to class, catch the bus — a live bus map
+   being useless at the moment that matters, because that moment is
+   a few minutes earlier when she should have left. He added the
+   half nobody builds because it looks like nothing: the app does
+   not only remind, it reassures that a thing has been done. So the
+   spine is remind before, reassure after, and Memory already does
+   the second half three ways, My Week's self-clearing tick being
+   the purest. The focus is knowing where to focus now, other
+   features may or may not come later. The ordering came out of his
+   cooking analogy, read back and confirmed: she sequences by what
+   must happen before what rather than by what is due soonest, she
+   works the dead time while something else runs itself, and the
+   comfort is in being able to put everything else down — with his
+   one correction, that she still needs the due dates, so the date
+   is what the app reasons with rather than what she reads. He
+   added expected work and time as a required ingredient, which is
+   what makes the rest computable. The first concrete rule is the
+   gap rule: given a gap, offer what fits inside it, soonest due
+   first — not the most urgent thing overall but the most urgent
+   thing she can actually clear. And he corrected a sentence Claude
+   had written saying she wants one answer: she does not, the app
+   offers several annotated options and she chooses, never deciding
+   for her, with a separate running-out-of-time warning that a due
+   date alone can never produce.
+   Two other things settled. A thing Patrick sets aside as "adjust
+   later" is written down as settled rather than carried as open —
+   he does not want to be reminded that something he has already
+   put down is still open — and that is now a working note in the
+   project's `CLAUDE.md`. And travel drops down the list: he is
+   less concerned about it than she was and says the live feeds
+   cover the Omaha campus, though SA-1's record covers Lincoln only
+   and says nothing about Omaha. The leave-by alert is not
+   abandoned; it is the spine applied to a bus.
+   Two new working files: `docs/app-structure.md` and
+   `docs/student-needs-research.md`, the second holding published
+   survey findings with every one graded strong, fair or weak,
+   because the wayfinding material and every criticism of Canvas
+   turned out to be published by companies selling the remedy. Its
+   strongest finding is that the most-wanted tool students name is
+   the one Patrick has already built — more than two in five chose
+   combining different syllabi into one set of deadlines, the top
+   answer of eight.
+   Her class schedule arrived as a screenshot at the end of the
+   session and is written into `docs/app-structure.md`. Five
+   courses, Monday to Friday with Tuesday and Thursday identical,
+   the day headings never actually seen. It settles that a course
+   is not one weekly item, that a place belongs to a meeting rather
+   than to a course, and that My Week's one-weekday-per-item limit
+   is a real obstacle rather than a theoretical one.
+   Before it, SA-1 (2026-08-19) opened the project and its chain.
+   The folder rename from the
    misspelled `Sudents-Assistant` was already done. Patrick
    settled five things: the build platform is a native iPhone app
    using Expo like Memory, which overturns the "web first" line
@@ -949,7 +1085,9 @@ this one holds where everything stands (Patrick, Y-15).
    third-party apps — and no StarTran or Connexionz terms of use
    could be found at all. An email asking StarTran directly is
    drafted and Patrick has the address; it was unsent at the
-   close. Nothing is built on those feeds until his answer comes.
+   close. That question stopped blocking at SA-3, the app now
+   taking nothing from outside itself, and whether he still wants
+   an answer for some later thing is his.
    `Projects/.gitignore` needs `Students-Assistant/` added to it.
 5. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer
    to the App Store listing only.
