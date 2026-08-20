@@ -910,10 +910,77 @@ this one holds where everything stands (Patrick, Y-15).
    Patrick renames it to `Students-Assistant` next session. The
    new app got its own session and its own chain at SA-1
    (2026-08-19); see project 4 below.
-4. **Students-Assistant — iPhone** — paper only, no code.
+4. **Students-Assistant — iPhone and web** — paper only, no code.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: SA-4 (2026-08-19) settled
+   active, `docs-ref` reference. Status: SA-5 (2026-08-20) settled
+   more structure than any session before it and left the project
+   one small answer away from a first buildable piece. **An item
+   holds information and a task is an action** — Patrick's own
+   realization, and the line SA-4's structure had been missing —
+   with due dates recorded as boundaries to the actions rather
+   than facts sitting inside an item. **A course is a tile**, its
+   identifying title on top with the room numbers, days and times
+   underneath and everything else behind it when it opens, and
+   what is in the tile is what the app runs on: the calendar, the
+   warnings, the notifications and the travel calculations are all
+   derived from it. The session's largest change narrows SA-3's
+   self-contained ruling, which had been this project's biggest
+   structural decision: **the app pulls information in but never
+   lets anything of hers out.** His own argument closed it — she
+   signs in to the school's site and hands it her identifying
+   information anyway, so the app takes what is already on her own
+   device and never holds credentials, never makes a handshake and
+   never meets anybody's IT department. What survives of the old
+   reasoning is shape rather than permission, since whatever she
+   hands across has a format the school can change. **It lives on
+   both her devices, and the phone is the brain** — the laptop is
+   for the convenience of typing and viewing, the phone holds the
+   real copy and does all the working-out. He first proposed
+   targeting the laptop and pulling the phone in later; the
+   collision with SA-1, that the whole reason for a native build is
+   local alarms and a reminder has to find her with the laptop shut
+   in her bag, was put to him and he settled the division instead.
+   Three roads to the Mac were read and the third taken: an iPhone
+   app runs natively on an Apple Silicon Mac but in a phone-shaped
+   window; a real Mac app is off Expo's supported path, desktop
+   being expressly not a priority; and web is Expo's own third
+   platform from the same codebase, giving a real laptop-sized
+   layout on any Mac. Whether her Mac is Apple Silicon is unknown —
+   Patrick said only that it is newer than his. AirDrop carries the
+   data with nothing in the middle, and he demonstrated it
+   mid-session by AirDropping the bus email from his phone to his
+   Mac; sending is clean through `expo-sharing`, receiving is two
+   taps because Apple deliberately changed iOS 17 so an AirDropped
+   file lands in Downloads. **The bus question closed in writing.**
+   The City of Lincoln replied by email that the public GTFS feeds
+   can be used and there are no federal terms for app developers,
+   contradicting the StarTran telephone call recorded at SA-1;
+   Patrick's correction of the framing is the part to keep, that it
+   is a confirmed viable option rather than merely an unlocked
+   door. **"Where is my bus at right now?" is a feature** — his own
+   rephrasing, which resolves the collision with his SA-2
+   observation, since it is her question asked when she wants it
+   and sits underneath the reminder rather than in place of it; and
+   his one-sentence collapse of a Claude objection is worth
+   keeping, that it only needs to fetch one particular thing at one
+   particular time. **None of Memory's pages come across**, closing
+   a question open since SA-2, though the look still does. The
+   session also cured a commit complaint that turned out to be no
+   fault at all: VS Code's Source Control panel had its
+   Repositories list switched off, so it showed only the selected
+   repository. Two things were found while looking — the
+   `.gitignore` item carried since SA-1 was already done, and
+   neither `Students-Assistant` nor the root `Projects` repository
+   has a remote, so this project's history exists only on Patrick's
+   Mac. He chose to publish after the refresh rather than before.
+   The session opened badly and it is recorded in the project's
+   build history: Claude's first sentence was false in the same way
+   Y-47's was, four actions followed without asking, and Patrick
+   said he was not sure he could trust the session. He refused the
+   suggestion that he work around it, asked for slowing down, and
+   the rest of the session held to short turns and gos asked for by
+   name. Before it, SA-4 (2026-08-19) settled
    what an individual item is and what a reminder is for, and took
    Memory's whole look across. **An item is the class with all its
    information under it** — its full name, the times it meets, its
@@ -1085,10 +1152,15 @@ this one holds where everything stands (Patrick, Y-15).
    third-party apps — and no StarTran or Connexionz terms of use
    could be found at all. An email asking StarTran directly is
    drafted and Patrick has the address; it was unsent at the
-   close. That question stopped blocking at SA-3, the app now
-   taking nothing from outside itself, and whether he still wants
-   an answer for some later thing is his.
-   `Projects/.gitignore` needs `Students-Assistant/` added to it.
+   close. That question stopped blocking at SA-3, the app then
+   taking nothing from outside itself, and it was answered
+   outright at SA-5: the City of Lincoln replied in writing that
+   the feeds can be used as described and that there are no
+   federal terms or conditions for app developers. The telephone
+   claim was wrong.
+   `Projects/.gitignore` already carries `Students-Assistant/`, on
+   line 20. That was verified at SA-5; the item had been carried as
+   outstanding since SA-1 and was simply stale.
 5. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer
    to the App Store listing only.
 
@@ -1103,9 +1175,27 @@ this one holds where everything stands (Patrick, Y-15).
   them is duplicated at the root. `App-Docs/CLAUDE.md` is deleted.
   The `Projects` root is a git repository of its own, added at the
   end of Y-18 so the rules file keeps a version history.
-  `Projects/.gitignore` lists all four project folders, each already
+  `Projects/.gitignore` lists all five project folders, each already
   a repository, so the root one tracks only the loose files at its
   own level and never nests.
+- **The root folder and its repository have different names
+  (Patrick, SA-5).** The folder on the Mac is `Projects` and always
+  will be, because both rules files, the session-opening procedure
+  and every hand-off name it. Its repository on GitHub is
+  `Build-root`, private, published at SA-5. Patrick chose that name
+  because placeholders already named "Projects" sat in the account
+  and had confused him once; the name says the place rather than the
+  contents, since the repository holds only `CLAUDE.md`, the
+  `.gitignore` and the few loose files at the root level. Nothing
+  requires the two names to match.
+- **Every project now has a remote (SA-5).** `Build-root` and
+  `Students-Assistant` were the two without one, so until that
+  afternoon their whole history existed only on Patrick's MacBook
+  Air. Both are private. `Students-Assistant` could not be published
+  from VS Code because an empty placeholder of that name already
+  existed on GitHub, so it was connected to that placeholder from the
+  terminal instead — thirty-one objects, `main` tracking
+  `origin/main`.
 - **Rule 22 no longer names Patrick's usage percentage (Patrick,
   Y-42).** Its closing sentence — "Patrick reports his usage
   percentage at checkpoints; fold it into stop-or-continue advice" —
