@@ -913,7 +913,57 @@ this one holds where everything stands (Patrick, Y-15).
 4. **Students-Assistant — iPhone and web** — paper only, no code.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: SA-5 (2026-08-20) settled
+   active, `docs-ref` reference. Status: SA-6 (2026-08-20) started a
+   dictionary and settled that **the syllabus is the structure**,
+   touching no app code and never beginning the build its opener had
+   named. Patrick's own words were that it is there for us already
+   and there is no need to reinvent the structure: the card's face is
+   the syllabus header, the modal behind it is the rest of the
+   document, the dated schedule is already the task list and arrives
+   flat rather than nested, and the grading breakdown is the
+   grouping. **It can arrive as a download — can, not does**, his own
+   correction, since she can enter all of it herself and may have to;
+   the app fills in the overhead it can read and **she enters the
+   items and tasks as she sees them**, which he said she actually
+   should, the bite being a judgment about her own working that no
+   parser can make and the squeeze warning firing as she enters, so
+   her entering is the mechanism working rather than overhead. The
+   dictionary is his own — `docs/dictionary.md`, ten definitions in
+   his words, nothing added to it except by him — and it moved a
+   word: **a course is a card and not a tile**, a tile being the pad
+   an icon sits on, and **a card opens as a modal**, which closes
+   both of the things the hand-off had carried as standing in front
+   of the first buildable piece. **There is one top card**, with how
+   many levels sit below it expressly undecided. **The card is the
+   room** — doors let her in, windows let her view, buttons live at
+   the window and editing happens inside — so a room has several
+   doors and windows and belongs to no single page, which makes the
+   card one piece written once with several ways in. **She sees three
+   calendars, Day, Week and Month**, the same three on both devices
+   with the laptop showing more of each; a course can be opened from
+   the calendar, and a list is a second way in, the calendar being
+   the time door and the list the thing door. The session's one code
+   read found Memory's housing far smaller than its line count: only
+   the last 22 lines of `_layout.tsx` are the frame, the other 608
+   being seven sets of banner buttons and one handler beneath them,
+   which is the reminder structure Patrick asked to borrow and which
+   lives in the housing rather than in the pages. Also settled: **the
+   word we say and the name in the code are the same word**, with the
+   code following the language because this app has no code yet and
+   his words are already in the documents — now a working note in the
+   project's `CLAUDE.md`. The session opened badly for the third time
+   running, with the identical false sentence about the rules files
+   not having arrived on their own, followed by proposing a Memory
+   read before opening this project's own structure file and by
+   manufacturing a naming conflict Patrick said did not exist. He
+   said he was really uncomfortable with the performance and offered
+   an outage as the cause; it was declined as untrue, elevated error
+   rates making requests fail rather than making sentences false.
+   What turned it was his asking where it was best to start and being
+   given a reason rather than a question, and his saying that he
+   would rather Claude work things out with him than sit asking what
+   he wants.
+   Before it, SA-5 (2026-08-20) settled
    more structure than any session before it and left the project
    one small answer away from a first buildable piece. **An item
    holds information and a task is an action** — Patrick's own
