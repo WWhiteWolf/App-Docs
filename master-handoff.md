@@ -882,7 +882,44 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #9-new (2026-08-21)
+   Folder: `Projects/elderlyassistant`. Status: #10-new (2026-08-21)
+   **built the second of step 4's three pieces — My Day's and Pets'
+   snoozes now come from the saved data — and nothing of it has run on a
+   phone.** All four Snooze buttons, the two on the pages and the two on
+   the banners, now write the moment down on the item instead of putting
+   a reminder straight on the phone and forgetting it. The shape is the
+   postpone's copied exactly: a `snoozedUntil` field beside `completed`,
+   both readers turning it back into a reminder while the moment is still
+   ahead, both gaining the `now` argument that tells them whether it is,
+   and `mydaysnooze` and `petssnooze` joining the owned list. One stamp
+   per item means one wanted reminder under one name, so **snoozing twice
+   moves the one reminder rather than leaving two** — the fault the piece
+   existed to cure. **The one visible change is a line on the row**,
+   "Snoozed till: 4:15 PM" under the item's name, Patrick's wording and
+   the page's own clock format. **Three things beyond the described piece
+   had to move with it** and were reported as such: Skip now rubs out the
+   stamp rather than cancelling the reminder off the phone, which stops
+   holding once the snooze is written down; the on-page Log clears it too;
+   and the banner's Done now asks the module to run, having relied on the
+   app coming back to the front. **One judgment call, Claude's:** a snooze
+   stands on its own, so an item whose time of day is cleared after it was
+   snoozed still gets its snooze, because dropping it breaks a promise the
+   app already made. Twelve new tests, 81 to 93, TypeScript clean. **Found
+   and left alone:** My Week's Skip no longer skips a postponed chore,
+   since #9-new made the postpone a stamp and the module puts it back on
+   the next run — never on a phone, and a My Week session's work. The
+   third piece, To-Do's snooze, is next and is the biggest of the three;
+   Patrick stopped before it on Claude's count of the session's reading.
+   **How the session ran** is the durable part: it opened with the same
+   false sentence caught at Y-47, SA-5, SA-6 and #7-new, and Patrick's
+   words were "That is not true again" and "Just maybe stop telling me the
+   untruths" — the verify-before-asserting rule applies to Claude's
+   account of its own session, not only to the code. Two instructions came
+   out of the misses that followed: **when a proposal is behind the
+   scenes, say so up front**, and **"stamp" is jargon** — the app writes
+   the moment down on the item. What turned the session was asking him
+   what he meant rather than guessing a third time.
+   Before it, #9-new (2026-08-21)
    **built the first of step 4's three pieces — My Week's postpone and
    Look Ahead's delay now come from the saved data — and nothing of it has
    run on a phone.** **Step 4 was split into three uneven pieces** because
