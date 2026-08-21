@@ -883,8 +883,8 @@ this one holds where everything stands (Patrick, Y-15).
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
    Folder: `Projects/elderlyassistant`. Status: #11-new (2026-08-21)
-   **finished step 4 and built step 5, so five of the plan's eight steps
-   are in and only steps 1 and 2 have ever been on a phone.** The third
+   **finished step 4 and built steps 5 and 6, so six of the plan's eight
+   steps are in and the plan has no open questions left.** The third
    piece of step 4 turned out to be **a removal rather than a build**:
    To-Do has no snooze anywhere and is not meant to have one, its banner
    carrying a single OK button since Patrick's own call at #56, so the
@@ -904,10 +904,35 @@ this one holds where everything stands (Patrick, Y-15).
    Test screen no longer arms its five-minute recall or cancels anything,
    its save asks the module to run, and its own cancelling turned out to
    be in three places rather than the two described. No test was written
-   or changed; 93 still pass, TypeScript clean. **Step 6 was looked at
-   and not built:** the warning needs no new plumbing, being one line in
-   each of six saves, but it waits on Patrick's decision about what it
-   says and where it shows. **How the session ran:** it opened cleanly,
+   or changed; 93 still pass, TypeScript clean. **Then he rebuilt, loaded
+   the phone, and three things passed** — the Memory Test's five-minute
+   recall, a Pets snooze all the way through, and My Week — the first of
+   the module's work ever confirmed on a device; the morning-after test,
+   the one that matters, is still to come. Three things came out of the
+   testing: the "Snoozed till:" line cannot be read on either theme, its
+   style using the color meant for text on a solid button, white on a
+   white row in the light theme; "+1 Day" has gone from every My Week
+   banner, so `myweekactions` is registered but never asked for and the
+   `postpone1` branch cannot fire; and he restated what he wants from a
+   tapped banner, the page open and the item highlighted, no scrolling —
+   which is nearer than it sounds, the id already travelling with every
+   reminder and both screens already drawing a highlighted row.
+   **Step 6 was then built as well**, so six of eight steps are in and
+   the plan has no open questions left. A new `scheduler/warn.ts` holds
+   the wording in one place and the check that decides whether to speak,
+   and each of six saves hands it the module's answer; it stays silent on
+   the housing's own runs, which is what makes it speak as an item goes in
+   and at no other time. **The words and the placement were proposed
+   rather than asked about**, which is the durable part: Patrick said
+   plainly that being grilled instead of helped would be reported, and he
+   was right — two of the rules that failed, the "X or Y?" question and
+   asking for what could be worked out, were already written and simply
+   not attended to. **His diagnosis is the one to carry:** too many rules,
+   not enough paying attention to them, so nothing new was added. One
+   correction went with it — step 8's home was never open, the
+   pending-queue screen going into Settings since #5-new, and that
+   project's hand-off had been carrying it as a question.
+   **How the session ran:** it opened cleanly,
    the session number had to be asked for because the chat names keep
    being changed on him — he had retyped #5-new through #10-new by hand —
    and the one real miss was a report he could not follow, after which he
