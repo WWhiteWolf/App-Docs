@@ -882,7 +882,63 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #4-new
+   Folder: `Projects/elderlyassistant`. Status: #5-new (2026-08-21)
+   **found why the reminders fail and wrote the plan to fix them**,
+   touching no app code. Patrick built #4-new, loaded it, and the
+   notifications still did not work. He opened with questions rather
+   than answers — whether an early choice between an easier road and a
+   more reliable one was to blame — and no such choice is written down
+   anywhere; the app has always used native local notifications through
+   `expo-notifications` in real EAS builds, which is the only road on
+   an iPhone that fires alarms with no server and with the app closed.
+   His own answer was that he does not care why, he wants it to work,
+   and he named the stake: a second app is being modelled on this one,
+   and without reliable reminders there are no apps. The read he then
+   asked for covered `app/_layout.tsx` end to end and the scheduling in
+   all eight screens that touch notifications. **My Day and Pets
+   destroy their own daily repeats** — each cancels every one of its
+   reminders and re-creates them only where the item is not completed,
+   so checking something off removes its repeat. **Nothing ever puts it
+   back**, because only the owning screen re-arms and only while it is
+   open; the housing arms nothing, the Home screen arms nothing, and
+   `app.json` declares no background modes. My Week does not have the
+   fault, arming every chore regardless, which is both the proof and
+   the shape of the fix. **A separate, non-structural bug** in the hour
+   stepper of `components/DateTimeControl.tsx` is wrong across the
+   twelve o'clock crossing, so a nine o'clock morning time set by
+   spinning down from the noon default is stored as 9:00 PM — Patrick's
+   own symptom, seen twice. **The plan is
+   `elderlyassistant/docs/scheduler-plan.md`**: one module owning the
+   whole queue, readers turning each saved list into wanted reminders,
+   keys that make duplicates impossible, a reconcile that leaves
+   matches alone, and a budget below Apple's sixty-four — run on
+   launch, on every return to the front, and after any save. Six things
+   settled into it. Snoozes, delays and postpones get saved so the
+   module owns them, on his own framing that a snooze is the second
+   chance and its absence the least likely to be noticed. A clean slate
+   every day, the midnight holdover gone in both halves, because a
+   thing not done on time is of no use as a reminder — the past-day
+   behavior existed for the log rather than the reminding, and a missed
+   item now simply stays unchecked. The daily reset moves into the
+   module. A reader stays plain — no storage, no iOS, nothing from
+   React Native or Expo — so Node can run it without a build, decided
+   before the readers exist because pulling the reads out later means
+   rewriting all seven. The tests follow Mystery's shape, read this
+   session at `engine-tests.html`: a ten-line hand-rolled runner, no
+   framework, headless under Node, tests writing to their own storage
+   keys; this project has no test runner and no test files at all
+   today. And Timer stays outside the module as a special case, with
+   Patrick noting in passing that Timer is not working right now
+   either. A screen showing the pending queue goes into Settings. The
+   ceiling was worked through and is pending scheduled requests for the
+   whole app, a repeat costing one slot forever — Memory will not come
+   near it, Students-Assistant might, and the answer there is rolling.
+   The budget warning fires as an item goes in rather than when a
+   reminder fails, and never for ordinary rolling. Its wording and
+   placement is the plan's one open item, left until there is a screen.
+   Two slips are recorded: Claude drifted into tracing the time bug
+   unasked, and wrote a snooze recommendation as law, both caught by
+   Patrick. Before it, #4-new
    (2026-08-18) fixed the three notification defects and is
    written but unbuilt — six files changed, TypeScript clean,
    nothing on the phone. Patrick redirected the session to them
@@ -913,7 +969,16 @@ this one holds where everything stands (Patrick, Y-15).
 4. **Students-Assistant — iPhone and web** — Alpha, and it runs.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: SA-7 (2026-08-20) **started
+   active, `docs-ref` reference. Status: **the leave-by alert is
+   dropped** (Patrick, #5-new, in Memory's session) — not deferred,
+   dropped, because travel is already handled by the bus route apps
+   she has, so the app has nothing to add there. That overturns SA-2's
+   "not abandoned" and SA-5's "survives the ruling intact", and it is
+   recorded in that project's `docs/app-structure.md` above the
+   superseded paragraphs and in its `docs/handoff.md`. What it leaves
+   unasked, and Patrick will take up in that project's next session:
+   the travel time is still entered at the first sitting and nothing
+   now consumes it. Before it, SA-7 (2026-08-20) **started
    the build**, and the project stopped existing on paper only. The
    Expo project was written by hand rather than created by Expo's own
    command: the sandbox can run it — Node, npm and the registry all
