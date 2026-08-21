@@ -882,7 +882,43 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #7-new (2026-08-21)
+   Folder: `Projects/elderlyassistant`. Status: #8-new (2026-08-21)
+   **built step 3 of the scheduler plan and took Orders out of the
+   reminding for good; nothing of step 3 has run on a phone.** My Week,
+   Look Ahead and To-Do no longer schedule anything themselves — each
+   lost its own scheduling function and its mount-time call, and each
+   save now asks the module to run, the same shape My Day and Pets took
+   at step 2. Their readers already existed from step 1, so nothing had
+   to be written to replace what came out. **Orders needed no new
+   mechanism**, which was the session's one open question and was
+   answered by reading the reconcile rather than by building anything:
+   it cancels a reminder whose source the module owns and which carries
+   no name of its own, so naming `orders` and `orderssnooze` as owned
+   while giving Orders no reader makes every reminder that page ever set
+   a leftover to be swept, and with the page no longer arming, nothing
+   brings them back. **A To-Do banner snooze already buys nothing** —
+   found in the housing, not acted on: it is created with `source:
+   'todo'` and no name of its own at `_layout.tsx` line 230, which was
+   safe when it was written and stopped being safe at step 1, when
+   `todo` became owned; the module now reads it as a leftover and
+   cancels it on its next run, and it is live on build 57 today. Snoozes
+   are step 4, so it was left alone. **Three things stayed that a strict
+   reading would have removed**: To-Do's `cancelReminders` and Orders'
+   `cancelForItem`, both matching by item rather than by source, so they
+   still clear a pending snooze the module cannot see; and the cancel
+   halves of Look Ahead's and Orders' cancel-then-re-arm lines, where
+   only the re-arming came out. One test asserted exactly what step 3
+   reverses and was rewritten, with a second added for Orders snoozes —
+   67 tests now, all passing, TypeScript clean. **Step 4 is next and
+   gets a fresh session**, on Patrick's own question at the close: it
+   lives mostly in the housing, where about six hundred of
+   `_layout.tsx`'s six hundred and forty-eight lines are the seven sets
+   of banner buttons and the handler beneath them, plus the on-page
+   Snooze buttons in My Day and Pets, My Week's postpone and Look
+   Ahead's delay. What is owed a phone is step 3 entire, and the test
+   steps 1 and 2 have still never had — the morning after, when an item
+   checked off today must still remind tomorrow.
+   Before it, #7-new (2026-08-21)
    **built step 2 of the scheduler plan and got it onto the phone as
    build 57, and Patrick wants the whole rest of the plan before the
    next build.** My Day and Pets no longer schedule anything
@@ -1492,9 +1528,9 @@ this one holds where everything stands (Patrick, Y-15).
   RTF stores the font size inside the file so the large type travels
   with it, where plain text leaves the size in TextEdit's own
   preferences. Patrick ruled that the docs change to match the file
-  rather than the other way about. Whether Memory's own pending list
-  is `.txt` or `.rtf` is unchecked — that folder was not connected
-  at Y-22, so the reference to it above still reads `.txt`.
+  rather than the other way about. Memory's own pending list really is
+  `docs/pending.txt`, opened and read at #8-new, so the Y-22 doubt
+  about it is closed.
 
 ## Loose ends belonging to no single project
 
