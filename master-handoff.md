@@ -882,7 +882,46 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #5-new (2026-08-21)
+   Folder: `Projects/elderlyassistant`. Status: #6-new (2026-08-21)
+   **built the whole of step 1 of the scheduler plan, and none of it has
+   run on a phone.** One module now owns every reminder: a new
+   `scheduler/` folder at the project root holding the shape of a wanted
+   reminder and the key that names it, six plain readers — My Day, Pets,
+   My Week, Look Ahead, To-Do and Memory Test — the reconcile with its
+   budget trim, one impure file that reads storage and the phone's queue
+   and applies the answer, and a test setup in Mystery's shape: a
+   ten-line runner, no framework, 66 tests, headless under Node in about
+   a second with no build and no simulator. It went in four pieces, each
+   proven before the next was started and each given its own go. **Only
+   two existing files changed** — `app/_layout.tsx` gained one import and
+   one small effect calling the module on launch and on every return to
+   the front, reusing the AppState listener the Siri note already had, and
+   `tsconfig.json` gained `"allowImportingTsExtensions": true` so Node can
+   run the files without a build. No screen was touched, so both places
+   still arm, which is what step 1 is meant to be: the reconcile matches
+   by name, so nothing can be created twice. **Orders gets no reader** —
+   Patrick is removing that page as soon as it is convenient — and the
+   consequence was named rather than guessed at, since a reconcile that
+   cancels anything unwanted would have killed a live page's reminders;
+   the answer is that the module owns only the sources it has readers for
+   and leaves everything else where it is, counting it against the room
+   the phone has, exactly as the plan already treats Timer. Four decisions
+   were named as judgment calls before they were agreed: the always-arm
+   rule was applied at step 1 rather than step 2, because writing the two
+   daily readers the old way would only mean rewriting them one step
+   later; each reminder carries its own name and firing times inside it,
+   so the reconcile never interprets the phone's own description of a
+   trigger, which differs by kind and by version; the module checks that
+   notifications are allowed but does not ask, the screens still doing the
+   asking; and the ceiling is sixty-four less eight kept free for the
+   Timer, the eight being Claude's number. The To-Do background daily now
+   has one name, so the pile-up cannot recur. My Week's postpone and Look
+   Ahead's delay are already saved and were deliberately left to step 4,
+   where the plan puts them. One test failed and the code was right — a
+   date already in the past, correctly dropped — and whether Metro accepts
+   a `.ts` on the end of an import was checked by bundling the whole app
+   rather than assumed. What is owed is a build and Patrick's phone.
+   Before it, #5-new (2026-08-21)
    **found why the reminders fail and wrote the plan to fix them**,
    touching no app code. Patrick built #4-new, loaded it, and the
    notifications still did not work. He opened with questions rather
