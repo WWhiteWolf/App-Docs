@@ -882,7 +882,57 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #6-new (2026-08-21)
+   Folder: `Projects/elderlyassistant`. Status: #7-new (2026-08-21)
+   **built step 2 of the scheduler plan and got it onto the phone as
+   build 57, and Patrick wants the whole rest of the plan before the
+   next build.** My Day and Pets no longer schedule anything
+   themselves — each screen's own scheduling function is gone, its
+   mount-time call with it, and its save now asks the module to run, so
+   the module is the only thing arming those two screens. About
+   thirty-six lines out of each of two files and two lines in.
+   **The always-arm rule was already in**, applied at step 1 where both
+   readers ignore whether an item is checked off, so removing the
+   screens' own scheduling *is* the fix for the silence and nothing had
+   to be added for it. What deliberately stayed: both on-page Snooze
+   buttons, which tag themselves `mydaysnooze` and `petssnooze` and are
+   not sources the module owns — snoozes are step 4 — both permission
+   asks, since the module checks permission but never asks, and My
+   Day's Siri publish. **The old keyless reminders take care of
+   themselves**, confirmed by reading the reconcile rather than assumed:
+   a reminder from an owned screen carrying no name of its own is
+   treated as left over from the old way and cancelled, so the
+   accumulated My Day and Pets requests are swept the first time the new
+   build runs. TypeScript clean, 66 of 66 tests passing. **Step 1 was
+   never separately tested on a device**, on Patrick's own ruling at the
+   top of the session — step 2 first, then one phone test covering
+   both — and what build 57 has not had is a day: the real test is the
+   morning after, when items checked off today must still remind
+   tomorrow. A fumble worth recording: the first build and submit were
+   run from the `Students-Assistant` folder by mistake, so a
+   Students-Assistant binary went to TestFlight, harmless because it is
+   simply never distributed, and the Memory build was then made from the
+   right folder. **Orders is dead to him** (his own words), so it gets
+   no reader, its scheduling comes out at step 3, and its old reminders
+   are swept rather than left sitting — which settles the #6-new note
+   that had left them alone until the page went. **Steps 3 through 8 are
+   all wanted before the next build**: told that today's untapped banner
+   will still be in Notification Center tomorrow because the sweep is
+   step 7, he said he needs another build anyway and wants it sooner
+   rather than later, and asked how much of the plan he wants in first,
+   answered "all" — one at a time, each proven before the next. Step 3's
+   shape is agreed and not started: My Week, Look Ahead and To-Do move
+   to the module, Orders stops with them. The session was ended on
+   purpose before step 3, about four thousand lines having been read
+   against more than that again ahead. Where it was thin: it opened with
+   the same false sentence recorded at Y-47, SA-5 and SA-6 — that the
+   rules files had not arrived on their own, when both were in front of
+   Claude from the first moment — and three either/or questions followed
+   against rule 4, each producing a "yes" that settled nothing, the last
+   of them making Patrick point out that the session's own sequence was
+   not hard to follow. He asked twice for smaller steps and shorter
+   messages, and said plainly that the code detail is not what he needs
+   to be told.
+   Before it, #6-new (2026-08-21)
    **built the whole of step 1 of the scheduler plan, and none of it has
    run on a phone.** One module now owns every reminder: a new
    `scheduler/` folder at the project root holding the shape of a wanted
