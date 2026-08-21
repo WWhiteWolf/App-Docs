@@ -910,10 +910,60 @@ this one holds where everything stands (Patrick, Y-15).
    Patrick renames it to `Students-Assistant` next session. The
    new app got its own session and its own chain at SA-1
    (2026-08-19); see project 4 below.
-4. **Students-Assistant — iPhone and web** — paper only, no code.
+4. **Students-Assistant — iPhone and web** — Alpha, and it runs.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: SA-6 (2026-08-20) started a
+   active, `docs-ref` reference. Status: SA-7 (2026-08-20) **started
+   the build**, and the project stopped existing on paper only. The
+   Expo project was written by hand rather than created by Expo's own
+   command: the sandbox can run it — Node, npm and the registry all
+   answer — but Memory's `node_modules` is 404 megabytes across 39,969
+   files, and every one would cross the mount for an install only ever
+   used on Patrick's Mac, so Claude writes the project's files and he
+   runs `npm install`. **It starts on Memory's versions rather than the
+   current release** — Expo 54.0.33 against 57.0.15 — because code is
+   going to be copied across and a version gap turns every copy into a
+   compatibility question. Memory's dependency list came across whole,
+   `expo-dev-client` with it, which is why the QR code and Expo Go are
+   both dead ends and `npx expo run:ios` is the road; the phone still
+   has no build on it. **The card's face is built and seen** in the
+   simulator, five courses with one, two and three meeting lines
+   underneath, `constants/Themes.ts` wired in through its own
+   `ThemeProvider` and the palette's keys — `card`, `cardBorder`,
+   `cardTitle`, `mutedText` — agreeing with the project's language
+   without renaming. The page list did not block any of it, because
+   SA-6 had settled that a card belongs to no single page. Four things
+   Patrick settled with it. **The home page carries tiles**, called
+   tiles in what is said and in the code alike, which came out of his
+   own question about how "badge" is used — everywhere else it means
+   the notification count on an app icon or a small pill attached to
+   something, and an app leaning this hard on reminders would have both
+   meanings live at once. **Office hours live behind the card, not on
+   its face.** **Whether a card opens as a modal or as its own page is
+   reopened** — the card is not in question, the opening is — so the
+   tap is unwired and `docs/dictionary.md` carries the entry as
+   reopened. The same session corrected how that file works: **Patrick
+   decides what goes in it and Claude does the writing**, which is not
+   what "nothing is added except by him" had been taken to mean. And
+   **reminders are the priority while travel and gap
+   filling go to the back burner**, which he brought back from talking
+   with his granddaughter mid-session; they are held as deferred rather
+   than deleted, the squeeze warning stays live as pressure rather than
+   gap filling, and Travel comes off SA-6's proposed page list. The
+   session also read a real UNL syllabus template he downloaded,
+   `docs-ref/Syllabus_template_2025July18.docx`, which corrects three
+   suppositions: the syllabus header carries no meeting time or room at
+   all, so the card's face is part syllabus and part class schedule;
+   office hours are real, in an instructor block of their own; and the
+   dated schedule is optional and instructor-discretion, so the app can
+   never count on one existing — his own SA-6 ruling that she enters
+   the tasks herself, arriving with more force. Confirmed as supposed:
+   the grading breakdown with weights, and repeated small assessments
+   counted as one item. Named and not proposed: UNL's attendance policy
+   carries a countable threshold. His one complaint is now rule 25 in
+   `Projects/CLAUDE.md` — Claude writes far too much for him to read,
+   and length is its own fault independent of quality.
+   Before it, SA-6 (2026-08-20) started a
    dictionary and settled that **the syllabus is the structure**,
    touching no app code and never beginning the build its opener had
    named. Patrick's own words were that it is there for us already
@@ -929,7 +979,8 @@ this one holds where everything stands (Patrick, Y-15).
    parser can make and the squeeze warning firing as she enters, so
    her entering is the mechanism working rather than overhead. The
    dictionary is his own — `docs/dictionary.md`, ten definitions in
-   his words, nothing added to it except by him — and it moved a
+   his words, and from SA-7 he decides what goes in it while Claude
+   does the writing — and it moved a
    word: **a course is a card and not a tile**, a tile being the pad
    an icon sits on, and **a card opens as a modal**, which closes
    both of the things the hand-off had carried as standing in front
