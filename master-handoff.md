@@ -882,7 +882,45 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #8-new (2026-08-21)
+   Folder: `Projects/elderlyassistant`. Status: #9-new (2026-08-21)
+   **built the first of step 4's three pieces — My Week's postpone and
+   Look Ahead's delay now come from the saved data — and nothing of it has
+   run on a phone.** **Step 4 was split into three uneven pieces** because
+   the four screens that make these one-offs were not in the same state:
+   My Week's postpone and Look Ahead's delay were already written down on
+   the item, and both readers already read the field and did nothing with
+   it; My Day's and Pets' snoozes are written down nowhere; To-Do's is the
+   one #8-new found buying nothing; Orders needs nothing. So the piece
+   with the record already in place went first. The two readers now emit
+   the one-off under its own long-standing source, `myweekpostpone` and
+   `lookaheaddelay`, both joining the owned list, and `readMyWeek` gained
+   the `now` argument it never had so it can tell whether a postpone is
+   still ahead. **A snooze will be recorded on the item** — Claude's call,
+   Patrick having handed the decision over — because the reader is already
+   given that screen's list, so there is no new plumbing and no second
+   pattern for the same idea, a snooze dies with its item instead of being
+   orphaned, and the screen can show it where today it shows nothing. That
+   settles the next piece's shape before it is begun. **One judgment call
+   changes a banner**: the "+1 Day" banner armed `myweekactions` while the
+   page's own postpone armed `routineactions`, so the same act made two
+   different button sets and one reader can only send one; it went to
+   `routineactions`, matching the page and the chore's own weekly
+   reminder, so a postponed chore's popup now carries Done, OK, Skip and
+   the three Delays and can no longer be pushed a second day from the
+   banner — which a postpone made on the page never could. **The housing
+   stopped arming Look Ahead as well**, its `done` handler having still
+   cancelled the item's two reminders by hand and re-armed the next date;
+   about twenty-five lines became one call to the module. My Week's `done`
+   handler kept its snooze hunt, `myweeksnooze` not being owned yet, and
+   lost only its postpone half. `cancelPostpone`, `cancelDelays` and all
+   five calls to them came out, two now-unused imports with them.
+   Fourteen new tests rather than a few — 67 to 81, all passing,
+   TypeScript clean. Patrick called for the fresh session himself at the
+   close; the next piece is My Day and Pets, needing those two screens,
+   their two readers and their tests. What is owed a phone is step 3, this
+   piece, and the test steps 1 and 2 have still never had — the morning
+   after, when an item checked off today must still remind tomorrow.
+   Before it, #8-new (2026-08-21)
    **built step 3 of the scheduler plan and took Orders out of the
    reminding for good; nothing of step 3 has run on a phone.** My Week,
    Look Ahead and To-Do no longer schedule anything themselves — each
@@ -902,22 +940,21 @@ this one holds where everything stands (Patrick, Y-15).
    safe when it was written and stopped being safe at step 1, when
    `todo` became owned; the module now reads it as a leftover and
    cancels it on its next run, and it is live on build 57 today. Snoozes
-   are step 4, so it was left alone. **Three things stayed that a strict
+   are step 4, so it was left alone; #9-new settled that it is cured in
+   that step's third piece. **Three things stayed that a strict
    reading would have removed**: To-Do's `cancelReminders` and Orders'
    `cancelForItem`, both matching by item rather than by source, so they
    still clear a pending snooze the module cannot see; and the cancel
    halves of Look Ahead's and Orders' cancel-then-re-arm lines, where
    only the re-arming came out. One test asserted exactly what step 3
    reverses and was rewritten, with a second added for Orders snoozes —
-   67 tests now, all passing, TypeScript clean. **Step 4 is next and
-   gets a fresh session**, on Patrick's own question at the close: it
+   67 tests now, all passing, TypeScript clean. **Step 4 was next and
+   got a fresh session**, on Patrick's own question at the close: it
    lives mostly in the housing, where about six hundred of
    `_layout.tsx`'s six hundred and forty-eight lines are the seven sets
    of banner buttons and the handler beneath them, plus the on-page
    Snooze buttons in My Day and Pets, My Week's postpone and Look
-   Ahead's delay. What is owed a phone is step 3 entire, and the test
-   steps 1 and 2 have still never had — the morning after, when an item
-   checked off today must still remind tomorrow.
+   Ahead's delay. #9-new took the first third of it.
    Before it, #7-new (2026-08-21)
    **built step 2 of the scheduler plan and got it onto the phone as
    build 57, and Patrick wants the whole rest of the plan before the
