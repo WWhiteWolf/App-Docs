@@ -882,7 +882,39 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #10-new (2026-08-21)
+   Folder: `Projects/elderlyassistant`. Status: #11-new (2026-08-21)
+   **finished step 4 and built step 5, so five of the plan's eight steps
+   are in and only steps 1 and 2 have ever been on a phone.** The third
+   piece of step 4 turned out to be **a removal rather than a build**:
+   To-Do has no snooze anywhere and is not meant to have one, its banner
+   carrying a single OK button since Patrick's own call at #56, so the
+   snooze and Done code in the housing could never be reached and came
+   out, along with `cancelReminders` in the To-Do screen, which had been
+   kept for a snooze that could not exist and was matching on a task id
+   only the old scheduling ever wrote. **Patrick's reason is the durable
+   part:** a To-Do reminder is advance warning that something is coming,
+   an appointment fifteen minutes out for instance, rather than a prod to
+   do the task, and other reminders for the same task are still coming
+   behind it — so a snooze would defeat it, the appointment not moving.
+   He twice trimmed the comment recording this, saying it "doesn't need
+   to say all that, just the fact that it doesn't need it". **It also
+   corrects the record:** #8-new had said a To-Do banner snooze "already
+   buys nothing" and was live on build 57, when in truth it could never
+   be made at all. **Step 5 followed in the same session** — the Memory
+   Test screen no longer arms its five-minute recall or cancels anything,
+   its save asks the module to run, and its own cancelling turned out to
+   be in three places rather than the two described. No test was written
+   or changed; 93 still pass, TypeScript clean. **Step 6 was looked at
+   and not built:** the warning needs no new plumbing, being one line in
+   each of six saves, but it waits on Patrick's decision about what it
+   says and where it shows. **How the session ran:** it opened cleanly,
+   the session number had to be asked for because the chat names keep
+   being changed on him — he had retyped #5-new through #10-new by hand —
+   and the one real miss was a report he could not follow, after which he
+   stated the To-Do reason plainly himself and it went into the comments
+   in his words. He ended by saying he would commit, load the phone with
+   what is built, and test what he can.
+   Before it, #10-new (2026-08-21)
    **built the second of step 4's three pieces — My Day's and Pets'
    snoozes now come from the saved data — and nothing of it has run on a
    phone.** All four Snooze buttons, the two on the pages and the two on
