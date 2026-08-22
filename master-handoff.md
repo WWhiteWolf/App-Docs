@@ -1354,7 +1354,61 @@ this one holds where everything stands (Patrick, Y-15).
    phone.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: SA-9 (2026-08-22) **cut the app
+   active, `docs-ref` reference. Status: SA-10 (2026-08-22) **settled
+   what an entry is and built Today's Tasks.** The work went backwards
+   from the firing, which was Patrick's instruction — settle what a
+   reminder needs before deciding what she types. **Only work reminds:**
+   a class repeats, so its reminders look as though they should repeat
+   with it and they do not, each meeting carrying its own thing to do;
+   and he went further, that she needs no reminder for the class at all,
+   only for assignments, tasks and due dates. **An entry says when in
+   one of two ways** — a date for something that happens once, or a
+   weekday for something that happens by day rather than by date, which
+   comes back every week — and either may carry a time and reminders or
+   neither. A date is required, a time is not, and with no time set
+   nothing fires and the entry simply sits in her list for that day.
+   That closes the SA-9 question of what an entry holds and how a repeat
+   is expressed. **Her presets are Memory's To-Do nine unchanged** and
+   the banner carries the standard 15, 30 and 60 snoozes; a due date
+   gets several reminders between now and then rather than one, and
+   which she ticks is her choice. The read behind it found that only six
+   of the nine work without a time — three are offsets counting back
+   from the time, six are clock reminders counting back from the date —
+   so a timeless entry can still take Week or Day Before, and taking a
+   time away takes any ticked offsets with it. **The durable ruling is
+   the consistency one.** The date and weekday pickers were first built
+   with a switch above them, and Patrick asked why a switch rather than
+   just putting the day row on the page; the reason given was that an
+   entry is one or the other in the data and the choice was made visible
+   rather than inferred, and he pointed out that inferring it from a
+   touch is exactly what the time half already does. The cost was named
+   before it was built — the time half can do without a switch because
+   it has an asleep look and the date stepper had none — and both
+   pickers now sit on the form with the last one touched live and the
+   other dulled at the same 0.4 opacity, still tappable, which is how
+   she switches back. Built: `constants/Entries.ts` holding the pool
+   under one storage key so all three pages read the same one, and
+   `app/today.tsx`; a Today's Tasks tile on the home page; and **＋ Add
+   as the round pill in the right of the header**, opposite Home, which
+   he called simple and elegant and made the pattern for all three
+   pages. A row with no time says "Anytime" on his ruling, because the
+   row is telling her when and anytime is a real answer. TypeScript is
+   clean and he verified in the simulator as the session went. Left
+   unfinished: the shared row and form were agreed and then stopped,
+   `EntryRow.tsx` written and unused and `EntryForm.tsx` refused
+   mid-write; a weekly entry's reminders need a weekly trigger and the
+   scheduler is not built; nothing marks an entry done; and Cancel still
+   throws typing away on one tap, still unruled. **How the session ran
+   is worth carrying.** Its worst miss was reporting Patrick's own
+   sentence about the snoozes back to him as a discovery and then
+   dressing it as a collision he was asked to resolve — nothing was in
+   collision, and he named it exactly. Twice he said the messages were
+   too long, and an empty "I'll wait" drew the right rebuke since he had
+   been verifying all along. What worked: reading Memory's code rather
+   than trusting the hand-off's line about it, naming the cost of the
+   consistency ruling before building it, and reading his double
+   negative back to him instead of picking a side of it.
+   Before it, SA-9 (2026-08-22) **cut the app
    back to what it is really for and built its Settings page.** Patrick
    opened by saying he had gone after the wrong pages first: Courses and
    its cards go to the back burner, not thrown away, and the heart of the
