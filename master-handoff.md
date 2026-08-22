@@ -1354,7 +1354,59 @@ this one holds where everything stands (Patrick, Y-15).
    phone.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: SA-10 (2026-08-22) **settled
+   active, `docs-ref` reference. Status: SA-11 (2026-08-22) **finished
+   the shared pieces, built the Week's View, and gave Today's View a way
+   to thumb through the days.** The row and the form that SA-10 stopped
+   mid-stream are now `components/EntryRow.tsx` and
+   `components/EntryForm.tsx`, so neither page carries a copy of its own;
+   `app/today.tsx` went from 537 lines to 181, and the form holds its own
+   draft, never touches storage, and hands a finished entry back. The row
+   turned out not to be half-written at all — it already matched what the
+   page drew inline, value for value, plus the date line the wider windows
+   need. **The Week's View is `app/week.tsx`**, the calendar week she is
+   standing in, Sunday through Saturday, whole; and it is **the same page,
+   not a new shape** — Patrick's own "I don't understand why it cannot be
+   the same", and he was right, the row's `showDate` having been built for
+   exactly this. Claude had put it to him as a choice when the answer was
+   already sitting in the code. **The session's largest piece began with
+   the long look and replaced it.** He first doubted a semester view, then
+   named what actually matters — her priority, and maybe the only thing
+   she wants from the app, is not to miss anything important, and she has
+   other resources for the longer looks — and then proposed the answer
+   himself: let Today's View page to tomorrow. It swipes seven days either
+   side of today and stops at **a wall**; the title becomes the day's name,
+   the pill becomes *Back*, and the header and ground take **away shades**,
+   two new colour names in both themes that hold their darkness because
+   the header's text and pills are painted on them. A **pulse** of three to
+   five seconds runs once when she leaves today and once when she returns,
+   never on every swipe. The day and date heading was made present after
+   his own "that is so unnoticeable I didn't see it" — it was 15-point
+   muted grey carrying the only statement of which day was on screen. The
+   pages are now **Today's View and Week's View**, *Tasks* struck from both
+   headers and both tiles, and the Course page's clipping pill became
+   *Back*. His verdict on the day-stepping: "I like it. It's easier and
+   smart." **The durable ruling is the confirmation rule's refinement.**
+   Done belongs in the entry pop-up and takes two taps; Claude called that
+   an override of Patrick's own Y-34 rule and was wrong. His correction:
+   Done is not a constructive action, it wipes away important information
+   with costly consequences, the confirmation costs one tap where the loss
+   is a missed due date and a failed test, over-use is no risk in an app
+   that barely confirms anything, and her missing something is why the app
+   exists. So an action counts as undoable only when undoing it puts back
+   everything it took, consequences included. **How the session ran is the
+   part worth carrying.** Claude then argued the point after he had ruled,
+   holding his own decision up against his own rule — "there are a dozen
+   ways I do not agree with you, and I know what the rule means", and
+   "there are more than one rule against arguing with me, especially about
+   rules." He ended the session tired and then asked for the docs refresh.
+   The lesson is his: the rules are for how Claude works, not a standard to
+   hold Patrick's decisions against. Also: the same weekly-repeat question
+   was asked three times in three phrasings and never landed, and it is
+   still open — `completed` is one true-or-false, so Done on a weekly entry
+   would mark it done forever. Nothing marks an entry done yet, the Week's
+   View has none of the day-stepping work, and none of it has been built to
+   TestFlight.
+   Before it, SA-10 (2026-08-22) **settled
    what an entry is and built Today's Tasks.** The work went backwards
    from the firing, which was Patrick's instruction — settle what a
    reminder needs before deciding what she types. **Only work reminds:**
