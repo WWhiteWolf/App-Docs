@@ -1350,10 +1350,70 @@ this one holds where everything stands (Patrick, Y-15).
    Patrick renames it to `Students-Assistant` next session. The
    new app got its own session and its own chain at SA-1
    (2026-08-19); see project 4 below.
-4. **Students-Assistant — iPhone and web** — Alpha, and it runs.
+4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
+   phone.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: **the leave-by alert is
+   active, `docs-ref` reference. Status: SA-8 (2026-08-22) **made the
+   first real build and put it on his phone through TestFlight,** and
+   settled four things that had been standing in front of the work.
+   **The road to a phone is EAS to TestFlight**, settled not by what is
+   easiest but by what he wants — his granddaughter must be able to
+   load it on her own phone in the easiest way, and only TestFlight
+   reaches her at all. Nothing in the record had ever ruled on this;
+   the hand-off's `npx expo run:ios` line was a description of what
+   existed. Build 3 shows "Ready to Submit", which means Apple has
+   finished and it has not been sent for the external review he has
+   never had to do for Memory; nothing appeared in TestFlight at first
+   because his own box in the internal group was unchecked, and he
+   found it himself. Adding his granddaughter is parked — either as an
+   internal tester, which needs no review but puts her on his developer
+   account, or as an external group, which needs the review.
+   **The app has an icon**, drawn this session after the read found it
+   had none at all. His idea was a happy face with a graduation cap; it
+   follows Memory's own shape, where the whole square is one colour and
+   the drawing sits on it as line work with no backdrop, and every
+   colour comes out of `constants/Themes.ts`. Expo 54 takes `ios.icon`
+   as an object of `light`, `dark` and `tinted`, confirmed from its own
+   v54 reference. One correction the work turned up: Memory's *header*
+   icon is not its app icon but a transparent silhouette painted with
+   `tintColor`, so nothing blends — and Memory's field `#eec55a` and
+   its dark header `#f0a83a` are near but not equal, which Patrick said
+   he cannot see and does not care about.
+   **The pages carry Memory's headers**, home and sub-page both, with
+   `Bridge` copied across. The read found a real bug with them: the old
+   "Courses" title was painted `titleText`, white in the light theme,
+   sitting on the pale page background instead of on a teal bar. The
+   gear is drawn for balance with no tap at all until Settings exists.
+   **The page list is settled** — home with tiles, Courses, what sits
+   behind a card, Today's Tasks, This Week's Tasks, Reminders and
+   Settings; This Semester a maybe; travel, gap filling, calendars and
+   maps out for now. Reminders sits inside Settings and Settings behind
+   the gear, which is his own observation and briefly collapsed the
+   home page before the two Tasks pages brought the tiles back.
+   **A card opens as its own page**, closing what SA-6 settled and SA-7
+   reopened. Both were built and compared, and his own question decided
+   it: which is easier for entering data, that being the main purpose.
+   A page sheet can be swiped away mid-typing — the same fault he
+   flagged in the Mystery app's Edit pop-up — the structure is three
+   levels deep so a page opens another page naturally, and the keyboard
+   is easier on a page. Behind each card are six sections, all
+   enterable and all saved on the phone, which he will fill in from the
+   syllabus. Two things left unruled: Cancel throws typing away on one
+   tap, named to him rather than cured by invention; and whether
+   calendars are dropped or only deferred, which collides with SA-6.
+   **How the session ran is the part worth carrying.** The first half
+   hour was lost entirely to Claude asking the same question four times
+   when Patrick had answered it in his first reply — "no you can not
+   follow a simple conversation" and "why do I have to lead you
+   around" were both his. He then asked in plain words that Claude stop
+   asking more than one question at a time, after a message ended in
+   two and his "No" answered neither clearly. A permission dialog for
+   deleting one file asks for deletion rights across a directory, and
+   he read it as a request to delete his project folder and refused it;
+   he was right to, deleting is his, and the file was wanted again an
+   hour later.
+   Before it, **the leave-by alert is
    dropped** (Patrick, #5-new, in Memory's session) — not deferred,
    dropped, because travel is already handled by the bus route apps
    she has, so the app has nothing to add there. That overturns SA-2's
