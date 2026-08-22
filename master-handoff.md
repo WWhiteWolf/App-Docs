@@ -1354,7 +1354,49 @@ this one holds where everything stands (Patrick, Y-15).
    phone.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: SA-8 (2026-08-22) **made the
+   active, `docs-ref` reference. Status: SA-9 (2026-08-22) **cut the app
+   back to what it is really for and built its Settings page.** Patrick
+   opened by saying he had gone after the wrong pages first: Courses and
+   its cards go to the back burner, not thrown away, and the heart of the
+   app is Today, This Week and This Semester, which his granddaughter
+   fills in herself, with Home and Settings for support. All three come
+   from Memory — Today from My Day, This Week from My Week, This Semester
+   from Look Ahead — and he set the order himself, Settings being the
+   easiest. **The session's largest outcome is that the three pages are
+   not three kinds of thing at all.** They are three window sizes onto one
+   pool of entries she has made: Today shows what falls on this date, This
+   Week these seven days, This Semester the whole stretch, and whether a
+   thing repeats belongs to the entry rather than to the page. That
+   replaced a split Claude proposed between a day's repeating part and its
+   one-off part, and his reason for rejecting it is the durable part — the
+   days are as consistent as the weeks and the weeks as inconsistent as
+   the days, so the split buys nothing; consistency is not a property of
+   the time unit. His own note as the session closed is that it reshapes
+   all three pages, which also makes the My Week and Look Ahead reads
+   still to come reads for their furniture rather than their shape.
+   **Settings is built** — five sections after he struck Memory's Security
+   with it, this app having no Vault — with the three reminder times
+   saving under Memory's own storage keys so the scheduler will find them,
+   the gear on the home page wired to open it, and Memory's shared date
+   and time control brought across for the time pop-up. Two rows are drawn
+   without a tap because their pages do not exist. TypeScript is clean and
+   nothing has been run on a phone. The build order from here was handed
+   to Claude and is Settings, then the three pages, then Memory's
+   scheduler module last, because a reminder is about a task and there are
+   no tasks for it to be about until those pages exist. **Siri is deferred,
+   not dropped**: Memory's `app-group` module turned out to be Siri
+   listening rather than speaking — she speaks, an App Intent writes a
+   note into a shared box, the app applies it on its next return to the
+   front — which is the opposite of what he had assumed. **The name hunt
+   was real and is shelved.** Classmate, Classpanion, Class-panion and
+   HEY! were weighed; HEY! went because a well-known email app carries it
+   and because a shout collides with an app whose reminder is never
+   demanded, and Classpanion went on a finding the search produced rather
+   than reasoning — no app uses that exact word, but Class Companion is a
+   live education product for schools, and Classpanion is a contraction of
+   exactly that phrase in exactly that field. The app stays
+   Students-Assistant and nothing in the code depends on the name.
+   Before it, SA-8 (2026-08-22) **made the
    first real build and put it on his phone through TestFlight,** and
    settled four things that had been standing in front of the work.
    **The road to a phone is EAS to TestFlight**, settled not by what is
