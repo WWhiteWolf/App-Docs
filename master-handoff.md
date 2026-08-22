@@ -882,9 +882,89 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #11-new (2026-08-21)
-   **finished step 4 and built steps 5 and 6, so six of the plan's eight
-   steps are in and the plan has no open questions left.** The third
+   Folder: `Projects/elderlyassistant`. Status: #12-new (2026-08-21)
+   **built step 8 and finished the scheduler plan — all eight steps are in,
+   one module owns every reminder on the phone, and the plan is no longer a
+   live document.** Step 8 is the Scheduled Reminders screen,
+   `app/reminders.tsx`, reached from a row of that name in Settings under the
+   three reminder times. It lists every reminder the phone is holding, broken
+   under Today, Tomorrow, This Week and Later, soonest first, with a plain
+   sentence at the foot saying how full the phone is; a tap opens a pop-up
+   carrying the item's name, its page, when it fires and whether it repeats,
+   when it was last due and when it is next due, the exact heading and
+   sentence the banner will show, and its buttons. **The screen Patrick
+   agreed to is not the screen the plan described** — the plan asked for a
+   flat list, and what he wanted was a list he could use to find the reminder
+   that was not behaving and then tap for the details, which made it two
+   levels rather than one and moved everything technical behind the tap. Asked
+   which of the pop-up's six lines he would leave off, he answered none.
+   **He asked whether it could show the last time a reminder actually fired,
+   and it cannot:** iOS keeps no history an app can read once a banner is
+   dismissed, and a record the app kept itself would miss the one case worth
+   having, a reminder that fired while the app was closed and went untapped.
+   He dropped it once the cost was named. What went in instead is free
+   arithmetic — when each reminder was last due and when it is next due —
+   which answers his real question by another road: a repeating reminder
+   missing from the list is the problem, one sitting there properly armed
+   means the app did its part, and a one-off that has gone is simply spent.
+   **Timer alerts are counted but never listed, and his reason is the durable
+   part:** the Timer is for short stretches, under half an hour, a pot left
+   boiling on the stove — it does not go anywhere and does not need looking up
+   on a quiet afternoon. **The best practice was looked up rather than
+   recalled,** at his asking: Apple ships no such screen, so what was borrowed
+   is the grouped-list shape, rows under a heading that gives them context
+   with a footer after the last, and the writing guidance for older users —
+   plain language, no jargon, no acronyms, 44-point targets — which is what
+   ruled out "queue", "pending" and "scheduler" and produced the name
+   *Scheduled Reminders*. The arithmetic and every sentence the screen says
+   live in a new plain file, `scheduler/queueview.ts`, so Node tests all of
+   it: forty-three new tests, 103 to 146. `readQueue` stopped discarding the
+   item's name, its id, the banner's heading and sentence and its buttons.
+   One judgment call, Claude's: the buttons are asked of the phone rather
+   than copied into the screen, so the list cannot drift from what the housing
+   registers. **The "Snoozed till:" line was then cured, and it took two
+   reversals.** Both pages had styled it with the colour for text sitting ON a
+   solid delay button — white on a white row in the light theme, near-black
+   brown on a dark brown row in the dark. The first fix went to the delay
+   orange, but that runs about 2.2 to 1 against a white row where 4.5 is the
+   usual floor; put to him with the numbers rather than decided quietly, he
+   asked for plain text and it went to the ordinary text colour. **He then
+   reversed it himself and his reason outranks the number** — asked why they
+   could not all be like My Week, he said he had looked at all these screens
+   in both themes and it works, and that it hits on consistency. So all four
+   now read identically: My Day's and Pets' snoozed lines, My Week's postponed
+   line, Look Ahead's delayed line. He built it, loaded the phone, and his
+   word was that everything came out very readable — the first confirmation of
+   the colour work on a device. **One ruling governs the documents
+   themselves:** these documents are Claude's and `pending.txt` is Patrick's,
+   so a document Claude has no use for should go. `docs/scheduler-plan.md` was
+   judged to have none left — its step list spent, its reasoning just as
+   reachable folded in — and it is now kept whole as an appendix at the foot
+   of `elderlyassistant/docs/build-history.md`. **The same ruling reshaped
+   his own file.** The refresh found `pending.docx` missing, rebuilt it, and
+   was chasing the wrong thing: that project's `CLAUDE.md` said there is no
+   Word copy, and when the contradiction was put to him rather than worked
+   around he said the format had never been the point — he wants it readable
+   to him, not in a form only Claude finds convenient, and what he actually
+   does is convert the txt to rich text by hand every time. So the docx is
+   gone, `docs/pending.rtf` stands in its place generated from the txt and
+   machine-checked against it, and the split is stated plainly in that
+   project's `CLAUDE.md`: the txt is Claude's because plain text can be
+   edited without mangling markup, the rtf is his, and the rtf is never
+   allowed to lag. One real mistake went with it — the round-trip check was
+   run in the docs folder and LibreOffice overwrote `pending.txt` with its
+   own output; it was caught at once and recovered exactly from the docx,
+   and the check now runs on a copy in a scratch folder. **What is still owed is a
+   day:** the morning after, when an item checked off today must still remind
+   tomorrow, has never happened. **How the session ran:** what worked was
+   putting the contrast finding to him with its numbers instead of resolving
+   it quietly, which produced a better answer than either side had alone; what
+   did not was an either/or question asked against rule 4 that got back a bare
+   "yes" settling nothing — the same fault recorded at #7-new — named as
+   Claude's own error and asked again cleanly, which settled it in one turn.
+   Before it, #11-new (2026-08-21)
+   **finished step 4 and built steps 5, 6 and 7, so seven of the plan's eight
+   steps were in and the plan had no open questions left.** The third
    piece of step 4 turned out to be **a removal rather than a build**:
    To-Do has no snooze anywhere and is not meant to have one, its banner
    carrying a single OK button since Patrick's own call at #56, so the
@@ -1163,8 +1243,10 @@ this one holds where everything stands (Patrick, Y-15).
    stepper of `components/DateTimeControl.tsx` is wrong across the
    twelve o'clock crossing, so a nine o'clock morning time set by
    spinning down from the noon default is stored as 9:00 PM — Patrick's
-   own symptom, seen twice. **The plan is
-   `elderlyassistant/docs/scheduler-plan.md`**: one module owning the
+   own symptom, seen twice. **The plan was written that session** — it
+   lived at `elderlyassistant/docs/scheduler-plan.md` until #12-new
+   finished it and folded it whole into the foot of that project's
+   `docs/build-history.md`: one module owning the
    whole queue, readers turning each saved list into wanted reminders,
    keys that make duplicates impossible, a reconcile that leaves
    matches alone, and a budget below Apple's sixty-four — run on
