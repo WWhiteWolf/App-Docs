@@ -882,7 +882,53 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #12-new (2026-08-21)
+   Folder: `Projects/elderlyassistant`. Status: #13-new (2026-08-21)
+   **made a tapped reminder land on its own item, on all five pages that have
+   one.** The housing now hands the item's id to the page it opens and the page
+   outlines that row. Nothing was added to the scheduler and no test changed:
+   every reminder the module makes has always carried the id of the thing it is
+   about, and the housing has always read it for the banner buttons — it was
+   being dropped at the one place it was needed, so the tap landed on the right
+   page and left Patrick to find his own item on it. **The read corrected the
+   record twice.** The hand-off had named the Vault as a screen that already
+   receives a value that way, and Patrick's first words were that the Vault has
+   no reminders — true, and the entry had meant it only as an example of the
+   mechanism. The read then found what the account had missed: the highlighted
+   row those pages already draw belongs to the reorder selection, and the same
+   state raises the ▲▼ arrows, so it could not simply be lent to a reminder.
+   Each page got a piece of state of its own instead. **Patrick's rulings, in
+   order:** Memory Test gets no highlight, only one reminder coming off that
+   page; a lit row is put out by a tap, and when it was put to him that the
+   same tap would then select the row for reorder, he gated it so the clearing
+   tap does nothing else; and all five were built at once rather than one
+   proven first, which was right for the four that share a shape, To-Do being
+   held back as its own piece. **The colour work is the durable part.** He
+   loaded the four reorder pages, said they all looked good, and asked for the
+   light theme's outline to be half as dark. It had been borrowing
+   `rowSelectedBorder` — and Shopping uses that same colour on its pale filled
+   row, where the darkness is what gives it its distinction. So the outline got
+   a name of its own, `rowReminderBorder`, `#6dc6e3` in the light theme with
+   the dark theme's orange carried across unchanged; Shopping is untouched. He
+   had already ruled the highlight is **outline only, no filled background**,
+   and his reason outlives the session: two lit states differing by a thin line
+   alone give the eye the hardest difference there is to catch, so reorder
+   fills the row and a reminder outlines it. **To-Do took a shape of its own** —
+   its cards have no selection and had no whole-card tap at all, so the card was
+   made tappable for the single purpose of putting out its own highlight; and
+   its background daily is about a group rather than a task, carrying the word
+   `background` where an id would be, so that banner opens the background list
+   instead of lighting a row. Nothing shifts when a row lights or goes out, done
+   two ways because the pages differ. 146 of 146 tests pass and TypeScript
+   reports only the stale generated-route error that predates this work.
+   **What it has not had is a real banner tap** — To-Do was built after the
+   load, and no reminder has yet been tapped to open any page. The morning
+   after is still owed as well. **How the session ran:** what worked was putting
+   the shared-colour finding to him with the Shopping consequence attached
+   rather than changing the value quietly, which produced a separate colour name
+   neither side had proposed; what did not was a miscount, five pages reported
+   as four after Memory Test was ruled out, quietly dropping To-Do until he
+   caught it.
+   Before it, #12-new (2026-08-21)
    **built step 8 and finished the scheduler plan — all eight steps are in,
    one module owns every reminder on the phone, and the plan is no longer a
    live document.** Step 8 is the Scheduled Reminders screen,
