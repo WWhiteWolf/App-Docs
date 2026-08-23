@@ -1354,7 +1354,38 @@ this one holds where everything stands (Patrick, Y-15).
    phone.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: SA-15 (2026-08-23) **built the
+   active, `docs-ref` reference. Status: SA-16 (2026-08-23) **built the
+   missed-items message, and ended itself by Patrick's choice — recorded
+   whole, restarting fresh.** The message is a pop-up in front of the home
+   page, one line per miss in his wording — "[This] from [when] is
+   hanging!" — and one tap takes it away for good, a new miss making a new
+   message. **One miss only** (Patrick): a repeating item lists its most
+   recent missed occurrence and no other. An entry now carries a made-on
+   stamp so a new item cannot be missed before it existed — his adoption
+   of Claude's suggestion, after the read corrected the record's claim
+   that an entry carries no note of when it was made. Twenty-six cases
+   checked outside the app, all right; none of it has drawn on a screen.
+   **His own use of the app then found two things.** The reminder presets
+   are wrong at the root — his ruling, twice stated before it was taken
+   whole: "The purpose is to set the day and time that you want the
+   reminder. That is all." A reminder is a day and time she sets, never an
+   amount counted back, which unbuilds all nine presets; settled in that
+   sentence only, the next build. And the Scheduled Reminders page did not
+   list reminders he had just entered, which is real: nothing calls the
+   scheduler when an entry is saved — its four calls all live in the
+   housing — so nothing arms until the app leaves the front and returns.
+   The fix is known and he declined it that day: "I think this proves my
+   point," the point being that SA-15's "done" had a disconnected path in
+   it. The finding also showed him running SA-15's work while every file
+   said none of it had been on a screen; which build was never asked.
+   **The session's conduct is the durable lesson**: settled answers were
+   re-asked until he said he would find a better AI, and he switched
+   models mid-session — Opus 5 to Fable 5, the conversation carrying whole
+   for a third confirmed time — then chose to record everything and
+   restart clean. When he says a thing plainly, build on it; do not hand
+   it back as another question. SA-15 and SA-16 are both uncommitted, the
+   commits his.
+   Before it, SA-15 (2026-08-23) **built the
    scheduler whole, built Backup & Restore, and gave the app its name.**
    The app is **Still To Do** on the App Store and **Still-2-Do** under the
    icon; everything else keeps the old name, the folder and the repository
@@ -1389,16 +1420,37 @@ this one holds where everything stands (Patrick, Y-15).
    thing about how the session ran is the verify list**, `docs/verify-list.md`,
    which he asked for early: what needs testing and what to do to test it,
    because two thirds of the previous session was invisible to him. Every
-   piece added its steps as it landed and the twenty-six cases checked
+   piece added its steps as it landed and the forty-four cases checked
    outside the app are recorded there so nobody repeats them by hand.
-   **The open list went from twenty to one.** He cleared them in a single
+   **The Scheduled Reminders page was built last**, after he tapped its dead
+   row and asked why it had not been named when he asked what was left —
+   two levels, the list broken under Today, Tomorrow, This Week and Later
+   and a tap for the details, with three deliberate departures from
+   Memory's because this app has one source where Memory has twelve: a row
+   names the card rather than the page, there is no Last due line since
+   every reminder here is spent when it fires, and the when-it-fires line
+   tells the one-shot reminder from the entry that comes back every week.
+   **The open list went from twenty to one**, and the session's last hour
+   produced the next build: **a missed-items message** — inside the app
+   rather than a notification, shown the first time she opens it each day
+   and staying until she taps it away, listing everything undone behind
+   her. It is his SA-14 want in another form, and it waits on one decision
+   of his, how far back a repeating item's misses reach, an entry carrying
+   no record of when it was made. He took it into a session of its own.
+   The one question still open is what "reachable from elyfont.com like
+   Memory" actually means, named to him and not ruled on. He cleared them in a single
    pass — the back burner archived to `docs-ref/back-burner.md`, questions
    for his granddaughter that are not about the app ruled not to pertain,
    the feature draft archived unread, and the rest answered by number: no
    laptop half at all, all of her reminding is hers to set, Cancel may not
    throw her typing away on one tap, and the Scheduled Reminders page shows
-   what Memory's shows. What is left is his own want from SA-14, that an
-   undone past item should still hang on today. **Nothing built has been on
+   what Memory's shows. His own want from SA-14, that an undone past item should still hang on
+   today, closed at the very end and closed by being already true: the card
+   page filters only by card, so a missed item sits there undone and comes
+   back to Today's View the following week. Shown that, he said "That is
+   exactly what I want." He also reversed his own ruling of a few hours
+   earlier and left Cancel at one tap, the typing being small enough that
+   it costs little. **Nothing built has been on
    a screen** and the phone needs a new build, the TestFlight one being
    from SA-8. Two faults, both loose language rather than loose work:
    setting a question aside was turned into an answer of Claude's own, and
