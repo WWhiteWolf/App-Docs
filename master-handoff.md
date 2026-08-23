@@ -1354,7 +1354,55 @@ this one holds where everything stands (Patrick, Y-15).
    phone.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: SA-12 (2026-08-22) **gave the
+   active, `docs-ref` reference. Status: SA-13 (2026-08-22) **built piece
+   three, read Memory's scheduler whole, and turned the done-day into a
+   list of days.** Piece three finishes SA-12: the two views are read-only
+   now, a tapped row pushes the card page carrying the card's id and the
+   entry's, and the card page opens that entry. **Every road out returns
+   her to the view she tapped on** — Patrick's own settling of what SA-12
+   had left open, "It should take her back to wherever she came in from" —
+   while a pop-up opened by ＋ Add on the card page still closes in place.
+   He ran it: "Nice and clean." **The record was wrong about the running,
+   and nobody had asked.** This file and the project's own said nothing
+   from SA-12 had been on a screen, and that was reported back to him as
+   fact; he has been verifying in the simulator all along, and said so —
+   "You just haven't asked." A document is not a verification.
+   **Memory's scheduler was read in two halves**, the core and then the
+   housing, so no session reads it again. Three files copy across
+   untouched — the shape of a wanted reminder, the reconcile with Apple's
+   sixty-four ceiling, and the near-the-ceiling warning; `scheduler.ts`
+   gets rewritten for one storage key; one reader replaces Memory's six,
+   modelled on its To-Do reader, which already holds her nine presets and
+   reads the three Settings times this app already writes. The housing
+   collapses to one button set, one handler branch, and a banner tap that
+   pushes the card page by the road piece three just built. **The weekly
+   repeat is not used, on Patrick's own proposal:** each reminder is a
+   date alarm aimed at the next occurrence and the module works the whole
+   set out afresh on every run, which also dissolves *Week* and *Month*,
+   sayable as a moment but not as a weekly repeat. Its cost was named —
+   a week she never opens the app arms nothing for the week after — and
+   his ruling outlives the mechanism: "If she doesn't open up for a week,
+   then she doesn't need it." A banner's Done marks the day and time it
+   fired. **The done-day became a list on his own find:** `completedOn`
+   held one day, so a weekly entry marked two Tuesdays running kept only
+   the second and paging back showed the first undone — every week before
+   the most recent one reading as not done. `completedDays` replaces it,
+   with entries already on the phone brought forward, so no reset is
+   owed. **What is open and stopped the session** is which day Done counts
+   for. It marks today and always has, the form never knowing which day
+   she was standing on; piece three widens that, the entry now opening on
+   the card page. His design is recorded and unbuilt — every road leads
+   into the one modal and the decision is hers there, the modal asking
+   "Mark Tapped today?" — and it has not been reconciled with his earlier
+   word that Done should not be tappable in the future or the past.
+   **The session ended early**, on "Lets end this session. before I lose
+   my mind." Two failures of the same shape: the hand-off's line about the
+   running was asserted instead of asked, and then his question to her was
+   converted into a fixed law that Done always means today, taking the
+   decision away from her — the invented-ruling fault Y-38 recorded,
+   reached by collapsing a question into a statement, and not seen even
+   after "That was a question??????????????????????????"
+   Before it, SA-12 (2026-08-22) **gave the
    Week's View everything Today's View had, turned the Courses page into
    the place entries are made, and built Done.** The Week's View now
    carries the week offset, the swipe, the wall, the away shades, the
