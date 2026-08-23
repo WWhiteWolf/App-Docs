@@ -1354,7 +1354,65 @@ this one holds where everything stands (Patrick, Y-15).
    phone.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: SA-11 (2026-08-22) **finished
+   active, `docs-ref` reference. Status: SA-12 (2026-08-22) **gave the
+   Week's View everything Today's View had, turned the Courses page into
+   the place entries are made, and built Done.** The Week's View now
+   carries the week offset, the swipe, the wall, the away shades, the
+   pulse and the *Back* pill, all copied from Today's View so the two
+   behave alike. **How far it reaches is the semester and nothing else**
+   — it walls at the week holding the start date and the week holding
+   the end, off a new `constants/Semester.ts`; and **with no dates set
+   it does not move at all**, which was Patrick's correction of a
+   proposal that would have let her page freely until they existed.
+   **The session's longest stretch was working out what "the Entry page"
+   was**, a page the record had never named. Claude did not know,
+   searched the docs and the previous transcript, found nothing, and
+   asked again after he had told it to look the thing up itself — which
+   drew "I really dislike this adversarial attitude you have developed
+   these last two sessions". What it turned out to be is the **Courses
+   page**: one page and not two that look alike, its name settleable
+   later, with the semester's dates at the top and cards under them. The
+   entry modal comes off the two views onto it, the views become
+   read-only lists, and **every entry lives in a card** — anything
+   outside her courses gets a card of its own, "to keep it organized".
+   **Tapping a row on a view opens that item on the card page**, because
+   a row that does nothing reads as broken and the alternative makes her
+   find the item again when she was looking straight at it; closing goes
+   back to the view, which costs nothing since the view is still on the
+   stack. Three pieces were built: the cards became hers, saved under
+   `sa_cards` and seeded once from her five real courses, with ＋ Add and
+   **a left swipe uncovering Edit and Delete** on a *Sure?*; entries moved
+   onto the card page, whose header took a third button and put its title
+   on a line of its own; and **the card page was trimmed to his own list**
+   — meeting lines gone, Office hours onto the class-name line, Schedule
+   gone as the class times, Materials and Grading side by side in a box
+   each, and Assignments and Important dates gone "because that is what
+   she will enter the way she wants". **A row now names its reminders
+   rather than counting them** in his own abbreviations — 30m, 1h, 2h,
+   Mof, DB, NB, 2DB, W, M — all of which fit, "there is enough room".
+   **Done closed the question SA-11 asked three times.** He said a weekly
+   entry's Done should repeat automatically, "how it is done in My Day,
+   Pets Day, and My Week", and the read of Memory's `dailyreset.ts` found
+   a whole-list sweep at the roll of the day. **That does not carry
+   across, and the reason is this app's own: the views look backwards.**
+   A swept list would show last Tuesday's reading as not done when she
+   pages back to last Tuesday, so an entry remembers the day it was
+   marked instead — `completedOn` replacing the old true-or-false — which
+   also needs nothing to run, so a week with the app closed cannot leave
+   a stale checkmark. Done sits in the entry pop-up, asks first, and undoes
+   on one tap; **it lives in the notification banners too**, which waits
+   on the scheduler. Left for a fresh session: piece three, the views
+   routing a tapped row to the card page and closing back. **Nothing built
+   this session has been run** — not the swipe, not the two new pop-ups,
+   not the semester line, not Done — TypeScript is clean, and nothing has
+   gone to TestFlight. An entry already on the phone carries no card and
+   no `completedOn`, so it shows in the views but on no card page; Reset
+   All Data is the cure. His verdict on the building was "Everything looks
+   excellent. Good job"; the cost of the session was all in the talking,
+   where Claude flagged his reversal of an agreed decision as a conflict
+   ("SO WHAT?") and quoted the rules at him mid-session ("Stop telling any
+   rules if you cannot control yourself").
+   Before it, SA-11 (2026-08-22) **finished
    the shared pieces, built the Week's View, and gave Today's View a way
    to thumb through the days.** The row and the form that SA-10 stopped
    mid-stream are now `components/EntryRow.tsx` and
