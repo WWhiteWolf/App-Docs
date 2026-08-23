@@ -1354,7 +1354,63 @@ this one holds where everything stands (Patrick, Y-15).
    phone.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: SA-13 (2026-08-22) **built piece
+   active, `docs-ref` reference. Status: SA-14 (2026-08-23) **archived the
+   Week's View, cut Today's View back to today alone, and settled what Done
+   means.** The session's real work was Patrick narrowing one problem until
+   what it actually was could be seen, and every step of that narrowing was
+   his. Done writes the real today, so any page standing on another day can
+   mark the wrong one; a one-time item cannot get it wrong, reading as done
+   off any mark at all, and standing on today cannot get it wrong either —
+   so the whole fault lived in one place, a recurring item tapped from a day
+   that is not today. Looking back at last Tuesday from a Thursday turned out
+   to do no harm, the mark landing where the item never appears, and **his
+   own summary is the durable part: other than for bookkeeping it does not
+   matter when the mark is recorded for, and if only looking back makes it
+   matter, then we do not look back.** Claude was wrong once inside that and
+   he caught it — it had been claimed she must page to another Tuesday to
+   reach the item, where the week page shows all seven days at once. **After
+   a night's sleep he decided the Week's View is not needed and Today's View
+   does not step forwards or backwards**, which cures it completely because
+   she is then only ever standing on the day the mark is written on. Its
+   cost is her looking ahead, and his answer to the cost is that looking
+   ahead was never what kept her from missing things — the reminders are.
+   The page is archived rather than deleted, at `archive/week.tsx`, out of
+   the routes and out of the type checker. **The card page was not cured by
+   any of that, and his correction of the framing settled the rest:** on a
+   card there is no day to be standing on, so she is not opening Tuesday's
+   item but an item set to fire next Tuesday, and **for a recurring reminder
+   Done is for the next single occurrence only, Delete being the only final
+   done, while for a one-time reminder Done is done.** The consequence made
+   the build small: because the answer is always the next occurrence, the
+   day she was standing on never has to travel anywhere, so the plumbing
+   proposed at the top of the session was not needed and the row no longer
+   takes a day from anybody. Two tidy-ups followed at his ask, and the first
+   was not the harmless clutter it had been called — turning a repeating
+   item into a one-time one would have left old marks behind and had it
+   arrive already finished. Doing it turned up a fault that would have been
+   silent: reading a stored day back the obvious way is a day out here, a
+   written-out date being read as a moment in Greenwich, so every Tuesday
+   would have come back a Monday and the pruning would have discarded
+   exactly the marks it was meant to keep. Both the occurrence arithmetic
+   and the day-parsing were checked with a scratch script rather than in the
+   head. **Nothing from the session has been run**, and neither has SA-13's
+   `completedDays` change; he chose not to load. One want of his is recorded
+   and unbuilt, and it matters more now that the looking-back is gone: an
+   undone past item should still hang on today and be tappable, and nothing
+   delivers that. **The session opened with three failures and a close
+   call**, all named by him before any work began — the same false sentence
+   about the rules files not having arrived that is recorded at Y-47, SA-5,
+   SA-6, SA-7 and #10-new; a second ask stacked onto one turn; a question
+   re-asked that he had answered at the close of SA-13 and answered often
+   enough to end that session over; and the running reported off the
+   hand-off when that very file says to ask him. He came within a sentence
+   of quitting and asked outright whether Claude could handle the session.
+   What turned it was reading the conversation back rather than defending,
+   and afterwards going at his pace — single questions, no jargon, and two
+   thoughts he held aloud read back to him before anything moved. He ended
+   by taking the scheduler, which is the next build and whose read is
+   already done, into a session of its own.
+   Before it, SA-13 (2026-08-22) **built piece
    three, read Memory's scheduler whole, and turned the done-day into a
    list of days.** Piece three finishes SA-12: the two views are read-only
    now, a tapped row pushes the card page carrying the card's id and the
