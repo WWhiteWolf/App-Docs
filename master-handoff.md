@@ -1354,7 +1354,57 @@ this one holds where everything stands (Patrick, Y-15).
    phone.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: SA-14 (2026-08-23) **archived the
+   active, `docs-ref` reference. Status: SA-15 (2026-08-23) **built the
+   scheduler whole, built Backup & Restore, and gave the app its name.**
+   The app is **Still To Do** on the App Store and **Still-2-Do** under the
+   icon; everything else keeps the old name, the folder and the repository
+   included, and `ios.bundleIdentifier` could never have moved without
+   orphaning the TestFlight build. Classmate was his first answer and the
+   check killed it within the hour — *ClassMate — Student Tool App* is live
+   and is her field exactly — and Cue, Don't Forget, Remember, Remember To
+   Do Today and Still Due all fell after it, the last two refused by App
+   Store Connect itself, which is the only real check. **The scheduler
+   works and owns every reminder on the phone:** three of Memory's files
+   copied across, one reader where Memory has six, `scheduler.ts` rewritten
+   for one storage key, and a housing that asks permission, registers the
+   buttons, runs the module on launch and on every return to the front, and
+   opens a tapped banner on its entry. **Two rulings shaped it.** A single
+   event's banner carries Done and the three snoozes and a recurring one
+   carries OK alone — drawn by whether the item recurs, never by when the
+   banner fires — and permission is assumed by her use of the app, so the
+   phone's own box comes up with nothing of ours around it and nothing said
+   if she declines. Done from a banner marks the occurrence rather than the
+   day of the tap and clears the snooze with it; a snooze is written on the
+   entry and the module arms it, so a second snooze moves one reminder
+   instead of leaving two. Memory's stale-banner sweep came across on his
+   ruling: "We will assume it fired. Then it means she did not
+   acknowledge. That does not matter. It should be taken down" — and it
+   touches the banner only, never the entry. **Backup & Restore** carries
+   everything the app has stored rather than a named list, because Memory's
+   fixed list has quietly forgotten things before and a card's text is
+   filed under its own card's id; and **the restore merges**, on what he
+   had actually come to Memory needing — "restore only what is different,
+   and ask whatever needs a decision" — which was reported with its cost
+   attached, that a card deleted after the backup comes back. **The durable
+   thing about how the session ran is the verify list**, `docs/verify-list.md`,
+   which he asked for early: what needs testing and what to do to test it,
+   because two thirds of the previous session was invisible to him. Every
+   piece added its steps as it landed and the twenty-six cases checked
+   outside the app are recorded there so nobody repeats them by hand.
+   **The open list went from twenty to one.** He cleared them in a single
+   pass — the back burner archived to `docs-ref/back-burner.md`, questions
+   for his granddaughter that are not about the app ruled not to pertain,
+   the feature draft archived unread, and the rest answered by number: no
+   laptop half at all, all of her reminding is hers to set, Cancel may not
+   throw her typing away on one tap, and the Scheduled Reminders page shows
+   what Memory's shows. What is left is his own want from SA-14, that an
+   undone past item should still hang on today. **Nothing built has been on
+   a screen** and the phone needs a new build, the TestFlight one being
+   from SA-8. Two faults, both loose language rather than loose work:
+   setting a question aside was turned into an answer of Claude's own, and
+   the scheduler being finished was reported as the app being done. He
+   caught both.
+   Before it, SA-14 (2026-08-23) **archived the
    Week's View, cut Today's View back to today alone, and settled what Done
    means.** The session's real work was Patrick narrowing one problem until
    what it actually was could be seen, and every step of that narrowing was
