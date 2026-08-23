@@ -1354,7 +1354,54 @@ this one holds where everything stands (Patrick, Y-15).
    phone.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: SA-16 (2026-08-23) **built the
+   active, `docs-ref` reference. Status: SA-17 (2026-08-23) **built the
+   by-day reminder, closed three more disconnected paths, and cost eight
+   hours for one hour's work.** The session opened for the missed-items
+   message and found it already whole — built at SA-16, recorded in both
+   hand-offs, its steps already in the verify list. **The real outcome is
+   Patrick's own sentence built at last:** *"A reminder set by day gets
+   the remind as set on the clock as the user sets it and the before
+   reminders are not used and should be disabled."* A weekday entry with
+   a time now arms one reminder at that day and time, with nothing ticked
+   and nothing counted back, walking forward a week at a time past a
+   moment gone or an occurrence marked done; the nine counted-back chips
+   are dulled and dead to the touch on such an entry, cleared when a day
+   chip is tapped, and ignored by the reader if a stale one survives.
+   Seven cases were checked outside the app and he loaded it and
+   confirmed it — the item showed for next Sunday, "Like it should."
+   **Dated entries are untouched, so his SA-16 sentence is half built.**
+   **Three more paths turned out to be built and connected to nothing**,
+   which with SA-16's makes four in this one app: `runScheduler` was
+   never called when an entry was saved or deleted, `scheduler/warn.ts`
+   — the near-the-ceiling warning copied from Memory at SA-15 — was
+   imported by nothing at all, and the Scheduled Reminders page never ran
+   the module before reading the phone. All three are connected now.
+   **The page also does its stated job, which Patrick had to state:**
+   tracking the number scheduled against the phone's limit. The count
+   stands at the top and is always drawn, a line names how many were
+   asked for that would not fit, and an empty list says which of four
+   things is true instead of leaving them identical. The entry form now
+   says when a ticked reminder lands, or that none of them will, running
+   the module's own reader over the draft so the two cannot disagree.
+   Two quieter fixes: the made-on stamp no longer moves when an old
+   unstamped entry is edited, which had been hiding its real misses, and
+   a snooze survives an edit. **What ended the session's long argument
+   was reading the simulator's own storage** — the app's `sa_entries` in
+   its container on the Mac — which showed in one step that a reminder
+   was stored exactly as ticked and its only moment had passed
+   twenty-eight minutes before he saved it, and that the other item held
+   no reminders because he had set a day and time and considered that to
+   be the reminder, which is precisely his SA-16 ruling. **His
+   accounting of the session is the durable part:** "I got about an
+   hour's worth done, 8 hours today arguing with you." He told Claude in
+   several forms to stop defending and understand him and it kept going;
+   when Claude then proposed he use a phrase as a tripwire, he answered
+   that he had been doing exactly that all day. The rule he asked for is
+   now rule 26 at the root and quoted in all four project rules files:
+   **"Instead of spending my time and money on proving yourself right,
+   work much harder to understand what I tell you."** SA-15, SA-16 and
+   SA-17 are all uncommitted.
+   Before it, SA-16 (2026-08-23) **built the
    missed-items message, and ended itself by Patrick's choice — recorded
    whole, restarting fresh.** The message is a pop-up in front of the home
    page, one line per miss in his wording — "[This] from [when] is
