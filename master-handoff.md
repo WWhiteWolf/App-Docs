@@ -1354,7 +1354,55 @@ this one holds where everything stands (Patrick, Y-15).
    phone.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: SA-17 (2026-08-23) **built the
+   active, `docs-ref` reference. Status: SA-19 (2026-08-24) **found no
+   fault, and turned the session into the app's testing plan.** It
+   touched no app code at all. The opening report — the app sending no
+   reminders — was a time set to PM rather than AM, settled by putting
+   the cheapest check to him before reading anything. A second apparent
+   fault, the entry form saying none of the ticked reminders would go
+   off, was the app telling the exact truth: *Day Before* fires at the
+   midday Settings time on the day before, which had passed an hour
+   earlier. **The finding that mattered is that "now" is already a
+   parameter** — only one line in the whole reminder module asks the real
+   clock — so the app's own reminder code can be handed a pretend item
+   and a pretend date and made to produce, for real, what it would
+   produce then. That is what makes testing without waiting possible.
+   **There are eleven ways a reminder can be raised**, counted from the
+   code. **The app has no test files of any kind**, which the record did
+   not say: the forty-four cases the hand-off credits were run once
+   outside the app and thrown away. `docs/issues.md` was started as the
+   running list of things found wrong or noticed and unruled, and that is
+   its second item. **The master test document is begun** —
+   `docs/build-test-doc.py` generates `docs/still2do-master-test.docx`
+   and it is never hand-edited — following the Mystery test document's
+   shape, which Patrick ruled is carried across whole: five columns with
+   a √/X box, section banners, a Start row per section, steps numbered by
+   section, and a "Make sure" column that is exact rather than
+   approximate. The first bite is 43 steps in five sections covering the
+   reminder half. He also corrected the Mystery record in passing: Word
+   not opening on his Mac was never Word's fault, the file was being
+   built wrong. **The session's largest outcome is his own fourth
+   option.** What he asked for was a build loaded once that runs every
+   test in a sitting, with pretend items and real banners; the design was
+   pushed through a build-time flag, and he saw its weakness at once —
+   the flag hides the door but the room is still in the building, which
+   is a test feature in the shipped app. His answer was to leave it as a
+   real option in the ordinary app, and it split into two things sharing
+   the same code: **Check My Reminders**, a genuine feature that fires one
+   test reminder and never touches her list, defensible because the app
+   fails silently today if permission is refused; and **the full
+   sitting**, all eleven paths with the banner buttons themselves under
+   test, which needs pretend items and stays his. It lives in `testkit/`
+   inside the project, permanently rather than being deleted, because a
+   separate test app holding its own copy of the reminder code would
+   prove only that the copy works. What iOS reports about a missing
+   banner was read in expo-notifications 0.32.17: the app can name a
+   refusal, a quiet grant, alerts switched off, sound off and the lock
+   screen, but cannot see a Focus mode or the scheduled summary — so the
+   page asks her, and offers to write to support at jojomurphy@tuta.com
+   with the diagnosis filled in. Still open: how the full sitting is kept
+   out of her build, which his fourth answers for her half only.
+   Before it, SA-17 (2026-08-23) **built the
    by-day reminder, closed three more disconnected paths, and cost eight
    hours for one hour's work.** The session opened for the missed-items
    message and found it already whole — built at SA-16, recorded in both
@@ -1399,8 +1447,13 @@ this one holds where everything stands (Patrick, Y-15).
    that he had been doing exactly that all day. The rule he asked for is
    now rule 26 at the root and quoted in all four project rules files:
    **"Instead of spending my time and money on proving yourself right,
-   work much harder to understand what I tell you."** SA-15, SA-16 and
-   SA-17 are all uncommitted.
+   work much harder to understand what I tell you."** The session closed
+   with the app **with Apple and waiting for beta review**: he built and
+   submitted the current code with EAS, wrote the Beta App Description
+   himself, and put his granddaughter, her mother and her brother into an
+   external group, which closes the SA-8 parking of that question in
+   favour of external testers. SA-15, SA-16 and SA-17 are all
+   uncommitted.
    Before it, SA-16 (2026-08-23) **built the
    missed-items message, and ended itself by Patrick's choice — recorded
    whole, restarting fresh.** The message is a pop-up in front of the home
