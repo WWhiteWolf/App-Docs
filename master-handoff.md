@@ -882,7 +882,46 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #13-new (2026-08-21)
+   Folder: `Projects/elderlyassistant`. Status: #14-new (2026-08-25)
+   **read the whole reminder machinery, built nothing, and wrote the findings
+   down.** Patrick's ruling opens it and governs the work from here: reminders
+   being rock solid is the only purpose of this app, nothing else in it matters
+   if one does not arrive. Two more of his stand with it — when something has to
+   give, the old reminder goes and the new one is kept; and the reminders should
+   follow established practice rather than a private arrangement that happens to
+   work. **The account is `docs/reminder-rebuild.md`** in the project, which is
+   the file to open for this work; it carries what was read, what is already
+   right, eight findings, a fix list in order and what is undecided, none of it
+   agreed. **The two faults he reported are one fault.** An item ticked off
+   before its time still reminds, because My Day, Pets and My Week arm the
+   phone's own repeating alarm and their readers never look at the checkmark —
+   deliberate, with the reasoning written into the file, and it cured the
+   opposite fault of the screens going silent. What the reasoning misses is that
+   today's reminder and tomorrow's are the same alarm, so it is true of tomorrow
+   and false of today. The banner arriving for an already-finished item then
+   lands on a row correctly showing its checkmark, which is the other fault. **A
+   cross-reading of Students-Assistant is what opened it.** That project's own
+   record named Memory's housing as the scattered part — "Memory's is long
+   because it answers seven button sets across six pages holding their items six
+   different ways" — and its by-day rule, Patrick's own at SA-13, is the proven
+   alternative: every reminder a single moment aimed at the next occurrence,
+   worked out afresh each run, stepping past an occurrence already done.
+   **The module's own shape is sound and was confirmed against published
+   guidance**, Apple's and the notification library's both, including that the
+   installed version needs no extra setting on a repeating alarm. **The largest
+   finding after the first is that a failure is swallowed everywhere and never
+   recorded**, so the module can fail completely while the app looks entirely
+   well. **The others:** a second run is discarded rather than held, so a save
+   can miss the phone; the instruction that lets a banner show while the app is
+   open is set on eight pages and in neither the housing nor the home page, so a
+   reminder falling due on a fresh start before any of those eight is opened
+   shows nothing; My Week's snooze is still armed outside the module; the "+1
+   Day" button cannot fire; the two kinds of alarm answer the same question two
+   ways; and nothing compares what the phone holds against what should be there.
+   **Owed as reading before the second fix:** `app/mollie.tsx` and
+   `app/myweek.tsx`. **#13-new's highlight was run on the phone and works**,
+   which closes it. `docs/pending.txt` was deliberately not touched (Patrick).
+   Before it, #13-new (2026-08-21)
    **made a tapped reminder land on its own item, on all five pages that have
    one.** The housing now hands the item's id to the page it opens and the page
    outlines that row. Nothing was added to the scheduler and no test changed:
