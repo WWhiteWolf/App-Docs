@@ -882,7 +882,58 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #18-new (2026-08-25)
+   Folder: `Projects/elderlyassistant`. Status: #19-new (2026-08-25)
+   **belongs to Patrick: he stopped the session at its first sentence with an
+   epiphany, and the reminder work now has one shape instead of six.** No app
+   code was touched and nothing was built. His framing governs the rest — the
+   reminder pages are the heart and the original purpose of the app, the
+   scheduler is the brain and the engine, and everything else is packaging and
+   screens; what the sessions before it had been doing was piecing and patching
+   one screen at a time, and what replaces it is one shape designed once, which
+   in his words is where the work is but is logical work rather than juggling.
+   **The five pieces are his** — input screens, an input store, the scheduler,
+   an output store, and the reminder — with the two stores as the contracts.
+   **The returning arrow is his too:** told that done, snoozed and skipped come
+   back from the far end, he answered in flowchart terms that the arrows return
+   to a decision block and that the arrow from the store arrives at the same
+   block, which is stronger than the rule Claude had offered, because a rule
+   must be remembered at every call site and an arrow need not be. **Two
+   decision blocks:** *is this still wanted?*, where every returning arrow
+   lands and where the kinds answer differently as a rule rather than an
+   exception, and *how far ahead do we arm?*, which belongs to the scheduler
+   because only the scheduler can see how full the phone is. **The reading
+   changed the size of the job** — `types.ts`, `readers/occurrences.ts` and all
+   six readers, about seven hundred lines: `WantedReminder` is already the one
+   common output and all six readers produce it, so every one of the six shapes
+   is on the input side, and four of their five differences are only different
+   words. **Patrick collapsed the fifth himself:** a To-Do task has one end
+   date and its several reminders are lead times off it, so the input shape is
+   an item, a rule for when it comes due, and how far ahead to speak. **Five
+   screens go through the shape** — My Day, Pets, My Week, Look Ahead, To-Do —
+   with the Memory Test and the Timer handled their own way on his call, the
+   code bearing the Memory Test out; the caveat recorded is that the two
+   specials skip the input shape and not the engine, or they spend places
+   nothing watches. **He asked directly whether this is a total bulldoze and
+   whether it is worth it, and the answer was neither:** half of what he wants
+   is already built, and the mess is five screens each saving their own way
+   rather than the scheduler's mess, so a translator sits at the boundary —
+   what the screens save is left exactly as it is, the one shape goes between
+   them and the scheduler, and the readers become five small translators plus
+   one engine, with no screen changed and nothing on the phone broken. **The
+   shape overtakes My Week's steps two and three** on his ruling, the tick
+   question being the first decision block and the weekly arithmetic the common
+   due rule, so My Week is cured by being one of the five. **The agreed order:**
+   read `scheduler.ts` and `reconcile.ts`, 718 lines and the one thing not yet
+   read first-hand; settle the input shape on paper with him; build it and the
+   two blocks as plain tested files nothing yet calls; the five translators one
+   at a time; swap the screens over one at a time; then the phone. **Two
+   documents are the session's whole output** — `docs/reminder-shape.md` and
+   `docs/reminder-shape.drawio`, the same thing drawn as a data flow diagram
+   with flowchart diamonds, which he opened and called very good. Raised and
+   then dropped entirely: renaming To-Do to Appointments, abandoned once the
+   background tasks came up and Claude said plainly it had not opened the page
+   — *Not even shelved. Forgotten.* 230 of 230 tests still stand from #18-new.
+   Before it, #18-new (2026-08-25)
    **checked the outside report against the code, and the answer is mend rather
    than rebuild.** Patrick set the order — verify before deciding — and then set
    the lens that decided it: *Cursor knew nothing of the "helpful" features we
