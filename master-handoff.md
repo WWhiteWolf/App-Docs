@@ -882,7 +882,45 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #17-new (2026-08-25)
+   Folder: `Projects/elderlyassistant`. Status: #18-new (2026-08-25)
+   **checked the outside report against the code, and the answer is mend rather
+   than rebuild.** Patrick set the order — verify before deciding — and then set
+   the lens that decided it: *Cursor knew nothing of the "helpful" features we
+   are considering.* Grok had read the code cold, so every deliberate decision
+   looked like a defect. Six of the flagged things were put to him one at a time
+   and all six still stand: Done never cancelling the fired repeat, the To-Do
+   banner's single OK, Orders having no reader, two occurrences ahead, the snooze
+   written on the item, and the loud fault on an unreadable list. Most carry
+   old-chain numbers and predate the whole reminder effort. Orders was verified
+   rather than believed — `app/orders.tsx` arms nothing at all now. **His reason
+   for the To-Do banner is now on record in his own framing**, an appointment
+   cannot be snoozed and a lead-up reminder has nothing to mark Done, with his
+   correction to the draft kept: *Don't put the reason that it's not. Put the
+   reason that it is.* **`_layout.tsx` and `scheduler.ts` were read end to end**,
+   every `runScheduler` call site found, the test folder listed; the joins are
+   careful and reasoned. **Two things the report did not find:** Siri's
+   `applyPendingNote` writes the tick and stops, and nothing re-plans the phone
+   after it — My Day's refresh calls the daily reset but never the scheduler, so
+   the cold-launch run races the Siri write instead of following it; and a
+   `reset` fault never reaches the pop-up at all, because `faultSpeaks` filters
+   it as harmless on reasoning now known to be false. **My Week's cure was begun
+   and its first of three steps built.** The order was forced by the code: the
+   reset had to move before the reader could be touched, because My Week's
+   reminder is a weekly repeat and a reader that skipped a ticked chore would
+   cancel it until the tick cleared — which happened only when the page was
+   opened, so a chore ticked once would have gone silent for good.
+   `scheduler/weeklyreset.ts` now holds the arithmetic lifted off the page, and
+   `runWeeklyReset` is a sibling of the daily reset rather than part of it,
+   because each chore rolls on its own weekday. 230 of 230 tests pass, up from
+   210. Nothing reached the phone. Owed: the weekly companion to
+   `nextOccurrences`, then `readMyWeek` rewritten to honour the tick, which takes
+   out the wrong comment and the wrong test with it. **The session's own fault is
+   on the record at Patrick's calling:** wording was offered as a fix and
+   approved by him, and only afterwards checked and found to be text that never
+   reaches the screen — *You are thinning. You are having me approve fixing
+   wording for sentences that never are seen, and you leave the useless stay.*
+   Verify that a thing matters before offering to fix it.
+   Before it, #17-new (2026-08-25)
    **cured My Day, and then had the whole reminder machinery read by someone
    outside this project — which changed the ground under the work.** My Day moved
    to single moments the way Pets did, two occurrences ahead, day-stamped names,
