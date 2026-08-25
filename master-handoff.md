@@ -882,7 +882,52 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #14-new (2026-08-25)
+   Folder: `Projects/elderlyassistant`. Status: #15-new (2026-08-25)
+   **built the first two pieces of the reminder work — a failing run can no
+   longer hide, and a missed reminder is now told — and did not touch fix 2
+   itself.** Nothing went onto the phone, and that is deliberate: Patrick wants
+   the reminder improvements to go on together and be lived with over time
+   rather than a build per session. **His verdict on the eight sessions before
+   it is on the record at his asking**, at the top of
+   `elderlyassistant/docs/reminder-rebuild.md`: eight sessions, #5-new through
+   #13-new, with the reminders as their sole focus, and the read at #14-new
+   still found eight faults, one of them the very thing he had reported — with a
+   feature this established it should have been plug-and-play, his own
+   shorthand. Recorded beside it, not as a defence: every one of those sessions
+   was proved by tests and by his eye on a screen, and the one test that would
+   have caught the main fault — a day passing, an item ticked off still
+   reminding tomorrow — has never run, going back to #6-new. **The move to
+   single moments is agreed**, on his condition that a missed firing is noted
+   when he opens the app, which answers the question #14-new left open about
+   what a stretch away costs. **The failure record is finding 2 cured:** all six
+   swallow points in `scheduler.ts` still catch, so one failure never stops the
+   rest, but each now says what happened, and the last ten runs are kept so a
+   failure at breakfast is not wiped out by a good run at noon. Four faults
+   speak in a pop-up when the app is opened and two stay quiet, on his rule that
+   it speaks when a reminder he is expecting will not arrive; it comes back once
+   a day rather than on every open, because a notice appearing every time is one
+   you learn to tap away without reading. **The missed-firing net is the
+   condition on fix 2, built ahead of it:** the day's rollover is the only
+   moment the truth can be seen, since it wipes the checkmarks, so each undone
+   item leaves a line behind — and a gap needs nothing written down at all,
+   being arithmetic from the last day the app rolled over, which closed a hole
+   where a fortnight away would have caught the last day only. **His correction
+   is the durable part:** a miss is cleared by having been shown, never by the
+   item being done again, because the pop-up always comes first — the app cannot
+   be used without being opened. His Still To Do wording came across whole,
+   "[This] from [when] is hanging!", with the one-miss-per-item rule. One pop-up
+   carries both kinds, faults first, because two stacking on opening teaches a
+   person to tap without reading. **And an instruction about how the work is
+   done:** give a suggestion without being asked for it, especially where the
+   good answer is already known — said after he was asked three times running
+   what he wanted when there was a plain recommendation to make. 192 of 192
+   tests pass, up from 146; TypeScript reports only the stale generated-route
+   error that predates the work. Two new plain files, `scheduler/health.ts` and
+   its thin impure half `scheduler/notice.ts`, in the split `warn.ts` already
+   had. Two Scheduled Reminders layout fixes went into `pending.txt` at his
+   asking. Next is fix 2, given a fresh session on purpose, with
+   `app/mollie.tsx` and `app/myweek.tsx` still owed as reading.
+   Before it, #14-new (2026-08-25)
    **read the whole reminder machinery, built nothing, and wrote the findings
    down.** Patrick's ruling opens it and governs the work from here: reminders
    being rock solid is the only purpose of this app, nothing else in it matters
