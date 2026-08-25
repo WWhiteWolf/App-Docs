@@ -882,7 +882,49 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #16-new (2026-08-25)
+   Folder: `Projects/elderlyassistant`. Status: #17-new (2026-08-25)
+   **cured My Day, and then had the whole reminder machinery read by someone
+   outside this project — which changed the ground under the work.** My Day moved
+   to single moments the way Pets did, two occurrences ahead, day-stamped names,
+   snooze half untouched; the shared calendar arithmetic came out into
+   `scheduler/readers/occurrences.ts`, closing #16-new's note about
+   `OCCURRENCES_AHEAD`; 210 of 210 tests pass, up from 202. Nothing went onto the
+   phone. **The session then turned on a question of Patrick's** — whether the
+   daily screens would benefit from a timestamp like My Week's — which Claude
+   answered yes, withdrew after reading `runScheduler`, and then had to reverse
+   again when Patrick said that rock solid is the top goal but not the only one
+   and named consistency beside it. He said the resulting explanation sounded
+   like a casserole mess and that he had stopped reading half way through; the
+   fault was the writing, not the code. **He then offered to bulldoze and start
+   over.** Claude said it did not need one; he pushed back, that eight previous
+   sessions and this one said otherwise, and he was right to — "the module is
+   sound" had been lifted from the hand-off written by those same sessions, and
+   Claude had read three of six readers. He then noted that Look Ahead and To-Do
+   had not even been mentioned, which was the same fault in miniature. **His own
+   move was the one that worked:** he took the evaluation into Cursor and ran
+   Grok 4.6 over `scheduler/` and `app/` with the documents and Claude's
+   conclusions deliberately withheld, so the answer would not be this project's
+   claims handed back. The full report, the exact request, and a section marking
+   every finding checked or unchecked now live in
+   `elderlyassistant/docs/outside-review.md` — kept in full at his instruction,
+   on the reasoning Claude had itself given, that condensing is where a claim
+   gets softened. **The finding that matters most, verified in the code:**
+   `readMyWeek` never looks at `completed`, so a ticked chore still gets its
+   weekly reminder — My Week has the fault, and the project's own record has been
+   saying for weeks that it never did, held in place by a header comment and by a
+   test asserting the wrong behaviour. The record and the code were allowed to
+   disagree without anything noticing. **Two more verified:** a failed
+   `runDailyReset` records its fault and `runScheduler` reads the lists anyway,
+   so a stale tick can cancel a day that was never done; and `runScheduler`
+   returns null when already running, so a save mid-run never reaches the phone.
+   **Unverified but the plainest explanation of the eight sessions:** the suite
+   runs the readers alone and never runs a screen, `_layout.tsx` or the module
+   end to end, so "done means it will not sound" has never been tested at all.
+   Left open and undecided: whether this is mended or rebuilt; the unchecked
+   majority of the report, which is `_layout.tsx` entire, three readers, the
+   reconcile and the test-coverage claims; and My Week itself, whose header
+   comment is now wrong in the opposite direction from what #16-new recorded.
+   Before it, #16-new (2026-08-25)
    **cured the fault Patrick reported on the first of the three screens: Pets
    no longer reminds about a feed already seen to.** It is fix 2's first
    screen; My Day and My Week are untouched and still on the phone's repeating
