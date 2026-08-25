@@ -882,7 +882,50 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #15-new (2026-08-25)
+   Folder: `Projects/elderlyassistant`. Status: #16-new (2026-08-25)
+   **cured the fault Patrick reported on the first of the three screens: Pets
+   no longer reminds about a feed already seen to.** It is fix 2's first
+   screen; My Day and My Week are untouched and still on the phone's repeating
+   alarms. The session read more than it built — `app/mollie.tsx` and
+   `app/myweek.tsx` entire, the two reads owed since #14-new, then the types,
+   the reconcile, the scheduler's top and the three readers, so nothing of fix
+   2's reading is owed any more. **The two pages are not built alike, and it is
+   unruled:** Pets carries a plain `completed` and leans on the module's daily
+   reset, while My Week carries `doneAt` and clears its own checkmarks on the
+   page, weekly, only when the page is opened — so the daily clearing fix 2
+   names never reaches My Week, which also already holds the next-occurrence
+   arithmetic. **Patrick's ruling on depth is two occurrences ahead, not two
+   days**, so a weekly chore gets a fortnight rather than nothing; he first
+   said three and settled on two once the arithmetic was in front of him —
+   fourteen items three deep take forty-two of the fifty-six places the module
+   has to spend, two deep take twenty-eight. What covers a longer stretch away
+   is the missed-firing notice, and what it does was stated back to him and
+   accepted: it tells him afterwards, it does not make the reminder arrive.
+   **His ruling on order closed the question #15-new left open** — Pets, then
+   My Day, then My Week, one screen at a time with both halves built together,
+   because both halves live in the same few lines of each reader and My Week is
+   the odd one. **Best practice was checked rather than recalled, at his
+   asking**, and a recommendation made from memory was withdrawn once the
+   sources were read: Apple's own engineers confirm the sixty-four limit counts
+   scheduled requests rather than deliveries and that a repeating trigger is one
+   request however often it fires, so leaving repeating alarms has a real cost
+   and that cost is what fix 2 spends; for a conditional reminder the documented
+   pattern is to fill the queue with the nearest occurrences each launch, which
+   the reconcile already does. **The durable build decision is how an occurrence
+   is named:** for the day it falls on, `pets:p1:20260825`, so it keeps its name
+   until it fires and the reconcile leaves it alone. Naming by place in the run
+   was tried first and caught before anything ran — those names slide as days
+   pass, so every run would take all of them down and put them all back. 202 of
+   202 tests pass, up from 192, including the one that had never run since
+   #6-new: a day passing, an item ticked off, and whether it still reminds
+   tomorrow. TypeScript reports only the stale generated-route error.
+   Left owed: My Day, nearly a copy of Pets; My Week, waiting on the asymmetry;
+   the `readers/myweek.ts` comment that calls My Week the shape the others are
+   being brought round to; and `OCCURRENCES_AHEAD`, which sits inside
+   `readers/pets.ts` and belongs where all three can see it. Also found and
+   recorded rather than filled: `docs/build-history.md` has no entry for
+   #14-new or #15-new, so it reads 13 then 16.
+   Before it, #15-new (2026-08-25)
    **built the first two pieces of the reminder work — a failing run can no
    longer hide, and a missed reminder is now told — and did not touch fix 2
    itself.** Nothing went onto the phone, and that is deliberate: Patrick wants
