@@ -882,7 +882,43 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #22-new (2026-08-26)
+   Folder: `Projects/elderlyassistant`. Status: #23-new (2026-08-26)
+   **built the input shape and the two decision blocks — the third step of the
+   #19-new order and the first thing built in this chain since #20-new.**
+   `scheduler/inputshape.ts`, `scheduler/stillwanted.ts` and
+   `scheduler/armdepth.ts` stand with their tests and **nothing in the app calls
+   any of them**, which is the point: the piece was specified to be built before
+   anything depends on it, so the shape can be argued with while changing it
+   costs nothing. No reader, no screen and neither engine file was touched; the
+   only existing file edited is `scheduler/tests/run-all.ts`. **248 of 248 tests
+   pass**, up from 230, `npx tsc` reports only the standing Expo router error,
+   and nothing reached the phone. **The session was built from
+   `docs/build-sheet.md` alone** and asked Patrick nothing about the design,
+   which is what that sheet was written at the end of #22-new to make possible —
+   it carried the answers rather than pointers to them, and the only questions
+   put to him were about acting rather than deciding. **His one change to the
+   code is the trigger kind, and it was his catch:** the shape had been settled
+   at #22-new as `'daily' | 'weekly' | 'once'` on the belief that it matched the
+   output store, and it did not — `WantedTrigger` in `types.ts` has named its
+   third kind `date` since long before any of this. He ruled the shape changes
+   rather than the engine, the reason being that `types.ts` is what the phone's
+   own queue speaks in and is already on the phone, so bridging one word between
+   two documents that mean the same thing would be a cost paid at every boundary
+   forever in exchange for nothing. The change reached one file his instruction
+   had excluded — `armdepth.ts` switches on the kind and stopped compiling — and
+   it was raised with two quoted errors rather than assumed, which is the shape
+   the rules ask for. He then had `docs/build-sheet.md` corrected to match, five
+   lines of it, two of them found and put to him rather than named by him;
+   **his ruling is that the other documents keep their `once`**, that word being
+   history there, since a session record is wrong the moment it is tidied.
+   **Five choices made where the sheet was silent** were put to him and all five
+   stand, recorded as settled at the foot of `docs/handoff.md` — chiefly that
+   the wanted-block answers in four parts rather than yes or no, because a task
+   finished outright and a chore ticked off for today are both "done" and only
+   one has occurrences still standing behind it. Next is the fourth step of the
+   order, the five translators one at a time; and nothing yet joins the two new
+   blocks to `gatherWanted`, which is still to be decided.
+   Before it, #22-new (2026-08-26)
    **settled the field names and reopened the depth number, still the second step
    of the #19-new order and still all on paper.** No app code was touched, nothing
    was built, and 230 of 230 tests stand untouched since #20-new. Everything is
