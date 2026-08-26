@@ -882,7 +882,55 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #19-new (2026-08-25)
+   Folder: `Projects/elderlyassistant`. Status: #20-new (2026-08-25)
+   **read the engine first-hand and cured the last reminder in the app that the
+   module could not see.** `scheduler.ts` and `reconcile.ts`, 718 lines, were the
+   one piece of the module the record described but nobody in this chain had
+   opened; they hold up, and three things they settled all favour the shape. The
+   **output store is the phone's own queue rather than a file** — `applyPlan`
+   writes the key, the firing times, the source, the item and the label into each
+   banner's own data and `readQueue` reads them back, which is why the module
+   never interprets the phone's own description of a trigger. The **input store
+   is five saved lists plus one session**, all read in one place, `gatherWanted`,
+   so the five translators plug in exactly there. And the **depth block already
+   half exists where Patrick said it belongs**: the real judgment is in
+   `reconcile` — sixty-four less eight less whatever belongs to something else,
+   sorted by next firing and the furthest away trimmed — and only the reconcile
+   can see how full the phone is. *Is this still wanted?* is the block with no
+   home, every reader answering it its own way. **Patrick set the order himself
+   and it was to fix My Week's snooze first**, ahead of the shape work, his reason
+   being that leaving it is patching, which is the thing the shape exists to stop;
+   asked once whether "first" meant ahead of everything, he restated it and it was
+   taken as said. **The cure was his question rather than Claude's proposal.**
+   Asked how a snooze should sit beside a postpone on the same chore, he asked
+   instead whether a postpone could be treated as a long snooze — it can, and it
+   is cleaner than the two stamps about to be proposed, both being one moment in
+   the future for this occurrence only, both leaving the chore's home day and time
+   alone, both cleared by Done, the only difference being distance. So a Delay
+   tapped on a My Week banner now writes `postponedTo`, exactly as the page's
+   Postpone button does. **None of it needed new code in the reader**, which
+   already turns that stamp into a reminder: `myweeksnooze` stopped existing, both
+   hand-written notification searches went — in Skip and in Done, they existed
+   only because the module could not see that snooze — and the #10-new fault where
+   Skip did not skip a postponed chore is cured as a side effect. The Skip search
+   came out altogether rather than being changed, the category registrations
+   having been checked: `skip` is registered on `routineactions` and nowhere else,
+   and that set belongs to My Day, Pets and My Week alone. **One wrinkle was found
+   while drafting and Patrick settled the wording:** the chore's tile now shows the
+   time when the stamp lands on today and the day name when it does not, because a
+   postpone moves the day and a delay moves the time, so the line shows whichever
+   part actually changed. One test changed where none had been promised — the
+   Scheduled Reminders test that used `myweeksnooze` as its unreadable-trigger
+   example now uses a My Week postpone. Touched: `app/_layout.tsx` in four places,
+   `app/myweek.tsx`, two scheduler files for their comments, `queueview.ts`, and
+   one test. 230 of 230 pass; `npx tsc` reports only the standing Expo router
+   error. Nothing reached the phone, per the #15-new rule. Recorded as a miss: the
+   session-start question this project's rules require — whether the previous
+   session was committed — was never asked, and Patrick called out the hedging
+   mid-session in his own words, *for something that doesn't have any feelings, you
+   sure love to cover your backside.* Next is settling the input shape on paper,
+   the second step of the #19-new order and a long conversation rather than a read.
+   Before it, #19-new (2026-08-25)
    **belongs to Patrick: he stopped the session at its first sentence with an
    epiphany, and the reminder work now has one shape instead of six.** No app
    code was touched and nothing was built. His framing governs the rest — the
