@@ -882,7 +882,106 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #21-new (2026-08-25)
+   Folder: `Projects/elderlyassistant`. Status: #22-new (2026-08-26)
+   **settled the field names and reopened the depth number, still the second step
+   of the #19-new order and still all on paper.** No app code was touched, nothing
+   was built, and 230 of 230 tests stand untouched since #20-new. Everything is
+   written into `docs/reminder-shape.md` and not repeated anywhere. **The naming
+   rule is Patrick's, given in one sentence:** the name should pertain to what the
+   thing it names does, his own examples being `inputBitField`, `depthBit` and
+   `reminderTypeCode` — so a name carries its kind as well as its job, and a bit
+   reads as a bit. The full list was put to him in chat before any file was
+   written and his verdict was the test it was built to pass: *I don't even have
+   to read your explanation, the name tells me already.* **He asked for
+   established practice rather than deciding by preference** on whether the bits
+   should be packed into one field, and took the answer — separate named fields,
+   because this app saves plain text on the phone where packing buys nothing and
+   costs both readability and the compiler's checking; what survives whole from
+   his idea is the code, written as a named set of allowed words so an impossible
+   value cannot be written down. The three files have names and homes now —
+   `scheduler/inputshape.ts`, `scheduler/stillwanted.ts` and
+   `scheduler/armdepth.ts` — which closes one of the four things #19-new left
+   undecided. **The session's other half is his own reopening of the depth
+   number:** arming two occurrences ahead was decided under the old structure, so
+   it should not be carried across as settled, and he was careful to say he did
+   not know whether it should change, only that it should be discussed. He sent it
+   to the code in his own words, *You go read, then you inform me.* The read found
+   that the number is imported by My Day and Pets alone; that the reason recorded
+   for it describes something the code does not do, since the arithmetic only ever
+   steps days and My Week arms a true weekly repeat instead; that the module
+   re-plans at launch, on coming to the front and after every save, so the second
+   occurrence buys exactly one day on which the app is never opened; and that it
+   is therefore worth more to a daily item than to a weekly one, the reverse of
+   what the old comment assumed. **It survived**: it exists only to serve single
+   moments, single moments exist only because a repeating alarm cannot skip the
+   day an item was ticked off, and both are still true. Curing My Week is what
+   makes it expensive, a chore going from one place to one per occurrence. **One
+   claim under all of it is unchecked and recorded as such** — that a repeating
+   alarm cannot skip a single instance is general knowledge of the phone, not a
+   reading of the installed package. **Two questions stand exactly as put**: how
+   many unopened days a reminder should survive, and whether that claim should be
+   checked. **The session opened with a false report, the very fault #21-new had
+   just deleted a rule about** — Claude said neither rules file had arrived on its
+   own when both had, and then read both again, which is the cost. **The docs
+   were refreshed mid-session at his instruction**, his reason being that a lot had
+   been read and he wanted it recorded in case Claude was thinning — and in the
+   same breath he said he had asked one question three times without an answer and
+   would try to be more precise. That is the hinge, and the rest of the session
+   came after it. His precise question was whether the structure could make an
+   intelligent decision rather than patching by doubling, and it can: a one-off
+   needs no depth, a weekly needs one, and daily is the only kind where a second
+   earns its place, so My Week comes across for the one place a chore costs today.
+   **The backup buffer he asked for already exists in a stronger form** — nothing
+   trimmed is remembered because nothing is remembered at all, every run rebuilding
+   the whole set from the saved lists and re-sorting by time, which also makes the
+   trim self-healing and corrected a caution Claude had given minutes before. **Two
+   roads that do not need the app opened were checked and both are weak**: a banner
+   button registered not to open the app does reach the module, but the housing
+   handles presses with a React hook and nothing background is registered, so it
+   does nothing once the phone has shut the app down; and the background-task road
+   has none of its pieces installed. To that he said **"we can repackage"**, rightly
+   — the rebuild is not the obstacle, the phone's rationing is, and his own first
+   rule settles that a best-effort mechanism sits on top of arming ahead and never
+   underneath. **The plain fact under all of it is his and he found it himself** —
+   *if the app isn't open, then the intelligence isn't running* — and he asked
+   directly whether that was what had not been told him. It was: said in pieces,
+   never as the one sentence that governs everything, that the blocks do not react
+   but decide, while they run, how much to leave standing for the stretch when
+   nothing will be running. **His first ruling is "rock solid is for when you use
+   it"**, which places the second occurrence outside the standard. **His second is
+   the heart of the session**, given after he had declared it closed and then
+   carried on: the phone may drop things, but the app never relied on the queue for
+   the truth — the truth is in its own saved lists, so on opening it can look and
+   know where things stand, the #15-new missed-firing notice being one small
+   instance rather than the whole move. His two parts are exact — *it should tell
+   you what you missed and put back what you need going forward* — and he drew the
+   consequence himself: rather than a spare copy of everything queued constantly,
+   **the app re-queues when it opens and sees the gap**, so the queue carries no
+   insurance at all. **That settles the depth at one for every kind**, which is the
+   intelligent decision in place of doubling he had asked for three times at the
+   start; nothing is doubled anywhere and My Week comes across for the one place a
+   chore costs today. He named its form as well, in the shape's own founding terms:
+   **it should not be a rule, it should be part of the decision machinery** — the
+   block seeing, from data it already holds, that an occurrence's moment has gone by
+   unmarked, so nothing anywhere has to remember to recover. The telling is deliberately
+   small as well — **it tells you what you missed and that is it, then the firings
+   are reissued and the queue rebuilt, two acts on opening and nothing more** —
+   which took the design question out of it altogether. **And then it was read, and
+   both halves turned out to be built**, the record having just been written saying
+   otherwise: misses worked out at the rollover, the unopened-day case handled by
+   name through a `hadGap` flag that makes every reminding item a miss when the app
+   has been shut a whole day or more, one miss per item as he had ruled, his own
+   sentence from Still To Do, and one pop-up carrying faults and misses together.
+   **The one real gap is that it covers My Day and Pets only**, the rollover loop
+   naming those two lists and no others, so the work is extending the telling to My
+   Week, Look Ahead and To-Do rather than building it. **Patrick declared the session closed over
+   Claude's manner** — asked twice for shorter replies, the replies became clipped,
+   and he read that as impatience; he then rejected the shortness as an excuse,
+   having not asked for it until half an hour before, so it cannot account for the
+   three times his question went unanswered. Rule 25 asks for less, not for
+   curtness, and the misses began early when nothing was thin. Next is the third
+   step of the order, now unblocked entirely.
+   Before it, #21-new (2026-08-25)
    **settled the input shape on paper — the second step of the #19-new order —
    and the form of it is Patrick's own.** No app code was touched and the
    session's whole output is `docs/reminder-shape.md`, which carries the shape
