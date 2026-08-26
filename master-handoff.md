@@ -882,7 +882,50 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #20-new (2026-08-25)
+   Folder: `Projects/elderlyassistant`. Status: #21-new (2026-08-25)
+   **settled the input shape on paper — the second step of the #19-new order —
+   and the form of it is Patrick's own.** No app code was touched and the
+   session's whole output is `docs/reminder-shape.md`, which carries the shape
+   and is not repeated anywhere. **His answer arrived unprompted and shaped
+   everything after it:** shown three ways the due rule might be written, he
+   proposed instead a field in the data whose bits are set on the way in, so
+   the decision block only has to look at it — and, asked how many bits are
+   true at once, gave both forms, one bit per option where several can be
+   true, or several bits together as a code for something that can only ever
+   be one thing. So a value with one possible answer is a code, an independent
+   fact is a bit, and the translator sets both at the boundary. **Seven things
+   were settled and agreed:** the trigger kind is a code of three; capability
+   bits and state are different things, which is the load-bearing distinction
+   and what lets the kinds answer *is this still wanted?* as a rule rather
+   than an exception; done is one state plus a bit for how far it reaches,
+   since the app has two kinds of done that cannot share a bit; push-back is
+   one stamp that adds rather than replaces, collapsing three field names to
+   one; how far ahead to speak is a list of lead times each carrying a code
+   for which of two forms it is; an empty lead-time list is answered by the
+   kind rather than globally; and one bit says a reminder stands for a group
+   rather than one item. **Two of the seven are rulings that corrected the
+   question as it was put.** On the empty list he was asked which single
+   reading should hold and answered that the block already knows what kind of
+   reminder it is and should decide which way to go. On To-Do's background
+   banner, recorded minutes earlier as not fitting the shape, he said that if
+   it needs identifying it can be given a code or a bit — which brought the
+   last odd one inside, so **all five screens now go through the one shape and
+   none is left outside it.** **The reading corrected three things Claude had
+   asserted from the record**, and Patrick sent it to the code first in his
+   own words, *before I even read it and waste my time, go open the reader and
+   find out*: skip is not a state any reader reads and needs no bit; every one
+   of the five guards on whether the item has a time at all, which was missing
+   from the list entirely; and To-Do carries a second guard on whether the
+   item wants reminders at all. All five readers and the shared arithmetic
+   were read, about five hundred lines, plus the save path of `app/todo.tsx`
+   out of its 909 — where a task with no reminders can be saved but the app
+   asks first, a confirm recorded as #58, so the ruling matches a decision
+   already made. **A session rule was deleted at his instruction**, recorded
+   below under the loose ends. Nothing was built, nothing reached the phone,
+   and 230 of 230 tests still stand. Next is the third step of the order,
+   building the shape and the two decision blocks as plain tested files that
+   nothing yet calls.
+   Before it, #20-new (2026-08-25)
    **read the engine first-hand and cured the last reminder in the app that the
    module could not see.** `scheduler.ts` and `reconcile.ts`, 718 lines, were the
    one piece of the module the record described but nobody in this chain had
@@ -2668,6 +2711,23 @@ this one holds where everything stands (Patrick, Y-15).
   checking is thinning. He was sure the old meter goes, said he is not
   yet sure what replaces it, and asked for no placeholder. The rest of
   rule 22 stands untouched.
+- **Rule 1 no longer tells Claude to report when a rules file did not
+  arrive on its own (Patrick, #21-new).** Its closing sentence — "If a
+  rules file did not arrive on its own, say so plainly before the
+  status report instead of covering the gap quietly (SA-20)" — was
+  struck from `Projects/CLAUDE.md`. The session had opened with exactly
+  that report and it was false: both files had arrived and were in
+  front of Claude from the first moment. Patrick said the same false
+  sentence has appeared a dozen times in Students-Assistant, and his
+  own argument closed it — reading a file by hand and having it arrive
+  amount to the same thing once it is read, and how the file got there
+  is plumbing he never asked to be kept posted on. The rule's own
+  defence does not survive that: in a session where Claude never thinks
+  to read the file it also never thinks to report, so the warning can
+  only fire in sessions where nothing is wrong, and a warning that
+  fires at random teaches him to stop reading it. **The two folder asks
+  and the reasoning behind them stand unchanged** — the asks are what
+  make the files arrive, and only the reporting went.
 - **The opening asks for two folders, not one (Y-18, overturning
   MT#5).** The parent `Projects` folder first, then the folder of the
   session's goal, so that project's own `CLAUDE.md` arrives on its
