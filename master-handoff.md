@@ -882,35 +882,22 @@ this one holds where everything stands (Patrick, Y-15).
    legs wait until the merged app is done, and `wrapper-android`
    has never been given the rebuilt page.
 3. **A Place To Remember (Memory) — iPhone** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #23-new (2026-08-26)
-   **built the input shape and the two decision blocks — the third step of the
-   #19-new order and the first thing built in this chain since #20-new.**
-   `scheduler/inputshape.ts`, `scheduler/stillwanted.ts` and
-   `scheduler/armdepth.ts` stand with their tests and **nothing in the app calls
-   any of them**, which is the point: the piece was specified to be built before
-   anything depends on it, so the shape can be argued with while changing it
-   costs nothing. No reader, no screen and neither engine file was touched; the
-   only existing file edited is `scheduler/tests/run-all.ts`. **248 of 248 tests
-   pass**, up from 230, `npx tsc` reports only the standing Expo router error,
-   and nothing reached the phone. **The session was built from
-   `docs/build-sheet.md` alone** and asked Patrick nothing about the design,
-   which is what that sheet was written at the end of #22-new to make possible —
-   it carried the answers rather than pointers to them, and the only questions
-   put to him were about acting rather than deciding. **His one change to the
-   code is the trigger kind, and it was his catch:** the shape had been settled
-   at #22-new as `'daily' | 'weekly' | 'once'` on the belief that it matched the
-   output store, and it did not — `WantedTrigger` in `types.ts` has named its
-   third kind `date` since long before any of this. He ruled the shape changes
-   rather than the engine, the reason being that `types.ts` is what the phone's
-   own queue speaks in and is already on the phone, so bridging one word between
-   two documents that mean the same thing would be a cost paid at every boundary
-   forever in exchange for nothing. The change reached one file his instruction
-   had excluded — `armdepth.ts` switches on the kind and stopped compiling — and
-   it was raised with two quoted errors rather than assumed, which is the shape
-   the rules ask for. He then had `docs/build-sheet.md` corrected to match, five
-   lines of it, two of them found and put to him rather than named by him;
-   **his ruling is that the other documents keep their `once`**, that word being
-   history there, since a session record is wrong the moment it is tidied.
+   Folder: `Projects/elderlyassistant`. Status: #27-new (2026-08-27)
+   **the reminder engine is whole and live — all five reminder screens go
+   through the one machine**, and five screen fixes went in the same day, every
+   one confirmed on the simulator. 391 of 391 tests pass; `npx tsc` is clean.
+   **The phone is the next act** — none of the engine work has been proved on
+   the device. The old readers are still in the project but the live run no
+   longer calls them, except the Memory Test. Two ways of working changed with
+   it: the supervisor-and-worker split is retired in favour of one session doing
+   the work in the conversation that discussed it, with big mechanical builds
+   going to Cursor from a sheet written here.
+
+   *Everything below, to the start of Students-Assistant, is the session history
+   this entry accumulated before the four-things rule was applied to it — about
+   nine hundred lines. It is on Patrick's list to be trimmed out of this file.
+   **Whether all of it also sits in `elderlyassistant/docs/build-history.md` has
+   not been checked**, and it should be before any of it is deleted.*
    **Five choices made where the sheet was silent** were put to him and all five
    stand, recorded as settled at the foot of `docs/handoff.md` — chiefly that
    the wanted-block answers in four parts rather than yes or no, because a task
