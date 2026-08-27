@@ -1,7 +1,10 @@
 # Master hand-off — cross-project state (all projects)
 
 App-Docs (this folder) is the single home for cross-project
-docs (Patrick's decision, #71). It is a git repo; Patrick makes
+docs (Patrick's decision, #71). **The Reminder Engine's picture and
+document no longer live here** — they moved to
+`Projects/Reminder Engine/docs` at Reminder Engine 1, which is now that
+project's home. It is a git repo; Patrick makes
 every commit. Keep this file to four things only: the projects
 and their folders, one line of status each, what is true across
 them all, and the loose ends belonging to no single project.
@@ -886,9 +889,14 @@ this one holds where everything stands (Patrick, Y-15).
    **the reminder engine is whole and live — all five reminder screens go
    through the one machine**, and five screen fixes went in the same day, every
    one confirmed on the simulator. 391 of 391 tests pass; `npx tsc` is clean.
-   **The phone is the next act** — none of the engine work has been proved on
-   the device. The old readers are still in the project but the live run no
-   longer calls them, except the Memory Test. Two ways of working changed with
+   **The phone has now had it, and it holds** — Patrick had the new engine on
+   the phone through the morning of 2026-08-27 and reported it running all
+   morning, which overtakes the line that none of the engine work had been
+   proved on the device. The old readers are still in the project but the live
+   run no longer calls them, except the Memory Test; **taking them out is
+   raised and not scheduled** (Patrick, SA-21, of both apps at once), and the
+   Students-Assistant half of that scrub turned out not to be a simple
+   deletion, which is worth checking for here before anything is removed. Two ways of working changed with
    it: the supervisor-and-worker split is retired in favour of one session doing
    the work in the conversation that discussed it, with big mechanical builds
    going to Cursor from a sheet written here.
@@ -1825,7 +1833,30 @@ this one holds where everything stands (Patrick, Y-15).
    phone.
    Folder: `Projects/Students-Assistant`; its CLAUDE.md names the
    reads, and the layout follows `MysteryCluesTracker` — `docs`
-   active, `docs-ref` reference. Status: SA-20 (2026-08-24) **pared the
+   active, `docs-ref` reference. Status: SA-21 (2026-08-27) **the new
+   reminder engine is in and the live path goes through it.** Cursor built
+   it in the folder while the session ran alongside; this session checked
+   it rather than taking its account. Verified here: one call, `wantedFor`,
+   feeds the launch run, the entry form's preview line and the Scheduled
+   Reminders page, so the form and the phone cannot disagree; **61 of 61
+   tests pass**, run in the sandbox under Node with no build and no
+   simulator, which is the first runnable test suite this app has ever
+   had; and `tsc` is silent, overtaking the standing note about two stale
+   route errors. One claim of Cursor's was corrected: the old reader is
+   retired as a reader but its file still supplies four things to live
+   code, so it cannot simply be deleted. **The engine fired on his phone**
+   — a 30-minute reminder, correctly — which is the offset kind on a dated
+   entry, so the one behaviour that changed, a by-day item marked done
+   staying quiet where the old reader walked on to next week, is not yet
+   proved. **Patrick prizes the engine on its own** and it becomes a thing
+   in its own right: the drawing loses its Memory title and a short
+   document joins it here in `App-Docs`, saying why each block is there.
+   Wiring both apps to one shared copy is expressly not decided. Named and
+   not scheduled: a scrub of old code in both apps, his own raising; and
+   the two limits of scope, time zones across travel and repeat rules
+   beyond "every week". No line of Memory's code was read — its engine was
+   measured only, at about 3,500 lines without tests.
+   Before it, SA-20 (2026-08-24) **pared the
    testing plan down to its useful half and designed the half that
    ships, touching no app code.** Patrick pared his own design — "I have
    a tendency to over reach in my initial design, and I have done that
@@ -2792,6 +2823,35 @@ this one holds where everything stands (Patrick, Y-15).
    outstanding since SA-1 and was simply stale.
 5. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer
    to the App Store listing only.
+6. **The Reminder Engine — not an app.** Folder:
+   `Projects/Reminder Engine`, with a space; its CLAUDE.md names the
+   reads and the opening read is `docs/handoff.md`. It holds the
+   reminder design the two apps share by each having a copy; there is
+   no code in it and there is not meant to be. Status: Reminder Engine
+   1 (2026-08-27) **the folder was put in order and two settled things
+   were written down.** `CLAUDE.md`, `docs` and `docs-ref` created;
+   `reminder-engine.md` and `reminder-engine.drawio` moved out of
+   `App-Docs`; `reminder-shape.drawio` — Memory's superseded picture —
+   down into `docs-ref`. **The chain is written "Reminder Engine 1,
+   Reminder Engine 2, …"**, no badge. Two sections were added to the
+   engine document. **The input vocabulary**: a code where a thing is
+   one of several, a bit where a fact stands alone, both set by the
+   translator at the boundary, nothing packed, capability set once
+   against state that changes — Patrick's own answers at Memory's
+   #21-new and #22-new, moved somewhere a session actually opens. And
+   **the formula this problem already has**: RFC 5545's recurrence rule
+   was read whole and reduces to six parts — a unit, an interval,
+   position parts, pick-the-nth from the set, week start, and an end.
+   It cannot express parity or a week-of-the-month reckoning, and those
+   two gaps are exactly what a code supplements. **Adopting any of it
+   is not proposed.** Patrick's own frame governs the whole project:
+   *a variety of inputs, one output* — the variety lives at the input
+   and the engine stays one thing, so a new code is not an exception.
+   Named and not scheduled: the scrub of the old readers in both apps,
+   and the two limits of scope. Next is a session of its own to read
+   Memory's `scheduler` folder — no line of it has been read by anyone
+   — and write a plain factual inventory, and then the translator page
+   of a multi-page drawing.
 
 ## True across them all
 
