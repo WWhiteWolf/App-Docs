@@ -2825,9 +2825,40 @@ this one holds where everything stands (Patrick, Y-15).
    to the App Store listing only.
 6. **The Reminder Engine — not an app.** Folder:
    `Projects/Reminder Engine`, with a space; its CLAUDE.md names the
-   reads and the opening read is `docs/handoff.md`. It holds the
+   reads, which are now three — `docs/handoff.md`, `docs/aims.md` and
+   `docs/in-flight.md`. It holds the
    reminder design the two apps share by each having a copy; there is
    no code in it and there is not meant to be. Status: Reminder Engine
+   2 (2026-08-28) **both of the previous session's next steps are done,
+   and the standard was reopened.** Memory's `scheduler` folder was read
+   whole — 3,481 lines of working code and 391 tests — into
+   `docs/memory-scheduler-inventory.md`, which is opened instead of that
+   code. It established that the live path arms **single moments only**,
+   so My Week's true weekly repeat and To-Do's eight o'clock banner
+   exist only in the old readers; and that Memory's old readers are the
+   same kind of case as Students-Assistant's — uncalled, but their files
+   still supplying live types and values, so the scrub is not a
+   deletion here either. `reminder-engine.drawio` became multi-page with
+   a Translator page; drawing from the inventory caught two errors in it.
+   Patrick then **reopened the recurrence standard**, which both files
+   said was not proposed, and that conflict was put to him rather than
+   worked around: what he wants is the calendar standards' *thinking*
+   brought in as his own codes and bits — in his words, so that he does
+   not have to worry about different rules, everything being a machine
+   step. JSCalendar (RFC 8984) was discussed and **not checked against
+   the RFC**. Where each piece would land was worked out against the
+   code and **nothing is decided**. The screens were discussed too and
+   belong to Memory: pages becoming views rather than kinds, a month
+   page, and one calendar control doing both jobs — as an input on the
+   dated pages, and as a **view** that shades the days a rule actually
+   produces, which he called the good idea of the session. The durable
+   outcome is about the way of working: with all the documents he still
+   had to keep re-explaining himself, because the files held decisions,
+   status, history and items and none of them held what he *wants* — so
+   `docs/aims.md` was written for that, and `docs/in-flight.md` for what
+   design work is live, and both joined the opening reads. Next is a
+   session of its own for the design, working towards a build sheet
+   Cursor builds from. Before it, Reminder Engine
    1 (2026-08-27) **the folder was put in order and two settled things
    were written down.** `CLAUDE.md`, `docs` and `docs-ref` created;
    `reminder-engine.md` and `reminder-engine.drawio` moved out of
@@ -2958,3 +2989,15 @@ this one holds where everything stands (Patrick, Y-15).
   live, unlinked (deferred by Patrick, #130).
 - The 266-step web test procedure as a tickable web page
   remains a liked idea.
+- **Trim this file back to the four things its own header names**
+  (Patrick, Reminder Engine 2, 2026-08-28 — **this is the next
+  session's work**, and he said he should not put it off any longer).
+  The file is 2,961 lines. The Memory entry carries roughly nine
+  hundred lines of session history and the Mystery Clues entry carries
+  more; both belong in their projects' own build histories, and this
+  file is meant to hold one line of status each.
+  **It is a check first and a cut second.** Whether all of that history
+  also sits in `elderlyassistant/docs/build-history.md` and
+  `MysteryCluesTracker/docs-ref/build-history.md` has never been
+  checked, and anything existing only here would be lost. Nothing is
+  deleted until it is known to sit somewhere else.
