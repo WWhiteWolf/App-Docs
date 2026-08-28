@@ -27,9 +27,11 @@ this one holds where everything stands (Patrick, Y-15).
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
    phone. Folder: `Projects/elderlyassistant`. Status: the reminder
-   engine is whole and live across all five reminder screens at 391
-   tests, and #27-new (2026-08-27) put in five screen fixes, every one
-   checked on the simulator.
+   engine is whole and live across all five reminder screens, now at
+   413 tests after Reminder Engine 4 Cursor put the repeat group,
+   skip, and floating-or-named-zone time into Memory's copy; #27-new
+   (2026-08-27) put in five screen fixes, every one checked on the
+   simulator.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
@@ -39,12 +41,10 @@ this one holds where everything stands (Patrick, Y-15).
 6. **The Reminder Engine — not an app.** Folder: `Projects/Reminder
    Engine`, with a space. It holds the reminder design the two apps
    share by each having a copy, and there is no code in it and there
-   is not meant to be. Status: Reminder Engine 3 (2026-08-28) checked
-   and trimmed this file, from 3,003 lines to its present length; before
-   it, Reminder Engine 2 read Memory's scheduler whole into
-   `docs/memory-scheduler-inventory.md` and reopened the recurrence
-   standard at Patrick's asking. Nothing about the standard is decided,
-   and a session of its own for the design is next.
+   is not meant to be. Status: Reminder Engine 4 (2026-08-28) settled
+   the calendar fields and wrote the Memory build sheet; Cursor then
+   built that sheet into Memory's scheduler, 413 of 413 tests.
+   Students-Assistant's copy has not had this change.
 
 ## True across them all
 
