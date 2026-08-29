@@ -31,7 +31,10 @@ this one holds where everything stands (Patrick, Y-15).
    413 tests after Reminder Engine 4 Cursor put the repeat group,
    skip, and floating-or-named-zone time into Memory's copy; #27-new
    (2026-08-27) put in five screen fixes, every one checked on the
-   simulator.
+   simulator. #30-new (2026-08-29) dropped the one-Input-page plan and
+   settled the reminder pages instead — Daily, Weekly, Monthly,
+   Quarterly, Yearly, One Time, Extended and Options — with a build
+   sheet as the next piece of work. Nothing of it is built.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
@@ -139,6 +142,14 @@ this one holds where everything stands (Patrick, Y-15).
   rather than the other way about. Memory's own pending list really is
   `docs/pending.txt`, opened and read at #8-new, so the Y-22 doubt
   about it is closed.
+
+- **Sessions can run in Cursor as well as the Claude app (#30-new).**
+  Cursor has the assistant built into the editor and the model is
+  chosen per chat from the picker beside the message box, so one chat
+  can be Claude and the next one Grok. The two folder asks and
+  everything else in the opening procedure are unchanged. The detail,
+  including which model suits which kind of work and how the two
+  billing pools differ, is in `Projects/My-Tools-and-Extensions.md`.
 
 ## Loose ends belonging to no single project
 
