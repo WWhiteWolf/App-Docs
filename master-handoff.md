@@ -28,12 +28,10 @@ this one holds where everything stands (Patrick, Y-15).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
    phone. Folder: `Projects/elderlyassistant`. Status: the reminder
    engine is whole and live across all five reminder screens, 413
-   tests. The live work is the reminder pages. Daily is built
-   (#33-new, 2026-08-29): one saved list, Home's Daily tile, Snooze
-   and Done, hold-and-slide reorder, My Log. The My Day page is gone.
-   Weekly, Monthly, Quarterly, Yearly, One Time, Extended and Options
-   are next, from `docs/build-sheet-pages.md`. Testing and the phone
-   wait until that building is done.
+   tests. Daily through Options are built. Options connecting is in
+   (#37-new, 2026-08-30): + OPT writes the cases that apply, Note is on
+   New and Edit. He is loading this build on the phone to live with it
+   for a few weeks. Holidays and Float are not yet read by the engine.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
