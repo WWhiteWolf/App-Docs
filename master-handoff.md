@@ -27,20 +27,13 @@ this one holds where everything stands (Patrick, Y-15).
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
    phone. Folder: `Projects/elderlyassistant`. Status: the reminder
-   engine is whole and live across all five reminder screens, now at
-   413 tests after Reminder Engine 4 Cursor put the repeat group,
-   skip, and floating-or-named-zone time into Memory's copy; #27-new
-   (2026-08-27) put in five screen fixes, every one checked on the
-   simulator. #30-new (2026-08-29) dropped the one-Input-page plan and
-   settled the reminder pages instead — Daily, Weekly, Monthly,
-   Quarterly, Yearly, One Time, Extended and Options — with a build
-   sheet as the next piece of work. Nothing of it is built. #31-new
-   (2026-08-29) touched no code and put the record itself right: the
-   hand-off pruned from 906 lines to 281, five sessions that had never
-   been written into the build history written up, `CLAUDE.md` rule 4
-   added holding the record-keeping conditions, and `docs/check-docs.py`
-   written to report them. **The build sheet is blocked on one question
-   Patrick has not yet answered — what these pages actually save.**
+   engine is whole and live across all five reminder screens, 413
+   tests. The live work is the reminder pages. Daily is built
+   (#33-new, 2026-08-29): one saved list, Home's Daily tile, Snooze
+   and Done, hold-and-slide reorder, My Log. The My Day page is gone.
+   Weekly, Monthly, Quarterly, Yearly, One Time, Extended and Options
+   are next, from `docs/build-sheet-pages.md`. Testing and the phone
+   wait until that building is done.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
