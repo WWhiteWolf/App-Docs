@@ -27,11 +27,11 @@ this one holds where everything stands (Patrick, Y-15).
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
    phone. Folder: `Projects/elderlyassistant`. Status: the reminder
-   engine is whole and live across all five reminder screens, 413
-   tests. Daily through Options are built. Options connecting is in
-   (#37-new, 2026-08-30): + OPT writes the cases that apply, Note is on
-   New and Edit. He is loading this build on the phone to live with it
-   for a few weeks. Holidays and Float are not yet read by the engine.
+   engine is whole and live across the one saved list, 433 tests. Daily
+   through Options are built. The five hardening points landed at
+   #40-new (2026-08-30), and the engine now reads a named time zone.
+   Holidays and Float are not yet read. He is living with the #37-new
+   build on the phone.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
