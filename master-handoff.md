@@ -26,12 +26,11 @@ this one holds where everything stands (Patrick, Y-15).
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
-   phone. Folder: `Projects/elderlyassistant`. Status: the reminder
-   engine is whole and live across the one saved list, 459 tests. Daily
-   through Options are built. The automated load is built (#44-new,
-   2026-08-31); the simulator sitting is done. Two engine Fails from
-   that sitting (Daily after Done, named zone) are #45-new. He is
-   living with the #37-new build on the phone.
+   phone. Folder: `Projects/elderlyassistant`. Status: a turning point
+   (#45-new, 2026-08-31). The engine, Options, and the sitting fixes
+   are on the phone for long-term testing. Daily after Done arms
+   tomorrow; a named zone moves the fire. The test load is out. 460
+   tests. He is living with this build.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
