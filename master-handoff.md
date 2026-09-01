@@ -26,11 +26,11 @@ this one holds where everything stands (Patrick, Y-15).
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
-   phone. Folder: `Projects/elderlyassistant`. Status: #49-new
-   (2026-09-01). Calendar page built from the sheet. He is living
-   with the #45-new build. They need landscape now: the calendar is
-   allowed to turn, the other pages still stay upright, and a fresh
-   simulator build is needed before a turn will take. 460 tests.
+   phone. Folder: `Projects/elderlyassistant`. Status: #50-new
+   (2026-09-01). Landscape is in: optional view, 0 and 90 only, all
+   pages including covers. Calendar was #49-new. He is living with
+   the #45-new build; calendar and landscape are not on that load.
+   460 tests.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
