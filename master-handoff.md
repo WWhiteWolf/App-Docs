@@ -26,11 +26,13 @@ this one holds where everything stands (Patrick, Y-15).
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
-   phone. Folder: `Projects/elderlyassistant`. Status: #52-new
-   (2026-09-02). Landscape is 90° counter-clockwise, headers on the
-   left, on the phone. Sit load on the phone; seven banners fired
-   Wednesday. Next is Pending 4 (miss notice). Paperwork half is
-   named. 460 tests.
+   phone. Folder: `Projects/elderlyassistant`. Status: #60-new
+   (2026-09-03). Landscape is 0°, 90° counter-clockwise, and 270°
+   counter-clockwise; 180° is out; headers stay at the physical top.
+   Miss notice, Appointments and Bucket List, Where?, and #59-new are
+   committed; not all are on the phone yet. Next is remove the old
+   pages and readers, then scrub stale code. Paperwork half is named.
+   489 tests.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
