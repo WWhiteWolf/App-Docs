@@ -26,11 +26,10 @@ this one holds where everything stands (Patrick, Y-15).
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
-   phone. Folder: `Projects/elderlyassistant`. Status: #66-new
-   (2026-09-03). The live desk was pruned; the archive is
-   `handoff-history.md`. Name scrub finished. Phone load is next.
-   Paperwork is Pending 2–5. Mac 298. Nothing from #56-new through
-   #65-new is on the phone yet.
+   phone. Folder: `Projects/elderlyassistant`. Status: #67-new
+   (2026-09-03). Nothing missing before an EAS phone load. Name scrub
+   finished. Paperwork is Pending 2–5. Mac 298. Nothing from #56-new
+   through #65-new is on the phone yet.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
