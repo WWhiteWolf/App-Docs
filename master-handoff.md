@@ -8,7 +8,7 @@ project's home. It is a git repo; Patrick makes
 every commit. Keep this file to four things only: the projects
 and their folders, one line of status each, what is true across
 them all, and the loose ends belonging to no single project.
-Session history lives in the projects' build-history files.
+Session history lives in the projects' own history files.
 This file is brought current at every session's docs refresh and
 is never left to lag — a project's own docs hold the detail, and
 this one holds where everything stands (Patrick, Y-15).
@@ -26,13 +26,11 @@ this one holds where everything stands (Patrick, Y-15).
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
-   phone. Folder: `Projects/elderlyassistant`. Status: #60-new
-   (2026-09-03). Landscape is 0°, 90° counter-clockwise, and 270°
-   counter-clockwise; 180° is out; headers stay at the physical top.
-   Miss notice, Appointments and Bucket List, Where?, and #59-new are
-   committed; not all are on the phone yet. Next is remove the old
-   pages and readers, then scrub stale code. Paperwork half is named.
-   489 tests.
+   phone. Folder: `Projects/elderlyassistant`. Status: #66-new
+   (2026-09-03). The live desk was pruned; the archive is
+   `handoff-history.md`. Name scrub finished. Phone load is next.
+   Paperwork is Pending 2–5. Mac 298. Nothing from #56-new through
+   #65-new is on the phone yet.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
@@ -59,8 +57,11 @@ this one holds where everything stands (Patrick, Y-15).
   The `Projects` root is a git repository of its own, added at the
   end of Y-18 so the rules file keeps a version history.
   `Projects/.gitignore` lists all five project folders, each already
-  a repository, so the root one tracks only the loose files at its
+  a repository, so   the root one tracks only the loose files at its
   own level and never nests.
+- **Patrick is one person, not a team** (Patrick, #66-new). Rule 27
+  of `Projects/CLAUDE.md`. Claude still follows the rules. Do not
+  keep a team's reminders running at him.
 - **The root folder and its repository have different names
   (Patrick, SA-5).** The folder on the Mac is `Projects` and always
   will be, because both rules files, the session-opening procedure
