@@ -26,9 +26,10 @@ this one holds where everything stands (Patrick, Y-15).
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
-   phone. Folder: `Projects/elderlyassistant`. Status: #75-new
+   phone. Folder: `Projects/elderlyassistant`. Status: #76-new
    (2026-09-06). Timer Alerts, Vault, Shopping List, and Memory Test
-   will leave; they still run here. Last phone load is #67-new. Mac 304.
+   are out. Last phone load is #67-new. Mac 298. Next is Merge and
+   Restore leftovers.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
@@ -43,9 +44,9 @@ this one holds where everything stands (Patrick, Y-15).
    built that sheet into Memory's scheduler, 413 of 413 tests.
    Students-Assistant's copy has not had this change.
 7. **stray apps** — not a running app. Folder: `Projects/stray apps`,
-   with a space. Status: #75-new (2026-09-06). Source copies of
+   with a space. Status: #76-new (2026-09-06). Source copies of
    Memory's Timer Alerts, Vault, Shopping List, and Memory Test page
-   files. Own apps vs one group app is open.
+   files.
 
 ## True across them all
 
