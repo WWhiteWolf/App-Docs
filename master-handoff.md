@@ -27,9 +27,8 @@ this one holds where everything stands (Patrick, Y-15).
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
    phone. Folder: `Projects/elderlyassistant`. Status: #82-new
-   (2026-09-07). Quarterly 30 / 60 / 90 chips on Add, in on the Mac;
-   Mac 310. Phone still on #81-new (Birthdays). Phone load of #82-new
-   is this sitting's last step.
+   (2026-09-07). Quarterly 30 / 60 / 90 chips on Add, on the phone;
+   a 90-day Done moved to December 6. Mac 310.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
