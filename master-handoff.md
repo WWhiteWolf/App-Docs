@@ -26,10 +26,11 @@ this one holds where everything stands (Patrick, Y-15).
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
-   phone. Folder: `Projects/elderlyassistant`. Status: #77-new
-   (2026-09-06). Restore with Merge is done, checked on the simulator.
-   Last phone load is #67-new. Mac 298. Next is Daily Save landing on
-   Appointments.
+   phone. Folder: `Projects/elderlyassistant`. Status: #80-new
+   (2026-09-07). Duplicate miss warning and iOS back link fixed; Help
+   page and helper built, checked on the simulator. Last phone load is
+   #67-new. Mac 301. Next session: Birthdays page — mirror Appointments;
+   build sheet first.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
