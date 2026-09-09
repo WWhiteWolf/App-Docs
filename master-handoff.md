@@ -26,10 +26,10 @@ this one holds where everything stands (Patrick, Y-15).
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
-   phone. Folder: `Projects/elderlyassistant`. Status: #92-new
-   (2026-09-08). Save writes from the table. Simulator checks done
-   except One Time for today has no Snooze. Next sitting takes that
-   look. Not on the phone. Do not change the scheduler's decisions.
+   phone. Folder: `Projects/elderlyassistant`. Status: #93-new
+   (2026-09-08). Daily One Time snooze is on the table and works from
+   the edit page and the banner. Not on the phone. Do not change the
+   scheduler's decisions.
    Phone still the #82-new load. Testers on TestFlight; App Store 72
    waiting for review, manual release, not aiming to go live.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
