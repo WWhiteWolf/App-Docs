@@ -26,11 +26,10 @@ this one holds where everything stands (Patrick, Y-15).
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
-   phone. Folder: `Projects/elderlyassistant`. Status: #97-new
-   (2026-09-09). Two leftovers built; Feedback on Settings; Reset in
-   the header; User's Guide tile with an empty page. Phone still the
-   #82-new load. Next sitting fills the guide, then he builds.
-   Testers on TestFlight;
+   phone. Folder: `Projects/elderlyassistant`. Status: #98-new
+   (2026-09-09). User's Guide written; same words on first load as a
+   popup. Checked on the simulator. Phone still the #82-new load. He
+   is putting this build in the App Store. Testers on TestFlight;
    App Store 72 waiting for review, manual release, not aiming to go
    live.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
