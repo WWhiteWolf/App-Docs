@@ -26,14 +26,12 @@ this one holds where everything stands (Patrick, Y-15).
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
-   phone. Folder: `Projects/elderlyassistant`. Status: #95-new
-   (2026-09-09). Third evaluation: engine facts belong in the one
-   description of each kind; what the add screen shows stays on the
-   form. Morning dated Done tick reads that Done moves the date. Old
-   Options page gone. New and Edit: Cancel and Save stay at the top
-   while the form scrolls. Do not change the scheduler's decisions.
-   Phone still the #82-new load. Testers on TestFlight; App Store 72
-   waiting for review, manual release, not aiming to go live.
+   phone. Folder: `Projects/elderlyassistant`. Status: #96-new
+   (2026-09-09). Easiest-and-best look; Log off the list. Two leftovers
+   for the next sitting: way back to none, and distinct Home pictures
+   for Appointments and Bucket List. Phone still the #82-new load.
+   Testers on TestFlight; App Store 72 waiting for review, manual
+   release, not aiming to go live.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
