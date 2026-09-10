@@ -26,11 +26,10 @@ this one holds where everything stands (Patrick, Y-15).
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
-   phone. Folder: `Projects/elderlyassistant`. Status: #102-new
-   (2026-09-10). Build 79 on the phone. Time spinner Cancel and Done,
-   muted offset chips, Birthday on Calendar and Daily, Birthdate on
-   the form — in the project, not on 79. Testers on TestFlight; App
-   Store 72 waiting for review, manual release.
+   phone. Folder: `Projects/elderlyassistant`. Status: #104-new
+   (2026-09-10). Build 79 on the phone. User's Guide on Settings and
+   Help pop-up words in Help — in the project, not on 79. Testers on
+   TestFlight; App Store 72 waiting for review, manual release.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
