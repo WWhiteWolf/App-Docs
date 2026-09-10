@@ -27,12 +27,11 @@ this one holds where everything stands (Patrick, Y-15).
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
    phone. Folder: `Projects/elderlyassistant`. Status: #100-new
-   (2026-09-09). Duplicate Home badges split: Yearly keeps the
-   telescope, Quarterly a fallen leaf, Monthly a first-quarter moon.
-   Checked on the simulator. This is the load he is building for the
-   phone and the store. Phone still the #82-new load. Testers on
-   TestFlight; App Store 72 waiting for review, manual release, not
-   aiming to go live.
+   (2026-09-09). Build 78 on the phone. Home badges split. Year on the
+   table; how-near is thirty or sixty days from the date; weekday
+   monthly Done leaves Daily. That last work is in the project, not on
+   78. 351 tests. Testers on TestFlight; App Store 72 waiting for
+   review, manual release.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
