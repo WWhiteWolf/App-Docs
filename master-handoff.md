@@ -27,8 +27,8 @@ this one holds where everything stands (Patrick, Y-15).
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
    phone. Folder: `Projects/elderlyassistant`. Status: #106-new
-   (2026-09-11). Build 80 on the phone. User's Guide headings in.
-   Reset All Data out. In the project, not on 80. Testers on
+   (2026-09-11). Build 81 on the phone. #105-new and #106-new are on
+   that load. He will be testing for a while. Testers on
    TestFlight; App Store 72 waiting for review, manual release.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
