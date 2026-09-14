@@ -26,11 +26,13 @@ this one holds where everything stands (Patrick, Y-15).
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
-   phone. Folder: `Projects/elderlyassistant`. Status: #110-new
-   (2026-09-13). Build 82 on the phone. Designed-machine jobs are on
+   phone. Folder: `Projects/elderlyassistant`. Status: #111-new
+   (2026-09-14). Build 82 on the phone. Designed-machine jobs are on
    that load and still need phone proof. Birthday birthdate-with-name
-   is in the project, not on 82; 406 checks pass. Testers on
-   TestFlight; App Store 72 waiting for review, manual release.
+   is in the project, not on 82. Letters and Page are on Settings
+   Appearance; plus is more, minus is less; he is trying them on the
+   phone. Testers on TestFlight; App Store 72 waiting for review,
+   manual release.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
