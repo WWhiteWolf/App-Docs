@@ -26,13 +26,13 @@ this one holds where everything stands (Patrick, Y-15).
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
-   phone. Folder: `Projects/elderlyassistant`. Status: #115-new
-   (2026-09-15). Build 90 on the phone. Weekday Save and Done and the
-   Weekly visitor are fixed through shared machinery in the project:
-   412 Mac checks and TypeScript clean, not checked on the phone.
-   Quarterly's day-chip conflict is next. Designed-machine jobs,
-   Birthday, and Home badges still need phone proof. Testers on
-   TestFlight; App Store 72 waiting for review, manual release.
+   phone. Folder: `Projects/elderlyassistant`. Status: #116-new
+   (2026-09-15). Build 90 on the phone. Evaluations 7 work from this
+   sitting is in the project: 418 Mac checks and TypeScript clean,
+   not checked on the phone. Phone proof of that sitting is next.
+   Designed-machine jobs, Birthday, and Home badges still need phone
+   proof. Testers on TestFlight; App Store 72 waiting for review,
+   manual release.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: the new
    reminder engine is in and the live path goes through it (SA-21,
