@@ -50,8 +50,8 @@ this one holds where everything stands (Patrick, Y-15).
    Memory's Timer Alerts, Vault, Shopping List, and Memory Test page
    files. Shopping List is now also its own app.
 8. **Shopping List — iPhone.** Folder: `Projects/shopping`. Status:
-   2-Shopping (2026-09-16). On the phone; runs without the Mac. The
-   icon is still a teal square. Badge: Shopping.
+   4-Shopping (2026-09-19). Submitted for App Store review. Badge:
+   Shopping.
 
 ## True across them all
 
