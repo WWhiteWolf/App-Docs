@@ -26,25 +26,26 @@ this one holds where everything stands (Patrick, Y-15).
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
-   phone. Folder: `Projects/elderlyassistant`. Status: #117-new
-   (2026-09-16). A load after 90 is on the phone. Split Letters and
-   Page are on that load and working. Phone proof still open:
-   designed-machine jobs, Birthday, and #116-new backup and back-drag.
-   Testers on TestFlight; App Store 72 waiting for review, manual
-   release.
+   phone. Folder: `Projects/elderlyassistant`. Status: #118-new
+   (2026-09-22). Saved Done state now removes every stale queued and
+   delivered alert copy for that item, keeps the next legitimate cycle,
+   and reports a removal the phone cannot confirm. 432 Mac checks pass;
+   TypeScript is clean. Patrick is putting the new native build on his
+   phone and will report back. Other phone proof remains open. Testers
+   on TestFlight; App Store 72 waiting for review, manual release.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
-   phone. Folder: `Projects/Students-Assistant`. Status: the new
-   reminder engine is in and the live path goes through it (SA-21,
-   2026-08-27), with 61 of 61 tests passing and `tsc` silent.
+   phone. Folder: `Projects/Students-Assistant`. Status: Patrick said
+   on 2026-09-22 that it is going away. Its last recorded working state
+   remains SA-21: the new reminder engine is in, 61 of 61 tests pass,
+   and `tsc` is silent.
 5. **Memory — web** — DROPPED (#72). elyfont.com gets a pointer to the
    App Store listing only.
-6. **The Reminder Engine — not an app.** Folder: `Projects/Reminder
-   Engine`, with a space. It holds the reminder design the two apps
-   share by each having a copy, and there is no code in it and there
-   is not meant to be. Status: Reminder Engine 4 (2026-08-28) settled
-   the calendar fields and wrote the Memory build sheet; Cursor then
-   built that sheet into Memory's scheduler, 413 of 413 tests.
-   Students-Assistant's copy has not had this change.
+6. **The Reminder Engine — retired historical baseline, not an app.**
+   Folder: `Projects/Reminder Engine`, with a space. Status: retired at
+   Reminder Engine 4 (2026-08-28). It preserves the original shared
+   reasoning, drawing, inventory, and build sheet. Memory moved on in
+   its own live design, and Students-Assistant is going away, so the
+   folder is not brought current as a second copy.
 7. **stray apps** — not a running app. Folder: `Projects/stray apps`,
    with a space. Status: #76-new (2026-09-06). Source copies of
    Memory's Timer Alerts, Vault, Shopping List, and Memory Test page
