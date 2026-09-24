@@ -26,18 +26,14 @@ this one holds where everything stands (Patrick, Y-15).
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone** — Alpha, and build 97 is
-   on his phone. Folder: `Projects/elderlyassistant`. Status: #118-new
-   (2026-09-22). Saved Done state now removes every stale queued and
-   delivered alert copy for that item, keeps the next legitimate cycle,
-   and reports a removal the phone cannot confirm. 432 Mac checks pass;
-   TypeScript is clean. After 24 hours on the new phone load, no
-   already-Done reminder had returned, while a legitimate missing
-   reminder did; the app acted normally. Birthday and backup, day-roll
-   lock, #116-new Settings backup and back-drag, and the Settings Guide
-   names are also verified on the phone. The designed-machine Jobs 1,
-   2, and 3 are verified too. No phone proof remains open. Testers on
-   TestFlight; App Store version 1.0 (72) is Pending Developer Release,
-   with manual release.
+   on his phone. Folder: `Projects/elderlyassistant`. Status: #119-new
+   (2026-09-24), in the project, not on the phone. Weekly Done holds
+   until the next real speaking time, holiday move included. A reminder
+   that lands on a holiday stays on the moved day. The same-week move
+   is dropped. Home badges change order while one is sliding; that part
+   is not yet seen. 428 Mac checks pass; TypeScript is clean. Build 97
+   still has the 24-hour Done proof. Testers on TestFlight; App Store
+   version 1.0 (72) is Pending Developer Release, with manual release.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: Patrick said
    on 2026-09-22 that it is going away. Its last recorded working state
