@@ -25,14 +25,19 @@ this one holds where everything stands (Patrick, Y-15).
    LIVE on the App Store since 2026-08-06, with the Y-chain rebuild
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
-3. **A Place To Remember (Memory) — iPhone** — Alpha, and it is on his
-   phone. Folder: `Projects/elderlyassistant`. Status: #118-new
+3. **A Place To Remember (Memory) — iPhone** — Alpha, and build 97 is
+   on his phone. Folder: `Projects/elderlyassistant`. Status: #118-new
    (2026-09-22). Saved Done state now removes every stale queued and
    delivered alert copy for that item, keeps the next legitimate cycle,
    and reports a removal the phone cannot confirm. 432 Mac checks pass;
-   TypeScript is clean. Patrick is putting the new native build on his
-   phone and will report back. Other phone proof remains open. Testers
-   on TestFlight; App Store 72 waiting for review, manual release.
+   TypeScript is clean. After 24 hours on the new phone load, no
+   already-Done reminder had returned, while a legitimate missing
+   reminder did; the app acted normally. Birthday and backup, day-roll
+   lock, #116-new Settings backup and back-drag, and the Settings Guide
+   names are also verified on the phone. The designed-machine Jobs 1,
+   2, and 3 are verified too. No phone proof remains open. Testers on
+   TestFlight; App Store version 1.0 (72) is Pending Developer Release,
+   with manual release.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: Patrick said
    on 2026-09-22 that it is going away. Its last recorded working state
