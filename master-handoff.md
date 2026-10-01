@@ -25,15 +25,14 @@ this one holds where everything stands (Patrick, Y-15).
    LIVE on the App Store since 2026-08-06, with the Y-chain rebuild
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
-3. **A Place To Remember (Memory) — iPhone** — Alpha, and build 97 is
-   on his phone. Folder: `Projects/elderlyassistant`. Status: #119-new
-   (2026-09-24), in the project, not on the phone. Weekly Done holds
-   until the next real speaking time, holiday move included. A reminder
-   that lands on a holiday stays on the moved day. The same-week move
-   is dropped. Home badges change order while one is sliding; that part
-   is not yet seen. 428 Mac checks pass; TypeScript is clean. Build 97
-   still has the 24-hour Done proof. Testers on TestFlight; App Store
-   version 1.0 (72) is Pending Developer Release, with manual release.
+3. **A Place To Remember (Memory) — iPhone** — Alpha. Folder:
+   `Projects/elderlyassistant`. Status: #122-new (2026-10-01). Android
+   stays upright, and the page body sits above the strip the phone
+   uses. That is in the project, not on the Galaxy. The Play account
+   was submitted; Google said they would let him know. The store file
+   waits. Do not raise the closed-test count. App Store build 100 is
+   Waiting for Review. Release is manual. He releases it himself when
+   Apple approves.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: Patrick said
    on 2026-09-22 that it is going away. Its last recorded working state
