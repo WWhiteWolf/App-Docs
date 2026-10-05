@@ -25,14 +25,14 @@ this one holds where everything stands (Patrick, Y-15).
    LIVE on the App Store since 2026-08-06, with the Y-chain rebuild
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
-3. **A Place To Remember (Memory) — iPhone** — Alpha. Folder:
-   `Projects/elderlyassistant`. Status: #122-new (2026-10-01). Android
-   stays upright, and the page body sits above the strip the phone
-   uses. That is in the project, not on the Galaxy. The Play account
-   was submitted; Google said they would let him know. The store file
-   waits. Do not raise the closed-test count. App Store build 100 is
-   Waiting for Review. Release is manual. He releases it himself when
-   Apple approves.
+3. **A Place To Remember (Memory) — iPhone and Android** — Alpha.
+   Folder: `Projects/elderlyassistant`. Status: #125-new (2026-10-05).
+   Evaluation 8 judged that Memory reached Patrick's personal aim; a
+   fresh run was 428 passed and 0 failed, and TypeScript was clean.
+   Next is Daily's redesigned Snooze selector and honest handling of a
+   failed saved-list read. The Galaxy proof and Play account remain
+   outside that update. App Store build 100 is Waiting for Review;
+   release is manual.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: Patrick said
    on 2026-09-22 that it is going away. Its last recorded working state
