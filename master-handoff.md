@@ -26,13 +26,14 @@ this one holds where everything stands (Patrick, Y-15).
    whole on the phone at 179 tests; the live work is the Player
    Guide's rebuild, at Y-47 (2026-08-18).
 3. **A Place To Remember (Memory) — iPhone and Android** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #125-new (2026-10-05).
-   Evaluation 8 judged that Memory reached Patrick's personal aim; a
-   fresh run was 428 passed and 0 failed, and TypeScript was clean.
-   Next is Daily's redesigned Snooze selector and honest handling of a
-   failed saved-list read. The Galaxy proof and Play account remain
-   outside that update. App Store build 100 is Waiting for Review;
-   release is manual.
+   Folder: `Projects/elderlyassistant`. Status: #127-new (2026-10-06).
+   Build 110 is on the iPhone: Daily's Snooze minutes use the round
+   arrows, and list neighbors make room while a row slides. Done's
+   one-day check, and the User's Guide that matches it, are not on
+   the phone. The saved-list read warning is unproved. The Galaxy
+   still has the old preview. A Play file was started, Android only,
+   and it is not sent until Google opens the account. App Store
+   build 100 is Waiting for Review; release is manual.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: Patrick said
    on 2026-09-22 that it is going away. Its last recorded working state
