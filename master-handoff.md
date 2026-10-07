@@ -29,8 +29,9 @@ this one holds where everything stands (Patrick, Y-15).
    Folder: `Projects/elderlyassistant`. Status: #127-new (2026-10-06).
    Build 110 is on the iPhone: Daily's Snooze minutes use the round
    arrows, and list neighbors make room while a row slides. Done's
-   one-day check, and the User's Guide that matches it, are not on
-   the phone. The saved-list read warning is unproved. The Galaxy
+   one-day check, the matching User's Guide, the home arrangement
+   restore, and the narrower 15, 30, and 60 minute buttons are not
+   on the phone. The saved-list read warning is unproved. The Galaxy
    still has the old preview. A Play file was started, Android only,
    and it is not sent until Google opens the account. App Store
    build 100 is Waiting for Review; release is manual.
