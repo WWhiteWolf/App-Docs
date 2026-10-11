@@ -24,8 +24,9 @@ this one holds where everything stands (Patrick, Y-15).
    rebuild's home.** Folder: `Projects/MysteryCluesTracker`. Status:
    LIVE on the App Store since 2026-08-06, with the Y-chain rebuild
    whole at 179 tests; the live work is the Player Guide's rebuild,
-   at Y-50 (2026-10-11): all sixteen trailing sections are agreed,
-   with whole-Guide assembly and its remaining passes next before code.
+   at Y-51 (2026-10-11): Next ▶ is placed, and the agreed Guide is
+   in the phone page, with the House column, the Turn Log, and the
+   Notepad kept as they stood.
 3. **A Place To Remember (Memory) — iPhone and Android** — Alpha.
    Folder: `Projects/elderlyassistant`. Status: #134-new (2026-10-10).
    Build 116 is on the iPhone. Android number 5 is the internal test
