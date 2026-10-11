@@ -23,8 +23,9 @@ this one holds where everything stands (Patrick, Y-15).
 2. **Mystery Clues Track Sheet — mobile, App Store, FREE — and the
    rebuild's home.** Folder: `Projects/MysteryCluesTracker`. Status:
    LIVE on the App Store since 2026-08-06, with the Y-chain rebuild
-   whole on the phone at 179 tests; the live work is the Player
-   Guide's rebuild, at Y-47 (2026-08-18).
+   whole at 179 tests; the live work is the Player Guide's rebuild,
+   at Y-49 (2026-10-11): ten of sixteen trailing sections are agreed,
+   with Cell notes next.
 3. **A Place To Remember (Memory) — iPhone and Android** — Alpha.
    Folder: `Projects/elderlyassistant`. Status: #134-new (2026-10-10).
    Build 116 is on the iPhone. Android number 5 is the internal test
