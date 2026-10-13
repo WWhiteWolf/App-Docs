@@ -56,11 +56,11 @@ this one holds where everything stands (Patrick, Y-15).
    Release. TestFlight on the phone has Build 2, cart badge.
    Badge: Shopping.
 9. **Clues Tracker Sheet — new, not on a store.** Folder:
-   `Projects/CluesTrackerSheet`. Status: opened 2026-10-13, chain
-   CTS. Built off Mystery Clues Track Sheet, and the page shows
-   the new name. Not a repository yet. The first packaging is the
-   web version for elyfont.com, and it has not been started. The
-   commit order is in that project's handoff.
+   `Projects/CluesTrackerSheet`. Status: CTS-1 (2026-10-13).
+   Built off Mystery Clues Track Sheet, and the page shows the
+   new name. Repository `WWhiteWolf/CluesTrackerSheet`, public,
+   first commit `Init CTS`. The elyfont.com page is already up.
+   This app is not on it yet. The web version has not been started.
 
 ## True across them all
 
