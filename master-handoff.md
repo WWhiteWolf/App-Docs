@@ -27,13 +27,17 @@ this one holds where everything stands (Patrick, Y-15).
    is on the phone and Waiting for Review, and the Android load is
    next.
 3. **A Place To Remember (Memory) — iPhone and Android** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #134-new (2026-10-10).
+   Folder: `Projects/elderlyassistant`. Status: #136-new (2026-10-14).
    Build 116 is on the iPhone. Android number 5 is the internal test
-   on the Galaxy, and it is working. Daily Snooze, Backup, and
-   Birthday list reorder work on both phones. The fresh-open text
-   size, Done's one-day check, and the Android backup and restore
-   display are done. App Store build 100 is Waiting for Review;
-   release is manual. The $9.99 Android listing still waits.
+   on the Galaxy, and it is working. The download will be free. The
+   app counts one month, then it is $9.99 once inside the app, on
+   both stores. That is not built yet. App Store build 100 is
+   Waiting for Review and comes off review. Build 117 is the code of
+   116 plus the free month. Release is manual. The Expo App Awards
+   entry waits on a public iPhone page and closes October 31.
+   Android is not that page. The payments profile is not set up, and
+   the Android release waits on 12 testers. The public Android
+   listing still waits.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: Patrick said
    on 2026-09-22 that it is going away. Its last recorded working state
@@ -76,9 +80,11 @@ this one holds where everything stands (Patrick, Y-15).
   `Projects/.gitignore` lists all five project folders, each already
   a repository, so   the root one tracks only the loose files at its
   own level and never nests.
-- **Patrick is one person, not a team** (Patrick, #66-new). Rule 27
-  of `Projects/CLAUDE.md`. Claude still follows the rules. Do not
-  keep a team's reminders running at him.
+- **Patrick is one person, not a team** (Patrick, #66-new). He works
+  alone. He makes the rules. Stop responding to him as subject to the
+  rules, and stop telling him about the rules he already knows
+  (Patrick, #136-new). Rule 27 of `Projects/CLAUDE.md`. Do the work.
+  Leave the rules out of the replies.
 - **The root folder and its repository have different names
   (Patrick, SA-5).** The folder on the Mac is `Projects` and always
   will be, because both rules files, the session-opening procedure
