@@ -26,19 +26,16 @@ this one holds where everything stands (Patrick, Y-15).
    whole at 179 tests; at Y-52 (2026-10-11) iPhone version 1.1 (3)
    is on the phone and Waiting for Review, and the Android load is
    next.
-3. **My Reminders — iPhone and Android** — Alpha.
-   Folder: `Projects/elderlyassistant`. The earlier name was A Place
-   To Remember. Status: #138.3-new (2026-10-15). Build 120 is on the
-   iPhone and is the build for the store. He can add and change on
-   that copy. Build 100 is Waiting for Review and comes off review
-   before the name or the screenshots change. The store name and the
-   purchase name become My Reminders. The notice picture and the
-   light-theme page pictures go on after that, with build 120. The
-   store page sentence has not been typed onto the store page. The
-   Galaxy free trial waits. Android number 5 is the internal test on
-   the Galaxy. The Expo App Awards entry waits on a public iPhone page
-   and closes October 31. Android is not that page. The public Android
-   listing still waits.
+3. **Daily Reminders — iPhone and Android** — Alpha.
+   Folder: `Projects/elderlyassistant`. Earlier names were A Place To
+   Remember and My Reminders. Status: #139-new (2026-10-15). Build 125
+   is on the iPhone. Version 1.0 with build 125, and the purchase, are
+   submitted for App Store review. Release is manual. The store name
+   is Daily Reminders. Apple would not take My Reminders. Promotional
+   Text says free one month, then $9.99 once. After it is public, the
+   Expo App Awards entry is next; the form closes October 31. Android
+   number 5 is the internal test on the Galaxy. The public Android
+   listing still waits. The Galaxy free trial waits.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: Patrick said
    on 2026-09-22 that it is going away. Its last recorded working state
