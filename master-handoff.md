@@ -26,14 +26,14 @@ this one holds where everything stands (Patrick, Y-15).
    whole at 179 tests; at Y-52 (2026-10-11) iPhone version 1.1 (3)
    is on the phone and Waiting for Review, and the Android load is
    next.
-3. **A Place To Remember (Memory) — iPhone and Android** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #138-new (2026-10-14).
-   Build 117 is on the iPhone. A new daily item was saved. The notice
-   did not appear. That copy came through Expo, and Expo does not have
-   Apple's day. No change to the app was chosen. The purchase is
-   Prepare for Submission. Build 100 is Waiting for Review and comes
-   off review. The light-theme screenshots and the saved screen of the
-   notice go on after that, and before 117 is added for review. The
+3. **My Reminders — iPhone and Android** — Alpha.
+   Folder: `Projects/elderlyassistant`. The earlier name was A Place
+   To Remember. Status: #138.3-new (2026-10-15). Build 120 is on the
+   iPhone and is the build for the store. He can add and change on
+   that copy. Build 100 is Waiting for Review and comes off review
+   before the name or the screenshots change. The store name and the
+   purchase name become My Reminders. The notice picture and the
+   light-theme page pictures go on after that, with build 120. The
    store page sentence has not been typed onto the store page. The
    Galaxy free trial waits. Android number 5 is the internal test on
    the Galaxy. The Expo App Awards entry waits on a public iPhone page
