@@ -27,17 +27,18 @@ this one holds where everything stands (Patrick, Y-15).
    is on the phone and Waiting for Review, and the Android load is
    next.
 3. **A Place To Remember (Memory) — iPhone and Android** — Alpha.
-   Folder: `Projects/elderlyassistant`. Status: #137-new (2026-10-14).
-   The iPhone purchase is in the code. Patrick is making build 117
-   and loading it on the iPhone. The purchase is created in App Store
-   Connect and is Prepare for Submission. Build 100 is Waiting for
-   Review and comes off review. The light-theme screenshots and the
-   review picture on the purchase go on after that, and before 117 is
-   added for review. The store page sentence has not been typed onto
-   the store page. The Galaxy free trial waits. Android number 5 is
-   the internal test on the Galaxy. The Expo App Awards entry waits
-   on a public iPhone page and closes October 31. Android is not that
-   page. The public Android listing still waits.
+   Folder: `Projects/elderlyassistant`. Status: #138-new (2026-10-14).
+   Build 117 is on the iPhone. A new daily item was saved. The notice
+   did not appear. That copy came through Expo, and Expo does not have
+   Apple's day. No change to the app was chosen. The purchase is
+   Prepare for Submission. Build 100 is Waiting for Review and comes
+   off review. The light-theme screenshots and the saved screen of the
+   notice go on after that, and before 117 is added for review. The
+   store page sentence has not been typed onto the store page. The
+   Galaxy free trial waits. Android number 5 is the internal test on
+   the Galaxy. The Expo App Awards entry waits on a public iPhone page
+   and closes October 31. Android is not that page. The public Android
+   listing still waits.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: Patrick said
    on 2026-09-22 that it is going away. Its last recorded working state
