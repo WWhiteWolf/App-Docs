@@ -28,14 +28,16 @@ this one holds where everything stands (Patrick, Y-15).
    next.
 3. **Daily Reminders — iPhone and Android** — Alpha.
    Folder: `Projects/elderlyassistant`. Earlier names were A Place To
-   Remember and My Reminders. Status: #141-new (2026-10-16). Build 125
+   Remember and My Reminders. Status: #142-new (2026-10-16). Build 125
    is on the iPhone. Version 1.0 with build 125, and the purchase, are
    submitted for App Store review. Release is manual. The store name
-   is Daily Reminders. The Expo App Awards form is ready to paste in
-   `docs/expo-awards.md`; Patrick fills it after the App Store page
-   is public. The form closes October 31. Android number 5 is the
-   internal test on the Galaxy. The public Android listing still
-   waits. The Galaxy free trial waits.
+   is Daily Reminders. `docs/reminder-shape.md` is the live engine
+   detail, brought current this sitting. If no time is entered on an
+   Appointment or a Birthday, 12:00 pm is the default. The Expo App
+   Awards form is ready to paste in `docs/expo-awards.md`; Patrick
+   fills it after the App Store page is public. The form closes
+   October 31. Android number 5 is the internal test on the Galaxy.
+   The public Android listing still waits. The Galaxy free trial waits.
 4. **Students-Assistant — iPhone and web** — Alpha, and it is on his
    phone. Folder: `Projects/Students-Assistant`. Status: Patrick said
    on 2026-09-22 that it is going away. Its last recorded working state
