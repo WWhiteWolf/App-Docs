@@ -28,10 +28,12 @@ this one holds where everything stands (Patrick, Y-15).
    next.
 3. **Daily Reminders — iPhone and Android** — Alpha.
    Folder: `Projects/elderlyassistant`. Earlier names were A Place To
-   Remember and My Reminders. Status: #142-new (2026-10-16). Build 125
+   Remember and My Reminders. Status: #142-new (2026-10-17). Build 125
    is on the iPhone. Version 1.0 with build 125, and the purchase, are
-   submitted for App Store review. Release is manual. The store name
-   is Daily Reminders. `docs/reminder-shape.md` is the live engine
+   submitted for App Store review. Release is manual. The Paid
+   Applications Schedule was accepted, and the Small Business Program
+   enrollment is submitted and waiting on Apple. The lower rate has
+   not started. The store name is Daily Reminders. `docs/reminder-shape.md` is the live engine
    detail, brought current this sitting. If no time is entered on an
    Appointment or a Birthday, 12:00 pm is the default. The Expo App
    Awards form is ready to paste in `docs/expo-awards.md`; Patrick
