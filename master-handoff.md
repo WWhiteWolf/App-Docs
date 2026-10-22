@@ -62,11 +62,12 @@ this one holds where everything stands (Patrick, Y-15).
    Release. TestFlight on the phone has Build 2, cart badge.
    Badge: Shopping.
 9. **Clues Tracker Sheet — new, not on a store.** Folder:
-   `Projects/CluesTrackerSheet`. Status: CTS-3 (2026-10-21).
-   The web version starts from the Mystery Tracker page, copied
-   in and not yet changed. Setup decisions are in
-   `docs/ClueTrackerSheet-spec.md`. Gameplay changes from Mystery
-   Clues Track Sheet are next. Mystery Tracker is already on
+   `Projects/CluesTrackerSheet`. Status: CTS-4 (2026-10-21).
+   The work is the web version. Setup is in the page and in
+   `docs/ClueTrackerSheet-spec.md`. The game side is next.
+   Gameplay changes from Mystery Clues Track Sheet have not
+   been named. The aim is the best of Mystery Tracker and
+   Mystery Clues Track Sheet. Mystery Tracker is already on
    elyfont.com. Repository `WWhiteWolf/CluesTrackerSheet`, public,
    first commit `Init CTS`.
 
