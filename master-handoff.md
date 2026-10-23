@@ -62,14 +62,14 @@ this one holds where everything stands (Patrick, Y-15).
    Release. TestFlight on the phone has Build 2, cart badge.
    Badge: Shopping.
 9. **Clues Tracker Sheet — new, not on a store.** Folder:
-   `Projects/CluesTrackerSheet`. Status: CTS-4 (2026-10-21).
-   The work is the web version. Setup is in the page and in
-   `docs/ClueTrackerSheet-spec.md`. The game side is next.
-   Gameplay changes from Mystery Clues Track Sheet have not
-   been named. The aim is the best of Mystery Tracker and
-   Mystery Clues Track Sheet. Mystery Tracker is already on
-   elyfont.com. Repository `WWhiteWolf/CluesTrackerSheet`, public,
-   first commit `Init CTS`.
+   `Projects/CluesTrackerSheet`. Status: CTS-8 (2026-10-22).
+   The work is the web version. The turn runs on the engine from
+   the phone. The seven deduction helpers are on this page, start
+   off, and only color. A right-click types up to four characters
+   in a player’s cell. He has seen both working. The User Guide
+   waits for a new session.
+   Repository `WWhiteWolf/CluesTrackerSheet`, public, first commit
+   `Init CTS`.
 
 ## True across them all
 
