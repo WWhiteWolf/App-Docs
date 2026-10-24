@@ -62,15 +62,16 @@ this one holds where everything stands (Patrick, Y-15).
    Release. TestFlight on the phone has Build 2, cart badge.
    Badge: Shopping.
 9. **Clues Tracker Sheet — new, not on a store.** Folder:
-   `Projects/CluesTrackerSheet`. Status: CTS-10 (2026-10-23).
+   `Projects/CluesTrackerSheet`. Status: CTS-11 (2026-10-24).
    The work is the web version. The turn runs on the engine from
-   the phone. The seven deduction helpers are on this page, start
-   off, and only color. The first one waits until every House
-   card has been checked. A right-click types up to four
-   characters in a player’s cell. Quit and a wrong accusation
-   are not in the app. The page is on elyfont.com, from the
-   public repository `WWhiteWolf/mystery-tracker`. He has seen
-   it there. He said the app is complete for now.
+   the phone. Player columns move in Setup and during play. The
+   turn order is taken once when Setup ends. A palm on the left
+   of each name starts a drag. The seven deduction helpers are
+   on this page, start off, and only color. A right-click types
+   up to four characters in a player’s cell. Quit and a wrong
+   accusation are not in the app. The page is on elyfont.com,
+   from the public repository `WWhiteWolf/mystery-tracker`. The
+   Guide’s line about left-to-right turn order is stale.
    Repository `WWhiteWolf/CluesTrackerSheet`, public, first commit
    `Init CTS`.
 
