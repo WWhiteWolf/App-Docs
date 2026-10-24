@@ -62,14 +62,15 @@ this one holds where everything stands (Patrick, Y-15).
    Release. TestFlight on the phone has Build 2, cart badge.
    Badge: Shopping.
 9. **Clues Tracker Sheet — new, not on a store.** Folder:
-   `Projects/CluesTrackerSheet`. Status: CTS-9 (2026-10-23).
+   `Projects/CluesTrackerSheet`. Status: CTS-10 (2026-10-23).
    The work is the web version. The turn runs on the engine from
    the phone. The seven deduction helpers are on this page, start
-   off, and only color. A right-click types up to four characters
-   in a player’s cell. He has seen both working. The User Guide
-   describes the page as it plays, and he is satisfied with it.
-   He does not want the Quit feature. The button is still on the
-   page.
+   off, and only color. The first one waits until every House
+   card has been checked. A right-click types up to four
+   characters in a player’s cell. Quit and a wrong accusation
+   are not in the app. The page is on elyfont.com, from the
+   public repository `WWhiteWolf/mystery-tracker`. He has seen
+   it there. He said the app is complete for now.
    Repository `WWhiteWolf/CluesTrackerSheet`, public, first commit
    `Init CTS`.
 
