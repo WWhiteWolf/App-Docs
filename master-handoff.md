@@ -62,18 +62,16 @@ this one holds where everything stands (Patrick, Y-15).
    Release. TestFlight on the phone has Build 2, cart badge.
    Badge: Shopping.
 9. **Clues Tracker Sheet — new, not on a store.** Folder:
-   `Projects/CluesTrackerSheet`. Status: CTS-11 (2026-10-24).
-   The work is the web version. The turn runs on the engine from
-   the phone. Player columns move in Setup and during play. The
-   turn order is taken once when Setup ends. A palm on the left
-   of each name starts a drag. The seven deduction helpers are
-   on this page, start off, and only color. A right-click types
-   up to four characters in a player’s cell. Quit and a wrong
-   accusation are not in the app. The page is on elyfont.com,
-   from the public repository `WWhiteWolf/mystery-tracker`. The
-   Guide’s line about left-to-right turn order is stale.
-   Repository `WWhiteWolf/CluesTrackerSheet`, public, first commit
-   `Init CTS`.
+   `Projects/CluesTrackerSheet`. Status: CTS-12 (2026-10-26).
+   The work is the web version. Test Spec §§1–2 exist under
+   `docs-ref/`; §3 not started. elyfont.com DNS is on Cloudflare
+   Free; site still from `WWhiteWolf/mystery-tracker` GitHub
+   Pages. Network Solutions hosting/Secure Xpress cancelled.
+   Cloudflare Access for per-app login is mid-setup: zone was
+   still Pending for the Access Domain dropdown; One-time PIN
+   missing from Add IdP list in the UI; no custom passcode IdP.
+   Guide left-to-right turn-order line still stale. Repository
+   `WWhiteWolf/CluesTrackerSheet`, public.
 10. **Night Vitals — new, not on a store.** Folder:
     `Projects/NightVitals`. Status: Health Data Display-1
     (2026-10-25). Store name Night Vitals accepted in App Store
