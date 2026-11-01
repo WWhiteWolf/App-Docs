@@ -73,13 +73,14 @@ this one holds where everything stands (Patrick, Y-15).
    Guide left-to-right turn-order line still stale. Repository
    `WWhiteWolf/CluesTrackerSheet`, public.
 10. **Night Vitals — new, not on a store.** Folder:
-    `Projects/NightVitals`. Status: Health Data Display-1
-    (2026-10-25). Store name Night Vitals accepted in App Store
+    `Projects/NightVitals`. Status: Night Vitals -3
+    (2026-11-01). Store name Night Vitals accepted in App Store
     Connect; Bundle ID `com.molliedog.nightvitals`; Prepare for
     Submission. Docs desk and `docs/design-spec.md` written; no
-    app code yet. First build: Apple Health only, stacked raw
-    waveforms, pluggable sources later. O2Ring sample CSVs still
-    in `Projects/Health`.
+    app code yet. November 1 export in Downloads is the phone and
+    watch sample; record shape in `docs-ref/health-record.md`.
+    First build still ahead: Apple Health only, stacked raw
+    waveforms. O2Ring sample CSVs still in `Projects/Health`.
 
 ## True across them all
 
