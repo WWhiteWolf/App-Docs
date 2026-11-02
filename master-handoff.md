@@ -81,6 +81,15 @@ this one holds where everything stands (Patrick, Y-15).
     watch sample; record shape in `docs-ref/health-record.md`.
     First build still ahead: Apple Health only, stacked raw
     waveforms. O2Ring sample CSVs still in `Projects/Health`.
+11. **Buzzards Bay Phantom — fiction, not an app.** Folder:
+    `Writing/Buzzards-Bay-Phantom`. The `Writing` tree sits
+    beside `Projects`, at `/Users/patsmactop/Writing`, and is
+    not inside it. Status: Phantmom-14 closed (2026-11-01).
+    The story is done. Chapters 1 through 14 are locked. The
+    title stays Buzzards Bay Phantom. Read
+    `Buzzards Bay Phantom.docx`. Page numbers are on that
+    file. The title page is page 1. Detail is in
+    `Writing/handoff.md`.
 
 ## True across them all
 
@@ -157,6 +166,9 @@ this one holds where everything stands (Patrick, Y-15).
   history. "SA-n" is Students-Assistant, begun SA-1
   (2026-08-19). "CTS" is Clues Tracker Sheet, folder
   `Projects/CluesTrackerSheet`, named by Patrick on 2026-10-13.
+  "Phantmom-n" is Buzzards Bay Phantom, folder
+  `Writing/Buzzards-Bay-Phantom`. Phantmom-14 closed
+  2026-11-01. The story is done.
   No old reference is ever edited.
 - The build-and-test commit rhythm: the code commit comes
   before the build, the docs commit after the device test — so
